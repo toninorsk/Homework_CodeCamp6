@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML text formatting exercise 2</title>
+    <link rel="stylesheet" href="HTML_text_fomatting_exercise_2.css">
+</head>
+<body>
+    <!-- 2. Prints 10 names with a line break between each name. The list should be alphabetized, and to do this place a subscripted number next to each based on where it will go in the alphabetized list. (Example: Alan1). Print first, the unalphabetized list. Both lists should have an h1 level heading.  -->
+    <h1>Unalphabetized name list</h1>
+    <ol>
+        <li>Frederic<sub>4</sub></li>
+        <li>Napoleon<sub>8</sub></li>
+        <li>Zachariah<sub>10</sub></li>
+        <li>Maximilian<sub>7</sub></li>
+        <li>Cornelius<sub>2</sub></li>
+        <li>Amadeus<sub>1</sub></li>
+        <li>Ludwig<sub>6</sub></li>
+        <li>Nicolai<sub>9</sub></li>
+        <li>Daniel<sub>3</sub></li>
+        <li>Griffin<sub>5</sub></li>
+    </ol>
+
+    <h1>Alphabetized name list</h1>
+    <ol>
+        <li>Amadeus</li>
+        <li>Cornelius</li>
+        <li>Daniel</li>
+        <li>Frederic</li>
+        <li>Griffin</li>
+        <li>Ludwig</li>
+        <li>Maximilian</li>
+        <li>Napoleon</li>
+        <li>Nicolai</li>
+        <li>Zachariah</li>
+    </ol>
+
+    <p>Click the button to sort the list alphabetically:</p>
+    <button onclick="sortList()">Sort</button>
+
+    <ol id="id01">
+        <li>Frederic</li>
+        <li>Napoleon</li>
+        <li>Zachariah</li>
+        <li>Maximilian</li>
+        <li>Cornelius</li>
+        <li>Amadeus</li>
+        <li>Ludwig</li>
+        <li>Nicolai</li>
+        <li>Daniel</li>
+        <li>Griffin</li>
+    </ol>
+
+    <script>
+        function sortList() {
+            var list, i, switching, b, shouldSwitch;
+            list = document.getElementById("id01");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // start by saying: no switching is done:
+                switching = false;
+                b = list.getElementsByTagName("LI");
+                // Loop through all list-items:
+                for (i = 0; i < (b.length - 1); i++) {
+                    // start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* check if the next item should
+                    switch place with the current item: */
+                    if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                        /* if next item is alphabetically
+                        lower than current item, mark as a switch
+                        and break the loop: */
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark the switch as done: */
+                    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+
+<!-- https://www.w3schools.com/howto/howto_js_sort_list.asp -->
+
+</body>
+
+</html>
