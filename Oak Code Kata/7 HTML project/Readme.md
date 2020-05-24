@@ -3,4 +3,4 @@
 3. HTML Project
 -   3.1. Project 1 - HTML Tribute Page Project
 -   3.2. Project 2 - HTML Form Validation Project
--   3.3. Personal Portfolio Website
+-   3.3. Project 3 - Personal Portfolio Website
