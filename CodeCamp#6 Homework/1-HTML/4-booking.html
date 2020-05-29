@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-booking</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #000000;
+            opacity: 0.7;
+            color: #ffffff;
+            padding: 15px;
+            width: 100%;
+            transition: 0.7s;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #fff;
+            opacity: 0.5;
+            color: #000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: 0.7s;
+        }
+
+        .menu li:hover {
+            background-color: #66db93;
+        }
+
+        .footer {
+            background-color: #000;
+            opacity: 0.7;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background-color: black;
+            background-image: url("airport.jpg");
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Nattawoot Denduangchai: Booking</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <a href="1-index.html">
+                    <li>Homepage</li>
+                </a>
+                <a href="2-profile.html">
+                    <li>Profile</li>
+                </a>
+                <a href="3-friends.html">
+                    <li>Friends</li>
+                </a>
+                <a href="4-booking.html">
+                    <li style="background-color: #66db93;">Booking</li>
+                </a>
+                <a href="5-phonebook.html">
+                    <li>Phone book</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9" style="background-color: white; opacity: 0.5;">
+            <h1>Fight booking service:</h1>
+            <fieldset style="background-color: #66db93; padding: 10px;">
+                <legend>Book Flight</legend>
+                <span><label for="departure">Flying from</label>
+                    <select>
+                        <optgroup label="Thailand">
+                            <option value="Bangkok">Bangkok</option>
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Phuket">Phuket</option>
+                        </optgroup>
+                        <optgroup label="Japan">
+                            <option value="Tokyo">Tokyo</option>
+                            <option value="Osaka">Osaka</option>
+                            <option value="Sapporo">Sapporo</option>
+                        </optgroup>
+                        <optgroup label="USA">
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                        </optgroup>
+                        <optgroup label="Canada">
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                        </optgroup>
+                    </select>
+                    <span><label for="arrival">To</label>
+                        <select>
+                            <optgroup label="Thailand">
+                                <option value="Bangkok">Bangkok</option>
+                                <option value="Chiang Mai">Chiang Mai</option>
+                                <option value="Phuket">Phuket</option>
+                            </optgroup>
+                            <optgroup label="Japan">
+                                <option value="Tokyo">Tokyo</option>
+                                <option value="Osaka">Osaka</option>
+                                <option value="Sapporo">Sapporo</option>
+                            </optgroup>
+                            <optgroup label="USA">
+                                <option value="Alabama">Alabama</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                            </optgroup>
+                            <optgroup label="Canada">
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <form action="/action_page.php">
+                            <span>
+                                <label for="departure_date">Departing</label>
+                                <input type="date" id="departure_date" name="departure_date">
+                            </span>
+                            <span>
+                                <label for="return_date">Returning</label>
+                                <input type="date" id="return_date" name="departure_date">
+                            </span>
+                        </form>
+                        <br>
+                        <span><label for="adult">Adult</label></span>
+
+                        <select>
+                            <optgroup label="Adult"></optgroup>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                            </optgroup>
+                        </select>
+
+                        <span><label for="child">Child</label></span>
+
+                        <select>
+                            <optgroup label="Child"></optgroup>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                            </optgroup>
+                        </select>
+
+                        <span><label for="infant">Infant</label></span>
+
+                        <select>
+                            <optgroup label="Infant"></optgroup>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                            </optgroup>
+                        </select>
+
+                        <span><label for="currency">Currency</label></span>
+
+                        <select>
+                            <optgroup label="Currency"></optgroup>
+                            <option value="THB">THB</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <a href="https:skyscanner.net"><button>SEARCH</button></a>
+
+            </fieldset>
+        </div>
+
+
+        <div class="footer">
+            <p>Created by <b>Nattawoot Denduangchai</b> on May 28, 2020</p>
+        </div>
+
+</body>
+
+</html>
