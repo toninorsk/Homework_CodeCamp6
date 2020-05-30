@@ -1,0 +1,8 @@
+.hover {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+td.hover:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}

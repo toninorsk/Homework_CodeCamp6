@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 review</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link rel="stylesheet" href="2-review-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html">1 CSS review</a>
+        <a href="2-review.html" style="background-color: rgba(0, 255, 0, 0.3);
+        ">2 CSS review</a>
+        <a href="3-form.html" target="_blank">3 CSS form</a>
+        <a href="4-review.html" target="_blank">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <img src="image/css-syntax.gif" alt="css-syntax" style="opacity: 0.7; width: 100%; margin-top: 20px;">
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">2 CSS review</h1>
+
+            <p>Whereas HTML has tags, CSS has selectors. Selectors are the names given to styles in internal and external style sheets. In this CSS Beginner Tutorial we will be concentrating on HTML selectors, which are simply the names of HTML tags and are used to change the style of a specific type of element.</p>
+            <p>For each selector there are <span style="background-color: rgba(245, 245, 41, 0.5);">"properties"</span> inside curly brackets, which simply take the form of words such as color, font-weight or background-color.</p>
+            <p>A <span style="background-color: rgba(245, 245, 41, 0.5);">value</span> is given to the property following a colon (NOT an “equals” sign). Semi-colons are used to separate the properties.</p>
+
+            <hr>
+
+            <h2 style="text-align: center;">CSS Properties</h2>
+
+            <table>
+                <tr>
+                    <td class=" hover">Content</td>
+                    <td class=" hover">Border</td>
+                    <td class=" hover">Image</td>
+                    <td class=" hover">Margin</td>
+                    <td class=" hover">Display</td>
+                    <td class=" hover">Grid</td>
+                    <td class=" hover">Flex</td>
+                    <td class=" hover">Position</td>
+                    <td class=" hover">Media Queries</td>
+                </tr>
+            </table>
+
+            <h2 style="text-align: center;"><b>CSS content Property</b></h2>
+
+            <h2> Color </h2>
+            <p>With CSS, color can be specified in different ways:</p>
+            <ul>
+                <li>By color name</li>
+                <li>As RGB values</li>
+                <li>As hexadecimal values</li>
+                <li>As HSL values</li>
+                <li>As HWB values</li>
+            </ul>
+            <hr>
+        
+            <h4> <u>Color Names</u> </h4>
+            <p>CSS supports 140 standard color names.</p>
+            <p><u>exp.</u> <span style="color: purple;"> Purple </style></span> <span style="color: lightblue;"> Lightblue
+                </span>
+                <span style="color: blue;"> Blue </span><span style="color: green;"> Green </span><span style="color: yellow;">
+                    Yellow </span><span style="color: orange;"> Orange </span><span style="color: red;"> Red </span></p>
+        
+            <h4> <u>RGB Colors</u> </h4>
+            <p>An RGB color value is specified with: RGB (<span style="color:rgb(255, 0, 0);">Red</span><span
+                    style="color:rgb(0, 255, 0);">Green</span><span style="color:rgb(0, 0,255);">Blue</span>)</p>
+            <p>Each parameter defines the intensity of the color as an integer between 0 and 255. This makes 256*256*256 =
+                16,777,216 possible colors</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: rgb(255, 0, 0);"></td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 255, 0);"></td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 0, 255);"></td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 0, 0);"></td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(128, 128, 128);"></td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(255, 255, 255);"></td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h4>RGBA Colors</h4>
+            <p>RGBA color values are an extension of RGB color values with an alpha chanel - which specifies the opacity for a
+                color.</p>
+            <p>An RGBA color value is specified with: RGBA (<span style="color: rgb(255, 0, 0);">Red</span>
+                <span style="color: rgb(0, 255, 0);">Green</span>
+                <span style="color: rgb(0, 0, 255);">Blue</span>Alpha). The alpha parameter is a number between 0.0 (fully
+                transparent) and 1.0 (fully opaque).</p>
+        
+            <table>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.2);">RGBA(255, 0, 0, 0.2)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.2);">RGBA(0, 255, 0, 0.2)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.2);">RGBA(0, 0, 255, 0.2)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.4);">RGBA(255, 0, 0, 0.4)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.4);">RGBA(0, 255, 0, 0.4)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.4);">RGBA(0, 0, 255, 0.4)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.6);">RGBA(255, 0, 0, 0.6)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.6);">RGBA(0, 255, 0, 0.6)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.6);">RGBA(0, 0, 255, 0.6)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.8);">RGBA(255, 0, 0, 0.8)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.8);">RGBA(0, 255, 0, 0.8)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.8);">RGBA(0, 0, 255, 0.8)</td>
+                </tr>
+            </table>
+        
+            <h4> <u>Hexadecimal Colors</u> </h4>
+            <p>A hexadecimal color is specified with #<span style="color:#ff0000">RR</span><span
+                    style="color:#00ff00">GG</span><span style="color:#0000ff">BB</span></p>
+            <p>The number of colors that can be represented by this system is 16<sup>6</sup> = 16,777,216 </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>HEX</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: #ff0000;"></td>
+                        <td>#FF0000</td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #00ff00;"></td>
+                        <td>#00FF00</td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #0000ff;"></td>
+                        <td>#0000FF</td>
+                        <td>RGB(0,0,255)</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #000000;"></td>
+                        <td>#000000</td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #808080;"></td>
+                        <td>#808080</td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #ffffff;"></td>
+                        <td>#FFFFFF</td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h4> <u>HSL Colors</u> </h4>
+            <p>HSL stands for hue, saturation, and lightness (ความเข้มสี, ความอิ่มตัวของสี, ความสว่าง).</p>
+            <p>HLS color values are specified with: hls (hue, saturation, lightness) </p>
+            <p><b>Hue</b> is a degree on the color wheel from 0 to 360. 0 is <span style="color: rgb(255, 0, 0);">Red</span>,
+                120 is <span style="color: rgb(0, 255, 0);">Green</span>, 240 is <span
+                    style="color: rgb(0, 0, 255);">Blue</span>.</p>
+            <p><b>Saturation</b> is a percentage value; 0% means a shade of gray and 100% is the full color.</p>
+            <p><b>Lightness</b> is also a percentage; 0% is black, 100% is white.</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>HEX</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: hsl(0, 100%, 50%);"></td>
+                        <td>#FF0000</td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                        <td>HSL(0,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(120, 100%, 50%);"></td>
+                        <td>#00FF00</td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                        <td>HSL(120,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(240, 100%, 50%);"></td>
+                        <td>#0000FF</td>
+                        <td>RGB(0,0,255)</td>
+                        <td>Blue</td>
+                        <td>HSL(240,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 0%);"></td>
+                        <td>#000000</td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                        <td>HSL(0,0%,0%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 50%);"></td>
+                        <td>#808080</td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                        <td>HSL(0,0%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 100%);"></td>
+                        <td>#FFFFFF</td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                        <td>HSL(0,0%,100%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        
+            <style>
+                #testHSL {
+                    background-color:
+                        hsl(180, 50%, 50%);
+                    color: hsl(0, 0%, 100%);
+                    padding: 5px;
+                }
+            </style>
+        
+            <table>
+                <tr>
+                    <td id="testHSL">exp. background color is HLS(180, 50%, 50%) and letter color is HLS(0, 0%, 100%)</td>
+                </tr>
+            </table>
+        
+            <h4> <b>HSLA Colors</b> </h4>
+            <p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of a
+                color.</p>
+            <p>An HSLA color value is specified with: HSLA (Hue, Saturation, Lightness, Alpha), where the alpha parameter
+                defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+        
+            <table>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 30%, 0.3);">HSLA(0, 100%, 30%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 30%, 0.3);">HSLA(120, 100%, 30%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 30%, 0.3);">HSLA(240, 100%, 30%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 50%, 0.3);">HSLA(0, 100%, 50%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 50%, 0.3);">HSLA(120, 100%, 50%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 50%, 0.3);">HSLA(240, 100%, 50%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 70%, 0.3);">HSLA(0, 100%, 70%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 70%, 0.3);">HSLA(120, 100%, 70%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 70%, 0.3);">HSLA(240, 100%, 70%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 90%, 0.3);">HSLA(0, 100%, 90%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 90%, 0.3);">HSLA(120, 100%, 90%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 90%, 0.3);">HSLA(240, 100%, 90%, 0.3)</td>
+                </tr>
+            </table>
+        
+            <hr>
+        
+            <h2> Text </h2>
+        
+            <ul>
+                <li>Text color</li>
+                <li>Text Alignment</li>
+                <li>Text Decoration</li>
+                <li>Text Transformation</li>
+                <li>Text Spacing</li>
+                <li>Text Shadow</li>
+            </ul>
+        
+            <hr>
+        
+            <h4><u>Text Color</u></h4>
+            <p>The text-color property is used to set the color of the text. The color is specified by:</p>
+        
+            <ul>
+                <li> a color name - like "red"</li>
+                <li> a HEX value - like "#ff0000"</li>
+                <li> an RGB value - like "rgb(255,0,0)"</li>
+                <li> a HSL value - like "hsl(0,100%,50%)"</li>
+            </ul>
+        
+            <p> <u>exp.</u> <span style="color: purple;"> Purple </style></span> <span style="color: lightblue;"> Lightblue
+                </span>
+                <span style="color: blue;"> Blue </span><span style="color: green;"> Green </span><span style="color: yellow;">
+                    Yellow </span><span style="color: orange;"> Orange </span><span style="color: red;"> Red </span></p>
+        
+            <h4><u>Text Alignment</u></h4>
+            <p>The text-align property is used to set the horizontal alignment of a text.</p>
+            <p>A text can be left or right aligned, centered, or justified.</p>
+            <p>The following example shows center aligned, and left and right aligned text (left alignment is default if text
+                direction is left-to-right, and right alignment is default if text direction is right-to-left): </p>
+        
+            <style>
+                #test-text-align-center {
+                    text-align: center;
+                }
+        
+                #test-text-align-left {
+                    text-align: left;
+                }
+        
+                #test-text-align-right {
+                    text-align: right;
+                }
+        
+                #test-text-align-justified {
+                    border: 1px solid black;
+                    padding: 10px;
+                    width: 200px;
+                    height: 200px;
+                    text-align: justify;
+                }
+            </style>
+        
+            <style>
+                th, td {border: 1px solid black;}
+            </style>
+        
+            <table>
+                <tr>
+                    <td><u>exp.</u> test text alignment - center, left, right</td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-center"> text alignment - center </td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-left"> text alignment - left </td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-right"> text alignment - right </td>
+                </tr>
+            </table>
+        
+            <table>
+                <tr>
+                    <td><u>exp.</u> test text alignment - justify</td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-justified"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos obcaecati
+                        modi quo nesciunt, similique alias odit laborum sed ullam quia reiciendis accusamus quos illum labore
+                        cupiditate atque aspernatur in magnam? </td>
+                </tr>
+            </table>
+        
+            <h4>Text Direction</h4>
+            <p>The direction and unicode-bidi property can be used to change the text direction of an element:</p>
+        
+            <style>
+                #test-text-direction-ltr {
+                    direction: ltr;
+                    unicode-bidi: bidi-override;
+                }
+        
+                #test-text-direction-rtl {
+                    direction: rtl;
+                    unicode-bidi: bidi-override;
+                }
+            </style>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ltr</td>
+                        <td id="test-text-direction-ltr"> left-to-right </td>
+                        <td>Text direction goes from left-to-right. This is default.</td>
+                    </tr>
+                    <tr>
+                        <td>rtl</td>
+                        <td id="test-text-direction-rtl"> right-to-left </td>
+                        <td>Text direction goes from right-to-left.</td>
+                    </tr>
+                    <tr>
+                        <td>initial</td>
+                        <td></td>
+                        <td>Sets this property to its default value.</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td></td>
+                        <td>Inherits this property from its parent element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h4><u>Text Decoration</u></h4>
+            <p>The text-decoration property is used to set or remove decorations from text.</p>
+            <p>The value text-decoration: none; is often used to remove underlines from links: </p>
+        
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+        
+            <p>exp. A link with no underline: <a
+                    href="https://www.w3schools.com/css/css_text_decoration.asp">www.w3schools.com</a></p>
+        
+            <p style="text-decoration-line: underline; text-decoration-style: none;">exp. text-decoration-line: underline;
+                text-decoration-style: none;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: double;">exp. text-decoration-line: underline;
+                text-decoration-style: double;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: dotted;">exp. text-decoration-line: underline;
+                text-decoration-style: dotted;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: dashed;">exp. text-decoration-line: underline;
+                text-decoration-style: dashed;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: wavy;">exp. text-decoration-line: underline;
+                text-decoration-style: wavy;</p>
+        
+            <p style="color: red; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: green;">
+                exp. color: red; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: green;</p>
+            <p
+                style="color: hotpink; text-decoration-line: line-through; text-decoration-style: dashed;text-decoration-color: purple;">
+                exp. color: hotpink; text-decoration-line: line-through; text-decoration-style: dashed; text-decoration-color:
+                purple;</p>
+            <p
+                style="color: teal; text-decoration-line: overline; text-decoration-style: double; text-decoration-color: aquamarine;">
+                exp. color: teal; text-decoration-line: overline; text-decoration-style: double; text-decoration-color:
+                aquamarine;</p>
+            <p style="color:blueviolet; text-decoration: underline overline line-through dotted red;">exp. color: blueviolet;
+                text-decoration: underline overline line-through dotted red;</p>
+        
+        
+            <style>
+                #test-text-decoration-overline {
+                    color: gold;
+                    text-decoration: overline;
+                    text-decoration-color: fuchsia;
+                }
+            </style>
+        
+            <p id="test-text-decoration-overline">exp. color: gold; text decoration: overline; text-decoration-color: fuchsia;
+                by id</p>
+        
+            <h4><u>Text Transformation</u></h4>
+            <p>The property text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+            <p>it can be used to turn everything into uppercase or lowercase letters, or capitalized the first letter of each
+                word:</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Uppercase</th>
+                        <th>Lowercase</th>
+                        <th>Capitalized</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                        <td style="text-transform: lowercase;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                        <td style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h4><u>Text Spacing</u></h4>
+            <h4>Text Indentation</h4>
+            <p>the text-indent property is used to specify the indentation of the first line of a text.</p>
+        
+            <p><u>exp.</u> text-indent: 50px;</p>
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae, explicabo
+                voluptate ipsum molestias magni deleniti provident, minima distinctio beatae dolorum temporibus ratione tenetur
+                soluta quos recusandae! Accusamus, excepturi velit!</p>
+        
+            <h4>Letter Spacing</h4>
+            <p>The letter-spacing property is used to specify the space between the characters in a text.</p>
+            <p>The following example demonstrates how to increase or decrease the space between character:</p>
+        
+            <p><u>exp.</u> letter-spacing: 3px;</p>
+            <p style="letter-spacing: 3px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error minima vero, aperiam
+                temporibus amet fuga accusamus, distinctio itaque eligendi libero corporis animi. Mollitia minima tempora
+                soluta. Corporis ducimus voluptatem enim.</p>
+            <p><u>exp.</u> letter-spacing: -3px;</p>
+            <p style="letter-spacing: -3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus ad eius
+                quis facere temporibus rerum illo itaque a perspiciatis sint laudantium unde maxime enim repellendus, cum error
+                ducimus quibusdam!</p>
+        
+            <h4>Line Height</h4>
+            <p>The line-height property is used to specifiy the space between lines:</p>
+        
+            <p><u>exp.</u> line-height: normal;</p>
+            <p style="line-height: normal;">This is a paragraph with a normal line-height.<br>This is a paragraph with a normal
+                line-height.</p>
+        
+            <p><u>exp.</u> line-height: 0.7;</p>
+            <p style="line-height: 0.7;">This is a paragraph with a smaller line-height.<br>This is a paragraph with a smaller
+                line-height. </p>
+        
+            <p><u>exp.</u> line-height: 1.8;</p>
+            <p style="line-height: 1.8;">This is a paragraph with a bigger line-height.<br>This is a paragraph with a bigger
+                line-height.</p>
+        
+            <h4>World Spacing</h4>
+            <p>The word-spacing property is used to specify the space between the words in a text.</p>
+            <p>The following example demonstrates how to increase or decrease the space between words:</p>
+        
+            <p><u>exp.</u> word-spacing: normal;</p>
+            <p style="word-spacing: normal;">This is a paragraph with a normal word-spacing</p>
+        
+            <p><u>exp.</u> word-spacing: 10 px;</p>
+            <p style="word-spacing: 10px;">This is a paragraph with a wider word-spacing.</p>
+        
+            <p><u>exp.</u> word-spacing: -5px;</p>
+            <p style="word-spacing: -5px;">This is a paragraph with a smaller word-spacing.</p>
+        
+            <h4><u>Text Shadow</u></h4>
+            <p>The text-shadow property adds shadow to text.</p>
+            <p>In its simplest use, you only specify the horizontal shadow (right +, left -) and the vertical shadow (up +, down
+                -):</p>
+        
+            <p><u>exp.</u> text-shadow: 2px 2px;</p>
+            <h2 style="text-shadow: 2px 2px;">Text-Shadow effect!</h2>
+        
+            <p>Next, add a color <span style="color: blue;">(blue)</span> to the shadow:</p>
+            <p><u>exp.</u> text-shadow: 2px 2px blue;</p>
+            <h2 style="text-shadow: 2px 2px blue;">Text-Shadow effect!</h2>
+        
+            <p>Then, add a blur effect (5px) to the shadow:</p>
+            <p><u>exp.</u> text-shadow: 2px 2px 5px blue;</p>
+            <h2 style="text-shadow: 2px 2px 5px blue;">Text-Shadow effect!</h2>
+        
+            <hr>
+        
+            <h2> Font </h2>
+        
+            <p>The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+        
+            <ul>
+                <li>Font Family</li>
+                <li>Font Style</li>
+                <li>Font Size</li>
+                <li>Font Shorthand</li>
+            </ul>
+        
+            <hr>
+        
+            <h4><u>Font Family</u></h4>
+        
+            <p>The font-family property speifies the font for an element.</p>
+        
+            <p>The font-family property can hold several font names as a "fallback" system. If the browser does not support the
+                first font, it tries the next font.</p>
+        
+            <p>In CSS, there are two types of font family names:</p>
+            <ul>
+                <li><b>font family</b> - a specific font family like "Times", "Arial", "Courier", etc.</li>
+                <li><b>generic family</b> - a group of font families with a similar look like "Serif", "Sans-serif", "cursive",
+                    "fantasy" or "Monospace"</li>
+            </ul>
+        
+            <p>Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the
+                generic family, if no other fonts are available.</p>
+            <p><b>Note:</b> Seperate each value with a comma.</p>
+        
+            <p><b>Note:</b> If a font name contains white-space, it must be quoted. Single quotes must be used when using the
+                "style" attribute in HTML.</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Generic family</th>
+                        <th>Font family Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">Serif</td>
+                        <td style="text-align:center; font-family: 'Times New Roman', Times, serif;">Times New Roman <br> <span
+                                style="font-family: Georgia, Times, serif;">Georgia</span></td>
+                        <td> Serif fonts have small lines at the ends on some characters</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Sans-serif</td>
+                        <td style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Arial<br><span
+                                style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Vernada</span></td>
+                        <td> "Sans" means without - these fonts do not have lines at the ends of characters</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Monospace</td>
+                        <td style="text-align: center; font-family: 'Courier New', Courier, monospace;">Courier New<br><span
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Lucida
+                                Sans</span> </td>
+                        <td> All monospace characters have the same width</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h4><u>Font Style</u></h4>
+        
+            <h4>Font Style</h4>
+            <p>The font-style property is mostly used to specify italic text.</p>
+            <p>This property has three values:</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Font Style</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>normal</td>
+                    <td style="font-style: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>The text is shown normally</td>
+                </tr>
+                <tr>
+                    <td>italic</td>
+                    <td style="font-style: italic;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                    <td>The text is shown in italics</td>
+                </tr>
+                <tr>
+                    <td>oblique</td>
+                    <td style="font-style: oblique;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                    <td>The text is "leaning" (oblique is very similar to italic, but less supported)</td>
+                </tr>
+            </table>
+        
+            <h4><u>Font Weight</u></h4>
+            <p>The font-weight property specifies the weight of a font: <br><u>exp.</u> <span
+                    style="font-weight: normal;">font-weight: normal;</span> <br><u>exp.</u> <span
+                    style="font-weight: bold;">font-weight: bold;</span> <span style="font-weight: lighter;"><br><u>exp.</u>
+                    font-weight: lighter;</span></p>
+        
+            <h4><u>Font Variant</u></h4>
+            <p>The font-variant property specifies weather or not a text should be displayed in a small-caps font.</p>
+            <p>In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase
+                letters appears in a smaller font size than the original uppercase letters in the text.</p>
+            <p><u>exp.</u> <span style="font-variant: normal;">This is font-variant: normal; <br> <u>exp.</u></span> <span
+                    style="font-variant: small-caps;"> This is font-variant: small-caps;</span></p>
+        
+            <h4><u>Font Size</u></h4>
+            <p>The font-size property sets the size of the text.</p>
+            <p>Being able to manage the text size is important in web design. However, you should not use font size adjustmant
+                to make paragraph look like headings, or headings look like paragraphs.</p>
+        
+            <p>Always use the proper HTML tags, like h1 to h6 for headings and p for paragraphs.</p>
+        
+            <p>The font-size value can be an absolute, or relative size.</p>
+        
+            <p>Absolute size:</p>
+            <ul>
+                <li>Sets the text to a specified size</li>
+                <li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</li>
+                <li>Absolute size is useful when the physical size of the output is known</li>
+            </ul>
+        
+            <p>Relative size:</p>
+            <ul>
+                <li>Sets the size relative to surrounding elements</li>
+                <li>Allows a user to change the text size in browsers</li>
+            </ul>
+        
+            <p><b>Note:</b> If you do not specify a font size, the default size for normal text, like paragraphs, is 16px
+                (16px=1em).</p>
+        
+            <h4>Set Font Size With Pixels</h4>
+            <p>Setting the text size with pixels gives you full control over the text size:</p>
+        
+            <p><u>exp.</u> font-size: 40px; font-size: 30px; font-size: 20px; and font-size: 10px;</p>
+            <p style="font-size: 40px;">Font-size: 40px; <span style="font-size: 30px;">Font-size: 30px;</span> <span
+                    style="font-size: 20px;">Font-size: 20;</span> <span style="font-size: 10px;">Font-size: 10px;</span></p>
+        
+            <h4>Set Font Size With Em</h4>
+            <p>To allow users to resize the text (in the browser menu), many developer use em insteas of pixels.</p>
+            <p>The em size is recommomended by the W3C.</p>
+            <p>1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is
+                16px.</p>
+            <p>The size can be calculated from pixels to em using this formula: <i>pixels/16=em</i></p>
+        
+            <p><u>exp.</u> font-size: 2.5em; font-size: 1.875em; front-size:1.25em; and font-size: 0.626; </p>
+            <p><span style="font-size: 2.5em;"> Font-size: 2.5em;</span> <span style="font-size: 1.875em;">Font-size:
+                    1.875em;</span> <span style="font-size: 1.25em;">Font-size: 1.25em;</span> <span
+                    style="font-size: 0.625em;">Font-size: 0.625;</span>
+            </p>
+        
+            <h4>Use a Combination of Percent and Em</h4>
+        
+            <p>The solution that works in all browsers, is to set a defult font-size in percent for the body element:</p>
+        
+            <p><u>exp.</u> font-size: 250%; font-size: 187.5%; front-size:125%; and font-size: 6.25%; </p>
+            <p><span style="font-size: 250%;"> Font-size: 250%;</span> <span style="font-size: 187.5%;">Font-size:
+                    187.5%;</span> <span style="font-size: 125%;">Font-size: 125%;</span> <span
+                    style="font-size: 6.25%;">Font-size: 6.25%;</span>
+            </p>
+        
+            <h4>Responsive Font Size</h4>
+            <p>The text size can be set with a vm unit, which means the "viewport width".</p>
+            <p>That way the text size will follow the size of the browser window:</p>
+        
+            <p><u>exp.</u> font-size: 5vm; and font-size: 3vm;</p>
+            <p style="font-size: 5vw;"> Font-size: 5vw; <span style="font-size: 3vw;"> Font-size: 3vw; </span> </p>
+        
+            <h4>Font Shorthand</h4>
+            <p>To shorten the code, it is also possible to specify all the individual font properties in one property.</p>
+        
+            The font property is a shorthand property for:
+            <ul>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>font-size/line-height</li>
+                <li>font-family</li>
+            </ul>
+        
+            <p><u>exp.</u> font: italic small-caps bold 2em arial, sans-serif;</p>
+            <p style="font: italic small-caps bold 2em arial, sans-serif;">Font: italic small-caps bold 2em arial, sans-serif;
+            </p>
+        
+            <p><u>exp.</u> font: bold 1.2em 'Courier New', Courier, monospace;</p>
+            <p style="font: bold 1.2em 'Courier New', Courier, monospace;">Font: bold 1.2em 'Courier New', Courier, monospace;
+            </p>
+        
+            <p><u>exp.</u> color: cadetblue; text-decoration:hotpink underline wavy; font: italic bold 1.5em Verdana, Geneva,
+                Tahoma, sans-serif;</p>
+            <p
+                style="color: cadetblue; text-decoration:hotpink underline  wavy; font: italic bold 1.5em Verdana, Geneva, Tahoma, sans-serif;">
+                color: cadetblue; text-decoration:hotpink underline wavy; font: italic bold 1.5em Verdana, Geneva, Tahoma,
+                sans-serif;</p>
+        
+            <h4>@font-face Rule</h4>
+            <p>With the @font-face rule, web designers do not have to use one of the "web-safe" fonts anymore.</p>
+            <p>In the @font-face rule you must first define a name for the font (e.g. myFirstFont), and then point to the font
+                file.</p>
+        
+            <p id="kanit"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat pariatur veritatis voluptatibus
+                vitae laborum ad dolorum, omnis quis quisquam optio sed sunt reiciendis numquam consequatur iure sapiente fugiat
+                autem aut.</p>
+        
+            <p style="font-family: Kanit;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae quos sequi debitis, neque ipsam facilis error quidem mollitia, doloribus, qui esse rem at. Voluptas culpa natus blanditiis illo libero.</p>
+        
+            <style>
+                #test-font-banger {font-family: 'Bangers', cursive;}
+            </style>
+        
+            <p id="Bangers"> Test Bangers</p>
+        
+            <h4><u>CSS list-style-type Property</u></h4>
+        
+            <table>
+                <thead>
+                    <th>
+                        Value
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>disc</td>
+                        <td><ul style="list-style-type: disc;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>Default value. The marker is a filled circle</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>armenian</td>
+                        <td><ul style="list-style-type: armenian;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Armenian numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>circle</td>
+                        <td><ul style="list-style-type: circle;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is a circle</td>
+                    </tr>
+                    <tr>
+                        <td>cjk-ideographic</td>
+                        <td><ul style="list-style-type: cjk-ideographic;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is plain ideographic numbers</td>
+                    </tr>
+                    <tr>
+                        <td>decimal</td>
+                        <td><ul style="list-style-type: decimal;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is a number</td>
+                    </tr>
+                    <tr>
+                        <td>decimal-leading-zero</td>
+                        <td><ul style="list-style-type: decimal-leading-zero;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is a number with leading zeros</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>georgian</td>
+                        <td><ul style="list-style-type: georgian;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Georgian numbering</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>hebrew</td>
+                        <td><ul style="list-style-type: hebrew;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Hebrew numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>hiragana</td>
+                        <td><ul style="list-style-type: hiragana;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Hiragana numbering</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>hiragana-iroha</td>
+                        <td><ul style="list-style-type: hiragana-iroha;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Hiragana iroha numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>katakana</td>
+                        <td><ul style="list-style-type: katakana;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Katakana numbering</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>katakana-iroha</td>
+                        <td><ul style="list-style-type: katakana-iroha;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Katakana iroha numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>lower-alpha</td>
+                        <td><ul style="list-style-type: lower-alpha;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is lower-alpha</td>
+                    </tr>
+                    <tr>
+                        <td>lower-greek</td>
+                        <td><ul style="list-style-type: lower-greek;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is lower-greek</td>
+                    </tr>
+                    <tr>
+                        <td>lower-latin</td>
+                        <td><ul style="list-style-type: lower-latin;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is lower-latin</td>
+                    </tr>
+                    <tr>
+                        <td>lower-roman</td>
+                        <td><ul style="list-style-type: lower-roman;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is lower-roman</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td><ul style="list-style-type: none;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>No marker is shown</td>
+                    </tr>
+                    <tr>
+                        <td>square</td>
+                        <td><ul style="list-style-type: square;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is a square</td>
+                    </tr>
+                    <tr>
+                        <td>upper-alpha</td>
+                        <td><ul style="list-style-type: upper-latin;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is upper-alpha</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>upper-greek</td>
+                        <td><ul style="list-style-type: upper-greek;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td></td>
+                    </tr> -->
+                    <tr>
+                        <td>upper-latin</td>
+                        <td><ul style="list-style-type: upper-latin;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul>
+                        <td>The marker is upper-latin</td>
+                    </tr>
+                    <tr>
+                        <td>upper-roman</td>
+                        <td><ul style="list-style-type: upper-roman;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is upper-roman</td>
+                    </tr>
+                    <tr>
+                        <td>List-style-image</td>
+                        <td><ul id="list-style-image"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The list-style-image property replaces the list-item marker with an image</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h2 style="text-align: center;"><b>CSS border Property</b></h2>
+            <p>The border-style property specifies what kind of border to display.</p>
+    <p>The following values are allowed:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border-style: dotted;"> A dotted border</td>
+                <td> defines a dotted border</td>
+            </tr>
+            <tr>
+                <td style="border-style: dashed;"> A dashed border</td>
+                <td> defines a dashed border</td>
+            </tr>
+            <tr>
+                <td style="border-style: solid;"> A solid border</td>
+                <td> defines a solid border</td>
+            </tr>
+            <tr>
+                <td style="border-style: double;"> A double border</td>
+                <td> defines a double border</td>
+            </tr>
+            <tr>
+                <td style="border-style: groove;"> A groove border</td>
+                <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: ridge;"> A ridge border</td>
+                <td> defines a 3D ridge border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: inset;"> A inset border</td>
+                <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: outset;"> A outset border</td>
+                <td> defines a 3D inset border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: none;"> A none border</td>
+                <td> defines no border</td>
+            </tr>
+            <tr>
+                <td style="border-style: hidden;"> A hidden border</td>
+                <td> defines a hidden border</td>
+            </tr>
+            <tr>
+                <td style="border-style: dotted dashed solid double;"> A dotted dashed solid double border</td>
+                <td> defines the top, right bottom and the left border</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4><u>CSS Border Width</u></h4>
+    <p>The border-width property specifies the width of the four borders.</p>
+    <p>The width can be set as a specific size (in px, pt, cm, em, etc) or thick:</p>
+
+    <table>
+        <tr>
+            <td style="border-style: solid; border-width: 5px">5px border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: medium;">medium border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: dashed; border-width: 1em;">1em border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: dotted; border-width: thick;">thick border-width</td>
+        </tr>
+    </table>
+
+    <h4>Specific Side Widths</h4>
+    <p>The border-width property can have from one to four values (for top, right, bottom, and left border):</p>
+
+    <table>
+        <tr>
+            <td style="border-style: solid; border-width: 5px 20px;"> 5px top and bottom, 20px on the sides</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 20px 5px;"> 20px top and bottom, 5px on the sides</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 5px 10px 15px 20px;"> 5px top, 10px right, 15px bottom, and
+                20px left</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 20px 15px 10px 5px;">20px top, 15px right, 10px bottom, 5px
+                left</td>
+        </tr>
+    </table>
+
+    <h4>CSS Border color</h4>
+    <p>The border-color property is used to set the color of the four borders.</p>
+    <p>The color can be set by:</p>
+    <ul style="list-style: square;">
+        <li>name - specify a color name, like "red"</li>
+        <li>HEX - specify a HEX value, like "ff0000"</li>
+        <li>RGB - specify an RGB value, like "rgb(255,0,0)" </li>
+        <li>HLS - specify a HSL value, like "hsl(0,100%,50%)"</li>
+        <li>transparent</li>
+    </ul>
+
+    <p>Note: If border-color is not set, it inherits the color of the element.</p>
+
+    <p style="border-style: solid; border-color: red;">red border</p>
+    <p style="border-style: dashed; border-color: green;">green border</p>
+    <p style="border-style: double; border-color: blue;">blue border</p>
+    <p style="color: silver; border-style: dotted;">If border-color is not set, it inherits the color of the element.
+    </p>
+
+    <h4>Specific Side Colors</h4>
+    <p>The border-color property can have one to four values (for top, right, bottom, and left border).</p>
+
+    <p style="border-style: solid; border-color: red green blue silver;">red green blue silver border</p>
+    <p style="border-style: solid; border-color:green blueviolet yellow;">green blueviolet yellow</p>
+
+    <h4>CSS Border - Individual Sides</h4>
+    <p>From the example on the previous, you have seen that it is possible to specify a different border for each.</p>
+    <p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+
+    <p
+        style="border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;">
+        Different Border Style</p>
+    <p
+        style="border-top-style: dashed; border-right-style: solid; border-bottom-style: double; border-left-style: solid;">
+        Different Border Style</p>
+
+    <h4>CSS Shorthand Border Property</h4>
+    <p>Like you saw in the previous page, there are many properties to consider when dealing with borders.</p>
+    <p>The border property is a shorthand property for the following individual</p>
+
+    <p>The border property is a shorthand property for the following individual border properties:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style (required)</li>
+        <li>border-color</li>
+    </ul>
+
+    <p style="border: 5px solid red;">Some text</p>
+    <p>You can also specify all the individual border properties for just one side:</p>
+    <p style="border-left: 6px solid red; background-color: silver;">Some text</p>
+    <p style="border-bottom: 6px solid red; background-color: silver;">Some text</p>
+
+    <h4>CSS Rounded Borders</h4>
+    <p>The border-radius property is used to add rounded borders to an element:</p>
+    <p style="border: 2px solid green; border-radius: 0px;">Normal border</p>
+    <p style="border: 2px solid green; border-radius: 5px;">Round border</p>
+    <p style="border: 2px solid green; border-radius: 10px;">Round border</p>
+
+    <h4><u>CSS Height and Width</u></h4>
+    <p>The height and width properties are used to set the height and width of an element.</p>
+    <p>The height and width properties do not include padding, borders, or margins. It sets the height/width of the area
+        inside the padding, border, and margin of the element.</p>
+
+    <h4>CSS height and width Values</h4>
+    <p>The height and width properties may have the following values:</p>
+    <ul>
+        <li>auto - This is default. The browser calculates the height and width</li>
+        <li>length - Defines the height/width in px, cm, etc.</li>
+        <li>% - defines the height/width in percent of the containing block</li>
+        <li>initial - sets the height/width to its default value</li>
+        <li>inherit - the height/width will be inherited from its parent value</li>
+    </ul>
+
+    <h4>CSS height and width Examples</h4>
+    <p style="height: 100px; width: 50%; background-color: lightskyblue; border: dashed green; border-radius: 10px;">
+        This element has a height of 100px and a width of 50% - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque at libero fugiat iste ipsum harum ab. Aliquid veniam praesentium quo ducimus perspiciatis ullam,</p>
+
+    <div style="width: 100%; height: 50px; background-color: yellow; border: dotted deeppink;">This element has a height
+        of 50px and a width of 100% - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto ab ullam magni
+        quam incidunt voluptate laborum labore soluta? Iusto fuga repudiandae ullam maxime sint iure eaque fugiat
+        sapiente nam!</div>
+
+    <br>
+
+    <div
+        style="width:fit-content;height: fit-content; border: thick brown solid; border-radius: 8px; background-color: chartreuse;">
+        This element has a fit-content width and a fit-content height - Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Cumque accusamus placeat natus nesciunt voluptate perspiciatis molestias eos autem assumenda
+        adipisci, dolore hic odit blanditiis voluptatum? Impedit voluptatibus tempore et rem.</div>
+
+    <br>
+
+    <div style="min-width: 700px; border: 1px solid;">This element has a min-width: 700px - Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus laboriosam. Corrupti,
+        perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+    <br>
+
+    <div style="max-width: 1000px; border: solid 1px;">This element has a max-width: 1000px - Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus laboriosam.
+        Corrupti, perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+    <h4><u>CSS Tables</u></h4>
+    <h4>Table Borders</h4>
+    <p>To specify table borders in CSS, use the border property.</p>
+    <p>The example below specifies a blue border for table th and td elements:</p>
+
+    <table style="border: 1px solid blue;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid blue;">First name</th>
+                <th style="border: 1px solid blue;">Last name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid blue;">Peter</td>
+                <td style="border: 1px solid blue;">Griffin</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid blue;">Lois</td>
+                <td style="border: 1px solid blue;">Griffin</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <p>The example below specifies a black border for table th and td elements:</p>
+
+
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">First name</th>
+            <th style="border: 1px solid black;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Peter</td>
+            <td style="border: 1px solid black;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Lois</td>
+            <td style="border: 1px solid black;">Griffin</td>
+        </tr>
+    </table>
+
+    <p>Notice that the tables in the example above have double borders. This is because both the table and the th and td
+        elements have separate borders.</p>
+
+    <h4>Collapse Table Borders</h4>
+    <p>The border-collapse property sets whether the table borders should be collapsed into a single border:</p>
+
+    <table style="border-collapse: collapse;">
+        <tr>
+            <th style="border-collapse: collapse; border: 1px solid black">First name</th>
+            <th style="border-collapse: collapse; border: 1px solid black">Last name</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px solid black">Peter</td>
+            <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px solid black">Lois</td>
+            <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="borderCollapse">
+        <tr>
+            <th class="borderCollapse">First name</th>
+            <th class="borderCollapse">Last name</th>
+        </tr>
+        <tr>
+            <td class="borderCollapse">Peter</td>
+            <td class="borderCollapse">Griffin</td>
+        </tr>
+        <tr>
+            <td class="borderCollapse">Lois</td>
+            <td class="borderCollapse">Griffin</td>
+        </tr>
+    </table>
+
+    <p>If you only want a border around the table, only specify the border property for table:</p>
+
+    <table style="border: 1px solid black">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS border-spacing Property</h4>
+    <p>The border-spacing property sets the distance between the borders of adjacent cells.</p>
+    <p><b>Note:</b> This property works only when <u>border-collapse</u> is separate.</p>
+
+    <p><u>exp.</u> border-collapse: separate; border-spacing: 15px;</p>
+    <table style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">
+        <tr>
+            <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">First name</th>
+            <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Peter</td>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Lois</td>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+        </tr>
+    </table>
+
+    <p>Using two values (the first sets the horizontal spacing and the second sets the vertical spacing)</p>
+    <p><u>exp.</u> border-collapse: separate; border-spacing: 15px 50px;</p>
+
+    <table style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">
+        <tr>
+            <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">First name</th>
+            <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Peter</td>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Lois</td>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS empty-cells Property</h4>
+    <p>The empty-cells property sets whether or not to display borders on empty cells in a table.</p>
+    <p><b>Note:</b> This property has no effect if <u>border-collapse</u> is "collapse"</p>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">First name</th>
+            <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Peter</td>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS table-layout Property</h4>
+    <p><b>Tip:</b>The main benefit of table-layout: fixed; is that the table renders much faster. On large tables, users
+        will not see any part of the table until the browser has rendered the whole table. So, if you use table-layout:
+        fixed, users will see the top of the table while the browser loads and renders rest of the table. This gives the
+        impression that the page loads a lot quicker!</p>
+
+    <style>
+        table.a {
+            table-layout: auto;
+            width: 180px;
+        }
+
+        table.b {
+            table-layout: fixed;
+            width: 180px;
+        }
+
+        table.c {
+            table-layout: auto;
+            width: 100%;
+        }
+
+        table.d {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
+
+    <p><u>exp.</u> table-layout: auto; width: 180px;</p>
+
+    <table class="a" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: fixed; width: 180px;</p>
+
+    <table class="b" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: auto; width: 100%;</p>
+
+    <table class="c" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: fixed; width: 100%;</p>
+
+    <table class="d" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <h4>W3.CSS Tables</h4>
+
+    <h4>W3.CSS Tables Classes</h4>
+    <p>W3.CSS provides the following classes for tables:</p>
+
+    <table style="border: 1px solid black">
+        <tr>
+            <th style="background-color: silver;">Class</th>
+            <th style="background-color: silver;">Defines</th>
+        </tr>
+        <tr>
+            <td>w3-table</td>
+            <td>Container for an HTML table</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-striped</td>
+            <td style="background-color: silver;">Striped table</td>
+        </tr>
+        <tr>
+            <td>w3-border</td>
+            <td>Bordered table</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-bordered</td>
+            <td style="background-color: silver;">Bordered lines</td>
+        </tr>
+        <tr>
+            <td>w3-centered</td>
+            <td>Centered table content</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-hoverable</td>
+            <td style="background-color: silver;">Hoverable table</td>
+        </tr>
+        <tr>
+            <td>w3-table-all</td>
+            <td>All properties set</td>
+        </tr>
+    </table>
+
+    <p><a href="https://www.w3schools.com/w3css/w3css_tables.asp"><button>Click</button></a> to learn more about W3.CSS
+        Tables Classes</p>
+
+    <h4><u>Adding Cell Padding</u></h4>
+    <p>Cell padding specifies the space between the cell content and its borders.</p>
+    <p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+    <p>To set the padding, use the CSS padding property:</p>
+
+    <p><u>exp.</u> not specify a padding</p>
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; border-collapse: collapse;">First Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse;">Last Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse;">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">Jill</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Smith</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">50</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">Eve</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Jackson</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">94</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">John</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Doe</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><u>exp.</u> padding: 15px;</p>
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">First Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Last Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jill</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Smith</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">50</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Eve</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jackson</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">94</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">John</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Doe</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>HTML Table - Cells that Span Many Columns</h4>
+    <p>To make a cell span more than one column, use the <span
+            style="color: red; background-color: silver;">colspan</span> attribute:</p>
+
+    <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Name</th>
+                <th colspan="2" style="padding: 15px; border: 1px solid black; border-collapse: collapse;">Telephone
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Bill Gates</td>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">123456789</td>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">987654321</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">Steve Jobs</td>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">000000000</td>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">111111111</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>HTML Table - Cells that Span Many Rows</h4>
+    <p>To make a cell span more than one row, use the <span style="color: red; background-color: silver;">rowspan</span>
+        attribute:</p>
+
+    <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+        <tr>
+            <th style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Name:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Telephone:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">123456789</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">987654321</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Companies:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Microsoft</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Lorem</td>
+        </tr>
+    </table>
+
+    <h4>HTML Table - Adding a Caption</h4>
+    <p>To add a caption to a table, use the <span style="color: red; background-color: silver;">caption</span> tag:</p>
+
+    <p><u>exp.</u> add a caption "Monthly savings"</p>
+
+    <table style="border: black solid 1px; border-collapse: collapse; padding: 3px;">
+        <caption style="color:tomato">Monthly savings</caption>
+        <tr>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> add a caption "Monthly savings" capption-side: bottom;</p>
+
+    <table style="border: black solid 1px; border-collapse: collapse; padding: 3px; caption-side: bottom;">
+        <caption style="color: tomato;">Monthly savings</caption>
+        <tr>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+        </tr>
+    </table>
+
+    <h4>A Special Style for One Table</h4>
+    <p>To define a special style for table add an <span style="color: red; background-color: silver;">id</span>
+        attribute to the table:</p>
+
+    <p><u>exp.</u> table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+        border: solid black 1px;
+        border-collapse: collapse;
+        text-align: center;
+        }</p>
+
+    <style>
+        table#t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+            border: solid black 1px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+    <table id="t01">
+        <tr>
+            <th style="border: solid 1px black;">First Name</th>
+            <th style="border: solid 1px black;">Last Name</th>
+            <th style="border: solid 1px black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Jill</td>
+            <td style="border: solid 1px black;">Smith</td>
+            <td style="border: solid 1px black;">50</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Eve</td>
+            <td style="border: solid 1px black;">Jackson</td>
+            <td style="border: solid 1px black;">94</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">John</td>
+            <td style="border: solid 1px black;">Doe</td>
+            <td style="border: solid 1px black;">80</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> <br> table#t02 {
+        width: 100%;
+        border: solid black 1px;
+        border-collapse: collapse;
+        text-align: center;
+        } <br>
+        table#t02 tr:nth-child(even) {
+        background-color: white;
+        } <br>
+        table#t02 tr:nth-child(odd) {
+        background-color: silver;
+        } <br>
+        table#t02 th {
+        background-color: black;
+        color: white;
+        }
+    </p>
+
+    <style>
+        table#t02 {
+            width: 100%;
+            border: solid black 1px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table#t02 tr:nth-child(even) {
+            background-color: white;
+        }
+
+        table#t02 tr:nth-child(odd) {
+            background-color: silver;
+        }
+
+        table#t02 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <table id="t02">
+        <tr>
+            <th style="border: solid 1px black;">First Name</th>
+            <th style="border: solid 1px black;">Last Name</th>
+            <th style="border: solid 1px black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Jill</td>
+            <td style="border: solid 1px black;">Smith</td>
+            <td style="border: solid 1px black;">50</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Eve</td>
+            <td style="border: solid 1px black;">Jackson</td>
+            <td style="border: solid 1px black;">94</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">John</td>
+            <td style="border: solid 1px black;">Doe</td>
+            <td style="border: solid 1px black;">80</td>
+        </tr>
+    </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

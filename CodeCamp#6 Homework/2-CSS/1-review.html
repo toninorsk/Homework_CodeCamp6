@@ -24,7 +24,7 @@
     <div class="topnav">
         <a href="1-review.html" style="background-color: rgba(0, 255, 0, 0.3);
         ">1 CSS review</a>
-        <a href="2-review.html" target="_blank">2 CSS review</a>
+        <a href="2-review.html">2 CSS review</a>
         <a href="3-form.html" target="_blank">3 CSS form</a>
         <a href="4-review.html" target="_blank">4 CSS review</a>
         <a href="5-nike.html" target="_blank">5 Nike</a>
@@ -62,6 +62,7 @@
             </ul>
             <hr>
             <h3 style="text-align: center;">Simple selectors</h3>
+
             <table>
                 <thead>
                     <tr>
@@ -71,6 +72,7 @@
                         <td>Example explanation</td>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
                         <td>The CSS element Selector</td>
@@ -91,44 +93,28 @@
                         <td>The CSS rule below will be applied to the HTML element with id="para1"</td>
                     </tr>
                     <tr>
-                        <td>The CSS class Selector</td>
-                        <td>
+                        <td rowspan="3">The CSS class Selector</td>
+                        <td rowspan="3">
                             <p>The class selector selects HTML elements with a specific class attribute.</p>
                             <p>To select elements with a specific class, write a period (.) character, followed by the
                                 class name.</p>
                         </td>
-                        <td>
-                            <table style="border: none;">
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;"><code>.center {text-align:
-                                        center; color: red;}</code><br><span style="opacity: 0;">.</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;"><code>p.center {text-align:
-                                        center; color: red;}</code><br><span style="opacity: 0;">.</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none;"><code>&ltP class="center large"&gtThis paragraph refers to two
-                                        classes.&lt/P&gt</code></td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table style="border: none;">
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;">In this example all HTML
-                                        elements with class="center" will be red and center-aligned</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;">In this example only
-                                        &ltP&gt elements with class="center" will be center-aligned</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none;">In this example the &ltP&gt element will be styled
-                                        according to class="center" and to class="large"</td>
-                                </tr>
-                            </table>
-                        </td>
+                        <td><code>.center {text-align:
+                            center; color: red;}</code></td>
+                        <td>In this example all HTML
+                            elements with class="center" will be red and center-aligned</td>
+                    </tr>
+                    <tr>
+                        <td><code>p.center {text-align:
+                            center; color: red;}</code></td>
+                        <td>In this example only
+                            &ltP&gt elements with class="center" will be center-aligned</td>
+                    </tr>
+                    <tr>
+                        <td><code>&ltP class="center large"&gtThis paragraph refers to two
+                            classes.&lt/P&gt</code></td>
+                        <td>In this example the &ltP&gt element will be styled
+                            according to class="center" and to class="large"</td>
                     </tr>
                     <tr>
                         <td>The CSS Universal Selector</td>
@@ -137,40 +123,27 @@
                         <td>The CSS rule will affect every HTML element on the page</td>
                     </tr>
                     <tr>
-                        <td>The CSS Grouping Selector</td>
-                        <td>
+                        <td rowspan="2">The CSS Grouping Selector</td>
+                        <td rowspan="2">
                             <p>The grouping selector all the HTML elements with the same style definitions.</p>
                             <p>Look at the following CSS code (the h1, h2, and p elements have the same style
                                 definitions)</p>
                         </td>
+                        <td><code>
+                                h1 {text-align: center; color: red;}
+                                h2 {text-align: center; color: red;}
+                                p {text-align: center; color: red;}
+                        </code></td>
+                        <td>It will be better to group
+                            the selectors, to minimize the code. To group selectors, separate each selector
+                            with a comma.</td>
+                    </tr>
+                    <tr>
                         <td>
-                            <table style="border: none;">
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;"><code>
-                                        h1 {text-align: center; color: red;}
-                                        h2 {text-align: center; color: red;}
-                                        p {text-align: center; color: red;}
-                                    </code></td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none;">
-                                        <code>h1, h2, p {text-align: center; color: red;}</code><br><span
-                                            style="opacity: 0;">.</span></td>
-                                </tr>
-                            </table>
+                            <code>h1, h2, p {text-align: center; color: red;}</code>
                         </td>
                         <td>
-                            <table style="border: none;">
-                                <tr>
-                                    <td style="border: none; border-bottom: 1px black solid;">It will be better to group
-                                        the selectors, to minimize the code. To group selectors, separate each selector
-                                        with a comma.</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: none;">In this example we have grouped the selectors from the
-                                        code above.</td>
-                                </tr>
-                            </table>
+                            In this example we have grouped the selectors from the code above.
                         </td>
                     </tr>
                 </tbody>
@@ -603,7 +576,8 @@ div:hover p {
                     <tr>
                         <td><code>[attribute*=value]</code></td>
                         <td><code>a[href*="w3schools"]</code></td>
-                        <td>Selects every &lta&gt element whose href attribute value contains the substring "w3schools"</td>
+                        <td>Selects every &lta&gt element whose href attribute value contains the substring "w3schools"
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -614,7 +588,8 @@ div:hover p {
     <hr>
     <h2 style="text-align: center;"><b>How To Add CSS</b></h2>
 
-    <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+    <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style
+        sheet.</p>
     <p><b>Three Ways to Insert CSS</b></p>
     <p>There are three ways of inserting a style sheet:</p>
     <ul>
