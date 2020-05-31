@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 form</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link rel="stylesheet" href="3-form-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html">1 CSS review</a>
+        <a href="2-review.html">2 CSS review</a>
+        <a href="3-form.html" style="background-color: rgba(0, 255, 0, 0.3);
+        ">3 CSS form</a>
+        <a href="4-review.html" target="_blank">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">3 CSS Form</h1>
+
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                        placeholder="Age" />
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Would you recommend Software Park CodeCamp to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                            checked />Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
+                        sure</label>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        What is your favorite feature of Software Park CodeCamp?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        What do you want to learn?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+
+                    <label><input name="prefer" value="html/css" type="checkbox"
+                            class="input-checkbox" />HTML/CSS</label>
+                    <label>
+                        <input name="prefer" value="bootstrap" type="checkbox" class="input-checkbox" />Bootstrap</label>
+                    <label><input name="prefer" value="data" type="checkbox" class="input-checkbox" />Data
+                        Visualization</label>
+                    <label><input name="prefer" value="git" type="checkbox"
+                            class="input-checkbox" />Git</label>
+                    <label><input name="prefer" value="ux/ui" type="checkbox"
+                            class="input-checkbox" />UX UI Visual design</label>
+                    <label><input name="prefer" value="jquery" type="checkbox"
+                            class="input-checkbox" />JQuery</label>
+                    <label><input name="prefer" value="javascript" type="checkbox" class="input-checkbox" />JavaScript</label>
+                    <label><input name="prefer" value="er diagram" type="checkbox" class="input-checkbox" />City
+    ER diagram</label>
+                    <label><input name="prefer" value="mysql" type="checkbox" class="input-checkbox" />MySQL</label>
+                    <label><input name="prefer" value="node/express" type="checkbox" class="input-checkbox" />Node/Express</label>
+                    <label><input name="prefer" value="cyber security" type="checkbox"
+                            class="input-checkbox" />Cyber Security</label>
+                    <label><input name="prefer" value="redux" type="checkbox" class="input-checkbox" /> Redux</label>
+                    <label><input name="prefer" value="cloud" type="checkbox" class="input-checkbox" /> Cloud Server</label>
+                    <label><input name="prefer" value="linux/docker" type="checkbox" class="input-checkbox" />Linux/Docker</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>
