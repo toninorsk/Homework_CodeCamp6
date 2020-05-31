@@ -1,0 +1,52 @@
+td:hover {
+    background-color: rgba(200, 202, 200, 0.3);
+}
+
+/* display style */
+
+.display-none {
+    display: none;
+    color: red;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.display-inline {
+    display: inline;
+    color: red;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.display-block {
+    display: block;
+    color: red;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.display-inline-block {
+    display: inline-block;
+    color: red;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+/* z-index */
+div.relative4 {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    border: 3px solid #73ad21;
+  }
+
+  .img1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  
+  .img2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+  }
+

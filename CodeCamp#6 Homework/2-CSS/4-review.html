@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 review</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link rel="stylesheet" href="4-review-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html">1 CSS review</a>
+        <a href="2-review.html">2 CSS review</a>
+        <a href="3-form.html">3 CSS form</a>
+        <a href="4-review.html" style="background-color: rgba(0, 255, 0, 0.3);">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">4 CSS review</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td class="hover"><a href="#value" style="text-decoration: none;">Values in display property</a></td>
+                        <td class="hover"><a href="#grid-flex" style="text-decoration: none;">How different between grid and flex?</a>
+                        </td>
+                        <td class="hover"><a href="#justify-align" style="text-decoration: none;">How different between justify and
+                                align?</a></td>
+                        <td class="hover"><a href="#position" style="text-decoration: none;">What is position?</a></td>
+                        <td class="hover"><a href="#z-index" style="text-decoration: none;">What is z-index?</a></td>
+                    </tr>
+                </thead>
+            </table>
+
+            <section id="value"></section>
+
+            <h2 style="text-align: center;">CSS display Property</h2>
+
+            <p>The <code>display</code> property specifies the display behavior (the type of rendering box) of an
+                element</p>
+            <p>In HTML, the default display property value is taken from the HTML specifications or from the
+                browser/user default style sheet. The default value in XML is inline, including SVG elements.</p>
+
+            <h3>display: none;</h3>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                felis blandit. <p class="display-none">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero
+                rhoncus ut.
+            </div>
+
+            <h3>display: inline;</h3>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                felis blandit. <p class="display-inline">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero
+                rhoncus ut.
+            </div>
+
+            <h3>display: block;</h3>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                felis blandit. <p class="display-block">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero
+                rhoncus ut.
+            </div>
+
+            <h3>display: inline-block;</h3>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                felis blandit. <p class="display-inline-block">HELLO WORLD!</p> Vestibulum volutpat tellus diam,
+                consequat gravida libero
+                rhoncus ut.
+            </div>
+
+            <hr>
+
+            <section id="grid-flex"></section>
+
+            <h2 style="text-align: center;">The main differences between Flexbox and CSS grid</h2>
+
+            <p>Dimensions define the primary demarcation between Flexbox and CSS Grid. Flexbox was designed specifically
+                for one-dimensional layouts, while CSS Grid is engineered to enable two-dimensional layouts. Therefore,
+                CSS Grid can easily render rows and columns simultaneously.</p>
+            <p>In layperson's terms, CSS Grid presents a larger canvas, while Flexbox offers minute functionality that
+                operates in a restricted space. The grids have been designed for a two-dimensional organization.</p>
+            <p>However, the two specifications share some common points, and if you know how to use flexible boxes, you
+                will find some concepts that will help you grasp CSS grids.</p>
+
+            <img src="image/1-dimension.png" alt="1-dimension.png"
+                style="width: 40%; margin: auto; display: block; opacity: 0.8;"><img src="image/2-dimension.png"
+                alt="2-dimension.png" style="width: 40%; margin: auto; display: block; opacity: 0.8;">
+
+            <p>The main differences between Grid and Flexbox, summarized as follows:</p>
+
+            <ul>
+                <li><span style="background-color: rgb(245, 245, 201);">Flexbox is designed for one-dimensional layouts,
+                        and Grid for two-dimensional layouts.</span></li>
+                <li>The approach of CSS Grid is the layout first, while the Flexbox approach is primarily the content.
+                </li>
+                <li>The Flexbox layout is best suited to application components and small-scale layouts, while the Grid
+                    layout is designed for larger-scale layouts that are not linear in design.</li>
+            </ul>
+
+            <h3>Getting to know Flexbox and Grid</h3>
+            <h4>The one-dimensional Flexbox</h4>
+
+            <p>CSS Flexible Box Layout (or Flexbox) allows designers to position responsive elements appropriately
+                within screens of different sizes. The tools include:</p>
+
+            <ul>
+                <li>box layout for documents</li>
+                <li>an inline layout for defining the appearance of text on screens</li>
+                <li>a table layout to depict tabular data in one dimension</li>
+                <li>and a positioned layout mode that enables explicit positioning of responsive elements.</li>
+            </ul>
+
+            <p>Flexbox is popular among front-end developers, since it allows developers to create multiple instances of
+                dynamic layouts and effortlessly align content within containers.</p>
+
+            <p>The flexible box module has been designed as a one-dimensional presentation model and as a method that
+                can provide space distribution between interface elements and powerful alignment functions. When we
+                describe the flexbox as one-dimensional, we describe the fact that flexbox processes layouts in one
+                dimension at a time, as a row or column. This can be compared to the two-dimensional model of the CSS
+                grid layout, which controls columns and row together.</p>
+
+            <p>Pros:</p>
+            <ul>
+                <li>Flex can be arranged in any direction</li>
+                <li>Flex can have its visual order reversed or rearranged.</li>
+                <li>Items can be aligned in your container or between</li>
+                <li>Support all browsers.</li>
+            </ul>
+
+            <p>Cons:</p>
+            <ul>
+                <li>Performance issues</li>
+            </ul>
+
+            <h4>The two-dimensional Grid</h4>
+
+            <p>CSS Grid aligns items in columns and rows, allowing developers to easily control the rendering and
+                appearance of large layouts and whole pages meant for the desktop, tablet, and smartphone displays.</p>
+
+            <p>Items are placed inside the cells defined by the grid. Creating and defining the overall layouts remains
+                the strong suit for CSS Grid. Internet Explorer, Chrome, Safari, Edge, and Firefox support Grid.
+                Notably, Opera Mini, Blackberry Browser, QQ Browser, and Baidu Browser does not support Grid.</p>
+
+            <p>It offers automation to create a layout, or define automatic placement rules that perform placements
+                inside a given grid.</p>
+
+            <p>Pros:</p>
+            <ul>
+                <li>Grid tracks are created within your stylesheet.</li>
+                <li>Reduced file size.</li>
+                <li>Prototyping with CSS Grid is fast and efficient</li>
+            </ul>
+
+            <p>Cons:</p>
+            <ul>
+                <li>Not supported by every browser</li>
+            </ul>
+
+            <h3>Differences between Flex and Grid</h3>
+            <h4>Dimensionality and Flexibility</h4>
+
+            <p>Flexbox offers greater control over alignment and space distribution between items. Being
+                one-dimensional, Flexbox only deals with either columns or rows. This system works for smaller layouts,
+                but cannot render complex displays such as text or document-centric properties that enable floats and
+                columns.</p>
+
+            <p>Grid has two-dimension layout capabilities which allow flexible widths as a unit of length. This
+                compensates for the limitations in Flex.</p>
+
+            <h4>Alignment</h4>
+
+            <p>Flexbox allows fine-tuning of alignments to ensure exact specification sharing. Flex Direction allows
+                developers to align elements vertically or horizontally, which is used when developers create and
+                reverse rows or columns.</p>
+
+            <p>For border alignments in both dimensions simultaneously, CSS Grid deploys fractional measure units for
+                grid fluidity and auto-keyword functionality to automatically adjust columns or rows. This in-built
+                automation saves developers from re-work regimes that may potentially originate in confused
+                calculations.</p>
+
+            <h4>Item Management</h4>
+            <p>Flex Container is the parent element while Flex Item represents the children. The Flex Container can
+                ensure balanced representation by adjusting item dimensions. This allows developers to design for
+                fluctuating screen sizes.</p>
+
+            <p>For fine-tuning this aesthetic, Grid supports both implicit and explicit content placement. Its inbuilt
+                automation allows it to automatically extend line items and copy values into the new creation from the
+                preceding item.</p>
+
+            <h4>Conclusion</h4>
+            <p>Flexbox and CSS Grid both allow a powerful measure of control over their respective domains of front-end
+                development. However, their capabilities are exponentiated when they are combined, utilizing their
+                respective strengths to create an extremely fluid, customizable, beautiful, smooth, and simple
+                experience.</p>
+
+            <p>Combining their code also results in a more lightweight setup where abstraction in both domains spills
+                over into the other. The are vast applications to both options, and even more when they are combined
+                into a powerful setup.</p>
+
+            <!-- https://www.freecodecamp.org/news/the-main-differences-between-flexbox-and-css-grid-667c03461d2b/ -->
+
+            <hr>
+
+            <section id="justify-align"></section>
+
+            <h2 style="text-align: center;">A Quick Way to Remember the Difference Between 'Justify-content' and
+                'align-items'</h2>
+
+            <style>
+                .justify-container {
+                    display: flex;
+                    height: 300px;
+                    background-color: rgba(255, 255, 255, 0.562);
+                    justify-content: center;
+                }
+
+                .justify-box {
+                    width: 170px;
+                    height: 170px;
+                    background-color: rgba(0, 255, 0, 0.3);
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 20px;
+                    font-family: sans-serif;
+                }
+
+                .align-container {
+                    display: flex;
+                    height: 300px;
+                    background-color: rgba(255, 255, 255, 0.562);
+                    align-items: center;
+                }
+
+                .align-box {
+                    width: 170px;
+                    height: 170px;
+                    background-color: rgba(0, 255, 0, 0.3);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 20px;
+                    font-family: sans-serif;
+                }
+            </style>
+
+            <ul>
+                <li>justify-content: longer word: horizontal alignment</li>
+            </ul>
+
+            <div class="justify-container">
+                <div class="justify-box">justify-content: center;</div>
+            </div>
+
+            <br>
+
+            <ul>
+                <li>align-items: shorter word: vertical alignment</li>
+            </ul>
+
+            <div class="align-container">
+                <div class="align-box">align-items: center;</div>
+            </div>
+
+            <!-- https://css-tricks.com/a-quick-way-to-remember-difference-between-justify-content-align-items/ -->
+
+            <hr>
+
+            <section id="position"></section>
+
+            <h2 style="text-align: center;">CSS position Property</h2>
+
+            <p>The <code>position</code> property specifies the type of positioning method used for an element (static,
+                relative, absolute, fixed, or sticky).</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Value</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>static</code></td>
+                        <td>Default value. Elements render in order, as they appear in the document flow</td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+#parent1 {
+    position: static;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    }                           
+                            </pre>
+                        </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>absolute</code></td>
+                        <td>The element is positioned relative to its first positioned (not static) ancestor element
+                        </td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+#child1 {
+    position: absolute;
+    border: 1px solid red;
+    top: 70px;
+    right: 15px;
+    }
+                            </pre>
+                        </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>fixed</code></td>
+                        <td>The element is positioned relative to the browser window</td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+#parent2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    }
+                            </pre>
+                        </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>relative</code></td>
+                        <td>The element is positioned relative to its normal position, sp "left:20px" add 20 pixels to
+                            the element's LEFT position</td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+div.relative {
+    position: relative;
+        eft: 30px;
+    border: 3px solid #73AD21;
+    }
+                            </pre>
+                        </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>sticky</code></td>
+                        <td>The element is positioned based on the user's scroll position <br> A sticky element toggles
+                            between <code>relative</code> and <code>fixed</code>, depending on the scroll position. It
+                            is positioned relative until a given offset position is met in the viewport - then it
+                            "stick" in place (like position fixed).</td>
+                        <td style="text-align: initial;">
+                            <code>
+                                <pre>
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+    }
+                                </pre>
+                            </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>initial</code></td>
+                        <td>Set this property to its default value.</td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+#parent1 {
+    position: initial;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    } 
+                            </pre>
+                        </code></td>
+                    </tr>
+                    <tr>
+                        <td><code>inherit</code></td>
+                        <td>Inherits this property from its parent</td>
+                        <td style="text-align: initial;"><code>
+                            <pre>
+#parent1 {
+    position: inherit;
+    border: 1px solid blue;
+    width: 300px;
+    height: 100px;
+    } 
+                            </pre>
+                        </code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <section id="z-index"></section>
+
+            <h2 style="text-align: center;">Overlapping Elements</h2>
+            <p>When elements are positioned, they can overlap other elements.</p>
+            <p>The z-index property specifies the stack order of an element (which element should be placed in front of,
+                or
+                behind, the others).</p>
+            <p>An element can have a positive or negative stack order:</p>
+
+            <div class="relative4" style="display: block; margin: auto;">
+                <h1>This is a heading</h1>
+                <img src="image/Eiffel.png" alt="Eiffel" class="img1" width="100" height="150" style="opacity: 0.4;">
+                <img src="image/Paris.jpg" alt="Paris" class="img1 img2" width="400" height="150" style="opacity: 0.4;">
+                <p>Because the image has a z-index of -1, it will be placed behind the text. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+            <p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+            <p><b>Note:</b> If two positioned elements overlap without a z-index specified, the element positioned last
+                in the
+                HTML code will be shown on top.</p>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-family: 'Merienda', cursive;">Created by Nattawoot Denduangchai on May 29, 2020</p>
+    </div>
+
+
+</body>
+
+</html>
