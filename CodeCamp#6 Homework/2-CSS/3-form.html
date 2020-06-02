@@ -41,133 +41,31 @@
         <div class="card">
             <h1 style="text-align: center;">3 CSS Form</h1>
 
-
-
-            <form id="survey-form">
-                <div class="form-group">
-                    <label id="name-label" for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
-                        required />
-                </div>
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
-                        required />
-                </div>
-                <div class="form-group">
-                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-                    <input type="number" name="age" id="number" min="10" max="99" class="form-control"
-                        placeholder="Age" />
-                </div>
-                <div class="form-group">
-                    <p>Which option best describes your current role?</p>
-                    <select id="dropdown" name="role" class="form-control" required>
-                        <option disabled selected value>Select current role</option>
-                        <option value="student">Student</option>
-                        <option value="job">Full Time Job</option>
-                        <option value="learner">Full Time Learner</option>
-                        <option value="preferNo">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>Would you recommend Software Park CodeCamp to a friend?</p>
-                    <label>
-                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
-                            checked />Definitely</label>
-                    <label>
-                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
-
-                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
-                        sure</label>
-                </div>
-
-                <div class="form-group">
-                    <p>
-                        What is your favorite feature of Software Park CodeCamp?
-                    </p>
-                    <select id="most-like" name="mostLike" class="form-control" required>
-                        <option disabled selected value>Select an option</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="openSource">Open Source</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>
-                        What do you want to learn?
-                        <span class="clue">(Check all that apply)</span>
-                    </p>
-
-                    <label><input name="prefer" value="html/css" type="checkbox"
-                            class="input-checkbox" />HTML/CSS</label>
-                    <label>
-                        <input name="prefer" value="bootstrap" type="checkbox"
-                            class="input-checkbox" />Bootstrap</label>
-                    <label><input name="prefer" value="data" type="checkbox" class="input-checkbox" />Data
-                        Visualization</label>
-                    <label><input name="prefer" value="git" type="checkbox" class="input-checkbox" />Git</label>
-                    <label><input name="prefer" value="ux/ui" type="checkbox" class="input-checkbox" />UX UI Visual
-                        design</label>
-                    <label><input name="prefer" value="jquery" type="checkbox" class="input-checkbox" />JQuery</label>
-                    <label><input name="prefer" value="javascript" type="checkbox"
-                            class="input-checkbox" />JavaScript</label>
-                    <label><input name="prefer" value="er diagram" type="checkbox" class="input-checkbox" />City
-                        ER diagram</label>
-                    <label><input name="prefer" value="mysql" type="checkbox" class="input-checkbox" />MySQL</label>
-                    <label><input name="prefer" value="node/express" type="checkbox"
-                            class="input-checkbox" />Node/Express</label>
-                    <label><input name="prefer" value="cyber security" type="checkbox" class="input-checkbox" />Cyber
-                        Security</label>
-                    <label><input name="prefer" value="redux" type="checkbox" class="input-checkbox" /> Redux</label>
-                    <label><input name="prefer" value="cloud" type="checkbox" class="input-checkbox" /> Cloud
-                        Server</label>
-                    <label><input name="prefer" value="linux/docker" type="checkbox"
-                            class="input-checkbox" />Linux/Docker</label>
-                </div>
-
-                <div class="form-group">
-                    <p>Any comments or suggestions?</p>
-                    <textarea id="comments" class="input-textarea" name="comment"
-                        placeholder="Enter your comment here..."></textarea>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" id="submit" class="submit-button">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-
         <div>
 
             <form action="/action_page.php">
                 <table>
                     <tr>
-                        <td style="text-align: left; border: none;">Name<span style="color: red;">*</span>:</td>
-                        <td style="text-align: left; border: none;"><input type="text" style="margin: 5px;"> <button type="button"
+                        <td>Name<span style="color: red;">*</span>:</td>
+                        <td><input type="text" style="margin: 5px;"> <button type="button"
                                 onclick="alert('Forget your name?')" style="border-radius: 10%;">?</button></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Tab Text <span style="color: red;">*</span>:</td>
-                        <td style="text-align: left; border: none;"><input type="text" style="margin: 5px;"> <button type="button"
+                        <td>Tab Text <span style="color: red;">*</span>:</td>
+                        <td><input type="text" style="margin: 5px;"> <button type="button"
                                 onclick="alert('Forget your name?')" style="border-radius: 10%;">?</button></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">URL <span style="color: red;">*</span>:</td>
-                        <td style="text-align: left; border: none;">http://www.wizehive.com/webform/<input type="text"
+                        <td>URL <span style="color: red;">*</span>:</td>
+                        <td>http://www.wizehive.com/webform/<input type="text"
                                 style="margin: 5px 5px 10px 0px;"></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: left; background-color: rgb(223, 219, 219);">FORM SETUP</td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Form:</td>
-                        <td style="text-align: left; border: none;">
+                        <td>Form:</td>
+                        <td>
                             <select name="form" id="form" style="width: 10.5em; margin: 10px 5px 5px 5px;">
                                 <optgroup label="option-1">
                                     <option value="option-1.1"></option>
@@ -187,12 +85,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Logo:</td>
-                        <td style="text-align: left; border: none;"><input style="margin: 5px;" type="file" accept="image/*"></td>
+                        <td>Logo:</td>
+                        <td><input style="margin: 5px;" type="file" accept="image/*"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Template Text:</td>
-                        <td style="text-align: left; border: none;">
+                        <td>Template Text:</td>
+                        <td>
                             <select name="template-text" id="template-text" style="width: 10.5em; margin: 5px;">
                                 <option value="eng">English</option>
                                 <option value="tha">Thai</option>
@@ -202,8 +100,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Review Form:</td>
-                        <td style="text-align: left; border: none;">
+                        <td>Review Form:</td>
+                        <td>
                             <select name="review-form" id="review-form" style="width: 10.5em; margin: 5px;">
                                 <option value="default">Default</option>
                                 <option value="adjust">Adjust</option>
@@ -211,8 +109,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Review Score:</td>
-                        <td style="text-align: left; border: none;">
+                        <td>Review Score:</td>
+                        <td>
                             <select name="review-score" id="review-score" style="width: 10.5em; margin: 5px;">
                                 <option value="rating">Rating</option>
                             </select>
@@ -220,8 +118,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Scoring Type:</td>
-                        <td style="text-align: left; border: none;">
+                        <td>Scoring Type:</td>
+                        <td>
                             <select name="score-type" id="score-type" style="margin: 5px;">
                                 <option value="average">Average</option>
                                 <option value="mean">Mean</option>
@@ -231,8 +129,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; border: none;">Max Score:</td>
-                        <td style="text-align: left; border: none;"><input type="text" style="width: 10.5em; margin: 5px;"
+                        <td>Max Score:</td>
+                        <td><input type="text" style="width: 10.5em; margin: 5px;"
                                 value="4.00"></td>
                     </tr>
                 </table>
