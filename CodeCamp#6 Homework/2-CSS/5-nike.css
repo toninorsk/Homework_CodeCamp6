@@ -89,17 +89,35 @@ a:hover {
 }
 
 footer {
+    display: grid;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: black;
     color: white;
-    padding: 10px 10px 10px 10px;
-}
+ }
 
 footer a {
-    color: red;
+    color: white;
+    font-weight: lighter;
+}
+
+footer a:hover {
+    color: white;
 }
 
 .footer-bold {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-light a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(175, 165, 165);
+}
+
+.footer-light {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(175, 165, 165);
 }
 
 .footer-left {
@@ -112,3 +130,36 @@ footer a {
     margin: 20px;
 }
 
+.footer-right {
+    float: right;
+    display: flex;
+    margin: 20px;
+}
+
+.footer-right img {
+    width: 30px;
+    opacity: 50%;
+    margin: 3px;
+}
+
+.footer-right img:hover {
+    opacity: 100%;
+}
+
+.footer-bottom {
+    float: left;
+    display: flex;
+    margin: 3px;
+}
+
+.footer-bottom img {
+    width: 20px;
+    height: 30px;
+    margin: 20px;
+}
+
+hr{
+    height: 1px;
+    background-color: rgb(44, 43, 43);
+    border: none;
+}
