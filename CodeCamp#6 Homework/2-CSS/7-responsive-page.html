@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 responsive page</title>
+    <link rel="stylesheet" href="7-responsive-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Send message button on the bottom right corner -->
+
+    <button onclick="myFunction()" class="message">
+        Send message
+    </button>
+
+    <div id="message">
+        <div class="top-message">
+            <div>
+                <div><p><b>Send message</b></p></div>
+                <div><button onclick="exit()" class="message-exit-button">X</button></div>
+
+                <script>
+                    function exit() {
+                        var x = document.getElementById("message");
+                        if (x.style.display === "none") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        }
+                </script>
+
+            </div>
+            <p>Please fill out the form below and we will get back to</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("message");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- --------- -->
+
+</body>
+
+</html>

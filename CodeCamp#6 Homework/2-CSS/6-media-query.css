@@ -35,6 +35,10 @@ div > div:nth-child(odd) {
     transform: rotate(-2.5deg);
 }
 
+div > div:hover {
+    transform: rotate(0deg);
+}
+
 div > h3 {
     text-transform: uppercase;
 }

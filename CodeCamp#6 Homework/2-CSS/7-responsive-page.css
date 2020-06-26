@@ -1,0 +1,39 @@
+.message {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 125px;
+    background-color:#e95123;
+    color: white;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    border-radius: 10px 10px 0 0;
+}
+
+#message {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    width: 350px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    border-radius: 10px 10px 0 0;    
+}
+
+.top-message {
+    background-color:#e95123;
+    padding: 12px;
+    border-radius: 10px 10px 0 0;    
+}
+
+.message-exit-button {
+    border: none; 
+    background-color:#e95123; 
+    color: white;
+    font-weight: bold;
+}
+
+.message-exit-button:
+
+
+
