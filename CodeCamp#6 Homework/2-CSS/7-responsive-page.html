@@ -28,17 +28,36 @@
         <div class="contact-middle-form">
             <form action="/action_page.php">
                 <div class="form-duo">
-                    <div style="display: flex;">
-                        <label for="name">Your name (required)</label><br>
-                        <input type="text" name="name" id="#" class="contact-input-text" required>
+                    <div class="contact-input-text">
+                        <label for="name">Your name (required)</label>
+                        <input type="text" id="#" name="name" required>
                     </div>
-                    <div style="display: flex;">
-                        <label for="email">Your Email (required)</label><br>
-                        <input type="text" name="email" id="#" class="contact-input-text" required>
+                    <div class="contact-input-text" style="margin-left: 10px;">
+                        <label for="email">Your Email (required)</label>
+                        <input type="email" id="#" name="email" required>
                     </div>
+                </div>
+
+                <div class="contact-input-text">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="#" name="subject">
+                </div>
+
+                <div class="contact-input-text">
+                    <label for="message">Your Message</label>
+                    <input type="text" id="#" name="message" style="height: 200px;">
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="SEND" class="contact-input-submit">
                 </div>
             </form>
         </div>
+
+    </div>
+
+    <div class="description">
+        <p>Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
     </div>
 
     <!-- Send message button on the bottom right corner -->

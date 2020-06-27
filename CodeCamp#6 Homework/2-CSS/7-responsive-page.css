@@ -165,24 +165,33 @@
 /* contact input form */
 
 .contact-input-text {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid rgb(224, 223, 223);
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.contact-input-text > input {
+    width: 100%;
+    height: 45px;
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .contact-input-submit {
-    width: 50%;
+    width: 35%;
+    font-size: 1.5em;
     background-color:#e95123;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer; 
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-input-submit:hover {
@@ -191,13 +200,8 @@
 
 .form-duo {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
   }
-
-.form-duo > input{
-    width: 200px;
-}
 
 .contact-middle-form {
     border-radius: 5px;
@@ -206,7 +210,25 @@
     color: rgb(131, 130, 128);
     font-size: 1.2em;
     font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
+
+/* description */
+
+.description {
+    width: 80%;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    text-align: justify;
+    color: rgb(77, 75, 75);
+}
+
 
 
 
