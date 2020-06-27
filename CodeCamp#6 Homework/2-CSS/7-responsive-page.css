@@ -203,6 +203,7 @@
     justify-content: space-between;
   }
 
+
 .contact-middle-form {
     border-radius: 5px;
     background-color: white;
@@ -262,6 +263,17 @@ iframe {
         min-width: 300px;
     }
 
+    .form-duo {
+        display: block;
+        justify-content: center;
+    }
+
+    #email {
+        margin: 0 auto;
+        justify-content: center;
+        display: block;
+    }
+
 }
 
 @media only screen and (min-width: 561px) {
@@ -277,6 +289,10 @@ iframe {
 
     .bottom-list h1 {
         font-size: 6vw;
+    }
+
+    #email {
+        margin-left: 10px;
     }
 
 }
