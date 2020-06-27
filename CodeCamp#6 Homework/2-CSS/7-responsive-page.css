@@ -1,3 +1,5 @@
+/* Send message button on the bottom right corner */
+
 .message {
     position: fixed;
     bottom: 0;
@@ -8,16 +10,17 @@
     text-align: center;
     font-family: 'Abel', sans-serif;
     border-radius: 10px 10px 0 0;
+    cursor: pointer;  
 }
 
 #message {
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
     right: 10px;
     width: 350px;
     color: white;
     font-family: 'Abel', sans-serif;
-    border-radius: 10px 10px 0 0;    
+    border-radius: 10px 10px 0 0;  
 }
 
 .top-message {
@@ -30,10 +33,188 @@
     border: none; 
     background-color:#e95123; 
     color: white;
-    font-weight: bold;
+    font-weight: lighter;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
 }
 
-.message-exit-button:
+.message-exit-button:hover {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;}
+
+.message-exit {
+    display: flex;
+}
+
+/* Send message form*/
+
+
+.message-form {
+    background-color: white;
+}
+
+.input-text {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-submit {
+    width:300px;
+    background-color:#e95123; 
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-submit:hover {
+    background-color:#943215; 
+}
+
+.message-inner-form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+/* ------------ */
+
+/* Top image area */
+
+.top-image-container {
+    position: relative;
+}
+
+.top-image-logo a {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    color: #e95123;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+.top-image-logo a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+}
+
+.top-image-menu a {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    color: #e95123;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.top-image-menu a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+}
+
+
+/* contact us today form */
+
+.contact-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 5px 10px 8px #888888;
+    margin: auto;
+}
+
+.contact-topic {
+    font-size: 5vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 560px) {
+   .contact-container {
+        width: 90%;
+   }
+
+    .contact-topic {
+        font-size: 45px;
+        padding: 80px 1px 80px 1px;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 840px) {
+    .contact-container {
+        width: 85%;
+    }
+
+    .contact-topic {
+        font-size: 50px;
+        padding: 80px 1px 80px 1px;
+    }
+
+}
+
+/* contact input form */
+
+.contact-input-text {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-input-submit {
+    width: 50%;
+    background-color:#e95123;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.contact-input-submit:hover {
+    background-color:#ad3c19;
+}
+
+.form-duo {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+.form-duo > input{
+    width: 200px;
+}
+
+.contact-middle-form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    color: rgb(131, 130, 128);
+    font-size: 1.2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+
+
+
+
+
 
 
 

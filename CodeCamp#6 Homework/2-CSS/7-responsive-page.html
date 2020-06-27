@@ -7,21 +7,52 @@
     <title>7 responsive page</title>
     <link rel="stylesheet" href="7-responsive-page.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- top image -->
+
+    <div class="top-image-container">
+        <img src="https://www.pimclick.com/wp-content/uploads/2019/02/Cover_Landing.jpg" alt="top-img" width="100%">
+        <div class="top-image-logo"><a href="https://www.pimclick.com/index.php">P</a></div>
+        <div class="top-image-menu"><a href="#">&#9776;</a></div>
+    </div>
+
+    <!-- Contact us today form -->
+
+    <div class="contact-container">
+        <div class="contact-topic">Contact us <span style="color: #e95123;">today</span></div>
+        <div class="contact-middle-form">
+            <form action="/action_page.php">
+                <div class="form-duo">
+                    <div style="display: flex;">
+                        <label for="name">Your name (required)</label><br>
+                        <input type="text" name="name" id="#" class="contact-input-text" required>
+                    </div>
+                    <div style="display: flex;">
+                        <label for="email">Your Email (required)</label><br>
+                        <input type="text" name="email" id="#" class="contact-input-text" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Send message button on the bottom right corner -->
 
-    <button onclick="myFunction()" class="message">
+    <button onclick="message()" class="message">
         Send message
     </button>
 
     <div id="message">
         <div class="top-message">
-            <div>
-                <div><p><b>Send message</b></p></div>
-                <div><button onclick="exit()" class="message-exit-button">X</button></div>
+            <div class="message-exit">
+                <div><b>Send message</b></div>
+
+                <div><button onclick="exit()" class="message-exit-button">&#10005;</button></div>
 
                 <script>
                     function exit() {
@@ -31,16 +62,32 @@
                         } else {
                             x.style.display = "none";
                         }
-                        }
+                    }
                 </script>
 
             </div>
             <p>Please fill out the form below and we will get back to</p>
+            <p style="text-align: center; margin-top: -15px;">you as soon as possible.</p>
         </div>
+
+        <div class="message-form">
+            <div class="message-inner-form">
+                <form action="/action_page.php">
+                    <input type="text" class="input-text" id="" name="name" placeholder="* Name" required>
+
+                    <input type="text" class="input-text" id="" name="email" placeholder="* Email" required>
+
+                    <input type="text" class="input-text" id="" name="message" placeholder="* Message" required>
+
+                    <input type="submit" class="input-submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <script>
-        function myFunction() {
+        function message() {
             var x = document.getElementById("message");
             if (x.style.display === "none") {
                 x.style.display = "block";
@@ -49,8 +96,6 @@
             }
         }
     </script>
-
-    <!-- --------- -->
 
 </body>
 
