@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 animation</title>
+</head>
+
+<body>
+
+    <style>
+        #id_div {
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            animation-name: example;
+            animation-duration: 10s;
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: step-end; */
+            /* animation-timing-function: step-start; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation: example alternate ease-in 1s 2s 4; */
+        }
+
+
+        /* @keyframes example {
+            from {
+                background-color: skyblue;
+                height: 300px;
+                width: 300px;
+                margin: auto;
+            }
+
+            to {
+                background-color: black;
+                margin: auto;
+            }
+        } */
+
+        @keyframes example {
+            0% {
+                background-color: peachpuff;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: pink;
+            }
+            100% {
+                background-color: darkblue;
+            }
+        }
+    </style>
+
+    <p style="text-align: center;">Created div element after this tag</p>
+
+    <div class="div" style="margin: auto;"></div>
+    <div id="id_div"></div>
+
+</body>
+
+</html>
