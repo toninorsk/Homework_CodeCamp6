@@ -60,7 +60,7 @@ body {
         background-color: rgb(255, 0, 0);
     }
     to {
-        width: 100%;
+        width: 95%;
         background-color: rgb(255, 0, 0);
     }
 }
@@ -77,7 +77,7 @@ body {
         background-color: rgb(255, 255, 255);
     }
     to {
-        width: 100%;
+        width: 95%;
         background-color: rgb(255, 255, 255);
     }
 }
@@ -94,7 +94,7 @@ body {
         background-color: rgb(0, 0, 255);
     }
     to {
-        width: 100%;
+        width: 90%;
         background-color: rgb(0, 0, 255);
     }
 }
@@ -188,6 +188,194 @@ body {
     }
     100% {
         border: white 4px solid;
+    }
+}
+
+/* animation background-color */
+
+#animation-bg-1 {
+    animation-name: bg-1;
+    animation: bg-1 10s infinite;
+    padding: 1em;
+    width: 25%;
+}
+
+#animation-bg-a {
+    animation-name: bg-a;
+    animation: bg-a 10s infinite;
+    padding: 1em;
+    width: 25%; 
+}
+
+@keyframes bg-1 {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes bg-a {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+#animation-bg-2 {
+    animation-name: bg-2;
+    animation: bg-2 10s infinite;
+    padding: 1em;
+    width: 50%;
+
+}
+
+#animation-bg-b {
+    animation-name: bg-b;
+    animation: bg-b 10s infinite;
+    padding: 1em;
+    width: 50%;
+}
+
+@keyframes bg-2 {
+    0% {
+        background-color: rgb(27, 194, 27);
+    }
+
+    20% {
+        background-color: rgb(230, 54, 54);
+    }
+
+    40% {
+        background-color: pink;
+    }
+
+    60% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: hotpink;
+    }
+}
+
+@keyframes bg-b {
+    0% {
+        background-color: slateblue;
+    }
+
+    100% {
+        background-color: springgreen;
+    }
+}
+
+/* animation position-relative */
+#animation-position-1 {
+    animation-name: position-1;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes position-1 {
+    from {
+        background-color: yellow;
+        left: 0%;
+    }
+    to {
+        background-color: black;
+        left: 85%;
+    }
+}
+
+#animation-position-2 {
+    animation-name: position-2;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes position-2 {
+    0% {
+        width: 0px;
+        Background-color: purple;
+        left: 0%;
+        top: 0px;
+    }
+    14% {
+        width: 1px;
+        Background-color: lightblue;
+        left: 14%;
+        top: 20px;
+    }
+    28% {
+        width: 28px;
+        Background-color: blue;
+        left: 28%;
+        top: 0px;
+    }
+    42% {
+        width: 42px;
+        Background-color: green;
+        left: 42%;
+        top: 20px;
+    }
+    56% {
+        width: 56px;
+        Background-color: yellow;
+        left: 56%;
+        top: 0px;
+    }
+    70% {
+        width: 70px;
+        Background-color: orange;
+        left: 70%;
+        top: 20px;
+    }
+    84% {
+        width: 84px;
+        Background-color: red;
+        left: 84%;
+        top: 0px;
+    }
+    100% {
+        width: 0px;
+        background-color: white;
+        left: 100%;
+        top: 20px;
+    }
+}
+
+/* animation show and hide */
+#animation-visible-1 {
+    animation-name: visible-1;
+    width: 100px;
+    height: 100px;
+    animation: visible-1 10s infinite;
+    background-color: red;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+@keyframes visible-1 {
+    from {
+        visibility: visible;
+    }
+    to {
+        display: hidden;
+        background-color: wheat;
     }
 }
 
