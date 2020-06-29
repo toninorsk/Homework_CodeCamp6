@@ -363,18 +363,58 @@ body {
 
 /* animation show and hide */
 #animation-visible-1 {
-    /* /* animation-name: visible-1; */
+    animation-name: visible-1; 
     width: 100px;
-    height: 100px; */
-    animation: visible-1 10s infinite;
-    /* background-color: red; */
+    height: 100px; 
+    animation: visible-1 0.5s infinite;
+    background-color: red;
+    visibility: visible;
+}
+
+#animation-visible-a {
+    animation-name: visible-a; 
+    width: 100px;
+    height: 100px; 
+    animation: visible-1 0.5s infinite;
+    background-color: white;
+    visibility: visible;
 }
 
 @keyframes visible-1 {
     from {
-        visibility: visible;
+        opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+
+@keyframes visible-a {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#animation-visible-2 {
+    animation-name: visible-2; 
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    animation: visible-1 5s infinite;
+    visibility: visible;
+    display:flex; margin: auto; justify-content: center;
+}
+
+@keyframes visible-2 {
+    0% {
+        visibility: visible;
+    }
+    100% {
         visibility: hidden;
     }
 }
