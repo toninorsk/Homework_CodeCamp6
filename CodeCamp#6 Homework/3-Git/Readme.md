@@ -42,4 +42,13 @@ _test_
 --|--
 | content | content |
 **content** | [Google](https://www.google.com/)
-*content* | *content*
+*content* | *content*  
+
+***
+  
+| Countries | Capitals | Population |
+| --- |:---:|---:|
+| USA | Washington D.C. | 329,862,384 |
+| Norway | Oslo | 5,420,960 |
+| Laos | Vientiane | 7,274,496 |
+| Tuvalu | Funafuti | 11,508 | 
