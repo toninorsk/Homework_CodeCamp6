@@ -413,9 +413,15 @@ body {
 @keyframes visible-2 {
     0% {
         visibility: visible;
+        animation-delay: 1s;
+    }
+    50% {
+        visibility: hidden;
+        animation-delay: 1s;
     }
     100% {
-        visibility: hidden;
+        visibility: visible;
+        animation-delay: 1s;
     }
 }
 

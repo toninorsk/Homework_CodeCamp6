@@ -1,0 +1,87 @@
+#animation-1 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(0, 0, 0);
+    background-color: red;
+    position: relative;
+    animation: animation-1 5s infinite;
+    animation-direction: normal;
+    animation-delay: 3s;
+}
+
+@keyframes animation-1 {
+    0%   {background: red; left: 0px;}
+    25%  {background: yellow; left: 80%; border-bottom: 100px solid rgb(141, 125, 125);
+    }
+    50%  {background: blue; left: 40%; border-bottom: 100px solid rgb(193, 31, 214)}
+    75%  {background: green; left: 80%px; border-bottom: 100px solid rgb(31, 187, 214)}
+    100% {background: red; left: 0px;}
+}
+
+#animation-2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(0, 0, 0);
+    background-color: red;
+    position: relative;
+    animation: animation-2 5s infinite;
+    animation-direction: reverse;
+    animation-delay: 3s;
+}
+
+@keyframes animation-2 {
+    0%   {background: red; left: 0px;}
+    25%  {background: yellow; left: 80%; border-bottom: 100px solid rgb(141, 125, 125);
+    }
+    50%  {background: blue; left: 40%; border-bottom: 100px solid rgb(193, 31, 214)}
+    75%  {background: green; left: 80%px; border-bottom: 100px solid rgb(31, 187, 214)}
+    100% {background: red; left: 0px;}
+}
+
+#animation-3 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(0, 0, 0);
+    background-color: red;
+    position: relative;
+    animation: animation-3 5s infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+@keyframes animation-3 {
+    0%   {background: red; left: 0px;}
+    25%  {background: yellow; left: 80%; border-bottom: 100px solid rgb(141, 125, 125);
+    }
+    50%  {background: blue; left: 40%; border-bottom: 100px solid rgb(193, 31, 214)}
+    75%  {background: green; left: 80%px; border-bottom: 100px solid rgb(31, 187, 214)}
+    100% {background: red; left: 0px;}
+}
+
+#animation-4 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(0, 0, 0);
+    background-color: red;
+    position: relative;
+    animation: animation-4 5s infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 3s;
+}
+
+@keyframes animation-4 {
+    0%   {background: red; left: 0px;}
+    25%  {background: yellow; left: 80%; border-bottom: 100px solid rgb(141, 125, 125);
+    }
+    50%  {background: blue; left: 40%; border-bottom: 100px solid rgb(193, 31, 214)}
+    75%  {background: green; left: 80%px; border-bottom: 100px solid rgb(31, 187, 214)}
+    100% {background: red; left: 0px;}
+}
