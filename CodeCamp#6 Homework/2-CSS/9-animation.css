@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(219, 221, 217);
+}
+
 #animation-1 {
     width: 0;
     height: 0;

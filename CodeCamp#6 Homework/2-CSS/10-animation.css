@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(219, 221, 217);
+}
+    .div-1 {
+        box-shadow: 0 0 0 1em red,
+        0 1em 0 1em red,
+        -2.5em 1.5em 0 .5em red,
+        2.5em 1.5em 0 .5em red,
+        -3em -3em 0 0 red,
+        3em -3em 0 0 red,
+        -2em -2em 0 0 red,
+        2em -2em 0 0 red,
+        -3em -1em 0 0 red,
+        -2em -1em 0 0 red,
+        2em -1em 0 0 red,
+        3em -1em 0 0 red,
+        -4em 0 0 0 red,
+        -3em 0 0 0 red,
+        3em 0 0 0 red,
+        4em 0 0 0 red,
+        -5em 1em 0 0 red,
+        -4em 1em 0 0 red,
+        4em 1em 0 0 red,
+        5em 1em 0 0 red,
+        -5em 2em 0 0 red,
+        5em 2em 0 0 red,
+        -5em 3em 0 0 red,
+        -3em 3em 0 0 red,
+        3em 3em 0 0 red,
+        5em 3em 0 0 red,
+        -2em 4em 0 0 red,
+        -1em 4em 0 0 red,
+        1em 4em 0 0 red,
+        2em 4em 0 0 red;
+        background: red;
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+        margin: 50px 0 70px 65px;    
+        position: relative;
+        animation: example 4s infinite alternate;
+      }
+      
+      @keyframes example {
+        0%   {background-color:black; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:black; left:0px; top:0px;}
+      }
+
+/* star */
+
+      #star-five {
+        margin: 50px 0;
+        position: relative;
+        display: block;
+        color: green;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid green;
+        border-left: 100px solid transparent;
+        transform: rotate(35deg);
+        animation: star-five 4s infinite reverse;
+
+      }
+      #star-five:before {
+        border-bottom: 80px solid green;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -45px;
+        left: -65px;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+      }
+      #star-five:after {
+        position: absolute;
+        display: block;
+        color: yellow;
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid green;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+      }
+    
+      @keyframes star-five {
+        0%   {left:0px; top:50px;}
+        25%  {left:50px; top:50px;}
+        50%  {left:100px; top:400px;}
+        75%  {left:20px; top:200px;}
+        100% {left:40px; top:0px;}
+      }
