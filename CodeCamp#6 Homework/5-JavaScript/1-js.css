@@ -1,0 +1,11 @@
+h2 {
+    color: plum;
+    background-color: saddlebrown;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: salmon;
+}
