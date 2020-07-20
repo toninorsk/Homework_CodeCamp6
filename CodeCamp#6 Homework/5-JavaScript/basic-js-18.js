@@ -15,4 +15,3 @@ console.log(null + 1)
 console.log(undefined + 1)
 console.log("\t\n" -2)
 
-console.log("1" == 1)
