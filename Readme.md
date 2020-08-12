@@ -1,5 +1,5 @@
-1. CodeCamp#6
-2. Nattawoot Denduangchai
+# CodeCamp#6
+Nattawoot Denduangchai
 
 ### Software Park Code Camp lesson
 - HTML
