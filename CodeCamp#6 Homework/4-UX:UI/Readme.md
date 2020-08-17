@@ -18,7 +18,7 @@ UI (User Interface) Analysis
 + The webpage utilizes CSS fixed menu to be always on the top of the screen which facilitates the users to redirect to where they need by just a click.
 
 > 📙 `answer.`  
-> [>> Link to https://afs.org/](https://docs.google.com/document/d/17jwvu9ZUlztRGLdWINlcZ96b21fL3fsAtml_MUzjIx0/edit?usp=sharing)
+> [>> Link to https://afs.org/ Analysis](https://docs.google.com/document/d/17jwvu9ZUlztRGLdWINlcZ96b21fL3fsAtml_MUzjIx0/edit?usp=sharing)
 
 ---
 
