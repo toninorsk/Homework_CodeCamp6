@@ -18,27 +18,28 @@ UI (User Interface) Analysis
 + The webpage utilizes CSS fixed menu to be always on the top of the screen which facilitates the users to redirect to where they need by just a click.
 
 > 📙 `answer.`  
-> [>> Link page size A4](https://docs.google.com/document/d/17jwvu9ZUlztRGLdWINlcZ96b21fL3fsAtml_MUzjIx0/edit?usp=sharing)
+> [>> Link to https://afs.org/](https://docs.google.com/document/d/17jwvu9ZUlztRGLdWINlcZ96b21fL3fsAtml_MUzjIx0/edit?usp=sharing)
 
 ---
 
-## Lab หาเว็บไซต์ 1 อัน ให้ครอบคลุม ที่มีไม่ครบ 6 ข้อ > slide 96     
+## Lab slide 96 - Find a website which does not include 6 properties
+
 + Useful: มีประโยชน์
 + Usable: ใช้งานง่าย
 + Findable: หาสิ่งที่ต้องการได้ง่าย
 + Credible: น่าเชื่อถือ
 + Desirable: น่าใช้
 + Accessible: เข้าถึงได้ง่าย  
-**ที่มีไม่ครบ 6 ข้อ**  
-> 📙 `answer.`  
-> เว็บไซต์ที่มีไม่ครบ 6 ข้อ: >> <http://www.thefacesoffacebook.com/>  
-> (true) Useful: มีประโยชน์  
-> (false) Usable: ใช้งานง่าย  
-> (false) Findable: หาสิ่งที่ต้องการได้ง่าย  
-> (true) Credible: น่าเชื่อถือ  
-> (true) Desirable: น่าใช้  
-> (false) Accessible: เข้าถึงได้ง่าย  
 
+> 📙 `answer.`  
+> <http://arngren.net/>  
+
+> useful = True 
+> usable = False
+> findable = False
+> credible = False
+> desirable = False
+> accessible = False
 ---
 
 ## Lab : 2 truth 1 lie > slide 106  
