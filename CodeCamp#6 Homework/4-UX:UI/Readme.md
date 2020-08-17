@@ -66,9 +66,10 @@ UI (User Interface) Analysis
 
 ---
 
-## Workshop - สร้าง Persona > slide 133 - 137  
-+ สร้าง Persona  
+## Workshop slide 133 - 137 - Create a Persona
++ Create a Persona  
 > 📙 `answer.`  
+> ![persona](https://i.ibb.co/QJ38tL3/Screen-Shot-2020-08-18-at-01-14-58.png)
 > [>> Link Workshop Persona - Nattawoot](https://docs.google.com/presentation/d/1fvQJ9gvVWF6LEDRG0tMW1kJiEcyQ16e6cS2f9aItmTE/edit?usp=sharing)  
 
 --- 
