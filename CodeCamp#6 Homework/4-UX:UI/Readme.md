@@ -2,6 +2,8 @@
 
 ## Lab slide 82 - UX/UI Analysis 
 
+![afs](https://i.ibb.co/MGCgFjC/Screen-Shot-2020-08-17-at-19-32-59.png)
+
 UX (User Experience) Analysis
 + The webpage menu bars are very well organized which makes the orga
 nization look professional and reliable.
