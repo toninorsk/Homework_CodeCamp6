@@ -58,9 +58,9 @@ UI (User Interface) Analysis
     + Silence Brain Storm - 3 นาที ให้ได้ไอเดียมากที่สุด `idea on post it`
     + เลือก 1 idea ที่จะนำมาทำกันใน 2 วันนี้ 
 > 📙 `answer.`  
-> [>> Link: Silence Brain Storm](https://miro.com/app/board/o9J_ksUP5jQ=/)  
-> เลือก idea: **Image Story** Project name: **I+S**  
-> [>> Link Workshop คิด Startup](https://atofinal.github.io/homeworkhtml/Startup%20Project/index.html) "ภาพและข้อมูล เป็นแค่การยกตัวอย่าง"   
+> [>> Link: Silence Brain Storm](https://miro.com/app/board/o9J_knKSn1k=/)  
+> เลือก idea: **Image Story** Project name: **CoCo**  
+> [>> Link Workshop คิด Startup](https://htmlpreview.github.io/?https://github.com/toninorsk/FreeCodeCamp/blob/master/3-product-landing-page.html) 
 
 ---
 
