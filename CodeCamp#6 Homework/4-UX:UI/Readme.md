@@ -46,9 +46,9 @@ UI (User Interface) Analysis
 
 ## Lab slide 106 - 2 truth 1 lie 
 > 📙 `answer.`  
-> I am still single.
-> I am a soldier.
-> I lived in Norway.
+> + I am in a relationship.
+> + I am a soldier.
+> + I lived in Norway.
 
 ---
 
