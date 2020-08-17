@@ -33,7 +33,7 @@ UI (User Interface) Analysis
 
 > 📙 `answer.`  
 > <http://arngren.net/>  
-> Useful = True 
+> Useful = True
 > Usable = False
 > Findable = False
 > Credible = False
