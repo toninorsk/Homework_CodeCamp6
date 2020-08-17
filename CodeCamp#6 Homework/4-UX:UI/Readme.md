@@ -52,7 +52,7 @@ UI (User Interface) Analysis
 
 ---
 
-## Workshop งานกลุ่ม - คิด Startup > slide 109-110
+## Workshop slide 109-110 - Startup 
 + คิดทำ Startup อะไรสักอย่าง
 + ขั้นตอน 
     + Silence Brain Storm - 3 นาที ให้ได้ไอเดียมากที่สุด `idea on post it`
