@@ -59,8 +59,8 @@ UI (User Interface) Analysis
     + เลือก 1 idea ที่จะนำมาทำกันใน 2 วันนี้ 
 > 📙 `answer.`  
 > [>> Link: Silence Brain Storm](https://miro.com/app/board/o9J_knKSn1k=/)  
-> เลือก idea: **Image Story** Project name: **CoCo**  
-> [>> Link Workshop คิด Startup](https://htmlpreview.github.io/?https://github.com/toninorsk/FreeCodeCamp/blob/master/3-product-landing-page.html) 
+> เลือก idea: **Image Story** Project name: **CoCoNut Green**  
+> [>> Link Workshop Startup - CoCoNut Green](https://htmlpreview.github.io/?https://github.com/toninorsk/FreeCodeCamp/blob/master/3-product-landing-page.html) 
 
 ---
 
