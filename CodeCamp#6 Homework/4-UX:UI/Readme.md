@@ -24,7 +24,7 @@ UI (User Interface) Analysis
 
 ---
 
-## Lab slide 96 - Find a website which does not include 6 properties
+## Lab slide 96 - Find a website which does _NOT_ include 6 properties
 
 + Useful: knowledgeable
 + Usable: easy to use
