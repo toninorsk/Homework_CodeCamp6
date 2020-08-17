@@ -53,10 +53,10 @@ UI (User Interface) Analysis
 ---
 
 ## Workshop slide 109-110 - Startup 
-+ คิดทำ Startup อะไรสักอย่าง
-+ ขั้นตอน 
-    + Silence Brain Storm - 3 นาที ให้ได้ไอเดียมากที่สุด `idea on post it`
-    + เลือก 1 idea ที่จะนำมาทำกันใน 2 วันนี้ 
++ Thinking of a Startup
++ How to
+    + Silence Brain Storm - 3 minutes `idea on post it`
+    + Choose 1 idea
 > 📙 `answer.`  
 > [>> Link: Silence Brain Storm](https://miro.com/app/board/o9J_knKSn1k=/)  
 > Idea: **Organic Coconut Product Startup** Project name: **CoCoNut Green**  
