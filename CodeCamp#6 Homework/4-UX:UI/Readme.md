@@ -59,6 +59,7 @@ UI (User Interface) Analysis
     + Silence Brain Storm - 3 minutes `idea on post it`
     + Choose 1 idea
 > 📙 `answer.`  
+> ![cocogreen](https://i.ibb.co/hL2VDGn/Screen-Shot-2020-08-18-at-00-24-27.png)
 > [>> Link: Silence Brain Storm](https://miro.com/app/board/o9J_knKSn1k=/)  
 > Idea: **Organic Coconut Product Startup** Project name: **CoCoNut Green**  
 > [>> Link Workshop Startup - CoCoNut Green](https://htmlpreview.github.io/?https://github.com/toninorsk/FreeCodeCamp/blob/master/3-product-landing-page.html) 
