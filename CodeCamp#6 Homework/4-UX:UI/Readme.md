@@ -33,12 +33,12 @@ UI (User Interface) Analysis
 
 > 📙 `answer.`  
 > <http://arngren.net/>  
-> Useful = True
-> Usable = False
-> Findable = False
-> Credible = False
-> Desirable = False
-> Accessible = False
+> + Useful = True
+> + Usable = False
+> + Findable = False
+> + Credible = False
+> + Desirable = False
+> + Accessible = False
 
 ---
 
