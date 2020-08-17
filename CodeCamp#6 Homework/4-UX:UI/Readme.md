@@ -1,19 +1,24 @@
-# UX UI (Folder)
+# UX/UI (User Experience / User Interface)
 
-## Lab งานคู่ วิเคราะห์ UX UI ของเว็บไซต์ แค่หน้าแรก > slide 82   
-+ 1.จับคู่
-+ 2.เขียน รหัสพนักงาน + ชื่อ สกุล ลง **A4** - 1 คู่ ต่อ 1 แผ่น 
-+ 3.ไปที่ Website https://mahidol.ac.th/th/
-+ 4.วิเคราะห์ แล้วเขียนออกมา 
-    + UX 5 หัวข้อ เช่น
-        + เมนูบนซ้าย เรียงตามความสำคัญ
-        + Logo อยู่บนขวา
-        + Banner มี Title และ Description เพื่อให้ข้อมูลที่มากขึ้น
-    + UI 5 หัวช้อ 
-        + สีเมนู แตกต่างและหนา
-        + Service link ด้านล่างมีบางอันสีส้มๆ 
+## Lab slide 82 - UX/UI Analysis 
+
+UX (User Experience) Analysis
++ The webpage menu bars are very well organized which makes the orga
+nization look professional and reliable.
++ The webpage includes multimedia such as videos which illustrates the favorable feelings.
++ The webpage well controls the theme-color to keep the organization look friendly to all types of users.
++ The webpage includes some informative and powerful texts e.g. “We Develop Active Global Citizens” and “AFS programs empower young people from all backgrounds with essential global skills—and the passion for making a difference.” which demonstrate the organization's missions.
++ The webpage includes some interesting statistics about the organization such as the number of alumni, host families, scholarships and volunteers.
+
+UI (User Interface) Analysis
++ The webpage is well interfaced with different screen sizes. The menu bars fully appear on standard PC screen size and hide in the hamburger menu on tablet and mobile screen sizes. 
++ The webpage utilizes CSS :hover selector on buttons which produces more sense of interest and interaction with users.
++ The webpage utilizes CSS dropdowns which clarifies the page to look more minimal and to prevent overwhelming information.
++ The webpage well designs  and organizes the structure by flex and grid of page, and also includes some flex boxes with CSS button on the image gallery. 
++ The webpage utilizes CSS fixed menu to be always on the top of the screen which facilitates the users to redirect to where they need by just a click.
+
 > 📙 `answer.`  
-> [>> Link page size A4](https://docs.google.com/document/d/1ypyTTQn6lO1edtqtqPDtF2OSXJ75WED-oFapn4Qe020/edit?usp=sharing)
+> [>> Link page size A4](https://docs.google.com/document/d/17jwvu9ZUlztRGLdWINlcZ96b21fL3fsAtml_MUzjIx0/edit?usp=sharing)
 
 ---
 
