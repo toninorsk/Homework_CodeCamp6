@@ -26,12 +26,12 @@ UI (User Interface) Analysis
 
 ## Lab slide 96 - Find a website which does not include 6 properties
 
-+ Useful: มีประโยชน์
-+ Usable: ใช้งานง่าย
-+ Findable: หาสิ่งที่ต้องการได้ง่าย
-+ Credible: น่าเชื่อถือ
-+ Desirable: น่าใช้
-+ Accessible: เข้าถึงได้ง่าย  
++ Useful: knowledgeable
++ Usable: easy to use
++ Findable: easy to find
++ Credible: trustworthy
++ Desirable: well designed and organized
++ Accessible: easy to access
 
 > 📙 `answer.`  
 > <http://arngren.net/>  
