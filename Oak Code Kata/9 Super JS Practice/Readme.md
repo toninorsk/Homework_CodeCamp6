@@ -4,10 +4,10 @@
 ### Basic JavaScript
 - Comment Your JavaScript Code
     - There are two ways to write comments in JavaScript: 
-        - Using `//` will tell JavaScript to ignore the remainder of the text on the current line: 
+        - Using `//` will tell JavaScript to ignore the remainder of the text on the current line:  
 
 
-        > // This is an in-line comment.
+        > // This is an in-line comment.  
 
 
         - You can make a multi-line comment beginning with `/*` and ending with `*/`:
