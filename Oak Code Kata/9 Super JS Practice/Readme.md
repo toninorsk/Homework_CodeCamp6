@@ -12,6 +12,16 @@
 
         /* This is a multi-line comment */
 
+- Declare JavaScript Variables
+    - JavaScript provides eight different data types which are
+        - undefined
+        - null
+        - boolean
+        - string
+        - symbol
+        - bigint
+        - number
+        - object
 ----
 ### ES6
 
