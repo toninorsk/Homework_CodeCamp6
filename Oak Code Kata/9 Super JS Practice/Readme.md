@@ -54,11 +54,35 @@ This assigns `5` to `myVar` and then resolves `myVar` to `5` again and assigns i
 ----
 
 4. **Initializing Variables with the Assignment Operator**
-- It is common to initialize a variable to an initial value in the same line as it is declared.
+
+It is common to initialize a variable to an initial value in the same line as it is declared.
 
 > var myVar = 0;
 
-Crea
+Creates a new variable called `myVar` and assigns it an initial value of `0`.
+
+✍ *Define a variable `a` with `var` and initialize it to a value of `9`.*
+
+> var a = 9;
+
+----
+
+5. **Understanding Uninitialized Variables**
+
+When JavaScript variables are declared, they have an initial value of `undefined`. If you do a mathematical operation on an `undefined` variable your result will be `NaN` which means "*Not a Number*". If you concatenate a string with an `undefined` variable, you will get a literal *string* of `"undefined"`.
+
+✍ *Initialize the three variables `a`, `b`, and `c` with `5`, `10`, and `"I am a"` respectively so that they will not be `undefined`.*
+
+> // Only change code below this line<br>
+var a = 5;<br>
+var b = 10;<br>
+var c = "I am a";<br>
+// Only change code above this line<br>
+<br>
+a = a + 1;<br>
+b = b + 5;<br>
+c = c + " String!";
+
 
 ----
 ### ES6
