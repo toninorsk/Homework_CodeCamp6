@@ -78,7 +78,6 @@ var a = 5;<br>
 var b = 10;<br>
 var c = "I am a";<br>
 // Only change code above this line<br>
-<br>
 a = a + 1;<br>
 b = b + 5;<br>
 c = c + " String!";
