@@ -82,6 +82,39 @@ a = a + 1;<br>
 b = b + 5;<br>
 c = c + " String!";
 
+----
+
+6. Understanding Case Sensitivity in Variables
+
+In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+
+`MYVAR` is not the same as `MyVar` nor `myvar`. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you *do not* use this language feature.
+
+<u>Best Practice</u>
+
+Write variable names in JavaScript in *camelCase*. In *camelCase*, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+
+_Examples:_
+
+> var someVariable;<br>
+var anotherVariableName;<br>
+var thisVariableNameIsSoLong;
+
+✍ *Modify the existing declarations and assignments so their names use camelCase.
+Do not create any new variables.*
+
+> // Variable declarations<br>
+var studlyCapVar;<br>
+var properCamelCase;<br>
+var titleCaseOver;<br><br>
+// Variable assignments<br>
+studlyCapVar = 10;<br>
+properCamelCase = "A String";<br>
+titleCaseOver = 9000;<br>
+
+----
+
+7. Add Two Numbers with JavaScript
 
 ----
 ### ES6
