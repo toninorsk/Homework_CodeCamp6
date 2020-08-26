@@ -19,7 +19,7 @@
         - number
         - object
 
-✍  Use the var keyword to create a variable called myName.<br><br>
+✍ *Use the var keyword to create a variable called myName.*<br><br>
 > var myName;
 
 - **Storing Values with the Assignment Operator**
@@ -34,8 +34,8 @@
     This assigns `5` to `myVar` and then resolves `myVar` to `5` again and assigns it to `myNum`.
 
 
-✍  Assign the value `7` to variable `a`.<br>
-✍  Assign the contents of `a` to variable `b`.<br><br>
+✍ *Assign the value `7` to variable `a`.*<br>
+✍ *Assign the contents of `a` to variable `b`.*<br><br>
 
 > a = 7;<br>b = a;
 ----
