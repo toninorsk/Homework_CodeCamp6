@@ -13,6 +13,8 @@ You can make a multi-line comment beginning with `/*` and ending with `*/`:<br><
 
 > /* This is a multi-line comment */
 
+----
+
 2. **Declare JavaScript Variables**
 
 JavaScript provides eight different data types which are
@@ -27,6 +29,8 @@ JavaScript provides eight different data types which are
 
 ✍ *Use the var keyword to create a variable called myName.*<br><br>
 > var myName;
+
+----
 
 3. **Storing Values with the Assignment Operator**
 
@@ -46,6 +50,8 @@ This assigns `5` to `myVar` and then resolves `myVar` to `5` again and assigns i
 ✍ *Assign the contents of `a` to variable `b`.*<br><br>
 
 > a = 7;<br>b = a;
+
+----
 
 4. **Initializing Variables with the Assignment Operator**
 - It is common to initialize a variable to an initial value in the same line as it is declared.
