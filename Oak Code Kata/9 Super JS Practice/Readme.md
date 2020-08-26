@@ -84,7 +84,7 @@ c = c + " String!";
 
 ----
 
-6. Understanding Case Sensitivity in Variables
+6. **Understanding Case Sensitivity in Variables**
 
 In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
 
@@ -114,7 +114,7 @@ titleCaseOver = 9000;<br>
 
 ----
 
-7. Add Two Numbers with JavaScript
+7. **Add Two Numbers with JavaScript**
 
 `Number` is a data type in JavaScript which represents numeric data.
 
