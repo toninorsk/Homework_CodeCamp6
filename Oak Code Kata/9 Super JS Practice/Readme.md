@@ -1,22 +1,42 @@
 # FreeCodeCamp
-### JavaScript Algorithms and Data Structures
+## JavaScript Algorithms and Data Structures
 
-#### Basic JavaScript
+### Basic JavaScript
+- Comment Your JavaScript Code
+    - There are two ways to write comments in JavaScript: 
+        - Using // will tell JavaScript to ignore the remainder of the text on the current line: 
+        
+        // This is an in-line comment.
 
-#### ES6
+        - You can make a multi-line comment beginning with /* and ending with */:
 
-#### Regular Expressions
+        /* This is a multi-line comment */
 
-#### Debugging
+----
+### ES6
 
-#### Basic Data Structures
+----
+### Regular Expressions
 
-#### Basic Algorithm Scripting
+----
+### Debugging
 
-#### Object Oriented Programming
+----
+### Basic Data Structures
 
-#### Functional Programming
+----
+### Basic Algorithm Scripting
 
-#### Intermediate Algorithms Scripting
+----
+### Object Oriented Programming
 
-#### JavaScript Algorithms and Data Structures Projects
+----
+### Functional Programming
+
+----
+### Intermediate Algorithms Scripting
+
+----
+### JavaScript Algorithms and Data Structures Projects
+
+----
