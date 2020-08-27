@@ -284,11 +284,104 @@ In mathematics, a number can be checked to be even or odd by checking the remain
 
 The *remainder* operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.
 
-✍ Set `remainder` equal to the remainder of `11` divided by `3` using the *remainder* (`%`) operator.
+✍ *Set `remainder` equal to the remainder of `11` divided by `3` using the *remainder* (`%`) operator.*
 
 > // Only change code below this line<br><br>
 var remainder = 11 % 3;
 
+----
+
+17. **Compound Assignment With Augmented Addition**
+
+In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
+
+> myVar = myVar + 5;
+
+to add `5` to `myVar`. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+
+One such operator is the `+=` operator.
+ > var myVar = 1;<br>
+ myVar += 5;<br>
+ console.log(myVar); // Returns 6
+
+✍ *Convert the assignments for `a`, `b`, and `c` to use the `+=` operator.*
+
+> var a = 3;<br>
+var b = 17;<br>
+var c = 12;<br><br>
+// Only change code below this line<br>
+a += 12;<br>
+b += 9;<br>
+c += 7;
+
+----
+
+18. **Compound Assignment With Augmented SubtractionPassed**
+
+Like the `+=` operator, `-=` subtracts a number from a variable.
+
+`myVar = myVar - 5;`
+
+will subtract `5` from `myVar`. This can be rewritten as:
+
+`myVar -= 5;`
+
+✍ *Convert the assignments for `a`, `b`, and `c` to use the `-=` operator.*
+
+> var a = 11;<br>
+var b = 9;<br>
+var c = 3;<br><br>
+// Only change code below this line<br>
+a -= 6;<br>
+b -= 15;<br>
+c -= 1;
+
+----
+
+19. **Compound Assignment With Augmented Multiplication**
+
+The `*=` operator multiplies a variable by a number.
+
+`myVar = myVar * 5;`
+
+will multiply `myVar` by `5`. This can be rewritten as:
+
+`myVar *= 5;`
+
+✍ _Convert the assignments for `a`, `b`, and `c` to use the `*=` operator._
+
+> var a = 5;<br>
+var b = 12;<br>
+var c = 4.6;<br><br>
+// Only change code below this line<br>
+a *= 5;<br>
+b *= 3;<br>
+c *= 10;
+
+----
+
+20. **Compound Assignment With Augmented Division**
+
+The `/=` operator divides a variable by another number.
+
+`myVar = myVar / 5;`
+
+Will divide `myVar` by `5`. This can be rewritten as:
+
+`myVar /= 5;`
+
+✍ *Convert the assignments for `a`, `b`, and `c` to use the `/=` operator.*
+
+> var a = 48;<br>
+var b = 108;<br>
+var c = 33;<br><br>
+// Only change code below this line<br>
+a /= 12;<br>
+b /= 4;<br>
+c /= 11;
+
+
+----
 ----
 
 ### ES6
