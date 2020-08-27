@@ -380,7 +380,78 @@ a /= 12;<br>
 b /= 4;<br>
 c /= 11;
 
+----
 
+21. **Declare String Variables**
+
+Previously we have used the code
+
+`var myName = "your name";`
+
+`"your name"` is called a string literal. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
+
+✍ *Create two new `string` variables: `myFirstName` and `myLastName` and assign them the values of your first and last name, respectively.*
+
+> var myFirstName = "Nattawoot";<br>
+var myLastName = 'Denduangchai';
+
+----
+22. **Escaping Literal Quotes in Strings**
+
+When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: `"` or `'` inside of your string?
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (`\`) in front of the quote.
+
+`var sampleStr = "Alan said, \"Peter is learning JavaScript\".";`
+
+This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+
+`Alan said, "Peter is learning JavaScript".`
+
+✍ _Use *backslashes* to assign a string to the `myStr` variable so that if you were to print it to the console, you would see:_
+
+_`I am a "double quoted" string inside "double quotes".`_
+
+> var myStr = "I am a \\"double quoted\\" string inside \\"double quotes\\"."; // Change this line
+
+----
+****
+----
+****
+----
+****
+----
+****
+----
+****
+----
+****
+----
+****
+----
+****
+----
+----
+****
+----
+----
+****
+----
+----
+****
+----
+----
+****
+----
+----
+****
+----
+----
+****
+----
+----
+****
+----
 ----
 ----
 
