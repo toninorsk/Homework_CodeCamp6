@@ -439,7 +439,9 @@ The backslash `\` should not be confused with the forward slash `/`. They do not
 
 ✍ *Change the provided string to a string with single quotes at the beginning and end and no escape characters.*
 
-> var myStr = '<a href=\"http://www.example.com\" target=\"_blank">Link</a>';
+<pre>
+var myStr = '<a href=\"http://www.example.com\" target=\"_blank">Link</a>';
+</pre>
 
 ----
 
@@ -479,11 +481,36 @@ Here is the text with the escape sequences written out.
 
 "FirstLine `newline tab backslash` SecondLine `newline` ThirdLine"
 
-> var myStr = "FirstLine\n\t\\\SecondLine\nThirdLine"; // Change this line
+<pre>
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+</pre>
 
 ----
 
 25. **Concatenating Strings with Plus Operator**
+
+In JavaScript, when the `+` operator is used with a `String` value, it is called the *concatenation* operator. You can build a new string out of other strings by `concatenating` them together.
+
+**Example**
+
+<pre>'My name is Alan,' + ' I concatenate.'</pre>
+
+**Note**
+
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+**Example**
+
+<pre>
+var ourStr = "I come first. " + "I come second.";
+// ourStr is "I come first. I come second."
+</pre>
+
+✍ *Build `myStr` from the strings `"This is the start. "` and `"This is the end."` using the + operator.*
+
+<pre>
+var myStr = "This is the start. " + "This is the end."; // Only change this line
+</pre>
 
 ----
 ****
