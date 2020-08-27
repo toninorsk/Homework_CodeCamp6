@@ -513,9 +513,59 @@ var myStr = "This is the start. " + "This is the end."; // Only change this line
 </pre>
 
 ----
-****
+
+26. **Concatenating Strings with the Plus Equals Operator**
+
+We can also use the `+=` operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+
+**Note**
+
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+**Example**
+
+<pre>
+var ourStr = "I come first. ";
+ourStr += "I come second.";
+// ourStr is now "I come first. I come second."
+</pre>
+
+✍ *Build `myStr` over severall lines by concatenating these two strings: `"This is the first sentence. "` and `"This is the second sentence."` using the `+=` operator. Use the `+=` operator similar to how it is shown in the editor. Start by assigning the first string to `myStr`, then add on the second string.*
+
+
+<pre>
+// Only change code below this line
+
+var myStr = "This is the first sentence. ";
+
+myStr += "This is the second sentence.";
+</pre>
+
 ----
-****
+27. **Constructing Strings with Variables**
+
+Sometimes you will need to build a string, *Mad Libs* style. By using the concatenation operator (`+`), you can insert one or more variables into a string you're building.
+
+**Example:**
+
+<pre>
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+// ourStr is now "Hello, our name is freeCodeCamp, how are you?"
+</pre>
+
+✍ *Set `myName` to a string equal to your name and build `myStr` with `myName` between the strings `"My name is "` and `" and I am well!"`*
+
+<pre>
+// Only change code below this line
+var myName = "Nattawoot";
+var myStr = "My name is " + myName + " and I am well!";
+</pre>
+
+----
+
+28. **Appending Variables to Strings**
+
 ----
 ****
 ----
