@@ -970,11 +970,75 @@ var removedFromMyArray = myArray.pop();
 </pre>
 
 ----
-****
+
+43. **Manipulate Arrays With shift()**
+
+`pop()` always removes the last element of an array. What if you want to remove the first?
+
+That's where `.shift()` comes in. It works just like `.pop()`, except it removes the first element instead of the last.
+
+**Example:**
+
+<pre>
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+</pre>
+
+✍ *Use the `.shift()` function to remove the first item from `myArray`, assigning the "shifted off" value to `removedFromMyArray`.*
+
+<pre>
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+var removedFromMyArray = myArray.shift();
+</pre>
+
 ----
-****
+
+44. **Manipulate Arrays With unshift()**
+
+Not only can you `shift` elements off of the beginning of an array, you can also `unshift` elements to the beginning of an array i.e. add elements in front of the array.
+
+`.unshift()` works exactly like `.push()`, but instead of adding the element at the end of the array, `unshift()` adds the element at the beginning of the array.
+
+**Example:**
+
+<pre>
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy");
+// ourArray now equals ["Happy", "J", "cat"]
+</pre>
+
+✍ *Add `["Paul",35]` to the beginning of the `myArray` variable using `unshift()`.*
+
+<pre>
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul",35]);
+</pre>
+
 ----
-****
+
+45 **Shopping List**
+
+✍ *Create a shopping list in the variable `myList`. The list should be a multi-dimensional array containing several sub-arrays.*
+
+The first element in each sub-array should contain a string with the name of the item. The second element should be a number representing the quantity i.e.
+
+`["Chocolate Bar", 15]`
+
+*There should be at least 5 sub-arrays in the list.*
+
+<pre>
+var myList = [["Chocolate Bar", 15],["egg", 30],["toothpaste", 1],["Soap Bar", 4],["Chicken", 2]];
+</pre>
+
 ----
 ****
 ----
