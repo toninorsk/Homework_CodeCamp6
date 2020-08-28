@@ -566,16 +566,223 @@ var myStr = "My name is " + myName + " and I am well!";
 
 28. **Appending Variables to Strings**
 
+Just as we build a string over multiple lines out of string *literals*, we can also append variables to a string using the plus equals (`+=`) operator.
+
+**Example**
+
+<pre>
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+// ourStr is now "freeCodeCamp is awesome!"
+</pre>
+
+✍ *Set `someAdjective` and append it to `myStr` using the `+=` operator.*
+
+<pre>
+// Change code below this line
+
+var someAdjective = "fun";
+var myStr = "Learning to code is ";
+
+myStr += someAdjective;
+</pre>
+
 ----
-****
+
+29. **Find the Length of a String**
+
+You can find the length of a `string` value by writing `.length` after the string variable or string literal.
+
+`"Alan Peter".length; // 10`
+
+For example, if we created a variable `var firstName = "Charles"`, we could find out how long the string `"Charles"` is by using the `firstName.length` property.
+
+✍ *Use the `.length` property to count the number of characters in the `lastName` variable and assign it to `lastNameLength`.*
+
+<pre>
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line
+
+lastNameLength = lastName.length;
+</pre>
+
 ----
-****
+
+30. **Use Bracket Notation to Find the First Character in a String**
+
+*Bracket notation* is a way to get a character at a specific `index` within a string.
+
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as *Zero-based* indexing.
+
+For example, the character at index 0 in the word "Charles" is "C". So if `var firstName = "Charles"`, you can get the value of the first letter of the string by using `firstName[0]`.
+
+**Example:**
+
+<pre>
+var firstName = "Charles";
+var firstLatter = firstName[0]; // firstLetter is "C"
+</pre>
+
+✍ *Use bracket notation to find the first character in the `lastName` variable and assign it to `firstLetterOfLastName`.*
+
+**Hint**: *Try looking at the example above if you get stuck.*
+
+<pre>
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+</pre>
+
 ----
-****
+
+31. **Understand String Immutability**
+
+In JavaScript, `String` values are *immutable*, which means that they cannot be altered once created.
+
+For example, the following code:
+
+<pre>
+var myStr = "Bob";
+myStr[0] = "J";
+</pre>
+
+cannot change the value of `myStr` to "Job", because the contents of `myStr` cannot be altered. Note that this does *not* mean that `myStr` cannot be changed, just that the individual characters of a *string literal* cannot be changed. The only way to change `myStr` would be to assign it with a new string, like this:
+
+<pre>
+var myStr = "Bob";
+myStr = "Job";
+</pre>
+
+✍ *Correct the assignment to `myStr` so it contains the string value of `Hello World` using the approach shown in the example above*.
+
+<pre>
+// Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
+</pre>
+
 ----
+
+32. **Use Bracket Notation to Find the Nth Character in a String**
+
+You can also use *bracket notation* to get the character at other positions within a string.
+
+Remember that computers start counting at `0`, so the first character is actually the zeroth character.
+
+**Example:**
+
+<pre>
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1]; // secondLetterOfFirstName is "d"
+</pre>
+
+✍ *Let's try to set `thirdLetterOfLastName` to equal the third letter of the `lastName` variable using bracket notation.*
+
+**Hint**: *Try looking at the example above if you get stuck.*
+
+<pre>
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var thirdLetterOfLastName = lastName[2]; // Change this line
+</pre>
+
 ----
-****
+
+33. **Use Bracket Notation to Find the Last Character in a String**
+
+In order to get the last letter of a string, you can subtract one from the string's length.
+
+For example, if `var firstName = "Charles"`, you can get the value of the last letter of the string by using `firstName[firstName.length - 1]`.
+
+**Example:**
+
+<pre>
+var firstName = "Charles";
+var lastLetter = firstName[firstName.length - 1]; // lastLetter is "s"
+</pre>
+
+✍ Use *bracket notation* to find the last character in the `lastName` variable.
+
+**Hint**: Try looking at the example above if you get stuck.
+
+<pre>
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
+</pre>
+
 ----
+
+34. **Use Bracket Notation to Find the Nth-to-Last Character in a String**
+
+You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
+
+For example, you can get the value of the third-to-last letter of the `var firstName = "Charles"` string by using `firstName[firstName.length - 3]`
+
+**Example:**
+
+<pre>
+var firstName = "Charles";
+var thirdToLastLetter = firstName[firstName.length - 3]; // thirdToLastLetter is "l"
+</pre>
+
+✍ *Use bracket notation to find the second-to-last character in the `lastName` string.*
+
+**Hint**: *Try looking at the example above if you get stuck.*
+
+<pre>
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+</pre>
+
+----
+
+35. **Word Blanks**
+
+We will now use our knowledge of strings to build a "Mad Libs" style word game we're calling "Word Blanks". You will create an (optionally humorous) "Fill in the Blanks" style sentence.
+
+In a "Mad Libs" game, you are provided sentences with some missing words, like nouns, verbs, adjectives and adverbs. You then fill in the missing pieces with words of your choice in a way that the completed sentence makes sense.
+
+Consider this sentence - "It was really ____, and we ____ ourselves ____". This sentence has three missing pieces- an adjective, a verb and an adverb, and we can add words of our choice to complete it. We can then assign the completed sentence to a variable as follows:
+
+<pre>
+var sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+</pre>
+
+✍ *In this challenge, we provide you with a noun, a verb, an adjective and an adverb. You need to form a complete sentence using words of your choice, along with the words we provide.*
+
+*You will need to use the string concatenation operator `+` to build a new string, using the provided variables: `myNoun`, `myAdjective`, `myVerb`, and myAdverb. You will then assign the formed string to the `wordBlanks` variable. You should not change the words assigned to the variables.*
+
+*You will also need to account for spaces in your string, so that the final sentence has spaces between all the words. The result should be a complete sentence.*
+
+<pre>
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = "A " + myAdjective + " " + myNoun + " " + myVerb + " very " + myAdverb; // Change this line
+// Only change code above this line
+</pre>
+
 ----
 ****
 ----
