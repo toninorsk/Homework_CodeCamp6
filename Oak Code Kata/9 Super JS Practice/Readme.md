@@ -1025,7 +1025,7 @@ myArray.unshift(["Paul",35]);
 
 ----
 
-45 **Shopping List**
+45. **Shopping List**
 
 ✍ *Create a shopping list in the variable `myList`. The list should be a multi-dimensional array containing several sub-arrays.*
 
@@ -1040,11 +1040,92 @@ var myList = [["Chocolate Bar", 15],["egg", 30],["toothpaste", 1],["Soap Bar", 4
 </pre>
 
 ----
-****
+
+46. **Write Reusable JavaScript with Functions**
+
+In JavaScript, we can divide up our code into reusable parts called *functions*.
+
+Here's an example of a function:
+<pre>
+function functionName() {
+  console.log("Hello World");
+}
+</pre>
+You can call or `invoke` this function by using its name followed by parentheses, like this: `functionName();` Each time the function is called it will print out the message `"Hello World"` on the dev console. All of the code between the curly braces will be executed every time the function is called.
+
+✍ *Create a function called reusableFunction which prints "Hi World" to the dev console.*<br>
+✍ *Call the function.*
+
+<pre>
+function reusableFunction() {
+  console.log("Hi World");
+} 
+
+reusableFunction()
+</pre>
+
 ----
-****
+
+47. **Passing Values to Functions with Arguments**
+
+*Parameters* are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "*passed*") into a function when it is called are known as *arguments*.
+
+Here is a function with two parameters, `param1` and `param2`:
+
+<pre>
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+</pre>
+
+Then we can call `testFun`: `testFun("Hello", "World");` We have passed two arguments, `"Hello"` and `"World"`. Inside the function, `param1` will equal "Hello" and `param2` will equal "World". Note that you could call `testFun` again with different arguments and the parameters would take on the value of the new arguments.
+
+✍ *Create a function called `functionWithArgs` that accepts two arguments and outputs their sum to the dev console.*<br>
+✍ Call the function with two numbers as arguments.
+
+<pre>
+function functionWithArgs(param1, param2) {
+  console.log(param1 + param2);
+}
+
+functionWithArgs(7, 8);
+</pre>
+
 ----
-****
+
+48. **Global Scope and Functions**
+
+In JavaScript, *scope* refers to the visibility of variables. Variables which are defined outside of a function block have *Global* scope. This means, they can be seen everywhere in your JavaScript code.
+
+Variables which are used without the `var` keyword are automatically created in the `global` scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with `var`.
+
+✍ *Using `var`, declare a global variable named `myGlobal` outside of any function. Initialize it with a value of `10`.*
+
+✍ *Inside function `fun1`, assign `5` to `oopsGlobal` **without** using the `var` keyword.*
+
+<pre>
+// Declare the myGlobal variable below this line
+var myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+</pre>
+
 ----
 ****
 ----
