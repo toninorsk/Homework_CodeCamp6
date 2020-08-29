@@ -1127,15 +1127,140 @@ function fun2() {
 </pre>
 
 ----
-****
+
+49. **Local Scope and Functions**
+
+Variables which are declared within a function, as well as the function parameters have *local scope*. That means, they are only visible within that function.
+
+Here is a function `myTest` with a local variable called `loc`.
+<pre>
+function myTest() {
+  var loc = "foo";
+  console.log(loc);
+}
+myTest(); // logs "foo"
+console.log(loc); // loc is not defined
+</pre>
+`loc` is not defined outside of the function.
+
+✍ *The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.*
+
+**Note**: *The console will still have 'ReferenceError: myVar is not defined', but this will not cause the tests to fail.*
+
+<pre>
+function myLocalScope() {
+  'use strict';
+
+  // Only change code below this line
+  var myVar = 'use strict';
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+</pre>
+
 ----
-****
+
+50. **Global vs. Local Scope in Functions**
+
+It is possible to have both *local* and *global* variables with the same name. When you do this, the `local` variable takes precedence over the `global` variable.
+
+In this example:
+<pre>
+var someVar = "Hat";
+function myFun() {
+  var someVar = "Head";
+  return someVar;
+}
+</pre>
+The function `myFun` will return `"Head"` because the `local` version of the variable is present.
+
+✍ *Add a local variable to `myOutfit` function to override the value of `outerWear` with `"sweater"`.*
+
+<pre>
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  var outerWear = "sweater";
+
+
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+</pre>
+
 ----
-****
+
+51. **Return a Value from a Function with Return**
+
+We can pass values into a function with *arguments*. You can use a `return` statement to send a value back out of a function.
+
+**Example**
+<pre>
+function plusThree(num) {
+  return num + 3;
+}
+var answer = plusThree(5); // 8
+</pre>
+`plusThree` takes an argument for `num` and returns a value equal to `num + 3`.
+
+Create a function `timesFive` that accepts one argument, multiplies it by `5`, and returns the new value. See the last line in the editor for an example of how you can test your `timesFive` function.
+
+<pre>
+function timesFive(num) {
+  return num * 5;
+}
+var answer = timesFive(3);
+</pre>
+
 ----
-****
+
+52. **Understanding Undefined Value returned from a Function**
+
+A function can include the `return` statement but it does not have to. In the case that the function doesn't have a `return` statement, when you call it, the function processes the inner code but the returned value is `undefined`.
+
+**Example**
+<pre>
+var sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+addSum(3); // sum will be modified but returned value is undefined
+</pre>
+`addSum` is a function without a `return` statement. The function will change the global `sum` variable but the returned value of the function is `undefined`.
+
+✍ *Create a function `addFive` without any arguments. This function adds 5 to the `sum` variable, but its returned value is `undefined`.*
+
+<pre>
+// Setup
+var sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive() {
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+</pre>
+
 ----
-****
+
+53. **Assignment with a Returned Value**
+
 ----
 ****
 ----
