@@ -1530,7 +1530,7 @@ The strict inequality operator (`!==`) is the logical opposite of the strict equ
 3 !== '3'  // true
 4 !==  3   // true
 </pre>
-Add the strict inequality operator to the `if` statement so the function will return "Not Equal" when `val` is not strictly equal to `17`
+✍ *Add the strict inequality operator to the `if` statement so the function will return "Not Equal" when `val` is not strictly equal to `17`*
 
 <pre>
 // Setup
@@ -1548,39 +1548,346 @@ testStrictNotEqual(10);
 
 62. **Comparison with the Greater Than Operator**
 
+The greater than operator (`>`) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns `true`. Otherwise, it returns `false`.
 
+Like the equality operator, greater than operator will convert data types of values while comparing.
+
+**Examples**
+<pre>
+5   >  3   // true
+7   > '3'  // true
+2   >  3   // false
+'1' >  9   // false
+</pre>
+
+✍ *Add the greater than operator to the indicated lines so that the return statements make sense.*
+
+<pre>
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+</pre>
 
 ----
 
-63. ****
+63. **Comparison with the Greater Than Or Equal To Operator**
+
+The greater than or equal to operator (`>=`) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns `true`. Otherwise, it returns `false`.
+
+Like the equality operator, `greater than or equal to` operator will convert data types while comparing.
+
+**Examples**
+
+<pre>
+6   >=  6   // true
+7   >= '3'  // true
+2   >=  3   // false
+'7' >=  9   // false
+</pre>
+
+✍ *Add the greater than or equal to operator to the indicated lines so that the return statements make sense.*
+
+<pre>
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+</pre>
 
 ----
 
-64. ****
+64. **Comparison with the Less Than Operator**
+
+The less than operator (`<`) compares the values of two numbers. If the number to the left is less than the number to the right, it returns `true`. Otherwise, it returns `false`. Like the equality operator, less than operator converts data types while comparing.
+
+**Examples**
+
+2   < 5  // true
+'3' < 7  // true
+5   < 5  // false
+3   < 2  // false
+'8' < 4  // false
+
+✍ *Add the less than operator to the indicated lines so that the return statements make sense.*
+
+<pre>
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
+</pre>
 
 ----
 
-65. ****
+65. **Comparison with the Less Than Or Equal To OperatorPassed**
+
+The less than or equal to operator (`<=`) compares the values of two numbers. If the number to the left is less than or equal to the number to the right, it returns `true`. If the number on the left is greater than the number on the right, it returns `false`. Like the equality operator, `less than or equal to` converts data types.
+
+**Examples**
+
+<pre>
+4   <= 5  // true
+'7' <= 7  // true
+5   <= 5  // true
+3   <= 2  // false
+'8' <= 4  // false
+</pre>
+
+✍ *Add the less than or equal to operator to the indicated lines so that the return statements make sense.*
+
+<pre>
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+</pre>
 
 ----
 
-66. ****
+66. **Comparisons with the Logical And Operator**
+
+Sometimes you will need to test more than one thing at a time. The *logical and operator* (`&&`) returns `true` if and only if the *operands* to the left and right of it are true.
+
+The same effect could be achieved by nesting an if statement inside another if:
+
+<pre>
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+</pre>
+
+will only return "Yes" if `num` is greater than `5` and less than `10`. The same logic can be written as:
+
+<pre>
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+</pre>
+
+✍ *Replace the two if statements with one statement, using the && operator, which will return `"Yes"` if `val` is less than or equal to `50` and greater than or equal to `25`. Otherwise, will return `"No"`.*
+
+<pre>
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+      return "Yes";
+    }
+  return "No";
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+</pre>
 
 ----
 
-67. ****
+67. **Comparisons with the Logical Or Operator**
+
+The *logical* or operator (`||`) returns `true` if either of the operands is true. Otherwise, it returns `false`.
+
+The *logical* or operator is composed of two pipe symbols: (`||`). This can typically be found between your Backspace and Enter keys.
+
+The pattern below should look familiar from prior waypoints:
+<pre>
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+</pre>
+will return "Yes" only if `num` is between `5` and `10` (5 and 10 included). The same logic can be written as:
+<pre>
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+</pre>
+
+✍ *Combine the two `if` statements into one statement which returns `"Outside"` if `val` is not between `10` and `20`, inclusive. Otherwise, return `"Inside"`.*
+
+<pre>
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val > 20 || val < 10) {
+    return "Outside";
+  }
+
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+</pre>
 
 ----
 
-68. ****
+68. **Introducing Else Statements**
+
+When a condition for an `if` statement is true, the block of code following it is executed. What about when that condition is false? Normally nothing would happen. With an `else` statement, an alternate block of code can be executed.
+
+<pre>
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+</pre>
+
+✍ *Combine the `if` statements into a single `if/else` statement.*
+
+<pre>
+function testElse(val) {
+  var result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
+</pre>
 
 ----
 
-69. ****
+69. **Introducing Else If Statements**
+
+If you have multiple conditions that need to be addressed, you can chain `if` statements together with `else if` statements.
+
+<pre>
+if (num > 15) {
+  return "Bigger than 15";
+} else if (num < 5) {
+  return "Smaller than 5";
+} else {
+  return "Between 5 and 15";
+}
+</pre>
+
+✍ *Convert the logic to use `else if` statements.*
+
+<pre>
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+  return "Between 5 and 10";
+}
+}
+testElseIf(7);
+</pre>
 
 ----
 
-70. ****
+70. **Logical Order in If Else StatementsPassed**
+
+Order is important in `if`, `else if` statements.
+
+The function is executed from top to bottom so you will want to be careful of what statement comes first.
+
+Take these two functions as an example.
+
+Here's the first:
+<pre>
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+</pre>
+And the second just switches the order of the statements:
+<pre>
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+</pre>
+While these two functions look nearly identical if we pass a number to both we get different outputs.
+
+<pre>
+foo(0) // "Less than one"
+bar(0) // "Less than two"
+</pre>
+
+✍ *Change the order of logic in the function so that it will return the correct statements in all cases.*
+
+<pre>
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
+</pre>
 
 ----
 ****
