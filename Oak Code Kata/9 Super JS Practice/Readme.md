@@ -4288,7 +4288,7 @@ A lot of things happened there. Firstly, the example uses backticks (\`), not qu
 
 ✍ *Use template literal syntax with backticks to display each entry of the `result` object's `failure` array. Each entry should be wrapped inside an `li` element with the class attribute `text-warning`, and listed within the `resultDisplayArray`.*
 
-Use an iterator method (any kind of loop) to get the desired output (shown below).
+*Use an iterator method (any kind of loop) to get the desired output (shown below).*
 
 <pre>
 [
@@ -4319,19 +4319,136 @@ function makeList(arr) {
 
 ----
 
-****
+18. **Write Concise Object Literal Declarations Using Object Property Shorthand**
+
+ES6 adds some nice support for easily defining object literals.
+
+Consider the following code:
+
+<pre>
+const getMousePosition = (x, y) => ({
+  x: x,
+  y: y
+});
+</pre>
+
+`getMousePosition` is a simple function that returns an object containing two properties. ES6 provides the syntactic sugar to eliminate the redundancy of having to write `x: x`. You can simply write `x` once, and it will be converted to `x: x` (or something equivalent) under the hood. Here is the same function from above rewritten to use this new syntax:
+
+<pre>
+const getMousePosition = (x, y) => ({ x, y });
+</pre>
+
+✍ *Use object property shorthand with object literals to create and return an object with `name`, `age` and `gender` properties.*
+
+<pre>
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // Only change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // Only change code above this line
+};
+</pre>
 
 ----
 
-****
+19. **Write Concise Declarative Functions with ES6**
+
+When defining functions within objects in ES5, we have to use the keyword `function` as follows:
+
+<pre>
+const person = {
+  name: "Taylor",
+  sayHello: function() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+</pre>
+
+With ES6, You can remove the `function` keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
+
+<pre>
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+</pre>
+
+✍ *Refactor the function `setGear` inside the object `bicycle` to use the shorthand syntax described above.*
+
+<pre>
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
+</pre>
 
 ----
 
-****
+20. **Use class Syntax to Define a Constructor Function**
+
+ES6 provides a new syntax to create objects, using the *class* keyword.
+
+It should be noted that the `class` syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+
+In ES5, we usually define a constructor function and use the `new` keyword to instantiate an object.
+
+<pre>
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+</pre>
+
+The `class` syntax simply replaces the constructor function creation:
+
+<pre>
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter');
+</pre>
+
+It should be noted that the `class` keyword declares a new function, to which a constructor is added. This constructor is invoked when `new` is called to create a new object.
+
+**Notes**:
+
+- UpperCamelCase should be used by convention for ES6 class names, as in `SpaceShuttle` used above.
+- The constructor method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming section of the JavaScript Algorithms And Data Structures Certification.
+
+✍ *Use the `class` keyword and write a constructor to create the `Vegetable` class.*
+
+*The `Vegetable` class allows you to create a vegetable object with a property `name` that gets passed to the constructor.*
+
+<pre>
+// Only change code below this line
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
+</pre>
 
 ----
 
-****
+21. ****
 
 ----
 
