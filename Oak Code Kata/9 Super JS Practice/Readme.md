@@ -5585,30 +5585,178 @@ let result = pwRegex.test(sampleWord);
 
 30. **Check For Mixed Grouping of Characters**
 
-Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses ().
+Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses `()`.
 
-If you want to find either Penguin or Pumpkin in a string, you can use the following Regular Expression: /P(engu|umpk)in/g
+If you want to find either `Penguin` or `Pumpkin` in a string, you can use the following Regular Expression: `/P(engu|umpk)in/g`
 
-Then check whether the desired string groups are in the test string by using the test() method.
+Then check whether the desired string groups are in the test string by using the `test()` method.
 
+<pre>
 let testStr = "Pumpkin";
 let testRegex = /P(engu|umpk)in/;
 testRegex.test(testStr);
 // Returns true
-Fix the regex so that it checks for the names of Franklin Roosevelt or Eleanor Roosevelt in a case sensitive manner and it should make concessions for middle names.
+</pre>
 
-Then fix the code so that the regex that you have created is checked against myString and either true or false is returned depending on whether the regex matches.
+Fix the regex so that it checks for the names of `Franklin Roosevelt` or ``Eleanor Roosevelt`` in a case sensitive manner and it should make concessions for middle names.
+
+✍ *Then fix the code so that the regex that you have created is checked against `myString` and either `true` or `false` is returned depending on whether the regex matches.*
+
+<pre>
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor).*Roosevelt/; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+</pre>
 
 ----
 
-****
+31. **Reuse Patterns Using Capture Groups**
+
+Some patterns you search for will occur multiple times in a string. It is wasteful to manually repeat that regex. There is a better way to specify when you have multiple repeat substrings in your string.
+
+You can search for repeat substrings using *capture groups*. Parentheses, `(` and `)`, are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.
+
+To specify where that repeat string will appear, you use a backslash (`\`) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be `\1` to match the first group.
+
+The example below matches any word that occurs twice separated by a space:
+
+<pre>
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]
+</pre>
+
+Using the `.match()` method on a string will return an array with the string it matches, along with its capture group.
+
+✍ *Use capture groups in `reRegex` to match numbers that are repeated only three times in a string, each separated by a space.*
+
+<pre>
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
+let result = reRegex.test(repeatNum);
+</pre>
 
 ----
 
-****
+32. **Use Capture Groups to Search and Replace**
+
+Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match.
+
+You can search and replace text in a string using `.replace()` on a string. The inputs for `.replace()` is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.
+
+<pre>
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+// Returns "The sky is blue."
+</pre>
+
+You can also access capture groups in the replacement string with dollar signs (`$`).
+
+<pre>
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+// Returns "Camp Code"
+</pre>
+
+✍ *Write a regex `fixRegex` using three capture groups that will search for each word in the string "one two three". Then update the `replaceText` variable to replace "one two three" with the string "three two one" and assign the result to the `result` variable. Make sure you are utilizing capture groups in the replacement string using the dollar sign (`$`) syntax.*
+
+<pre>
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+</pre>
+
+----
+
+33. **Remove Whitespace from Start and End**
+
+Sometimes whitespace characters around strings are not wanted but are there. Typical processing of strings is to remove the whitespace at the start and end of it.
+
+✍ *Write a regex and use the appropriate string methods to remove whitespace at the beginning and end of strings.*
+
+**Note**: *The `String.prototype.trim()` method would work here, but you'll need to complete this challenge using regular expressions.*
+
+<pre>
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
+</pre>
 
 ----
 ### Debugging
+
+Debugging is a valuable and (unfortunately) necessary tool for programmers. It follows the testing phase of checking if your code works as intended, and discovering it does not. Debugging is the process of finding exactly what isn't working and fixing it. After spending time creating a brilliant block of code, it is tough realizing it may have errors. These issues generally come in three forms:
+
+1. syntax errors that prevent a program from running
+2. runtime errors when code fails to execute or has unexpected behavior
+3. semantic (or logical) errors when code doesn't do what it's meant to.
+
+Modern code editors (and experience) can help identify syntax errors. Semantic and runtime errors are harder to find. They may cause your program to crash, make it run forever, or give incorrect output. Think of debugging as trying to understand why your code is behaving the way it is. Example of a syntax error - often detected by the code editor:
+
+<pre>
+funtcion willNotWork( 
+  console.log("Yuck");
+}
+// "function" keyword is misspelled and there's a missing parenthesis
+</pre>
+
+Here's an example of a runtime error - often detected while the program executes:
+
+<pre>
+function loopy() {
+  while(true) {
+    console.log("Hello, world!");
+  }
+}
+// Calling loopy starts an infinite loop, which may crash your browser
+</pre>
+
+Example of a semantic error - often detected after testing code output:
+
+<pre>
+function calcAreaOfRect(w, h) {
+  return w + h; // This should be w * h
+}
+let myRectArea = calcAreaOfRect(2, 3);
+// Correct syntax and the program executes, but this gives the wrong answer
+</pre>
+
+Debugging is frustrating, but it helps to develop (and follow) a step-by-step approach to review your code. This means checking the intermediate values and types of variables to see if they are what they should be. You can start with a simple process of elimination.
+
+For example, if function A works and returns what it's supposed to, then function B may have the issue. Or start checking values in a block of code from the middle to try to cut the search space in half. A problem in one spot indicates a bug in the first half of the code. If not, it's likely in the second.
+
+This section will cover a couple helpful tools to find bugs, and some of the common forms they take. Fortunately, debugging is a learnable skill that just requires a little patience and practice to master.
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
 
 ----
 ### Basic Data Structures
