@@ -5732,34 +5732,767 @@ This section will cover a couple helpful tools to find bugs, and some of the com
 
 ----
 
-****
+1. **Use the JavaScript Console to Check the Value of a Variable**
+
+Both Chrome and Firefox have excellent JavaScript consoles, also known as DevTools, for debugging your JavaScript.
+
+You can find Developer tools in your Chrome's menu or Web Console in Firefox's menu. If you're using a different browser, or a mobile phone, we strongly recommend switching to desktop Firefox or Chrome.
+
+The `console.log()` method, which "prints" the output of what's within its parentheses to the console, will likely be the most helpful debugging tool. Placing it at strategic points in your code can show you the intermediate values of variables. It's good practice to have an idea of what the output should be before looking at what it is. Having check points to see the status of your calculations throughout your code will help narrow down where the problem is.
+
+Here's an example to print 'Hello world!' to the console:
+
+`console.log('Hello world!');`
+
+✍ *Use the `console.log()` method to print the value of the variable `a` where noted in the code.*
+
+<pre>
+let a = 5;
+let b = 1;
+a++;
+// Only change code below this line
+console.log(a);
+
+let sumAB = a + b;
+console.log(sumAB);
+</pre>
 
 ----
 
-****
+2. **Understanding the Differences between the freeCodeCamp and Browser Console**
+
+You may have noticed that some freeCodeCamp JavaScript challenges include their own console. This console behaves a little differently than the browser console you used in the last challenge.
+
+The following challenge is meant to highlight the main difference between the freeCodeCamp console and your browser console.
+
+When you run ordinary JavaScript, the browser's console will display your `console.log()` statements the exact number of times it is called.
+
+The freeCodeCamp console will print your `console.log()` statements a short time after the editor detects a change in the script, as well as during testing.
+
+The freeCodeCamp console is cleared before the tests are run and, to avoid spam, only prints the logs during the first test (see the note below for exceptions).
+
+If you would like to see every log for every test, run the tests, and open the browser console. If you prefer to use the browser console, and want it to mimic the freeCodeCamp console, place `console.clear()` before any other `console` calls, to clear the browser console.
+
+**Note**: `console.log`s inside functions are printed to the freeCodeCamp console whenever those functions are called, this can help debugging functions that are called during testing.
+
+✍ *First, use `console.log` to log the `output` variable. Then, use `console.clear` to clear the browser console.*
+
+<pre>
+// Open your browser console.
+let output = "Get this to log once in the freeCodeCamp console and twice in the browser console";
+// Use console.log() to print the output variable.
+console.log(output);
+// Run the tests to see the difference between the two consoles.
+
+// Now, add console.clear() before your console.log() to clear the browser console, and pass the tests.
+console.clear();
+</pre>
 
 ----
 
-****
+3. **Use typeof to Check the Type of a Variable**
+
+You can use `typeof` to check the data structure, or type, of a variable. This is useful in debugging when working with multiple data types. If you think you're adding two numbers, but one is actually a string, the results can be unexpected. Type errors can lurk in calculations or function calls. Be careful especially when you're accessing and working with external data in the form of a JavaScript Object Notation (JSON) object.
+
+Here are some examples using `typeof`:
+
+<pre>
+console.log(typeof ""); // outputs "string"
+console.log(typeof 0); // outputs "number"
+console.log(typeof []); // outputs "object"
+console.log(typeof {}); // outputs "object"
+</pre>
+
+JavaScript recognizes six primitive (immutable) data types: `Boolean`, `Null`, `Undefined`, `Number`, `String`, and `Symbol` (new with ES6) and one type for mutable items: `Object`. Note that in JavaScript, arrays are technically a type of object.
+
+✍ *Add two `console.log()` statements to check the `typeof` each of the two variables `seven` and `three` in the code.*
+
+<pre>
+let seven = 7;
+let three = "3";
+console.log(seven + three);
+// Only change code below this line
+console.log(typeof seven);
+console.log(typeof three);
+</pre>
 
 ----
 
-****
+4. **Catch Misspelled Variable and Function Names**
+
+The `console.log()` and `typeof` methods are the two primary ways to check intermediate values and types of program output. Now it's time to get into the common forms that bugs take. One syntax-level issue that fast typers can commiserate with is the humble spelling error.
+
+Transposed, missing, or mis-capitalized characters in a variable or function name will have the browser looking for an object that doesn't exist - and complain in the form of a reference error. JavaScript variable and function names are case-sensitive.
+
+✍ *Fix the two spelling errors in the code so the `netWorkingCapital` calculation works.*
+
+<pre>
+let receivables = 10;
+let payables = 8;
+let netWorkingCapital = receivables - payables;
+console.log(`Net working capital is: ${netWorkingCapital}`);
+</pre>
 
 ----
 
-****
+5. **Catch Unclosed Parentheses, Brackets, Braces and Quotes**
+
+Another syntax error to be aware of is that all opening parentheses, brackets, curly braces, and quotes have a closing pair. Forgetting a piece tends to happen when you're editing existing code and inserting items with one of the pair types. Also, take care when nesting code blocks into others, such as adding a callback function as an argument to a method.
+
+One way to avoid this mistake is as soon as the opening character is typed, immediately include the closing match, then move the cursor back between them and continue coding. Fortunately, most modern code editors generate the second half of the pair automatically.
+
+✍ *Fix the two pair errors in the code.*
+
+<pre>
+let myArray = [1, 2, 3];
+let arraySum = myArray.reduce((previous, current) =>  previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
+</pre>
 
 ----
 
-****
+6. **Catch Mixed Usage of Single and Double Quotes**
+
+JavaScript allows the use of both single (`'`) and double (`"`) quotes to declare a string. Deciding which one to use generally comes down to personal preference, with some exceptions.
+
+Having two choices is great when a string has contractions or another piece of text that's in quotes. Just be careful that you don't close the string too early, which causes a syntax error.
+
+Here are some examples of mixing quotes:
+
+<pre>
+// These are correct:
+const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
+const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
+// This is incorrect:
+const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
+</pre>
+
+Of course, it is okay to use only one style of quotes. You can escape the quotes inside the string by using the backslash (`\`) escape character:
+
+<pre>
+// Correct use of same quotes:
+const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
+</pre>
+
+✍ *Fix the string so it either uses different quotes for the `href` value, or escape the existing ones. Keep the double quote marks around the entire string.*
+
+<pre>
+let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
+console.log(innerHtml);
+</pre>
 
 ----
 
-****
+7. **Catch Use of Assignment Operator Instead of Equality Operator**
+
+Branching programs, i.e. ones that do different things if certain conditions are met, rely on `if`, `else if`, and `else` statements in JavaScript. The condition sometimes takes the form of testing whether a result is equal to a value.
+
+This logic is spoken (in English, at least) as "if x equals y, then ..." which can literally translate into code using the `=`, or assignment operator. This leads to unexpected control flow in your program.
+
+As covered in previous challenges, the assignment operator (`=`) in JavaScript assigns a value to a variable name. And the `==` and `===` operators check for equality (the triple `===` tests for strict equality, meaning both value and type are the same).
+
+The code below assigns `x` to be 2, which evaluates as `true`. Almost every value on its own in JavaScript evaluates to `true`, except what are known as the "falsy" values: `false`, `0`, `""` (an empty string), `NaN`, `undefined`, and `null`.
+ 
+<pre>
+let x = 1;
+let y = 2;
+if (x = y) {
+  // this code block will run for any value of y (unless y were originally set as a falsy)
+} else {
+  // this code block is what should run (but won't) in this example
+}
+</pre>
+
+✍ *Fix the condition so the program runs the right branch, and the appropriate value is assigned to `result`.*
+
+<pre>
+let x = 7;
+let y = 9;
+let result = "to come";
+
+if(x === y) {
+  result = "Equal!";
+} else {
+  result = "Not equal!";
+}
+
+console.log(result);
+</pre>
+
+----
+
+8. **Catch Missing Open and Closing Parenthesis After a Function Call**
+
+When a function or method doesn't take any arguments, you may forget to include the (empty) opening and closing parentheses when calling it. Often times the result of a function call is saved in a variable for other use in your code. This error can be detected by logging variable values (or their types) to the console and seeing that one is set to a function reference, instead of the expected value the function returns.
+
+The variables in the following example are different:
+
+<pre>
+function myFunction() {
+  return "You rock!";
+}
+let varOne = myFunction; // set to equal a function
+let varTwo = myFunction(); // set to equal the string "You rock!"
+</pre>
+
+✍ *Fix the code so the variable `result` is set to the value returned from calling the function `getNine`.*
+
+<pre>
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+
+let result = getNine();
+console.log(result);
+</pre>
+
+----
+
+9. **Catch Arguments Passed in the Wrong Order When Calling a Function**
+
+Continuing the discussion on calling functions, the next bug to watch out for is when a function's arguments are supplied in the incorrect order. If the arguments are different types, such as a function expecting an array and an integer, this will likely throw a runtime error. If the arguments are the same type (all integers, for example), then the logic of the code won't make sense. Make sure to supply all required arguments, in the proper order to avoid these issues.
+
+✍ *The function `raiseToPower` raises a base to an exponent. Unfortunately, it's not called properly - fix the code so the value of `power` is the expected 8.*
+
+<pre>
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
+
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
+</pre>
+
+----
+
+10. **Catch Off By One Errors When Using Indexing**
+
+*Off by one errors* (sometimes called OBOE) crop up when you're trying to target a specific index of a string or array (to slice or access a segment), or when looping over the indices of them. JavaScript indexing starts at zero, not one, which means the last index is always one less than the length of the item. If you try to access an index equal to the length, the program may throw an "index out of range" reference error or print `undefined`.
+
+When you use string or array methods that take index ranges as arguments, it helps to read the documentation and understand if they are inclusive (the item at the given index is part of what's returned) or not. Here are some examples of off by one errors:
+
+<pre>
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let len = alphabet.length;
+for (let i = 0; i <= len; i++) {
+  // loops one too many times at the end
+  console.log(alphabet[i]);
+}
+for (let j = 1; j < len; j++) {
+  // loops one too few times and misses the first character at index 0
+  console.log(alphabet[j]);
+}
+for (let k = 0; k < len; k++) {
+  // Goldilocks approves - this is just right
+  console.log(alphabet[k]);
+}
+</pre>
+
+✍ *Fix the two indexing errors in the following function so all the numbers 1 through 5 are printed to the console.*
+
+<pre>
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+  // Only change code below this line
+  for (let i = 0; i < len; i++) {
+  // Only change code above this line
+    console.log(firstFive[i]);
+  }
+}
+
+countToFive();
+</pre>
+
+----
+
+11. **Use Caution When Reinitializing Variables Inside a Loop**
+
+Sometimes it's necessary to save information, increment counters, or re-set variables within a loop. A potential issue is when variables either should be reinitialized, and aren't, or vice versa. This is particularly dangerous if you accidentally reset the variable being used for the terminal condition, causing an infinite loop.
+
+Printing variable values with each cycle of your loop by using `console.log()` can uncover buggy behavior related to resetting, or failing to reset a variable.
+
+✍ *The following function is supposed to create a two-dimensional array with `m` rows and `n` columns of zeroes. Unfortunately, it's not producing the expected output because the `row` variable isn't being reinitialized (set back to an empty array) in the outer loop. Fix the code so it returns a correct 3x2 array of zeroes, which looks like `[[0, 0], [0, 0], [0, 0]]`.*
+
+<pre>
+function zeroArray(m, n) {
+  // Creates a 2-D array with m rows and n columns of zeroes
+  let newArray = [];
+  
+  for (let i = 0; i < m; i++) {
+    let row = [];
+    // Adds the m-th row into newArray
+
+    for (let j = 0; j < n; j++) {
+      // Pushes n zeroes into the current row to create the columns
+      row.push(0);
+    }
+    // Pushes the current row, which now has n zeroes in it, to the array
+    newArray.push(row);
+  }
+  return newArray;
+}
+
+let matrix = zeroArray(3, 2);
+console.log(matrix);
+</pre>
+
+----
+
+12. **Prevent Infinite Loops with a Valid Terminal Condition**
+
+The final topic is the dreaded infinite loop. Loops are great tools when you need your program to run a code block a certain number of times or until a condition is met, but they need a terminal condition that ends the looping. Infinite loops are likely to freeze or crash the browser, and cause general program execution mayhem, which no one wants.
+
+There was an example of an infinite loop in the introduction to this section - it had no terminal condition to break out of the `while` loop inside `loopy()`. Do NOT call this function!
+
+<pre>
+function loopy() {
+  while(true) {
+    console.log("Hello, world!");
+  }
+}
+</pre>
+
+It's the programmer's job to ensure that the terminal condition, which tells the program when to break out of the loop code, is eventually reached. One error is incrementing or decrementing a counter variable in the wrong direction from the terminal condition. Another one is accidentally resetting a counter or index variable within the loop code, instead of incrementing or decrementing it.
+
+✍ *The `myFunc()` function contains an infinite loop because the terminal condition `i != 4` will never evaluate to `false` (and break the looping) - `i` will increment by 2 each pass, and jump right over 4 since `i` is odd to start. Fix the comparison operator in the terminal condition so the loop only runs for `i` less than or equal to 4.*
+
+<pre>
+function myFunc() {
+  for (let i = 1; i <= 4; i += 2) {
+    console.log("Still going!");
+  }
+}
+</pre>
 
 ----
 ### Basic Data Structures
+
+Data can be stored and accessed in many different ways, both in JavaScript and other languages. This section will teach you how to manipulate arrays, as well as access and copy the information within them. It will also teach you how to manipulate and access the data within JavaScript objects, using both dot and bracket notation. When you're done with this section, you should understand the basic properties and differences between arrays and objects, as well as how to choose which to use for a given purpose.
+
+----
+
+1. **Use an Array to Store a Collection of Data**
+
+The below is an example of the simplest implementation of an array data structure. This is known as a *one-dimensional array*, meaning it only has one level, or that it does not have any other arrays nested within it. Notice it contains *booleans*, *strings*, and *numbers*, among other valid JavaScript data types:
+
+<pre>
+let simpleArray = ['one', 2, 'three', true, false, undefined, null];
+console.log(simpleArray.length);
+// logs 7
+</pre>
+
+All arrays have a length property, which as shown above, can be very easily accessed with the syntax `Array.length`. A more complex implementation of an array can be seen below. This is known as a *multi-dimensional array*, or an array that contains other arrays. Notice that this array also contains JavaScript *objects*, which we will examine very closely in our next section, but for now, all you need to know is that arrays are also capable of storing complex objects.
+
+<pre>
+let complexArray = [
+  [
+    {
+      one: 1,
+      two: 2
+    },
+    {
+      three: 3,
+      four: 4
+    }
+  ],
+  [
+    {
+      a: "a",
+      b: "b"
+    },
+    {
+      c: "c",
+      d: "d"
+    }
+  ]
+];
+</pre>
+
+✍ *We have defined a variable called `yourArray`. Complete the statement by assigning an array of at least 5 elements in length to the `yourArray` variable. Your array should contain at least one *string*, one *number*, and one *boolean*.*
+
+<pre>
+let yourArray = [
+  
+  {
+    one: 1,
+    two: "two",
+    three: true
+  },
+  {
+    four: 4,
+    five: "five",
+    six: false
+  },
+  {
+    seven: 7,
+    eight: "eight",
+    nine: true
+  }, "test", 99, true
+ 
+]; // Change this line
+</pre>
+
+----
+
+2. **Access an Array's Contents Using Bracket Notation**
+
+The fundamental feature of any data structure is, of course, the ability to not only store data, but to be able to retrieve that data on command. So, now that we've learned how to create an array, let's begin to think about how we can access that array's information.
+
+When we define a simple array as seen below, there are 3 items in it:
+
+<pre>
+let ourArray = ["a", "b", "c"];
+</pre>
+
+In an array, each array item has an *index*. This index doubles as the position of that item in the array, and how you reference it. However, it is important to note, that JavaScript arrays are *zero-indexed*, meaning that the first element of an array is actually at the **zeroth** position, not the first. In order to retrieve an element from an array we can enclose an index in brackets and append it to the end of an array, or more commonly, to a variable which references an array object. This is known as *bracket notation*. For example, if we want to retrieve the `"a"` from `ourArray` and assign it to a variable, we can do so with the following code:
+
+<pre>
+let ourVariable = ourArray[0];
+// ourVariable equals "a"
+</pre>
+
+In addition to accessing the value associated with an index, you can also *set* an index to a value using the same notation:
+
+</pre>
+ourArray[1] = "not b anymore";
+// ourArray now equals ["a", "not b anymore", "c"];
+<pre>
+
+Using bracket notation, we have now reset the item at index 1 from `"b"`, to `"not b anymore"`.
+
+✍ *In order to complete this challenge, set the 2nd position (index `1`) of `myArray` to anything you want, besides `"b"`.*
+
+<pre>
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "Tae"
+// Only change code above this line
+console.log(myArray);
+</pre>
+
+----
+
+3. **Add Items to an Array with push() and unshift()**
+
+An array's length, like the data types it can contain, is not fixed. Arrays can be defined with a length of any number of elements, and elements can be added or removed over time; in other words, arrays are *mutable*. In this challenge, we will look at two methods with which we can programmatically modify an array: `Array.push()` and `Array.unshift()`.
+
+Both methods take one or more elements as parameters and add those elements to the array the method is being called on; the `push()` method adds elements to the end of an array, and `unshift()` adds elements to the beginning. Consider the following:
+
+<pre>
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+
+romanNumerals.unshift('XIX', 'XX');
+// now equals ['XIX', 'XX', 'XXI', 'XXII']
+
+romanNumerals.push(twentyThree);
+// now equals ['XIX', 'XX', 'XXI', 'XXII', 'XXIII']Notice that we can also pass variables, which allows us even greater flexibility in dynamically modifying our array's data.
+</pre>
+
+✍ *We have defined a function, `mixedNumbers`, which we are passing an array as an argument. Modify the function by using `push()` and `unshift()` to add `'I', 2, 'three'` to the beginning of the array and `7, 'VIII', 9` to the end so that the returned array contains representations of the numbers 1-9 in order.*
+
+<pre>
+function mixedNumbers(arr) {
+  // Only change code below this line
+  arr.unshift('I', 2, 'three');
+  arr.push(7, 'VIII', 9);
+  // Only change code above this line
+  return arr;
+}
+
+console.log(mixedNumbers(['IV', 5, 'six']));
+</pre>
+
+----
+
+4. **Remove Items from an Array with pop() and shift()**
+
+Both `push()` and `unshift()` have corresponding methods that are nearly functional opposites: `pop()` and `shift()`. As you may have guessed by now, instead of adding, `pop()` *removes* an element from the end of an array, while `shift()` removes an element from the beginning. The key difference between `pop()` and `shift()` and their cousins `push()` and `unshift()`, is that neither method takes parameters, and each only allows an array to be modified by a single element at a time.
+
+Let's take a look:
+
+<pre>
+let greetings = ['whats up?', 'hello', 'see ya!'];
+
+greetings.pop();
+// now equals ['whats up?', 'hello']
+
+greetings.shift();
+// now equals ['hello']
+</pre>
+
+We can also return the value of the removed element with either method like this:
+
+<pre>
+let popped = greetings.pop();
+// returns 'hello'
+// greetings now equals []
+</pre>
+
+✍ *We have defined a function, `popShift`, which takes an array as an argument and returns a new array. Modify the function, using `pop()` and `shift()`, to remove the first and last elements of the argument array, and assign the removed elements to their corresponding variables, so that the returned array contains their values.*
+
+<pre>
+function popShift(arr) {
+  let popped = arr.pop(); // Change this line
+  let shifted = arr.shift(); // Change this line
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
+</pre>
+
+----
+
+5. **Remove Items Using splice()**
+
+Ok, so we've learned how to remove elements from the beginning and end of arrays using `shift()` and `pop()`, but what if we want to remove an element from somewhere in the middle? Or remove more than one element at once? Well, that's where `splice()` comes in. `splice()` allows us to do just that: **remove any number of consecutive elements** from anywhere in an array.
+
+`splice()` can take up to 3 parameters, but for now, we'll focus on just the first 2. The first two parameters of `splice()` are integers which represent indexes, or positions, of the array that `splice()` is being called upon. And remember, arrays are *zero-indexed*, so to indicate the first element of an array, we would use `0`. `splice()`'s first parameter represents the index on the array from which to begin removing elements, while the second parameter indicates the number of elements to delete. For example:
+
+<pre>
+let array = ['today', 'was', 'not', 'so', 'great'];
+
+array.splice(2, 2);
+// remove 2 elements beginning with the 3rd element
+// array now equals ['today', 'was', 'great']
+</pre>
+
+`splice()` not only modifies the array it's being called on, but it also returns a new array containing the value of the removed elements:
+
+<pre>
+let array = ['I', 'am', 'feeling', 'really', 'happy'];
+
+let newArray = array.splice(3, 2);
+// newArray equals ['really', 'happy']
+</pre>
+
+✍ *We've initialized an array `arr`. Use `splice()` to remove elements from `arr`, so that it only contains elements that `sum` to the value of `10`.*
+
+<pre>
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+  arr.splice(1, 4);
+// Only change code above this line
+console.log(arr);
+</pre>
+
+----
+
+6. **Add Items Using splice()**
+
+Remember in the last challenge we mentioned that `splice()` can take up to three parameters? Well, you can use the third parameter, comprised of one or more element(s), to add to the array. This can be incredibly useful for quickly switching out an element, or a set of elements, for another.
+
+<pre>
+const numbers = [10, 11, 12, 12, 15];
+const startIndex = 3;
+const amountToDelete = 1;
+
+numbers.splice(startIndex, amountToDelete, 13, 14);
+// the second entry of 12 is removed, and we add 13 and 14 at the same index
+console.log(numbers);
+// returns [ 10, 11, 12, 13, 14, 15 ]
+</pre>
+
+Here we begin with an array of numbers. We then pass the following to `splice()`. The index at which to begin deleting elements (3), the number of elements to be deleted (1), and the elements (13, 14) to be inserted at that same index. Note that there can be any number of elements (separated by commas) following `amountToDelete`, each of which gets inserted.
+
+✍ *We have defined a function, `htmlColorNames`, which takes an array of HTML colors as an argument. Modify the function using `splice()` to remove the first two elements of the array and add `'DarkSalmon'` and `'BlanchedAlmond'` in their respective places.*
+
+<pre>
+function htmlColorNames(arr) {
+  // Only change code below this line
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+  // Only change code above this line
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+</pre>
+
+----
+
+7. **Copy Array Items Using slice()**
+
+The next method we will cover is `slice()`. Rather than modifying an array, `slice()` copies or *extracts* a given number of elements to a new array, leaving the array it is called upon untouched. `slice()` takes only 2 parameters — the first is the index at which to begin extraction, and the second is the index at which to stop extraction (extraction will occur up to, but not including the element at this index). Consider this:
+
+<pre>
+let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+
+let todaysWeather = weatherConditions.slice(1, 3);
+// todaysWeather equals ['snow', 'sleet'];
+// weatherConditions still equals ['rain', 'snow', 'sleet', 'hail', 'clear']
+</pre>
+
+In effect, we have created a new array by extracting elements from an existing array.
+
+✍ *We have defined a function, `forecast`, that takes an array as an argument. Modify the function using `slice()` to extract information from the argument array and return a new array that contains the elements `'warm'` and `'sunny'`.*
+
+<pre>
+function forecast(arr) {
+  // Only change code below this line
+
+  return arr.slice(2, 4);
+}
+
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+</pre>
+
+----
+
+8. **Copy an Array with the Spread Operator**
+
+While `slice()` allows us to be selective about what elements of an array to copy, among several other useful tasks, ES6's new *spread operator* allows us to easily copy *all* of an array's elements, in order, with a simple and highly readable syntax. The spread syntax simply looks like this: `...`
+
+In practice, we can use the spread operator to copy an array like so:
+
+<pre>
+let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+// thatArray equals [true, true, undefined, false, null]
+// thisArray remains unchanged, and is identical to thatArray
+</pre>
+
+✍ *We have defined a function, `copyMachine` which takes `arr` (an array) and `num` (a number) as arguments. The function is supposed to return a new array made up of `num` copies of `arr`. We have done most of the work for you, but it doesn't work quite right yet. Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!).*
+
+<pre>
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // Only change code below this line
+  newArr.push([...arr])
+    // Only change code above this line
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));
+</pre>
+
+----
+
+9. **Combine Arrays with the Spread Operator**
+
+Another huge advantage of the *spread* operator, is the ability to combine arrays, or to insert all the elements of one array into another, at any index. With more traditional syntaxes, we can concatenate arrays, but this only allows us to combine arrays at the end of one, and at the start of another. Spread syntax makes the following operation extremely simple:
+
+<pre>
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+// thatArray now equals ['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']
+</pre>
+
+Using spread syntax, we have just achieved an operation that would have been more complex and more verbose had we used traditional methods.
+
+✍ *We have defined a function `spreadOut` that returns the variable `sentence`. Modify the function using the spread operator so that it returns the array `['learning', 'to', 'code', 'is', 'fun']`.*
+
+<pre>
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
+</pre>
+
+----
+
+10. **Check For The Presence of an Element With indexOf()**
+
+Since arrays can be changed, or mutated, at any time, there's no guarantee about where a particular piece of data will be on a given array, or if that element even still exists. Luckily, JavaScript provides us with another built-in method, `indexOf()`, that allows us to quickly and easily check for the presence of an element on an array. `indexOf()` takes an element as a parameter, and when called, it returns the position, or index, of that element, or `-1` if the element does not exist on the array.
+
+For example:
+
+<pre>
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+fruits.indexOf('dates'); // returns -1
+fruits.indexOf('oranges'); // returns 2
+fruits.indexOf('pears'); // returns 1, the first index at which the element exists
+</pre>
+
+✍ *`indexOf()` can be incredibly useful for quickly checking for the presence of an element on an array. We have defined a function, `quickCheck`, that takes an array and an element as arguments. Modify the function using `indexOf()` so that it returns `true` if the passed element exists on the array, and `false` if it does not.*
+
+<pre>
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  if (arr.indexOf(elem) == -1) {
+    return false;
+  } 
+    return true;
+  
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+</pre>
+
+----
+
+11. **Iterate Through All an Array's Items Using For Loops**
+
+Sometimes when working with arrays, it is very handy to be able to iterate through each item to find one or more elements that we might need, or to manipulate an array based on which data items meet a certain set of criteria. JavaScript offers several built in methods that each iterate over arrays in slightly different ways to achieve different results (such as `every()`, `forEach()`, `map()`, etc.), however the technique which is most flexible and offers us the greatest amount of control is a simple `for` loop.
+
+Consider the following:
+
+<pre>
+function greaterThanTen(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
+// returns [12, 14, 80]
+</pre>
+
+Using a `for` loop, this function iterates through and accesses each element of the array, and subjects it to a simple test that we have created. In this way, we have easily and programmatically determined which data items are greater than `10`, and returned a new array containing those items.
+
+✍ *We have defined a function, `filteredArray`, which takes `arr`, a nested array, and `elem` as arguments, and returns a new array. `elem` represents an element that may or may not be present on one or more of the arrays nested within `arr`. Modify the function, using a `for` loop, to return a filtered version of the passed array such that any array nested within `arr` containing `elem` has been removed.*
+
+<pre>
+
+</pre>
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
 
 ----
 ### Basic Algorithm Scripting
