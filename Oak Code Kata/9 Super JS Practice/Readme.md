@@ -6435,50 +6435,187 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 ----
 
-11. **Iterate Through All an Array's Items Using For Loops**
+11. **Create complex multi-dimensional arrays**
 
-Sometimes when working with arrays, it is very handy to be able to iterate through each item to find one or more elements that we might need, or to manipulate an array based on which data items meet a certain set of criteria. JavaScript offers several built in methods that each iterate over arrays in slightly different ways to achieve different results (such as `every()`, `forEach()`, `map()`, etc.), however the technique which is most flexible and offers us the greatest amount of control is a simple `for` loop.
+Awesome! You have just learned a ton about arrays! This has been a fairly high level overview, and there is plenty more to learn about working with arrays, much of which you will see in later sections. But before moving on to looking at *Objects*, lets take one more look, and see how arrays can become a bit more complex than what we have seen in previous challenges.
 
-Consider the following:
+One of the most powerful features when thinking of arrays as data structures, is that arrays can contain, or even be completely made up of other arrays. We have seen arrays that contain arrays in previous challenges, but fairly simple ones. However, arrays can contain an infinite depth of arrays that can contain other arrays, each with their own arbitrary levels of depth, and so on. In this way, an array can very quickly become very complex data structure, known as a *multi-dimensional*, or nested array. Consider the following example:
 
 <pre>
-function greaterThanTen(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 10) {
-      newArr.push(arr[i]);
+let nestedArray = [ // top, or first level - the outer most array
+  ['deep'], // an array within an array, 2 levels of depth
+  [
+    ['deeper'], ['deeper'] // 2 arrays nested 3 levels deep
+  ],
+  [
+    [
+      ['deepest'], ['deepest'] // 2 arrays nested 4 levels deep
+    ],
+    [
+      [
+        ['deepest-est?'] // an array nested 5 levels deep
+      ]
+    ]
+  ]
+];
+</pre>
+
+While this example may seem convoluted, this level of complexity is not unheard of, or even unusual, when dealing with large amounts of data. However, we can still very easily access the deepest levels of an array this complex with bracket notation:
+
+<pre>
+console.log(nestedArray[2][1][0][0][0]);
+// logs: deepest-est?
+</pre>
+
+And now that we know where that piece of data is, we can reset it if we need to:
+
+<pre>
+nestedArray[2][1][0][0][0] = 'deeper still';
+
+console.log(nestedArray[2][1][0][0][0]);
+// now logs: deeper still
+</pre>
+
+✍ *We have defined a variable, `myNestedArray`, set equal to an array. Modify `myNestedArray`, using any combination of strings, numbers, and booleans for data elements, so that it has exactly five levels of depth (remember, the outer-most array is level 1). Somewhere on the third level, include the string `'deep'`, on the fourth level, include the string `'deeper'`, and on the fifth level, include the string `'deepest'`.*
+
+<pre>
+let myNestedArray = [
+  // Only change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array', ['deep']],
+  ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]]
+  // Only change code above this line
+];
+</pre>
+
+----
+
+12. **Add Key-Value Pairs to JavaScript Objects**
+
+At their most basic, objects are just collections of *key-value* pairs. In other words, they are pieces of data (*values*) mapped to unique identifiers called *properties* (*keys*). Take a look at an example:
+
+<pre>
+const tekkenCharacter = {
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true
+};
+</pre>
+
+The above code defines a Tekken video game character object called `tekkenCharacter`. It has three properties, each of which map to a specific value. If you want to add an additional property, such as "origin", it can be done by assigning `origin` to the object:
+
+<pre>
+tekkenCharacter.origin = 'South Korea';
+</pre>
+
+This uses dot notation. If you were to observe the `tekkenCharacter` object, it will now include the `origin` property. Hwoarang also had distinct orange hair. You can add this property with bracket notation by doing:
+
+<pre>
+tekkenCharacter['hair color'] = 'dyed orange';
+</pre>
+
+Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. In the above case, the property is enclosed in quotes to denote it as a string and will be added exactly as shown. Without quotes, it will be evaluated as a variable and the name of the property will be whatever value the variable is. Here's an example with a variable:
+
+<pre>
+const eyes = 'eye color';
+
+tekkenCharacter[eyes] = 'brown';
+</pre>
+
+After adding all the examples, the object will look like this:
+
+<pre>
+{
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true,
+  origin: 'South Korea',
+  'hair color': 'dyed orange',
+  'eye color': 'brown'
+};
+</pre>
+
+✍ *A `foods` object has been created with three entries. Using the syntax of your choice, add three more entries to it: `bananas` with a value of `13`, `grapes` with a value of `35`, and `strawberries` with a value of `27`.*
+
+<pre>
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Only change code below this line
+  foods.bananas = 13;
+  foods.grapes = 35;
+  foods.strawberries = 27;
+// Only change code above this line
+
+console.log(foods);
+</pre>
+
+----
+
+13. **Modify an Object Nested Within an Object**
+
+Now let's take a look at a slightly more complex object. Object properties can be nested to an arbitrary depth, and their values can be any type of data supported by JavaScript, including arrays and even other objects. Consider the following:
+
+<pre>
+let nestedObject = {
+  id: 28802695164,
+  date: 'December 31, 2016',
+  data: {
+    totalUsers: 99,
+    online: 80,
+    onlineStatus: {
+      active: 67,
+      away: 13,
+      busy: 8
     }
   }
-  return newArr;
-}
-
-greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
-// returns [12, 14, 80]
+};
 </pre>
 
-Using a `for` loop, this function iterates through and accesses each element of the array, and subjects it to a simple test that we have created. In this way, we have easily and programmatically determined which data items are greater than `10`, and returned a new array containing those items.
-
-✍ *We have defined a function, `filteredArray`, which takes `arr`, a nested array, and `elem` as arguments, and returns a new array. `elem` represents an element that may or may not be present on one or more of the arrays nested within `arr`. Modify the function, using a `for` loop, to return a filtered version of the passed array such that any array nested within `arr` containing `elem` has been removed.*
+`nestedObject` has three properties: `id` (value is a number), `date` (value is a string), and `data` (value is an object with its nested structure). While structures can quickly become complex, we can still use the same notations to access the information we need. To assign the value `10` to the `busy` property of the nested `onlineStatus` object, we use dot notation to reference the property:
 
 <pre>
+nestedObject.data.onlineStatus.busy = 10;
+</pre>
 
+Here we've defined an object `userActivity`, which includes another object nested within it. Set the value of the `online` key to `45`.
+
+<pre>
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Only change code below this line
+  userActivity.data.online = 45;
+// Only change code above this line
+
+console.log(userActivity);
 </pre>
 
 ----
 
-****
+14. **Access Property Names with Bracket Notation**
 
-----
+In the first object challenge we mentioned the use of bracket notation as a way to access property values using the evaluation of a variable. For instance, imagine that our foods object is being used in a program for a supermarket cash register. We have some function that sets the selectedFood and we want to check our foods object for the presence of that food. This might look like:
 
-****
+let selectedFood = getCurrentFood(scannedItem);
+let inventory = foods[selectedFood];
+This code will evaluate the value stored in the selectedFood variable and return the value of that key in the foods object, or undefined if it is not present. Bracket notation is very useful because sometimes object properties are not known before runtime or we need to access them in a more dynamic way.
 
-----
+We've defined a function, checkInventory, which receives a scanned item as an argument. Return the current value of the scannedItem key in the foods object. You can assume that only valid keys will be provided as an argument to checkInventory.
 
-****
-
-----
-
-****
+<pre>
+</pre>
 
 ----
 
