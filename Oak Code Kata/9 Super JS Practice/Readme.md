@@ -7101,7 +7101,156 @@ Begin inserting elements at index `n` of the second array.
 Return the resulting array. The input arrays should remain the same after the function runs.
 
 <pre>
+function frankenSplice(arr1, arr2, n) {
+  let localArray = arr2.slice();
+  for (let i = 0; i < arr1.length; i++) {
+    localArray.splice(n, 0, arr1[i]);
+    n++;
+  }
+  return localArray;
+}
 
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+</pre>
+
+----
+
+13. **Falsy Bouncer**
+
+Remove all falsy values from an array.
+
+Falsy values in JavaScript are `false`, `null`, `0`, `""`, `undefined`, and `NaN`.
+
+Hint: Try converting each value to a Boolean.
+
+<pre>
+function bouncer(arr) {
+  let newArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i]);
+  }
+  return newArray;
+}
+
+bouncer([7, "ate", "", false, 9]);
+</pre>
+
+----
+
+14. **Where do I Belong**
+
+Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
+
+For example, `getIndexToIns([1,2,3,4], 1.5)` should return `1` because it is greater than `1` (index 0), but less than `2` (index 1).
+
+Likewise, `getIndexToIns([20,3,5], 19)` should return `2` because once the array has been sorted it will look like `[3,5,20]` and `19` is less than `20` (index 2) and greater than `5` (index 1).
+
+<pre>
+function getIndexToIns(arr, num) {
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+
+  for (var a = 0; a < arr.length; a++) {
+    if (arr[a] >= num) return a;
+  }
+  return arr.length;
+}
+
+getIndexToIns([40, 60], 50);
+</pre>
+
+----
+
+15. **Mutations**
+
+Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+
+For example, `["hello", "Hello"]`, should return true because all of the letters in the second string are present in the first, ignoring case.
+
+The arguments `["hello", "hey"]` should return false because the string "hello" does not contain a "y".
+
+Lastly, `["Alien", "line"]`, should return true because all of the letters in "line" are present in "Alien".
+
+<pre>
+function mutation(arr) {
+  var test = arr[1].toLowerCase();
+  var target = arr[0].toLowerCase();
+  for (var i = 0; i < test.length; i++) {
+    if (target.indexOf(test[i]) < 0) return false;
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
+</pre>
+
+----
+
+16. **Chunky Monkey**
+
+Write a function that splits an array (first argument) into groups the length of `size` (second argument) and returns them as a two-dimensional array.
+
+<pre>
+function chunkArrayInGroups(arr, size) {
+  var temp = [];
+  var result = [];
+
+  for (var a = 0; a < arr.length; a++) {
+    if (a % size !== size - 1) temp.push(arr[a]);
+  else {
+    temp.push(arr[a]);
+    result.push(temp);
+    temp = [];
+    }
+  }
+  if (temp.length !== 0) result.push(temp);
+  return result;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+</pre>
+
+----
+
+### Object Oriented Programming
+
+At its core, software development solves a problem or achieves a result with computation. The software development process first defines a problem, then presents a solution. Object oriented programming is one of several major approaches to the software development process.
+
+As its name implies, object oriented programming organizes code into object definitions. These are sometimes called classes, and they group together data with related behavior. The data is an object's attributes, and the behavior (or functions) are methods.
+
+The object structure makes it flexible within a program. Objects can transfer information by calling and passing data to another object's methods. Also, new classes can receive, or inherit, all the features from a base or parent class. This helps to reduce repeated code.
+
+Your choice of programming approach depends on a few factors. These include the type of problem, as well as how you want to structure your data and algorithms. This section covers object oriented programming principles in JavaScript.
+
+----
+
+1. **Create a Basic JavaScript Object**
+
+Think about things people see every day, like cars, shops, and birds. These are all *objects*: tangible things people can observe and interact with.
+
+What are some qualities of these objects? A car has wheels. Shops sell items. Birds have wings.
+
+These qualities, or *properties*, define what makes up an object. Note that similar objects share the same properties, but may have different values for those properties. For example, all cars have wheels, but not all cars have the same number of wheels.
+
+Objects in JavaScript are used to model real-world objects, giving them properties and behavior just like their real-world counterparts. Here's an example using these concepts to create a `duck` object:
+
+<pre>
+let duck = {
+  name: "Aflac",
+  numLegs: 2
+};
+</pre>
+
+This `duck` object has two property/value pairs: a `name` of "Aflac" and a `numLegs` of 2.
+
+✍ *Create a `dog` object with `name` and `numLegs` properties, and set them to a string and a number, respectively.*
+
+<pre>
+let dog = {
+  name: "Tae",
+  numLegs: 4
+};
 </pre>
 
 ----
@@ -7118,8 +7267,25 @@ Return the resulting array. The input arrays should remain the same after the fu
 
 ----
 
+****
+
 ----
-### Object Oriented Programming
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
 
 ----
 ### Functional Programming
