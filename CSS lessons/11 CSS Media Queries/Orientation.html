@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation: Portrait/Landscape</title>
+    <link rel="stylesheet" href="Orientation.css">
+</head>
+
+<body>
+    <h1>Orientation: Portrait/Landscape</h1>
+    <p>Media queries can also be used to change layout of a page depending on the orientation of the browser.</p>
+    <p>You can have a set of CSS properties that will only apply when the browser window is winder than its height, a so
+        called "Landscape" orientation:</p>
+
+    <p>Resize the browser window. When the width of this document is larger than the height, the background color is
+        "lightblue", otherwise it is "lightgreen".</p>
+    <p>@media only screen and (orientation: landscape) {
+        body {
+        background-color: lightblue;}
+        }</p>
+    <hr>
+    <h4>Hide Element With Media Queries</h4>
+    <p>Another common use of media queries, is to hide elements on different screen sizes:</p>
+
+    <div class="example">I will disappear when the browser's width is 600px or less!</div>
+
+    <p>When the browser's width is 600px wide or less, hide the div element. Resize the browser window to see the
+        effect.</p>
+    <hr>
+    <h4>Change Font Size With Media Queries</h4>
+    <p>Change Font Size With Media Queries</p>
+    <p>You can also use media queries to change the font size of an element on different screen sizes:</p>
+
+    <div class="example2">Example DIV.</div>
+
+    <p>When the browser's width is 600px wide or less, set the font-size of DIV to 30px. When it is 601px or wider, set
+        the font-size to 80px. Resize the browser window to see the effect.</p>
+
+</body>
+
+</html>

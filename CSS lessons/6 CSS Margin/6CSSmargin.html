@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6CSS Margin</title>
+</head>
+
+<body>
+    <h1>CSS Margins</h1>
+    <p>The CSS margin properties are used to create space around elements, outside of any defied borders. <br><br>
+        with CSS, you have full control over the margins. There are properties for setting the margin for each side of
+        an element (top, right, bottom, and left).</p>
+
+    <h4>Margin - Individual Sides</h4>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+
+    <p>All the margin properties can have the following values:</p>
+
+    <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - specifies a margin in px, pt, cm, etc.</li>
+        <li>% - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+
+    <p><b>Tip:</b> Negative values are allowed.</p>
+
+    <p><u>exp.</u> set different margins for four sides of a p element:</p>
+
+    <style>
+        div.test1 {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: lightblue;
+        }
+    </style>
+
+    <div class="test1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px,
+        and a left margin of 80px.</div>
+
+    <h4>Margin - Shorthand Property</h4>
+    <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+    <p>The margin property is a shorthand property for the following individual margin properties:</p>
+
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+
+    <p>So, here is how it works:</p>
+
+    <p><u>If the margin property has 4 values:</u></p>
+    <ul>
+        <li>margin: 25px 50px 75px 100px;</li>
+        <ul>
+            <li>top margin is 25px</li>
+            <li>right margin is 50px</li>
+            <li>bottom margin is 75px</li>
+            <li>left margin is 100px</li>
+        </ul>
+    </ul>
+
+    <style>
+        div.test2 {
+            border: 1px solid black;
+            margin: 25px 50px 75px 100px;
+            background-color: lightblue;
+        }
+    </style>
+
+    <p>The margin shorthand property - 4 values</p>
+    <p><u>exp.</u> use the margin shorthand property with 4 values:</p>
+
+    <div class="test2">
+        This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+        100px.
+    </div>
+
+    <p><u>If the margin property has 3 values:</u></p>
+    <ul>
+        <li>margin: 25px 50px 75px;</li>
+        <ul>
+            <li>top margin is 25px</li>
+            <li>right and left margins are 50px</li>
+            <li>bottom margin is 75px</li>
+        </ul>
+    </ul>
+
+
+    <style>
+        div.test3 {
+            border: 1px solid black;
+            margin: 25px 50px 75px;
+            background-color: lightblue;
+        }
+    </style>
+
+    <p>The margin shorthand property - 3 values</p>
+    <p><u>exp.</u> use the margin shorthand property with 3 values:</p>
+
+    <div class="test3">This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.</div>
+
+    <p><u>If the margin property has 2 values:</u></p>
+    <ul>
+        <li>margin: 25px 50px;</li>
+        <ul>
+            <li>top and bottom margins are 25px</li>
+            <li>right and left margins are 50px</li>
+        </ul>
+    </ul>
+
+    <style>
+        div.test4 {
+            border: 1px solid black;
+            margin: 25px 50px;
+            background-color: lightblue;
+        }
+    </style>
+
+    <p>The margin shorthand property - 2 values</p>
+    <p><u>exp.</u> use the margin shorthand property with 2 values:</p>
+ 
+    <div class="test4">This div element has a top and bottom margin of 25px, and a right and left margin of 50px.</div>
+
+    <p><u>If the margin property has 1 value:</u></p>
+    <ul>
+        <li>margin: 25px;</li>
+        <ul>
+            <li>all four are 25px</li>
+        </ul>
+    </ul>
+
+    <style>
+        div.test5 {
+            border: 1px solid black;
+            margin: 25px;
+            background-color: lightblue;
+        }
+    </style>
+
+<div class="test5">This div element has a top, bottom, left, and right margin of 25px.</div>
+
+<h4>The auto Value</h4>
+
+<p>You can set the margin property to auto to horizontally center the element within its container.</p>
+
+<p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+
+<p><u>exp.</u> use margin: auto:</p>
+
+<style>
+    div.test6 {
+        width:300px;
+        margin: auto;
+        border: 1px solid red;
+    }
+</style>
+
+<div class="test6">
+    This div will be horizontally centered because it has margin: auto;
+</div>
+
+<h4>The inherit Value</h4>
+<p>This example lets the left margin of the p class="ex1" element be inherited from the parent element (div):</p>
+
+<p><u>exp.</u> let the left margin be inherited from the parent element:</p>
+
+<style>
+    div.test7 {
+        border: 1px solid red;
+        margin-left: 100px;
+    }
+
+    p.ex1 {
+        margin-left: inherit;
+    }
+</style>
+
+<p>Use of the inherit value</p>
+<p>Let the left margin be inherited from the parent element:</p>
+
+<div class="test7">
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+
+<h4>CSS Margin Collapse</h4>
+<p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.</p>
+<p>This does not happen on left and right margins! Only top and bottom margins!</p>
+<p>Look at the following example:</p>
+
+<p>In the example above, the h1 element has a bottom margin of 50px and the h2 element has a top margin set to 20px.</p>
+<p>Common sense would seem to suggest that the vertical margin between the h1 and the h2 would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.</p>
+
+<style>
+    p.margin1 {
+        margin: 0 0 50px 0;
+        background-color: greenyellow;
+    }
+
+    p.margin2 {
+        margin: 20px 0 0 0;
+        background-color: greenyellow;
+    }
+</style>
+
+<p class="margin1">Margin 1</p>
+<p class="margin2">Margin 2</p>
+
+<h4><u>CSS Padding</u></h4>
+<p>The CSS padding are used to generate space around an element's content, inside of any defined borders.</p>
+
+<p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+
+<p><u>exp.</u> style="padding: 70px; </p>
+
+<table style="margin: auto;">
+    <tr>
+        <td style="padding: 70px; border: 1px solid green;">This element has a padding of 70px.</td>
+    </tr>
+</table>
+
+<h4>Padding - Individual Sides</h4>
+<p>CSS has properties for specifying the padding for each side of an element:</p>
+
+<ul>
+    <li>padding-top</li>
+    <li>padding-right</li>
+    <li>padding-bottom</li>
+    <li>padding-left</li>
+</ul>
+
+<p>All the padding properties can have the following values:</p>
+
+<ul>
+    <li>length - specifies a padding in px, pt, cm, etc.</li>
+    <li>% - specifies a padding in % of the width of the containing element</li>
+    <li>inherit - specifies that the padding should be inherited from the parent element</li>
+</ul>
+
+<p><b>Note:</b> Negative values are <u>not</u> allowed</p>
+
+<p><u>exp.</u> div.padding1 {
+    border: 1px solid green;
+    background-color: palegoldenrod;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+} </p>
+
+<style>
+    div.padding1 {
+        border: 1px solid green;
+        background-color: palegoldenrod;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+    }
+</style>
+
+<div class="padding1">
+    This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.
+</div>
+
+<h4>Padding - Shorthand Property</h4>
+<p>To shorten the code, it is possible all the padding properties in one property.</p>
+
+<p>The padding property is a shorthand property for the following individual padding properties:</p>
+
+<ul>
+    <li>padding-top</li>
+    <li>padding-right</li>
+    <li>padding-bottom</li>
+    <li>padding-left</li>
+</ul>
+
+<p>So, here is how it works:</p>
+<p>If the padding property has four values:</p>
+
+<ul>
+    <li>Padding: 25px 50px 75px 100px;</li>
+    <ul>
+        <li>top padding is 25px</li>
+        <li>right padding is 50px</li>
+        <li>bottom padding is 75px</li>
+        <li>left padding is 100px</li>
+    </ul>
+</ul>
+
+<p><u>exp.</u> div.padding2 {
+    border: 1px solid green;
+    background-color: palegoldenrod;
+    padding: 25px 50px 75px 100px;
+} </p>
+
+<style>
+    div.padding2 {
+        border: 1px solid green;
+        background-color: palegoldenrod;
+        padding: 25px 50px 75px 100px;
+    }
+</style>
+
+<div class="padding2">
+    This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.
+</div>
+
+<h4>Padding and Element Width</h4>
+<p>The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (<a href="https://www.w3schools.com/css/css_boxmodel.asp"> the box model </a>).</p>
+
+<p>So, if an element has a specifies width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+
+<p><u>exp.</u> here, the div element is given a width of 300px. However, the actual width of the div element will 350px (300px + 25px of left padding + 25px of right padding):</p>
+
+<style>
+    div.padding3 {
+        width: 300px;
+        background-color: palegoldenrod;
+        margin: auto;
+    }
+
+    div.padding4 {
+        width: 300px;
+        padding: 25px;
+        background-color:palegreen;
+        margin: auto;
+    }
+</style>
+
+<div class="padding3">
+    This div is 300px wide.
+</div>
+
+<div class="padding4">
+    The width of this div is 350px, even though it is defined as 300px in the CSS.
+</div>
+
+<h4><u>CSS Box Model</u></h4>
+<p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+<p>THe CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+
+<img src="CSS box.png" alt="CSS box" width="100%">
+
+<p>Explanation of the different parts:</p>
+<ul>
+    <li><b>Content</b> - The content of the box, where text and image appear</li>
+    <li><b>Padding</b> - Clears an area around the content. The padding is transparent</li>
+    <li><b>Border</b> - A border that goes around the padding and content</li>
+    <li><b>Margin</b> - Cleans an area outside the border. The margin is transparent</li>
+</ul>
+<p>The box model allows us to add a border around elements, and to define space between elements.</p>
+
+<p><u>exp.</u> div.padding5 {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+} </p>
+
+<style>
+    div.padding5 {
+        background-color: silver;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+    }
+</style>
+
+<div class="padding5">
+    This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+</div>
+
+</body>
+
+</html>

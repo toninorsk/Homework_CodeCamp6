@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CSS Units</h1>
+
+    <P>CSS has several different units for expressing a length.
+    Many CSS properties take "length" values, such as width, margin, padding, font-size.
+    Length is a number followed by a length unit, such as 10px, 2em, etc.
+    <p>A whitespace cannot appear between the number and the unit.
+    However, if the value is o, the unit can be omitted.
+    For some CSS properties, negative lengths are allowed.</p>
+    <p>There are 2 types of length units: absolute and relative.</p>
+
+    <h2>Absolute Lengths</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Unit</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cm</td>
+                <td>centimeters</td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>millimeters</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>inches (1in = 96px = 2.54cm)</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>pixels (1px = 1/96 of 1in)</td>
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td>points (1pt = 1/72 of 1in)</td>
+            </tr>
+            <tr>
+                <td>pc</td>
+                <td>picas (1pc = 12pt)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Relative Lengths</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Unit</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>em</td>
+                <td>relative to the font-size of the element (2em means 2 times the size of the current font</td>
+            </tr>
+            <tr>
+                <td>ex</td>
+                <td>relative to the x-height of the current font (rarely used)</td>
+            </tr>
+            <tr>
+                <td>ch</td>
+                <td>relative to width of the "0" (zero)</td>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>relative to font-size of the root element</td>
+            </tr>
+            <tr>
+                <td>vm</td>
+                <td>relative to 1% of the width of the viewport</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>relative to 1% of the height of the viewport</td>
+            </tr>
+            <tr>
+                <td>vmin</td>
+                <td>relative to 1% of viewport's smaller dimension</td>
+            </tr>
+            <tr>
+                <td>vmax</td>
+                <td>relative to 1% of viewport's larger dimension</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>relative to the parent element</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h5>Test Area</h5>
+
+    <style>
+        /* h1 {font-size: 30px;}
+        h2 {font-size: 20px;} */
+    </style>
+
+    <h1>Test</h1>
+
+    <h2>Test</h2>
+
+    <style>
+        p {
+            font-size: 16px;
+            line-height: 2em;
+        }
+
+        div {
+            font-size: 30px;
+            border: 1px solid red;
+        }
+
+        span {
+            font-size: 0.5em;
+            color: palevioletred;
+        }
+    </style>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem nemo vero culpa nobis. Aliquam, distinctio
+        odio consectetur cupiditate perferendis id tempore magni alias cumque amet quod.</p>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> est necessitatibus ut at harum iste, quod quae laboriosam placeat</span>, explicabo distinctio repudiandae itaque labore voluptatum sit esse eveniet. Explicabo, quis!</div>
+
+</body>
+
+</html>

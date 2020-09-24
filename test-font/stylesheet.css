@@ -1,0 +1,31 @@
+@font-face {
+    src: url(font/Kanit-Italic.ttf);
+    font-family: Kanit-Italic;
+
+}
+
+@font-face {
+    src: url(font/Monoton-Regular.ttf);
+    font-family: Monoton-Reg;
+}
+
+
+
+.testFontBanger {
+    font-family: 'Bangers', cursive;
+    color: darkcyan;
+    text-decoration: underline wavy darkorchid;
+}
+
+
+.testFontSatisfy {
+    font-family: 'Satisfy', cursive;
+    color: gold;
+    text-decoration: underline double
+     lightcoral;
+}
+
+
+#testIcon {
+    list-style-image: url(heart.png);
+}

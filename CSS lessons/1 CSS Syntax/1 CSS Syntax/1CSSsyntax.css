@@ -1,0 +1,85 @@
+selector {
+    property: value;
+    property: value;
+    property: value;
+}
+.heading{
+    color: red;
+}
+
+.test1{
+    color: blueviolet;
+}
+
+#test2{
+    color: green;
+}
+
+
+input:checked{
+    width: 15px;
+    height: 15px;
+}
+
+div:hover{
+    /* color: palevioletred; */
+}
+
+#tagH div {
+    /* color: greenyellow; */
+}
+
+#tagH span {
+    /* color: indianred */
+}
+#tagH > div {
+    /* color: orchid; */
+}
+
+p span {
+    /* color: darkgoldenrod; */
+}
+
+p > span {
+    /* color: aqua; */
+}
+
+p div {
+    /* color: red; */
+}
+
+.plusCombinators + div {
+    /* color: brown; */
+}
+
+.plusCombinators ~ div {
+    /* color: burlywood; */
+}
+
+input[type] {
+    /* color: blue; */
+}
+
+input[type="password"]{
+    /* background-color: silver; */
+}
+
+input[title~="this"] {
+    /* background-color: darksalmon; */
+}
+
+input[title^="input"] {
+    /* background-color: forestgreen; */
+}
+
+input[tile|="input"] {
+    background-color: black;
+}
+
+input[title$="Form"]{
+    /* background-color: teal; */
+}
+
+input[title*="this"]{
+    /* background-color: hotpink; */
+} 

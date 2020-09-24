@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Kanit;
+    src: url(Kanit);
+}
+
+#kanit {
+    font-family: Kanit; 
+    color: brown; 
+    text-decoration: underline wavy coral;
+}
+
+#test-font-bangers {font-family: 'Bangers', cursive;}
+
+#list-style-image {list-style-image: url(https://images.app.goo.gl/FEhgp19no5MmgVZz6);}

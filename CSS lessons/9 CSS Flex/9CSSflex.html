@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9CSS Flex Box</title>
+    <link rel="stylesheet" href="9CSSflex.css">
+</head>
+
+<body>
+    <h1>CSS Flexbox</h1>
+
+    <h4>CSS Flexbox Layout Module</h4>
+    <p>Before the Flexbox Layout module, there were four layout modes:</p>
+    <ul>
+        <li>Block, for sections in a webpage</li>
+        <li>Inline, for text</li>
+        <li>Table, for two-dimensional table data</li>
+        <li>Positioned, for explicit position of an element</li>
+    </ul>
+
+    <p>The Flexible Box Module, makes it easier to design flexible responsive layout structure without using float or
+        positioning.</p>
+
+    <hr>
+
+    <h4><u>Flexbox Elements</u></h4>
+    <p>To start using the Flexbox model, you need to first define a flex container.</p>
+
+    <div class="flex-container0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p>A Flexible Layout must have a parent element with the <i>display</i> property set to <i>flex</i>.</p>
+    <p>Direct child element(s) of the flexible container automatically becomes flexible items. </p>
+    <hr>
+    <h4><u>Parent Element (Container)</u></h4>
+    <p>The flex container becomes flexible by setting the display property to <em>flex</em>:</p>
+    <p><u>exp.</u> .flex-container {display: flex;} </p>
+    <p>The flex container properties are:</p>
+
+    <ul>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+        <li>flex-flow</li>
+        <li>justify-content</li>
+        <li>align-items</li>
+        <li>align-content</li>
+    </ul>
+    <hr>
+    <h4><u>The flex-direction Property</u></h4>
+    <p>The flex-direction property defines in which direction the container wants to stack the flex items.</p>
+
+    <p><u>exp.</u> The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+    <p>.flex-container {
+        display: flex;
+        flex-direction: column;}</p>
+
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "flex-direction: column-reverse;" stacks the flex items vertically (but from bottom to top):</p>
+    <p>.flex-container {
+        display: flex;
+        flex-direction: column-reverse;}</p>
+
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "flex-direction: row;" stacks the flex items horizontally (from left to right):</p>
+    <p>.flex-container {
+        display: flex;
+        flex-direction: row;}</p>
+
+    <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "flex-direction: row-reverse;" stacks the flex items horizontally (but from right to left):</p>
+    <p>.flex-container {
+        display: flex;
+        flex-direction: row-reverse;}</p>
+
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+    <h4><u>The flex-wrap Property</u></h4>
+    <p>The flex-wrap property specifies whether the flex items should wrap or not.</p>
+    <p>The example below have 12 flex items, to better demonstrate the flex-wrap property.</p>
+
+    <p><u>exp.</u> The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+    <p>.flex-container {
+        display: flex;
+        flex-wrap: wrap;}</p>
+
+    <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>Try resizing the browser window.</p>
+
+    <p><u>exp.</u> The "flex-wrap: nowrap;" specifies that the flex items will not wrap (this is default):</p>
+    <p>.flex-container {
+        display: flex;
+        flex-wrap: nowrap;}</p>
+
+    <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>Try resizing the browser window.</p>
+
+    <p><u>exp.</u> The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if necessary, in reverse
+        order:</p>
+    <p>.flex-container {
+        display: flex;
+        flex-wrap: wrap-reverse;}</p>
+
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <br>
+    <hr>
+    <h4><u>The flex-flow Property</u></h4>
+    <p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+    <p><u>exp.</u> .flex-container {
+        display: flex;
+        flex-flow: row wrap;}</p>
+
+    <div class="flex-container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>Try resizing the browser window.</p>
+    <hr>
+    <h4><u>The justify-content Property</u></h4>
+    <p>The justify-content property is used to align the flex items:</p>
+    <p><u>exp.</u> The "justify-content: center;" aligns the flex items at the center of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        justify-content: center;}</p>
+
+    <div class="flex-container9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is
+        default):</p>
+    <p>.flex-container {
+        display: flex;
+        justify-content: flex-start;}</p>
+
+    <div class="flex-container10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp. </u> The "justify-content: flex-end;" aligns the flex items at the end of the container:</p>
+    <P>.flex-container {
+        display: flex;
+        justify-content: flex-end;}</P>
+
+    <div class="flex-container11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p>The "justify-content: space-around;" displays the flex items with space before, between, and after the lines:</p>
+    <p>.flex-container {
+        display: flex;
+        justify-content: space-around;}</p>
+
+    <div class="flex-container12">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "justify-content: space-between;" displays the flex items with space between the lines:</p>
+    <p>.flex-container {
+        display: flex;
+        justify-content: space-between;}</p>
+
+    <div class="flex-container13">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+    <h4><u>The align-items Property</u></h4>
+    <p>The align-items property is used to align the flex items vertically.</p>
+    <p>In these examples we use a 200 pixels high container, to better demonstrate the align-items property.</p>
+
+    <p>The <i>center</i> value aligns the flex items in the middle of the container:</p>
+    <p><u>exp.</u> The "align-items: center;" aligns the flex items in the middle of the container: </p>
+    <p>.flex-container {
+        display: flex;
+        height: 200px;
+        align-items: center;}</p>
+
+    <div class="flex-container14">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "align-items: flex-start;" aligns the flex items at the top of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 200px;
+        align-items: center;}</p>
+
+    <div class="flex-container15">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "align-items: flex-end;" aligns the flex items at the bottom of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 200px;
+        align-items: flex-end;}</p>
+
+    <div class="flex-container16">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "align-items: stretch;" stretches the flex items to fill the container (this is default):</p>
+    <p>.flex-container {
+        display: flex;
+        height: 200px;
+        align-items: stretch;}</p>
+
+    <div class="flex-container17">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p><u>exp.</u> The "align-items: baseline;" aligns the flex items such as their baselines aligns: </p>
+    <p>.flex-container {
+        display: flex;
+        height: 200px;
+        align-items: baseline;}</p>
+
+    <div class="flex-container18">
+        <div>
+            <h1>1</h1>
+        </div>
+        <div>
+            <h6>2</h6>
+        </div>
+        <div>
+            <h3>3</h3>
+        </div>
+        <div><small>4</small></div>
+    </div>
+    <hr>
+    <h4><u>The align-content Property</u></h4>
+    <p>The align-content property is used to align the flex lines.</p>
+    <p>In these examples we use a 600 pixels high container, with the flex-wrap property set to wrap, to better
+        demonstrate the align-content property.</p>
+
+    <p><u>exp.</u> The space-between value displays the flex lines with equal space between them: </p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-between;}</p>
+
+    <div class="flex-container19">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><u>exp.</u> The "align-content: space-around;" displays the flex lines with space before, between, and after
+        them:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-around;</p>
+
+    <div class="flex-container20">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><u>exp.</u> The "align-content: stretch;" stretches the flex lines to take up the remaining space (this is
+        default):</p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: stretch;</p>
+
+    <div class="flex-container21">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><u>exp.</u> The "align-content: center;" displays the flex lines in the middle of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: center;</p>
+
+    <div class="flex-container22">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><u>exp.</u> The flex-start value displays the flex lines at the start of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-start;</p>
+
+    <div class="flex-container23">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><u>exp.</u> The "align-content: flex-end;" displays the flex lines at the end of the container:</p>
+    <p>.flex-container {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-end;</p>
+
+    <div class="flex-container24">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <hr>
+    <h4><u>Perfect Centering</u></h4>
+    <p>In the following example we will solve a very common style problem: perfect centering.</p>
+
+    <p><u>exp.</u> A container with both the justify-content and the align-items properties set to center will align the
+        item(s) in the center (in both axis).</p>
+    <p>.flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;}</p>
+
+    <div class="flex-container25">
+        <div></div>
+    </div>
+    <hr>
+    <h4><u>Child Elements (Items)</u></h4>
+    <p>The direct elements of a flex container automatically becomes flexible (flex) items.</p>
+    <p><u>exp.</u> The element below represents four blue flex items inside a grey flex container.</p>
+    <p></p>
+
+    <div class="flex-container26">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <p>The flex item properties are:</p>
+    <ul>
+        <li>order</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex</li>
+        <li>align-self</li>
+    </ul>
+    <hr>
+    <h4><u>The order Property</u></h4>
+    <p>The order property specifies the order of the flex items.</p>
+    <p>The first flex item in the code does not have to appear as the first item in the layout.</p>
+    <p>The order value must be a number, default value is 0.</p>
+    <p><u>exp.</u> Use the order property to sort the flex items as you like:</p>
+    <p>"order: 3" 1 "order: 2" 2 "order: 4" 3 "order: 1" 4</p>
+
+    <div class="flex-container27">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+    </div>
+    <hr>
+    <h4><u>The flex-grow Property</u></h4>
+    <p>The flex-grow property specifies how much a flex item will grow ralative to the rest of the
+        flex items.</p>
+    <p>The value must be a number, default value is 0.</p>
+
+    <p><u>exp.</u> Make the third flex item grow eight times faster than the other flex items:</p>
+    <p>"flex-grow: 1""flex-grow: 1""flex-grow: 8"</p>
+
+    <div class="flex-container28">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+    <hr>
+    <h4><u>The flex-shrink Property</u></h4>
+    <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of
+        the flex items.</p>
+    <p><u>exp.</u> Do not let the third flex item shrink as much as the other flex items:</p>
+    <p>"flex-shrink: 0" 3 </p>
+
+    <div class="flex-container29">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <hr>
+    <h4><u>The flex-basis Property</u></h4>
+    <p><u>exp.</u> Set the initial length of the third flex item to 200 pixels:</p>
+    <p>"flex-basis:200px" 3</p>
+
+    <div class="flex-container30">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+    </div>
+    <hr>
+    <h4><u>The flex Property</u></h4>
+    <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+    <p><u>exp.</u> Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200
+        pixels:</p>
+    <p>"flex: 0 0 200px" 3 </p>
+
+    <div class="flex-container31">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+    </div>
+    <hr>
+    <h4><u>The align-self Property</u></h4>
+    <p>The align-self property specifies the alignment for the selected item inside the flexible container.</p>
+    <p>The align-self property override the default alignment set by the container's align-items property.</p>
+
+    <p>In these examples we use a 200 pixels high container, to better demonstrate the align-self property:</p>
+
+    <p><u>exp.</u> The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+    <p>"align-self: center" 3 </p>
+
+    <div class="flex-container32">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+    <p><u>exp.</u> Align the second flex item at the top of the container, and the third flex item at the bottom of the
+        container:</p>
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+    <p>"align-self: flex-start" 2 "align-self: flex-end" 3 </p>
+
+    <div class="flex-container33">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+    <hr>
+
+</body>
+
+</html>

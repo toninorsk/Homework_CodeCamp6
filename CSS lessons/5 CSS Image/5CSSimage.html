@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5CSS Image</title>
+</head>
+
+<body>
+    <h1>CSS Image</h1>
+    <h4><u>Image and Background decoration</u></h4>
+
+    <h4>HTML Image Syntax</h4>
+    <p>In HTML, images are defined with the <span style="color: red; background-color: silver;">img</span> tag.</p>
+    <p>The img tag is empty, it contains attributes only, and does not have a closing tag. The required alt attribute
+        specifies an alternate text for an image, if the image cannot be displayed.</p>
+    <p>The <span style="color: red; background-color: silver;">src</span> attribute specifies the URL (web address) of
+        the image:</p>
+
+    <p><u>exp.</u> img src="picture.jpg" alt="My face at Banyan Tree" style="width:300px; height=300px"</p>
+    <img src="71338470_2391737664213895_8146683023476129792_o.jpg" alt="My face at Banyan Tree"
+        style="width:300px; height:300px;">
+
+    <p><u>exp.</u> img src="picture.jpg" alt="My face at Banyan Tree" style="width:300px; height=300px; border-radius:
+        50%; border: gold dashed 10px; opacity: 0.9;""</p>
+    <img src="71338470_2391737664213895_8146683023476129792_o.jpg" alt="My face at Banyan Tree"
+        style="width:300px; height:300px; border-radius: 50%; border: gold dashed 10px; opacity: 0.9;">
+
+    <h4>Image Seize - Width and Height</h4>
+    <p>You can use the style attribute to specify the width and height of an image.</p>
+    <p>Alternatively, you can use the width and height attributes of the image in pixels:</p>
+
+    <h4>Images in Another Folder</h4>
+    <p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+    <p>However, it is common to store images in a sub-folder. You must then include the folder name in the src
+        attribute:</p>
+
+    <p><u>exp.</u> img src="/Image/picture.jpg" alt="Athenee1" style="width:300px; height=auto"</p>
+
+    <img src="/Image/Athenee1.jpg" alt="Athenee1" style="width: 300px; height: auto; border-radius: 10%;">
+
+    <h4>HTML File Paths</h4>
+
+    <style>
+        table#t1 {
+            width: 100%;
+            border: solid black 1px;
+            border-collapse: collapse;
+            /* text-align: center; */
+        }
+
+        /* table#t1 tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        table#t1 tr:nth-child(even) {
+            background-color: silver;
+        } */
+    </style>
+
+    <table id="t1">
+        <tr>
+            <th style="border: solid 1px black;">Path</th>
+            <th style="border: solid 1px black;">Description</th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">img src="picture.jpg"</td>
+            <td style="border: solid 1px black;">picture.jpg is located in the same folder as the current page</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">img src="images/picture.jpg"</td>
+            <td style="border: solid 1px black;">picture.jpg is located in the images folder in the current folder
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">img src="/images/picture.jpg"</td>
+            <td style="border: solid 1px black;">picture.jpg is located in the images folder at the root of the current
+                web
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">img src="../picture.jpg"</td>
+            <td style="border: solid 1px black;">picture.jpg is located in the folder one level up from the current
+                folder
+            </td>
+        </tr>
+    </table>
+
+    <h4>Images on Another Server</h4>
+    <p>Some web sites store their images on image servers.</p>
+    <p>Actually, you can access images from any web address in the world:</p>
+
+    <p><u>exp.</u> img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" </p>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+    <h4>Animated Images</h4>
+    <p>HTML allows animated GIFs:</p>
+
+    <p><u>exp.</u> img src="/Image/Globe.gif" alt="Globe" </p>
+
+    <img src="/Image/Globe.gif" alt="Globe">
+
+    <h4>Image as a Link</h4>
+    <p>Image as a link that you can click on.</p>
+    <p>To use an image as a link, put the img tag inside the a tag:</p>
+
+    <p><u>exp.</u> a href="https://www.w3schools.com/"
+        img src="Image/clickicon.png" alt="clickicon"</p>
+
+    <a href="https://www.w3schools.com/">
+        <img src="Image/clickicon.png" alt="clickicon" style="width:70px;height:70px;border:0;">
+    </a>
+
+    <h4>Image Floating</h4>
+    <p>Use the CSS float property to let the image float to the right or to the left of a text</p>
+
+    <p><u>exp.</u> img src="Image/rocket.png" alt="rocket" style="float:right;</p>
+    <p><img src="Image/rocket.png" alt="rocket" style="float:right;width:60px;height:60px;">
+        The image will float to the right of the text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+        nobis magnam debitis, totam consectetur est exercitationem quod, architecto aut assumenda hic quo quas neque
+        voluptatem. Dolores nihil quae illum voluptatum?</p>
+
+    <p><u>exp.</u> img src="Image/rocket.png" alt="rocket" style="float:left;</p>
+    <p><img src="Image/rocket.png" alt="rocket" style="float:left;width:60px;height:60px;">
+        The image will float to the left of the text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+        eius, reprehenderit impedit incidunt, exercitationem, beatae recusandae reiciendis laudantium voluptates at ipsa
+        dolorem dicta accusamus veniam. A similique in perspiciatis nam.</p>
+
+    <h4><u>CSS Backgrounds</u></h4>
+    <p>The CSS background properties are used to define the background effects for elements.</p>
+
+    <p>In these chapters, you will learn about the following CSS background properties:</p>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+    </ul>
+
+    <h4>CSS background-color</h4>
+    <p>The background-color property specifies the background color of an element.</p>
+
+    <p><u>exp.</u> The background color of a page is set like this:</p>
+    <p>body {background-color: lightblue;}</p>
+
+    <!-- <style>
+        body {
+          background-color: lightblue;
+        }
+    </style> -->
+
+    <p><u>exp.</u> The background color of a div is set like this: <br><br> div style="background-color: lightblue;
+        width: 300px; height: 100px;" </p>
+    <div style="background-color: lightblue; width: 300px; height: 100px;">
+        <p>This div has a lightblue background color!</p>
+    </div>
+
+    <h4>Other Elements</h4>
+    <p>You can set the background color for any HTML elements:</p>
+    <p><u>exp.</u> here, the h1, p and div elements will have different background colors:</p>
+
+    <h1 style="background-color: lightgreen; opacity: 0.8;">CSS background-color example!</h1>
+    <div style="background-color: lightblue;">
+        This is a text inside a div element.
+        <p style="background-color:gold;">This paragraph has its own background color.</p>
+        We are still in the div element.
+    </div>
+
+    <h4>CSS Background image</h4>
+    <p>The background-image property specifies an image to use as the background of an element.</p>
+    <p>By default, the image is repeated so it covers the entire element.</p>
+
+    <p><u>exp.</u> the background image for a page can be set like this: <br><br> body {background-image:
+        url("background.jpg")};</p>
+
+    <!-- <style>
+        body {background-image: url(pastelbg.jpg);}
+    </style> -->
+
+    <h4>CSS Background Repeat</h4>
+    <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+    <p>Some images, should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+
+    <!-- <style>
+        body {background-image: url(pastelbg.jpg);}
+    </style> -->
+
+    <p>If an image is repeated horizontally (background-repeat: repeat-x;), If an image is repeated vertically
+        (background-repeat: repeat-y;)
+    </p>
+
+    <!-- <style>
+        body {
+            background-image: url(pastelbg.jpg);
+            background-repeat: repeat-x;
+        }
+    </style>
+
+    <style>
+        body {
+            background-image: url(pastelbg.jpg);
+            background-repeat: repeat-y;
+        }
+    </style> -->
+
+    <h4>CSS background-repeat: no-repeat</h4>
+    <p>Showing the background image only once in also specified by the background-repeat property:</p>
+
+    <!-- <style>
+        body {
+            background-image: url(pastelbg.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>  -->
+
+    <h4>CSS background-position</h4>
+    <p>The background-position property is used to specify the position of the background image.</p>
+
+    <p><u>exp.</u> body {background-image: url(pastelbg.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;} </p>
+
+    <!-- <style>
+        body {
+            background-image: url(pastelbg.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+    </style>  -->
+
+    <h4>CSS Background Attachment</h4>
+    <p>CSS background-attachment</p>
+
+    <p>The background-attachment property specifies wether the background image should scroll or be fixed (will not
+        scroll with the rest of the page):</p>
+
+    <p><u>exp.</u> specify that the background image should be fixed:</p>
+    <p> body {
+        background-image: url("pastelbg.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        } </p>
+
+    <!-- <style>
+          body {
+        background-image: url("pastelbg.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+      }
+      </style> -->
+
+    <p><u>exp.</u> specify that the background image should scroll with the rest of the page: </p>
+    <p> body {
+        background-image: url("pastelbg.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll;
+        }
+    </p>
+
+    <!-- <style>
+        body {
+      background-image: url("pastelbg.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: scroll;
+    }
+    </style> -->
+
+    <h4>CSS Background Shorthand</h4>
+    <p>To shorten the code, it is also possible to specify all the background properties in one single property. This is
+        called a shorthand property. <br> Instead of writing:</p>
+
+    <p> body {
+        background-color: #ffffff;
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        } </p>
+
+    <p>You can use the shorthand property background:</p>
+
+    <p><u>exp.</u> Use the shorthand property to set the background properties in one declaration: </p>
+
+    <p>body {background: #ffffff url("img_tree.png") no-repeat right top;}</p>
+
+</body>
+
+</html>

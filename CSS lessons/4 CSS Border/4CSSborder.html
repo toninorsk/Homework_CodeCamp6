@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4CSS Border</title>
+    <link rel="stylesheet" href="4CSSborder.css">
+</head>
+
+<body>
+    <h1>CSS Borders</h1>
+    <h4><u>CSS Border Properties</u></h4>
+    <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+
+    <h4><u>CSS Border Style</u></h4>
+    <p>The border-style property specifies what kind of border to display.</p>
+    <p>The following values are allowed:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border-style: dotted;"> A dotted border</td>
+                <td> defines a dotted border</td>
+            </tr>
+            <tr>
+                <td style="border-style: dashed;"> A dashed border</td>
+                <td> defines a dashed border</td>
+            </tr>
+            <tr>
+                <td style="border-style: solid;"> A solid border</td>
+                <td> defines a solid border</td>
+            </tr>
+            <tr>
+                <td style="border-style: double;"> A double border</td>
+                <td> defines a double border</td>
+            </tr>
+            <tr>
+                <td style="border-style: groove;"> A groove border</td>
+                <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: ridge;"> A ridge border</td>
+                <td> defines a 3D ridge border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: inset;"> A inset border</td>
+                <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: outset;"> A outset border</td>
+                <td> defines a 3D inset border. The effect depends on the border-color value</td>
+            </tr>
+            <tr>
+                <td style="border-style: none;"> A none border</td>
+                <td> defines no border</td>
+            </tr>
+            <tr>
+                <td style="border-style: hidden;"> A hidden border</td>
+                <td> defines a hidden border</td>
+            </tr>
+            <tr>
+                <td style="border-style: dotted dashed solid double;"> A dotted dashed solid double border</td>
+                <td> defines the top, right bottom and the left border</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4><u>CSS Border Width</u></h4>
+    <p>The border-width property specifies the width of the four borders.</p>
+    <p>The width can be set as a specific size (in px, pt, cm, em, etc) or thick:</p>
+
+    <table>
+        <tr>
+            <td style="border-style: solid; border-width: 5px">5px border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: medium;">medium border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: dashed; border-width: 1em;">1em border-width</td>
+        </tr>
+        <tr>
+            <td style="border-style: dotted; border-width: thick;">thick border-width</td>
+        </tr>
+    </table>
+
+    <h4>Specific Side Widths</h4>
+    <p>The border-width property can have from one to four values (for top, right, bottom, and left border):</p>
+
+    <table>
+        <tr>
+            <td style="border-style: solid; border-width: 5px 20px;"> 5px top and bottom, 20px on the sides</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 20px 5px;"> 20px top and bottom, 5px on the sides</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 5px 10px 15px 20px;"> 5px top, 10px right, 15px bottom, and
+                20px left</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-width: 20px 15px 10px 5px;">20px top, 15px right, 10px bottom, 5px
+                left</td>
+        </tr>
+    </table>
+
+    <h4>CSS Border color</h4>
+    <p>The border-color property is used to set the color of the four borders.</p>
+    <p>The color can be set by:</p>
+    <ul style="list-style: square;">
+        <li>name - specify a color name, like "red"</li>
+        <li>HEX - specify a HEX value, like "ff0000"</li>
+        <li>RGB - specify an RGB value, like "rgb(255,0,0)" </li>
+        <li>HLS - specify a HSL value, like "hsl(0,100%,50%)"</li>
+        <li>transparent</li>
+    </ul>
+
+    <p>Note: If border-color is not set, it inherits the color of the element.</p>
+
+    <p style="border-style: solid; border-color: red;">red border</p>
+    <p style="border-style: dashed; border-color: green;">green border</p>
+    <p style="border-style: double; border-color: blue;">blue border</p>
+    <p style="color: silver; border-style: dotted;">If border-color is not set, it inherits the color of the element.
+    </p>
+
+    <h4>Specific Side Colors</h4>
+    <p>The border-color property can have one to four values (for top, right, bottom, and left border).</p>
+
+    <p style="border-style: solid; border-color: red green blue silver;">red green blue silver border</p>
+    <p style="border-style: solid; border-color:green blueviolet yellow;">green blueviolet yellow</p>
+
+    <h4>CSS Border - Individual Sides</h4>
+    <p>From the example on the previous, you have seen that it is possible to specify a different border for each.</p>
+    <p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+
+    <p
+        style="border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;">
+        Different Border Style</p>
+    <p
+        style="border-top-style: dashed; border-right-style: solid; border-bottom-style: double; border-left-style: solid;">
+        Different Border Style</p>
+
+    <h4>CSS Shorthand Border Property</h4>
+    <p>Like you saw in the previous page, there are many properties to consider when dealing with borders.</p>
+    <p>The border property is a shorthand property for the following individual</p>
+
+    <p>The border property is a shorthand property for the following individual border properties:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style (required)</li>
+        <li>border-color</li>
+    </ul>
+
+    <p style="border: 5px solid red;">Some text</p>
+    <p>You can also specify all the individual border properties for just one side:</p>
+    <p style="border-left: 6px solid red; background-color: silver;">Some text</p>
+    <p style="border-bottom: 6px solid red; background-color: silver;">Some text</p>
+
+    <h4>CSS Rounded Borders</h4>
+    <p>The border-radius property is used to add rounded borders to an element:</p>
+    <p style="border: 2px solid green; border-radius: 0px;">Normal border</p>
+    <p style="border: 2px solid green; border-radius: 5px;">Round border</p>
+    <p style="border: 2px solid green; border-radius: 10px;">Round border</p>
+
+    <h4><u>CSS Height and Width</u></h4>
+    <p>The height and width properties are used to set the height and width of an element.</p>
+    <p>The height and width properties do not include padding, borders, or margins. It sets the height/width of the area
+        inside the padding, border, and margin of the element.</p>
+
+    <h4>CSS height and width Values</h4>
+    <p>The height and width properties may have the following values:</p>
+    <ul>
+        <li>auto - This is default. The browser calculates the height and width</li>
+        <li>length - Defines the height/width in px, cm, etc.</li>
+        <li>% - defines the height/width in percent of the containing block</li>
+        <li>initial - sets the height/width to its default value</li>
+        <li>inherit - the height/width will be inherited from its parent value</li>
+    </ul>
+
+    <h4>CSS height and width Examples</h4>
+    <p style="height: 100px; width: 50%; background-color: lightskyblue; border: dashed green; border-radius: 10px;">
+        This element has a height of 100px and a width of 50% - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque at libero fugiat iste ipsum harum ab. Aliquid veniam praesentium quo ducimus perspiciatis ullam,</p>
+
+    <div style="width: 100%; height: 50px; background-color: yellow; border: dotted deeppink;">This element has a height
+        of 50px and a width of 100% - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto ab ullam magni
+        quam incidunt voluptate laborum labore soluta? Iusto fuga repudiandae ullam maxime sint iure eaque fugiat
+        sapiente nam!</div>
+
+    <br>
+
+    <div
+        style="width:fit-content;height: fit-content; border: thick brown solid; border-radius: 8px; background-color: chartreuse;">
+        This element has a fit-content width and a fit-content height - Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Cumque accusamus placeat natus nesciunt voluptate perspiciatis molestias eos autem assumenda
+        adipisci, dolore hic odit blanditiis voluptatum? Impedit voluptatibus tempore et rem.</div>
+
+    <br>
+
+    <div style="min-width: 700px; border: 1px solid;">This element has a min-width: 700px - Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus laboriosam. Corrupti,
+        perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+    <br>
+
+    <div style="max-width: 1000px; border: solid 1px;">This element has a max-width: 1000px - Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus laboriosam.
+        Corrupti, perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+    <h4><u>CSS Tables</u></h4>
+    <h4>Table Borders</h4>
+    <p>To specify table borders in CSS, use the border property.</p>
+    <p>The example below specifies a blue border for table th and td elements:</p>
+
+    <table style="border: 1px solid blue;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid blue;">First name</th>
+                <th style="border: 1px solid blue;">Last name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid blue;">Peter</td>
+                <td style="border: 1px solid blue;">Griffin</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid blue;">Lois</td>
+                <td style="border: 1px solid blue;">Griffin</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <p>The example below specifies a black border for table th and td elements:</p>
+
+
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">First name</th>
+            <th style="border: 1px solid black;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Peter</td>
+            <td style="border: 1px solid black;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Lois</td>
+            <td style="border: 1px solid black;">Griffin</td>
+        </tr>
+    </table>
+
+    <p>Notice that the tables in the example above have double borders. This is because both the table and the th and td
+        elements have separate borders.</p>
+
+    <h4>Collapse Table Borders</h4>
+    <p>The border-collapse property sets whether the table borders should be collapsed into a single border:</p>
+
+    <table style="border-collapse: collapse;">
+        <tr>
+            <th style="border-collapse: collapse; border: 1px solid black">First name</th>
+            <th style="border-collapse: collapse; border: 1px solid black">Last name</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px solid black">Peter</td>
+            <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px solid black">Lois</td>
+            <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="borderCollapse">
+        <tr>
+            <th class="borderCollapse">First name</th>
+            <th class="borderCollapse">Last name</th>
+        </tr>
+        <tr>
+            <td class="borderCollapse">Peter</td>
+            <td class="borderCollapse">Griffin</td>
+        </tr>
+        <tr>
+            <td class="borderCollapse">Lois</td>
+            <td class="borderCollapse">Griffin</td>
+        </tr>
+    </table>
+
+    <p>If you only want a border around the table, only specify the border property for table:</p>
+
+    <table style="border: 1px solid black">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS border-spacing Property</h4>
+    <p>The border-spacing property sets the distance between the borders of adjacent cells.</p>
+    <p><b>Note:</b> This property works only when <u>border-collapse</u> is separate.</p>
+
+    <p><u>exp.</u> border-collapse: separate; border-spacing: 15px;</p>
+    <table style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">
+        <tr>
+            <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">First name</th>
+            <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Peter</td>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Lois</td>
+            <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+        </tr>
+    </table>
+
+    <p>Using two values (the first sets the horizontal spacing and the second sets the vertical spacing)</p>
+    <p><u>exp.</u> border-collapse: separate; border-spacing: 15px 50px;</p>
+
+    <table style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">
+        <tr>
+            <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">First name</th>
+            <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Peter</td>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Lois</td>
+            <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS empty-cells Property</h4>
+    <p>The empty-cells property sets whether or not to display borders on empty cells in a table.</p>
+    <p><b>Note:</b> This property has no effect if <u>border-collapse</u> is "collapse"</p>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">First name</th>
+            <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Last name</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Peter</td>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+            <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Griffin</td>
+        </tr>
+    </table>
+
+    <h4>CSS table-layout Property</h4>
+    <p><b>Tip:</b>The main benefit of table-layout: fixed; is that the table renders much faster. On large tables, users
+        will not see any part of the table until the browser has rendered the whole table. So, if you use table-layout:
+        fixed, users will see the top of the table while the browser loads and renders rest of the table. This gives the
+        impression that the page loads a lot quicker!</p>
+
+    <style>
+        table.a {
+            table-layout: auto;
+            width: 180px;
+        }
+
+        table.b {
+            table-layout: fixed;
+            width: 180px;
+        }
+
+        table.c {
+            table-layout: auto;
+            width: 100%;
+        }
+
+        table.d {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
+
+    <p><u>exp.</u> table-layout: auto; width: 180px;</p>
+
+    <table class="a" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: fixed; width: 180px;</p>
+
+    <table class="b" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: auto; width: 100%;</p>
+
+    <table class="c" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> table-layout: fixed; width: 100%;</p>
+
+    <table class="d" style="border-collapse: collapse; border: solid black 1px;">
+        <tr>
+            <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+            <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste	</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+            <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+        </tr>
+    </table>
+
+    <h4>W3.CSS Tables</h4>
+
+    <h4>W3.CSS Tables Classes</h4>
+    <p>W3.CSS provides the following classes for tables:</p>
+
+    <table style="border: 1px solid black">
+        <tr>
+            <th style="background-color: silver;">Class</th>
+            <th style="background-color: silver;">Defines</th>
+        </tr>
+        <tr>
+            <td>w3-table</td>
+            <td>Container for an HTML table</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-striped</td>
+            <td style="background-color: silver;">Striped table</td>
+        </tr>
+        <tr>
+            <td>w3-border</td>
+            <td>Bordered table</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-bordered</td>
+            <td style="background-color: silver;">Bordered lines</td>
+        </tr>
+        <tr>
+            <td>w3-centered</td>
+            <td>Centered table content</td>
+        </tr>
+        <tr>
+            <td style="background-color: silver;">w3-hoverable</td>
+            <td style="background-color: silver;">Hoverable table</td>
+        </tr>
+        <tr>
+            <td>w3-table-all</td>
+            <td>All properties set</td>
+        </tr>
+    </table>
+
+    <p><a href="https://www.w3schools.com/w3css/w3css_tables.asp"><button>Click</button></a> to learn more about W3.CSS
+        Tables Classes</p>
+
+    <h4><u>Adding Cell Padding</u></h4>
+    <p>Cell padding specifies the space between the cell content and its borders.</p>
+    <p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+    <p>To set the padding, use the CSS padding property:</p>
+
+    <p><u>exp.</u> not specify a padding</p>
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; border-collapse: collapse;">First Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse;">Last Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse;">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">Jill</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Smith</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">50</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">Eve</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Jackson</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">94</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse;">John</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">Doe</td>
+                <td style="border: 1px solid black; border-collapse: collapse;">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><u>exp.</u> padding: 15px;</p>
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">First Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Last Name</th>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jill</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Smith</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">50</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Eve</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jackson</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">94</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">John</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Doe</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>HTML Table - Cells that Span Many Columns</h4>
+    <p>To make a cell span more than one column, use the <span
+            style="color: red; background-color: silver;">colspan</span> attribute:</p>
+
+    <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Name</th>
+                <th colspan="2" style="padding: 15px; border: 1px solid black; border-collapse: collapse;">Telephone
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Bill Gates</td>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">123456789</td>
+                <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">987654321</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">Steve Jobs</td>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">000000000</td>
+                <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">111111111</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>HTML Table - Cells that Span Many Rows</h4>
+    <p>To make a cell span more than one row, use the <span style="color: red; background-color: silver;">rowspan</span>
+        attribute:</p>
+
+    <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+        <tr>
+            <th style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Name:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Telephone:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">123456789</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">987654321</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Companies:</th>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Microsoft</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Lorem</td>
+        </tr>
+    </table>
+
+    <h4>HTML Table - Adding a Caption</h4>
+    <p>To add a caption to a table, use the <span style="color: red; background-color: silver;">caption</span> tag:</p>
+
+    <p><u>exp.</u> add a caption "Monthly savings"</p>
+
+    <table style="border: black solid 1px; border-collapse: collapse; padding: 3px;">
+        <caption style="color:tomato">Monthly savings</caption>
+        <tr>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> add a caption "Monthly savings" capption-side: bottom;</p>
+
+    <table style="border: black solid 1px; border-collapse: collapse; padding: 3px; caption-side: bottom;">
+        <caption style="color: tomato;">Monthly savings</caption>
+        <tr>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+            <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+        </tr>
+        <tr>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+            <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+        </tr>
+    </table>
+
+    <h4>A Special Style for One Table</h4>
+    <p>To define a special style for table add an <span style="color: red; background-color: silver;">id</span>
+        attribute to the table:</p>
+
+    <p><u>exp.</u> table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+        border: solid black 1px;
+        border-collapse: collapse;
+        text-align: center;
+        }</p>
+
+    <style>
+        table#t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+            border: solid black 1px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+    <table id="t01">
+        <tr>
+            <th style="border: solid 1px black;">First Name</th>
+            <th style="border: solid 1px black;">Last Name</th>
+            <th style="border: solid 1px black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Jill</td>
+            <td style="border: solid 1px black;">Smith</td>
+            <td style="border: solid 1px black;">50</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Eve</td>
+            <td style="border: solid 1px black;">Jackson</td>
+            <td style="border: solid 1px black;">94</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">John</td>
+            <td style="border: solid 1px black;">Doe</td>
+            <td style="border: solid 1px black;">80</td>
+        </tr>
+    </table>
+
+    <p><u>exp.</u> <br> table#t02 {
+        width: 100%;
+        border: solid black 1px;
+        border-collapse: collapse;
+        text-align: center;
+        } <br>
+        table#t02 tr:nth-child(even) {
+        background-color: white;
+        } <br>
+        table#t02 tr:nth-child(odd) {
+        background-color: silver;
+        } <br>
+        table#t02 th {
+        background-color: black;
+        color: white;
+        }
+    </p>
+
+    <style>
+        table#t02 {
+            width: 100%;
+            border: solid black 1px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table#t02 tr:nth-child(even) {
+            background-color: white;
+        }
+
+        table#t02 tr:nth-child(odd) {
+            background-color: silver;
+        }
+
+        table#t02 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <table id="t02">
+        <tr>
+            <th style="border: solid 1px black;">First Name</th>
+            <th style="border: solid 1px black;">Last Name</th>
+            <th style="border: solid 1px black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Jill</td>
+            <td style="border: solid 1px black;">Smith</td>
+            <td style="border: solid 1px black;">50</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">Eve</td>
+            <td style="border: solid 1px black;">Jackson</td>
+            <td style="border: solid 1px black;">94</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px black;">John</td>
+            <td style="border: solid 1px black;">Doe</td>
+            <td style="border: solid 1px black;">80</td>
+        </tr>
+    </table>
+
+</html>

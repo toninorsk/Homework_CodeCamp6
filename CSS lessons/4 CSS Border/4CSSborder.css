@@ -1,0 +1,5 @@
+.borderCollapse  { 
+    border-collapse: collapse;
+    border: 1px solid blue;
+    /* color: green;    */
+}

@@ -1,0 +1,37 @@
+body {
+    background-color: lightgreen;
+  }
+  
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  div.example {
+      background-color: yellow;
+      padding: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+      div.example {
+          display: none;
+      }
+  }
+
+  div.example2 {
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    div.example2 {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example2 {
+      font-size: 30px;
+    }
+  }
