@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML text formatting exercise 6</title>
+    <style>
+        code {
+            font-family: Consolas, "courier new";
+            color: crimson;
+            background-color: #f1f1f1;
+            padding: 2px;
+            font-size: 105%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 6. Print some preformatted text of your choosing. (hint: use the <pre> tag) -->
+    <h1>JavaScript: Calculate the factorial of a number</h1>
+
+    <pre>function factorial(x)
+        {
+            if (x === 0)
+            {
+                return 1;
+            }
+            return x * factorial(x-1);
+        }
+        
+        console.log(factorial(x));</pre>
+
+    <script>function factorial(x)
+        {
+            if (x === 0)
+            {
+                return 1;
+            }
+            return x * factorial(x-1);
+        }
+        
+        console.log(factorial(8));</script>
+
+<!-- https://www.w3resource.com/javascript-exercises/javascript-recursion-function-exercise-1.php -->
+
+    <p>Text in a <code>&lt;pre&gt;</code> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.</p>
+</body>
+</html>

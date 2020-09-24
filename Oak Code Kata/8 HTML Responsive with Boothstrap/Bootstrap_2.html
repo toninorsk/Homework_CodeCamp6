@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Newsweek - News, Analytics, Politics, Business, Technology</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <!-- Google font for Nesweek Logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Social Media Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center" style="background-color: red;">
+                <div class="col-4 pt-1">
+                    <p class="d-none d-lg-block" style="color: #fff;">
+                        <img src="https://g.newsweek.com/img/weather/26.webp" alt="cloudy" width="20px"> 33° Bangkok, TH
+                        > <br> Sun, Aug 23, 2020</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p class="blog-header-logo text-dark"><span
+                            style="color: #fff; font-family: 'Noto Serif', serif; font-size: 5vw;">Newsweek</span></p>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-link d-none d-lg-block" style="color: white;">LOGIN</button>
+                    <a class="btn btn-sm btn-warning" href="#" style="padding: 10px;"><b>Subscribe</b></a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle d-lg-none" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color: white; font-size: 2em;">
+                            ≡
+                        </button>
+                        <div class="dropdown-menu d-lg-none" aria-labelledby="dropdownMenuButton">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </form>
+                            <a class="dropdown-item" href="#">U.S.</a>
+                            <a class="dropdown-item" href="#">World</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="#">Tech & Science</a>
+                            <a class="dropdown-item" href="#">Culture</a>
+                            <a class="dropdown-item" href="#">Newsgeek</a>
+                            <a class="dropdown-item" href="#">Sport</a>
+                            <a class="dropdown-item" href="#">Health</a>
+                            <a class="dropdown-item" href="#">The Debate</a>
+                            <a class="dropdown-item" href="#">Vantage</a>
+                            <a class="dropdown-item" href="#">Weather</a>
+                            <hr>
+                            <p><b>Trending</b></p>
+                            <a class="dropdown-item" href="#">Donald Trump</a>
+                            <a class="dropdown-item" href="#">Joe Biden</a>
+                            <a class="dropdown-item" href="#">China</a>
+                            <a class="dropdown-item" href="#">Cronavirus</a>
+                            <a class="dropdown-item" href="#">2020 Election</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2 d-none d-lg-block">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#">U.S.</a>
+                <a class="p-2 text-muted" href="#">World</a>
+                <a class="p-2 text-muted" href="#">Business</a>
+                <a class="p-2 text-muted" href="#">Tech & Science</a>
+                <a class="p-2 text-muted" href="#">Culture</a>
+                <a class="p-2 text-muted" href="#">Newsgeek</a>
+                <a class="p-2 text-muted" href="#">Sport</a>
+                <a class="p-2 text-muted" href="#">Health</a>
+                <a class="p-2 text-muted" href="#">The Debate</a>
+                <a class="p-2 text-muted" href="#">Vantage</a>
+                <a class="p-2 text-muted" href="#">Weather</a>
+                <a class="p-2 text-muted" href="#"><a class="text-muted" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="mx-3">
+                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                        </svg>Search</a>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <p>FEATURED STORIES</p>
+                <img src="https://d.newsweek.com/en/full/1626856/chad-wolf-donald-trump.webp?w=397&h=265&q=90&f=0193cf3101dbf15c3bf87dec8facbe08"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+
+                <img src="https://d.newsweek.com/en/full/1626833/irs.webp?w=466&h=311&q=90&f=f81d67c0246cd35d8b3e3b30cf1bd4ca"
+                    alt="greenlight" style="width: 100%;">
+                <p><b>IRS is Sending Interest Checks to 14M Tax Payers Who Filed After April 15</b></p>
+                <p>Interest payments will be sent to those who filed their 2019 federal income tax returns by July 15,
+                    the date the filing deadline was extended to because of the coronavirus pandemic.</p>
+
+                <img src="https://d.newsweek.com/en/full/1626806/trump.webp?w=397&h=265&q=90&f=33d58cdae5472c38afda32cbb265e4f2"
+                    alt="TrumpSis" style="width: 100%;">
+                <p><b>Trump Says 'Every Day It's Something Else' to Sister's Audio Recording</b></p>
+                <p>Maryanne Trump Barry, a retired federal appellate judge, is heard criticizing her brother on the
+                    audio recordings, saying he "has no principles" and is "cruel."</p>
+
+                <img src="https://d.newsweek.com/en/full/1626382/infidelity-cheating-relationships-therapy.webp?w=397&h=265&q=90&f=c3e0f8e78409c964b2256cb8364d836a"
+                    alt="TrumpSis" style="width: 100%;">
+                <p><b>'I Work With Cheaters. Here Are My Top 6 Signs to Spot an Affair'</b></p>
+                <p>Over the course of 11 years, I have learned that the reasons people cheat are complicated, varied,
+                    and rarely what they first seem.</p>
+
+            </div>
+
+            <div class="col-lg-6 col-md-8">
+                <p>TOP STORY</p>
+                <img src="https://d.newsweek.com/en/full/1626899/president-donald-trump.webp?w=591&h=364&f=ea6ef8a28e765895d88734eeb67053bc"
+                    alt="TrumpFDA" style="width: 100%;">
+                <p><b>Trump and FDA Announce New Method to Treat Hospitalized COVID-19 Patients</b></p>
+                <p>The president said the new, expedited method of treatment has led to a reduced mortality rate by 35
+                    percent in coronavirus patients.</p>
+
+                <p>MY TURN</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1626456/michelle-obama-vote-necklace-chari-dnc.webp?w=397&h=397&f=d842d3bd753aca01b2007f90794bb714"
+                            alt="Michelle" width="100%">
+                        <p>'I Designed Michelle Obama's VOTE Necklace'</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1625468/demisexuality-asexuality-demisexual-flag.webp?w=397&h=397&f=204ce33279dc9a742a58cc78f9d97c62"
+                            alt="Dimisexual" width="100%">
+                        <p>'This Is What It's Like to Be Demisexual'</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1623598/love-coronavirus-immigration.webp?w=397&h=397&f=f17dcba4ab7dbb2475c8716068f8ff99"
+                            alt="Fiance" width="100%">
+                        <p>'My Fiancé and I Are Stuck 3,400 Miles Apart Indefinitely'</p>
+                    </div>
+                </div>
+
+                <p>CULTURE & TRAVEL</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1623779/central-park-monument.webp?w=397&h=397&f=d9785cb87a27d416b46250cd05afe94f"
+                            alt="women's right" width="100%">
+                        <p>Breaking the 'Bronze Ceiling': Central Park's First Statue Honoring Women</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.webp?w=397&h=397&l=52&t=43&f=b6a065dbcf99906c89d4d8ca453a0e3d"
+                            alt="women" width="100%">
+                        <p>Women Changemakers of the Last Century</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://d.newsweek.com/en/full/1621688/delta-airlines.webp?w=397&h=397&f=12af4d7a8179355ba08f00a5d774e649"
+                            alt="travel" width="100%">
+                        <p>How Likely Is It to Contract COVID-19 on a Plane?</p>
+                    </div>
+                </div>
+
+                <p>MORE STORIES</p>
+                <div class="row">
+                    <div class="col-12" style="display: flex;">
+                        <div style="float: left;">
+                            <img src="https://d.newsweek.com/en/full/1626848/coronavirus-impact-washington-dc-unemployment-2020.webp?w=95&h=95&f=815ae1818b65791b44c06f397b09426f"
+                                alt="noJob" width="120px">
+                        </div>
+                        <div style="float: right;">
+                            <p><b>Roughly 4 Million Employees to Remain Unemployed Amid Pandemic</b></p>
+                            <p>The transition rate from temporary to permanent layoffs nearly doubled from June to July.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="display: flex;">
+                        <div style="float: left;">
+                            <img src="https://d.newsweek.com/en/full/1626845/mark-meadows.webp?w=95&h=95&f=41e6234bc7ca8951d64de5abfd2959f0"
+                                alt="noJob" width="120px">
+                        </div>
+                        <div style="float: right;">
+                            <p><b>Trump's Chief of Staff Addresses Claims FDA is Delaying Vaccine Testing</b></p>
+                            <p>Mark Meadows discussed the Trump administration's perspective regarding COVID-19 vaccine
+                                and therapeutic development in interviews Sunday morning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="display: flex;">
+                        <div style="float: left;">
+                            <img src="https://d.newsweek.com/en/full/1626855/mark-warner.webp?w=95&h=95&f=71776b242454e445f44bab6f4a29b3db"
+                                alt="noJob" width="120px">
+                        </div>
+                        <div style="float: right;">
+                            <p><b>Senator Fears Americans Are 'Unwittingly' Spreading Russia Disinformation</b></p>
+                            <p>Senate Intelligence Committee vice chair Mark Warner urged U.S. intelligence officials to
+                                release more details about Russian election interference during an interview with NBC's
+                                'Meet the Press' on Sunday.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="d-md-none d-lg-block col-lg-3">
+                <p>THE DEBATE</p>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1621698/major-neill-franklin-ret.webp?w=150&h=150&f=fedb525be44c92fd2598c72f563e8f95"
+                            alt="blackMan" width="60px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/111059/kevin-sabet.webp?w=150&h=150&f=2d885279d159e97deb11590f95b67c10"
+                            alt="whiteman" width="60px">
+
+                    </div>
+                </div>
+                <p>OPINION</p>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/110947/frank-donatelli.webp?w=63&h=63&f=b92e963751e75af631fc1a59d57596f9"
+                            alt="Man3" width="60px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1577421/hank-gilman.webp?w=63&h=63&f=f18b9a7364da071493072861d8b4448f"
+                            alt="Man4" width="60px">
+                    </div>
+                    <div class="col-8">
+                        <p>What Should Really Worry You About the Stock Market Surge</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/110947/frank-donatelli.webp?w=63&h=63&f=b92e963751e75af631fc1a59d57596f9"
+                            alt="Man3" width="60px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1577421/hank-gilman.webp?w=63&h=63&f=f18b9a7364da071493072861d8b4448f"
+                            alt="Man4" width="60px">
+                    </div>
+                    <div class="col-8">
+                        <p>What Should Really Worry You About the Stock Market Surge</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <img src="https://d.newsweek.com/en/full/1626893/unc-chapel-hill.webp?w=397&h=265&q=90&f=cf876980db6669b4a29e0ae9a4adc7ae"
+                        alt="TrumpSis" style="width: 100%;">
+                    <p><b>BBC Considers Cutting Anthems From Music Program Due to Perceived Racism</b></p>
+                    <p>The news comes amid the resurgence of the Black Lives Matter (BLM) movement, which sparked
+                        protests around the world against systemic racism and police brutality.</p>
+
+                </div>
+
+                <div class="row" style="background-color:whitesmoke; justify-content: center; margin: auto;">
+                    <div class="row col-12">
+                        <p style="align-items: center;"><b>START YOUR DAY WITH OUR TOP 5 ARTICLES</b></p>
+                    </div>
+                    <div class="row col-12">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="email" placeholder="Email Address"
+                                aria-label="Email" style="width: 100%;">
+                        </form>
+                    </div>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger" style="width: 100%;">FREE SIGN UP ></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark"
+                style="background-image: url(https://ichef.bbci.co.uk/news/1024/cpsprodpb/BD75/production/_113810584_index_promo_poll_tracker_bw_976.png);">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+                    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly
+                        and
+                        efficiently about what's most interesting in this post's contents.</p>
+                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <p style="text-align: center;"><span
+                style="background-color: red; color: white; padding: 5px; font-weight: bold;">N</span> EDITOR'S PICK</p>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626777/postal-vote.webp?w=397&h=265&f=83082622e892e5cdfbe18ce04d3a8fe7"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626691/navalny-ambulance.webp?w=397&h=265&f=3554d9652a326be64a29b633347a61eb"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626534/belarus-military-drills-border-unrest.webp?w=397&h=265&f=d006d0f247d60af767f7a2a6fe4ccf6c"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626801/donald-trump.webp?w=397&h=265&f=9e44d17c661d1f62c7b173933a102177"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626731/michelle-obama.webp?w=397&h=265&f=44e7559cfa62798e6042cbb8bc102511"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626690/wildfire.webp?w=397&h=265&f=ab842a224722215bd33f7481d2570ada"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626763/washington-football-team.webp?w=397&h=265&f=42f9d54c6a3b5b87422c4bcc7bc928b2"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://d.newsweek.com/en/full/1626710/army.webp?w=397&h=265&f=0e5d8f7426f99a810a5e1502372a90ff"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Acting DHS Head Dismisses Possibility of Sending Federal Agents to Polls</b></p>
+                <p>"We don't have any authority to do that at the department," Chad Wolf said.</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p style="color: orangered;"><b>U.S.</b></p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626930/kellyanne-conway-donald-trump.webp?w=397&h=265&f=faa4f23bd7dc8265db332acf65dab5d4"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Kellyanne Conway Abruptly Announces White House Departure</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626927/defund-police.webp?w=397&h=265&f=4f7f7a399121cd155c76eee901597da6"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Biden Says He Would Not Defund Police Departments, But Said Trump Wants To</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626928/police-line.webp?w=397&h=265&f=91f5fcaf6a62ba7becec7a1c0f644587"
+                            alt="blackMan" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626923/plasma.webp?w=95&h=95&f=59451007cd8c6fd4c8309a69654ab41b"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626897/qanon.webp?w=95&h=95&f=9d120901e18079f624b854f1ab204e89"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <p style="color: orangered;"><b>World</b></p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626834/ukrainian-airlines-plane-crash-tehran-iran-2020.webp?w=397&h=265&f=7c7c203eb57894257b29bcc17900ad4e"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Kellyanne Conway Abruptly Announces White House Departure</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626824/italy-migrants-quarantine-ship.webp?w=397&h=265&f=e5327dbce5c2f4aca2dccf3beb4c16e0"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Biden Says He Would Not Defund Police Departments, But Said Trump Wants To</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626715/world-health-organization.webp?w=397&h=265&f=a8e57d3549dd9a8a69ef4af2974d3b3a"
+                            alt="blackMan" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626463/china-sri-lanka-military-exercises.webp?w=95&h=95&f=eeaaafd24ccec36cc4d2d3a4052f68ae"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1626585/f-35-us-air-force-jet-uae.webp?w=95&h=95&f=2cb9ef334c517a9e99a79675ca0c044e"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <p style="color: orangered;"><b>Business</b></p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1625645/zenni-geometric-translucent-optical.webp?w=397&h=265&f=e8f5acd49595e4dda709a581f93bf5e0"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Kellyanne Conway Abruptly Announces White House Departure</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1625559/walmart-store-front.webp?w=397&h=265&f=1a6ceb6854deb0e0929ecd9a4541d02c"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Biden Says He Would Not Defund Police Departments, But Said Trump Wants To</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1625438/donald-trump-speech.webp?w=397&h=265&f=d54b5d6bfdee9ca1af32ed1a3c688b6e"
+                            alt="blackMan" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1625357/elon-musk.webp?w=95&h=95&f=656456cb3d4e44ed98fa31e30131b576"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1625328/tiktok-download-page.webp?w=95&h=95&f=7bd2d06a9b4966c55499c76ef0ee5f88"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <p style="color: orangered;"><b>Tech & Science</b></p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626522/tropical-storm-laura.webp?w=397&h=265&f=397efec521c8efcc3451f35ad95a6f4d"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Kellyanne Conway Abruptly Announces White House Departure</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="https://d.newsweek.com/en/full/1626347/hurricane-genevieve.webp?w=397&h=265&f=6721f1e082327f0803267c8935759f9a"
+                    alt="TrumpDHS" style="width: 100%;">
+                <p><b>Biden Says He Would Not Defund Police Departments, But Said Trump Wants To</b></p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1625767/google-gmail-iphone-2018.webp?w=397&h=265&f=b9e9536da3748875bfa2c2ee8157098f"
+                            alt="blackMan" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalization Is the Only Way to Improve the Criminal Justice System</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1622805/portal-3-family.webp?w=95&h=95&f=93887282b014ce97320ba772f2be07d1"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://d.newsweek.com/en/full/1625454/supernova.webp?w=95&h=95&f=181118248254d8cf4a6530ee4b18688a"
+                            alt="whiteman" width="70px">
+                    </div>
+                    <div class="col-8">
+                        <p>Legalizing Pot Is a Catastrophic Mistake</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-6">
+                <p style="color: orangered;"><b>SUBSCRIBE</b></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://d.newsweek.com/en/full/1621252/cover-august-21-28-2020.jpg?w=170&q=95&f=4ae00bbf46b1f7cbfa7c8f3f3791b19e"
+                            alt="book">
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</b></p>
+                        <p>All Access + Weekly Delivery.
+                            Choose A Membership That's Perfect for You!</p>
+                        <button type="button" class="btn btn-danger">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <p style="color: orangered;"><b>NEWSLETTER</b></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://d.newsweek.com/en/full/1621252/cover-august-21-28-2020.jpg?w=170&q=95&f=4ae00bbf46b1f7cbfa7c8f3f3791b19e"
+                            alt="book">
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>The Starting 5</b></p>
+                        <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <button type="button" class="btn btn-danger">FREE SIGN UP</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            color: gray;
+        }
+
+        .fa-twitter {
+            color: gray;
+        }
+
+        .fa-instagram {
+            color: gray;
+        }
+
+        .fa-tumblr {
+            color: gray;
+        }
+
+        .fa-linkedin {
+            color: gray;
+        }
+    </style>
+
+    <hr>
+    <footer class="blog-footer">
+        <div class="row">
+            <div class="col-md-6">
+                <p><span
+                        style="color: rgb(236, 52, 5); font-family: 'Noto Serif', serif; font-size: 5vw;">Newsweek</span>
+                    © 2020 NEWSWEEK</p>
+            </div>
+            <div class="col-md-6" style="float: right;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-tumblr"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p><b>Editions:</b> <a href="#">U.S. Edition</a> | <a href="#">日本</a> | <a href="#">Pakistan</a> | <a href="#">Polska</a> | <a href="#">România</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p><a href="#">About Us</a> | <a href="#">Corrections</a> | <a href="#">Contact Us</a> | <a href="#">Editorial Guidelines</a> | <a href="#">Advertise</a> | <a href="#">Copyright</a> | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a> | <a href="#">Terms of Sale</a> | <a href="#">Archive</a> | <a href="#">Announcements</a> | <a href="#"> | Consent preferences</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

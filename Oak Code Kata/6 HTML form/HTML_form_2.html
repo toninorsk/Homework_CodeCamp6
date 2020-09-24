@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20+ HTML Forms Best Practices for Beginners</title>
+    <!-- https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593 -->
+    <style>
+        .topic {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Working with XHTML forms can be somewhat daunting; they not only use some niche HTML elements, but also blur the
+        line between static content and usr interaction. Let's review somethings to remember when creating your next
+        form.</p>
+    <p>Good HTML forms require attention on at least four points:</p>
+    <ol>
+        <li>Semantics</li>
+        <li>Accessibility</li>
+        <li>Functionality</li>
+        <li>Design</li>
+    </ol>
+    <p>Forms can be difficult and sometimes even annoying for users; often, a form interrupts a user's main focus and
+        direction on a page: they're intent on purchasing that gift, or trying out your new app, not giving you their
+        shipping address or coming up with yet another password. These tips will make forms easier for you as a
+        developer/designer, and them as a user.</p>
+    <p class="topic"><b><u>Semantics</u></b></p>
+    <p><b>1 : Use fieldsets to encapsulate similar fields</b></p>
+
+    <fieldset>
+        <span>Billing Address</span> <input type="text" />
+        <span>City</span> <input type="text" />
+        <span>Province</span> <input type="text" />
+        <span>Postal Code</span> <input type="text" />
+    </fieldset>
+
+    <fieldset>
+        <span>Shipping Address</span> <input type="text" />
+        <span>City</span> <input type="text" />
+        <span>Province</span> <input type="text" />
+        <span>Postal Code</span> <input type="text" />
+    </fieldset>
+
+    <p><b>2 : Label Fieldsets with Legends</b></p>
+
+    <fieldset>
+        <legend>Billing Address</legend>
+        <span>Address</span><input type="text" />
+        <span>City</span><input type="text" />
+        <span>Province</span><input type="text" />
+        <span>Postal Code</span><input type="text" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Shipping Address</legend>
+        <span>Address</span><input type="text" />
+        <span>City</span><input type="text" />
+        <span>Province</span><input type="text" />
+        <span>Postal Code</span><input type="text" />
+    </fieldset>
+
+    <p><b>3 : Name your Inputs</b></p>
+
+    <fieldset>
+        <span>Billing Address</span> <input type="text" name="billAddress">
+        <span>City</span> <input type="text" name="billCity">
+        <span>Province</span> <input type="text" name="billProvince">
+        <span>Postal Code</span> <input type="text" name="billPc">
+    </fieldset>
+
+    <p><b>4 : Use the Label Element</b></p>
+
+    <fieldset>
+        <legend>Billing Address</legend>
+        <label>Address</label><input type="text" name="billAddress" />
+        <label>City</label><input type="text" name="billCity" />
+        <label>Province</label><input type="text" name="billProvince" />
+        <label>Postal Code</label><input type="text" name="billPC" />
+    </fieldset>
+
+    <p><b>5 : Give Labels the For Attribute</b></p>
+
+    <fieldset>
+        <legend>Billing Address</legend>
+        <label for="billAddress">Address</label><input type="text" id="billAddress" name="billAddress" />
+        <label for="billCity">City</label><input type="text" id="billCity" name="billCity" />
+        <label for="billProvince">Province</label><input type="text" id="billProvince" name="billProvince" />
+        <label for="billPC">Postal Code</label><input type="text" id="billPC" name="billPC" />
+    </fieldset>
+
+    <p><b>6 : Use optgroup to categorize options</b></p>
+
+    <label for="states">Select a state:</label>
+    <select>
+        <optgroup label="USA">
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+        </optgroup>
+        <optgroup label="Canada">
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+        </optgroup>
+    </select>
+
+    <p><b>7 : Always assign complete attributes</b></p>
+
+    <!-- <label for="live">Living?</label>
+    <input name="live" id="live" type="checkbox" checked disabled /> Don't code like this! -->
+
+    <label for="live">Living?</label>
+    <input name="live" id="live" type="checkbox" checked="checked" disabled="disabled">
+
+    <p><b>8 : Consider using Buttons instead of Submit Inputs</b></p>
+
+    <style>
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4caf50;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 20%;
+        }
+
+        .button1:hover {
+            color: white;
+            background-color: #4caf50;
+        }
+    </style>
+
+    <p>Try <a href="https://www.google.com/" target="_blank"><button class=" button1">Click</button></a> here!</p>
+
+    <p class="topic"><b><u>Accessibility</u></b></p>
+    <p><b>9 : Put tabindices on your inputs</b></p>
+
+    <p>Try pressing <kbd>tab</kbd> on your keyboard</p>
+    <input type="text" tabindex="2" value="2">
+    <input type="text" tabindex="1" value="1">
+    <input type="text" tabindex="3" value="3">
+    <input type="text" tabindex="5" value="5">
+    <input type="text" tabindex="4" value="4">
+
+    <p><b>10 : Define accesskey when appropriate</b></p>
+
+    <p>Try pressing <kbd>[Control] [Alt] + accesskey</kbd> for Mac</p>
+
+    <label for="search"><span class="shortcut"></span>Search (<kbd>accesskey: S</kbd>)</label>
+    <input type="text" name="s" id="search" accesskey="s" />
+
+    <p><b>11 : Use good focusing techniques</b></p>
+
+    <style>
+        .focus:hover {
+            background-color: lightgreen;
+        }
+    </style>
+
+    <input class="focus" type="text" value="Hover on me!">
+
+    <p><b>12 : Consider people using Screen Readers</b></p>
+    <p>Since forms have the tendency to be so tedious, everyone likes a well-designed form.
+        But don't let a fancy form ignore screen readers: always make sure your inputs are
+        clearly labeled</p>
+
+    <p class="topic"><b><u>Functionality</u></b></p>
+    <p><b>13 : Use the right Content Type</b></p>
+
+    <form action="verify.php" method="get" enctype="multipart/form-data">
+        <label for="avatar">Upload your Avatar : </label>
+        <input type="file" name="avatar" id="avatar" />
+    </form>
+
+    <p><b>14 : Know when to use Get and when to use Post</b></p>
+    <p>Post is better for sensitive data (like passwords) and any
+        data that will generally change something (e.g. add a record to
+        the database). Also, post is your only option if you're uploading
+        a file.</p>
+
+    <form action="password.php" method="post">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" value="">
+    </form>
+
+    <p>Get is great for querying the database, and other requests
+        that don't have a lasting affect on anything.</p>
+
+    <form action="you.php" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="Bill" />
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" value="Gates" />
+    </form>
+
+    <p><b>15 : Validate on both the Client and Server</b></p>
+
+    <img src="https://cdn.tutsplus.com/net/uploads/legacy/426_formsBestPractices/validate.png" alt="validate">
+
+    <p>Validation is the bane of forms. But it's best to check the input both on
+        the client and on the server; validating in the browser allows you to warn
+        the user of mistakes before they submit the form, which requires one less
+        transaction with the server. However, always be sure to validate on the server
+        as well, for security's sake.</p>
+
+    <p><b>16 : Give your Users Smart Warnings</b></p>
+    
+    <!-- https://api.jquery.com/blur/ -->
+
+    <p><b>17 : Consider using AJAX to submit</b></p>
+
+    <!-- https://stackoverflow.com/questions/1960240/jquery-ajax-submit-form -->
+
+    <p><b>18 : Make sure your form works without Javascript</b></p>
+
+    <p>Maybe this should have gone under accessibility; although the last couple of tips need
+        JavaScript to work at all, make sure your form is completely functional without them. This means a regular
+        form submit, server-side validation, and good errors after a page reload.</p>
+
+    <p class="topic"><b><u>Design</u></b></p>
+    <p><b>19 : Style Forms Consistently</b></p>
+
+    <p>Your form should be consistent in its styling. Decide whether
+        your labels will be to the left or right (or perhaps above or below) of the fields, and stick
+        with it. Make all your text inputs and textareas the same width. Space all your fields equally.
+        Keep at least one edge of all boxes aligned. The tuts+ comment forms are great examples of well-styled forms.</p>
+
+    <p><b>20 : Consider using JavaScript to Consistently Style Forms over Different Platforms</b></p>
+
+    <p><b>21 : Be inspired by others</b></p>
+</body>
+
+</html>

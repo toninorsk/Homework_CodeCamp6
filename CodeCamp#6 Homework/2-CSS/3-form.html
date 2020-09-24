@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 form</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link rel="stylesheet" href="3-form-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html">1 CSS review</a>
+        <a href="2-review.html">2 CSS review</a>
+        <a href="3-form.html" style="background-color: rgba(0, 255, 0, 0.3);
+        ">3 CSS form</a>
+        <a href="4-review.html">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">3 CSS Form</h1>
+
+        <div>
+
+            <form action="/action_page.php">
+                <table>
+                    <tr>
+                        <td>Name<span style="color: red;">*</span>:</td>
+                        <td><input type="text" style="margin: 5px;"> <button type="button"
+                                onclick="alert('Forget your name?')" style="border-radius: 10%;">?</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tab Text <span style="color: red;">*</span>:</td>
+                        <td><input type="text" style="margin: 5px;"> <button type="button"
+                                onclick="alert('Forget your name?')" style="border-radius: 10%;">?</button></td>
+                    </tr>
+                    <tr>
+                        <td>URL <span style="color: red;">*</span>:</td>
+                        <td>http://www.wizehive.com/webform/<input type="text"
+                                style="margin: 5px 5px 10px 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left; background-color: rgb(223, 219, 219);">FORM SETUP</td>
+                    </tr>
+                    <tr>
+                        <td>Form:</td>
+                        <td>
+                            <select name="form" id="form" style="width: 10.5em; margin: 10px 5px 5px 5px;">
+                                <optgroup label="option-1">
+                                    <option value="option-1.1"></option>
+                                    <option value="option-1.2">A</option>
+                                    <option value="option-1.3">B</option>
+                                    <option value="option-1.4">C</option>
+                                </optgroup>
+                                <optgroup label="option-2">
+                                    <option value="option-2.1">D</option>
+                                    <option value="option-2.2">E</option>
+                                    <option value="option-2.3">F</option>
+                                    <option value="option-2.4">G</option>
+                                </optgroup>
+                            </select>
+                            <button type="button" onclick="alert('Do you want to edit form?')"
+                                style="border-radius: 10%;">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Logo:</td>
+                        <td><input style="margin: 5px;" type="file" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td>Template Text:</td>
+                        <td>
+                            <select name="template-text" id="template-text" style="width: 10.5em; margin: 5px;">
+                                <option value="eng">English</option>
+                                <option value="tha">Thai</option>
+                            </select>
+                            <button type="button" onclick="alert('Do you want to edit template text?')"
+                                style="border-radius: 10%;">Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Review Form:</td>
+                        <td>
+                            <select name="review-form" id="review-form" style="width: 10.5em; margin: 5px;">
+                                <option value="default">Default</option>
+                                <option value="adjust">Adjust</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Review Score:</td>
+                        <td>
+                            <select name="review-score" id="review-score" style="width: 10.5em; margin: 5px;">
+                                <option value="rating">Rating</option>
+                            </select>
+                            <button type="button" onclick="alert('Do you wan to edit review score?')" style="border-radius: 10%;">Reload Fields</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Scoring Type:</td>
+                        <td>
+                            <select name="score-type" id="score-type" style="margin: 5px;">
+                                <option value="average">Average</option>
+                                <option value="mean">Mean</option>
+                                <option value="median">Median</option>
+                                <option value="mode">Mode</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Max Score:</td>
+                        <td><input type="text" style="width: 10.5em; margin: 5px;"
+                                value="4.00"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-family: 'Merienda', cursive;">Created by Nattawoot Denduangchai on May 29, 2020</p>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-phone book</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #fff;
+            opacity: 0.7;
+            color: #000;
+            padding: 15px;
+            width: 100%;
+            transition: 0.7s;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #fff;
+            opacity: 0.5;
+            color: #000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: 0.7s;
+        }
+
+        .menu li:hover {
+            background-color: #66db93;
+        }
+
+        .footer {
+            background-color: #000;
+            opacity: 0.7;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background-color: black;
+            background-image: url("mobile.jpg");
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Nattawoot Denduangchai: Phone Book</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <a href="1-index.html">
+                    <li>Homepage</li>
+                </a>
+                <a href="2-profile.html">
+                    <li>Profile</li>
+                </a>
+                <a href="3-friends.html">
+                    <li>Friends</li>
+                </a>
+                <a href="4-booking.html">
+                    <li>Booking</li>
+                </a>
+                <a href="5-phonebook.html">
+                    <li style="background-color: #66db93;">Phone book</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9" style="background-color: white; opacity: 0.7;">
+            <p><b>Food delivery phone book:</b></p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>KFC & Pizza Hut</td>
+                        <td>1150</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Company & Burger King</td>
+                        <td>1112</td>
+                    </tr>
+                    <tr>
+                        <td>McDonald’s</td>
+                        <td>1711</td>
+                    </tr>
+                    <tr>
+                        <td>Domino's Pizza</td>
+                        <td>1612</td>
+                    </tr>
+                    <tr>
+                        <td>Chester’s Grill</td>
+                        <td>1145</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6 col-s-9" style="background-color: rgb(236, 65, 65); opacity: 0.7;">
+            <p><b>Emergency phone book:</b></p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>My phone number</td>
+                        <td>0997857714</td>
+                    </tr>
+                    <tr>
+                        <td>Police</td>
+                        <td>191</td>
+                    </tr>
+                    <tr>
+                        <td>Fire</td>
+                        <td>199</td>
+                    </tr>
+                    <tr>
+                        <td>Medical Emergency Call</td>
+                        <td>1669</td>
+                    </tr>
+                    <tr>
+                        <td>Tourist Police</td>
+                        <td>1155</td>
+                    </tr>
+                    <tr>
+                        <td>Highway Patrol</td>
+                        <td>1193</td>
+                    </tr>
+                    <tr>
+                        <td>Traffic Control Center</td>
+                        <td>1197</td>
+                    </tr>
+                    <tr>
+                        <td>Ambulance and Rescue</td>
+                        <td>1554</td>
+                    </tr>
+                    <tr>
+                        <td>National Disaster Warning Centre</td>
+                        <td>1860</td>
+                    </tr>
+                    <tr>
+                        <td>Private Air Ambulance </td>
+                        <td>02 586 7654</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Created by <b>Nattawoot Denduangchai</b> on May 28, 2020</p>
+        </div>
+
+</body>
+
+</html>

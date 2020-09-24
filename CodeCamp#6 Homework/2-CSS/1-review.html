@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 review</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html" style="background-color: rgba(0, 255, 0, 0.3);
+        ">1 CSS review</a>
+        <a href="2-review.html">2 CSS review</a>
+        <a href="3-form.html">3 CSS form</a>
+        <a href="4-review.html">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <img src="image/css-syntax.gif" alt="css-syntax" style="opacity: 0.7; width: 100%; margin-top: 20px;">
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">1 CSS review</h1>
+
+            <h2>CSS Syntax</h2>
+            <p>A CSS rule-set consists of a selector and a declaration block:</p>
+            <p>The <b>selector</b> points to the HTML element you want to style.</p>
+            <p>The <b>declaration</b> block contains one or more declarations separated by semicolons.</p>
+            <p>Each declaration includes a CSS <b>property</b> names and a <b>value</b>, separated by a colon.</p>
+            <p>Multiple CSS declaration are separated with semicolons, and declaration blocks are surrounded by curly
+                braces.</p>
+
+            <h2>CSS Selector</h2>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>We can divide CSS selectors into five categories:</p>
+            <ul>
+                <li>Simple selectors (select element based on name, id, class)</li>
+                <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <hr>
+            <h3 style="text-align: center;">Simple selectors</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Simple Selectors</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                        <td>Example explanation</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>The CSS element Selector</td>
+                        <td>The element selector selects HTML elements based on the element name.</td>
+                        <td><code>p {text-align: center; color: red;}</code></td>
+                        <td>all elements on the page will be center-aligned, with a red text color</td>
+                    </tr>
+                    <tr>
+                        <td>The CSS id Selector</td>
+                        <td>
+                            <p>The id selector uses the id attribute of HTML element to select a specific element.</p>
+                            <p>The id of an element is unique within a page, so the id selector is used to select one
+                                unique element!</p>
+                            <p>To select an element with a specific id, write a hash (#) character, followed by the id
+                                of the element.</p>
+                        </td>
+                        <td><code>#para1 {text-align: center; color: red;}</code></td>
+                        <td>The CSS rule below will be applied to the HTML element with id="para1"</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">The CSS class Selector</td>
+                        <td rowspan="3">
+                            <p>The class selector selects HTML elements with a specific class attribute.</p>
+                            <p>To select elements with a specific class, write a period (.) character, followed by the
+                                class name.</p>
+                        </td>
+                        <td><code>.center {text-align:
+                            center; color: red;}</code></td>
+                        <td>In this example all HTML
+                            elements with class="center" will be red and center-aligned</td>
+                    </tr>
+                    <tr>
+                        <td><code>p.center {text-align:
+                            center; color: red;}</code></td>
+                        <td>In this example only
+                            &ltP&gt elements with class="center" will be center-aligned</td>
+                    </tr>
+                    <tr>
+                        <td><code>&ltP class="center large"&gtThis paragraph refers to two
+                            classes.&lt/P&gt</code></td>
+                        <td>In this example the &ltP&gt element will be styled
+                            according to class="center" and to class="large"</td>
+                    </tr>
+                    <tr>
+                        <td>The CSS Universal Selector</td>
+                        <td>The universal selector (*) selects all HTML elements on the page.</td>
+                        <td><code>* {text-align: center; color: blue;}</code></td>
+                        <td>The CSS rule will affect every HTML element on the page</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">The CSS Grouping Selector</td>
+                        <td rowspan="2">
+                            <p>The grouping selector all the HTML elements with the same style definitions.</p>
+                            <p>Look at the following CSS code (the h1, h2, and p elements have the same style
+                                definitions)</p>
+                        </td>
+                        <td><code>
+                                h1 {text-align: center; color: red;}
+                                h2 {text-align: center; color: red;}
+                                p {text-align: center; color: red;}
+                        </code></td>
+                        <td>It will be better to group
+                            the selectors, to minimize the code. To group selectors, separate each selector
+                            with a comma.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>h1, h2, p {text-align: center; color: red;}</code>
+                        </td>
+                        <td>
+                            In this example we have grouped the selectors from the code above.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h3 style="text-align: center;">CSS Combinators</h3>
+            <p><span style="background-color: rgba(245, 245, 41, 0.5);">A combinator is something that explains the
+                    relationship between the selectors.</span></p>
+            <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a
+                combinator</p>
+            <p>There are four different combinators in CSS:</p>
+            <ul>
+                <li>descendant selector (space)</li>
+                <li>child selector (>)</li>
+                <li>adjacent sibling selector (+)</li>
+                <li>general sibling selector (-)</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <td>CSS Combinators</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                        <td>Example explanation</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descendant Selector</td>
+                        <td>The descendant selector matches all elements that are descendants of a specified element.
+                        </td>
+                        <td><code>div p {background-color: yellow;}</code></td>
+                        <td>This example selects all &ltP&gt elements inside &ltdiv&gt elements:</td>
+                    </tr>
+                    <tr>
+                        <td>Child Selector</td>
+                        <td>The child selector selects all elements that are the children of a specified element.</td>
+                        <td><code>div > p {background-color: yellow;}</code></td>
+                        <td>The example selects all &ltP&gt elements that are children of a &ltdiv&gt element</td>
+                    </tr>
+                    <tr>
+                        <td>Adjacent Sibling Selector</td>
+                        <td>
+                            <p>The adjacent sibling selector selects all elements that are the adjacent siblings of a
+                                specified element.</p>
+                            <p>Sibling elements must have the same parent element element, and "adjacent" means
+                                "immediately following".</p>
+                        </td>
+                        <td><code>div + p {background-color: yellow;}</code></td>
+                        <td>The example selects all &ltp&gt elements that are placed immediately after &ltdiv&gt
+                            elements</td>
+                    </tr>
+                    <tr>
+                        <td>General Sibling Selector</td>
+                        <td>The general sibling selector selects all elements that are sibling of a specified element.
+                        </td>
+                        <td><code>div ~ p {background-color: yellow;}</code></td>
+                        <td>The example selects all &ltp&gt elements that are siblings of &ltdiv&gt elements</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h3 style="text-align: center;">CSS Pseudo-classes</h3>
+            <p>A pseudo-class is used to define a special state of an element.</p>
+            <p>For example, it can be used to:</p>
+            <ul>
+                <li>Style an element when a user mouse over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+            </ul>
+            <p>The syntax of pseudo-classes: <code>selector:pseudo-class {property: value;}</code></p>
+
+            <p><b>Anchor Pseudo-classes</b> - exp. links can be displayed in different ways:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>unvisited link</td>
+                        <td>visited link</td>
+                        <td>mouse over link</td>
+                        <td>selected link</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><code>a:link {color: blue;}</code></td>
+                    <td><code>a:visited {color: purple;}</code></td>
+                    <td><code>a:hover {color:red;}</code></td>
+                    <td><code>a:active {color: green;}</code></td>
+                </tr>
+            </table>
+
+            <p><b>Pseudo-classes and CSS Classes</b></p>
+            <p>Pseudo-classes can be combined with CSS classes:</p>
+            <pre><code>
+&ltstyle&gt
+a.highlight:hover {
+    color: red;
+}
+&lt/style&gt
+
+&ltbody&gt
+&ltp&gt&lta class="highlight" href="#"&gtHyper Link&lt/a&gt&lt/p&gt
+&lt/body&gt
+            </code></pre>
+
+            <p>When you hover over the link in the example, it will change color.</p>
+
+            <p><b>Hover on &ltdiv&gt</b></p>
+            <p>An example of using the <code>:hover</code> pseudo-class on &ltdiv&gt element:</p>
+            <pre><code>
+&ltstyle&gt
+div.class {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+dive.class:hover {
+    background-color: blue;
+}
+&lt/style&gt
+
+&ltbody&gt
+&ltdiv class="class"&gtMouse Over Me&lt/div&gt
+&lt/body&gt
+            </code></pre>
+
+            <p><b>Simple Tooltip Hover</b></p>
+            <p>Hover over a &ltdiv&gt element to show a &ltp&gt element (like a tooltip):</p>
+            <pre><code>
+&ltstyle&gt
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover p {
+    display: block;
+}
+&lt/style&gt
+
+&ltbody&gt
+
+&ltdiv&gtHover over me to show the p element
+    &ltp&gtTada! Here I am!&lt/p&gt
+&lt/div&gt
+
+&lt/body&gt
+            </code></pre>
+
+            <p><b>All CSS Pseudo-Classes</b></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Selector</td>
+                        <td>Example</td>
+                        <td>Example description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>:active</code></td>
+                        <td><code>a:active</code></td>
+                        <td>Selects the active link</td>
+                    </tr>
+                    <tr>
+                        <td><code>:checked</code></td>
+                        <td><code>input:checked</code></td>
+                        <td>Selects every checked &ltinput&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>:disabled</code></td>
+                        <td><code>input:disabled</code></td>
+                        <td>Select every disabled &ltinput&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>:empty</code></td>
+                        <td><code>p:empty</code></td>
+                        <td>Select every &ltp&gt element that has no children</td>
+                    </tr>
+                    <tr>
+                        <td><code>:enabled</code></td>
+                        <td><code>input:enabled</code></td>
+                        <td>Select every enabled &ltinput&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>:first-child</code></td>
+                        <td><code>p:first-child</code></td>
+                        <td>Selects every &ltp&gt elements that is the first child of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:first-of-type</code></td>
+                        <td><code>p:first-of-type</code></td>
+                        <td>Selects every &ltp&gt element that is the first &ltp&gt element of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:focus</code></td>
+                        <td><code>input:focus</code></td>
+                        <td>Selects the &ltinput&gt element that has focus</td>
+                    </tr>
+                    <tr>
+                        <td><code>:hover</code></td>
+                        <td><code>a:hover</code></td>
+                        <td>Selects links on mouse over</td>
+                    </tr>
+                    <tr>
+                        <td><code>:in-range</code></td>
+                        <td><code>input:in-range</code></td>
+                        <td>Select &ltinput&gt elements with a value within a specified range</td>
+                    </tr>
+                    <tr>
+                        <td><code>:invalid</code></td>
+                        <td><code>input:invalid</code></td>
+                        <td>Selects all &ltinput&gt elements with an invalid value </td>
+                    </tr>
+                    <tr>
+                        <td><code>:lang(language)</code></td>
+                        <td><code>p:lang(it)</code></td>
+                        <td>Select every &ltp&gt element with a lang attribute value starting with "it"</td>
+                    </tr>
+                    <tr>
+                        <td><code>:last-child</code></td>
+                        <td><code>p:last-child</code></td>
+                        <td>Selects every &ltp&gt elements that is the last child of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:last-of-type</code></td>
+                        <td><code>p:last-of-type</code></td>
+                        <td>Select every &ltp&gt element that is the last &ltp&gt element of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:link</code></td>
+                        <td><code>a:link</code></td>
+                        <td>Selects all unvisited links</td>
+                    </tr>
+                    <tr>
+                        <td><code>:not(selector)</code></td>
+                        <td><code>:not(p)</code></td>
+                        <td>Selects every element that is not a &ltp&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>:nth-child(n)</code></td>
+                        <td><code>p:nth-child(2)</code></td>
+                        <td>Selects every &ltp&gt element that is the second child of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:nth-last-child()</code></td>
+                        <td><code>p:nth-last-child(2)</code></td>
+                        <td>Selects every &ltp&gt element that is the second child of its parent, counting from the last
+                            child</td>
+                    </tr>
+                    <tr>
+                        <td><code>:nth-last-of-type(n)</code></td>
+                        <td><code>:nth-last-of-type(2)</code></td>
+                        <td>Selects every &ltp&gt element that is the second &ltp&gt element of its parent, counting
+                            from the last child</td>
+                    </tr>
+                    <tr>
+                        <td><code>:nth-of-type(n)</code></td>
+                        <td><code>p:nth-of-type(2)</code></td>
+                        <td>Selects every &ltp&gt element that is the second &ltp&gt element of its parent</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>:only-of-type</code></td>
+                        <td><code>p:only-of-type</code></td>
+                        <td>Selects every &ltp&gt element that is the only &ltp&gt element of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:only-child</code></td>
+                        <td><code>p:only-child</code></td>
+                        <td>Select every &ltp&gt element that is the only child of its parent</td>
+                    </tr>
+                    <tr>
+                        <td><code>:optional</code></td>
+                        <td><code>input:optional</code></td>
+                        <td>Selects &ltinput&gt elements with no "required" attribute</td>
+                    </tr>
+                    <tr>
+                        <td><code>:out-of-range</code></td>
+                        <td><code>input:out-of-range</code></td>
+                        <td>Selects &ltinput&gt elements with a value outside a specified range</td>
+                    </tr>
+                    <tr>
+                        <td><code>:read-only</code></td>
+                        <td><code>input:read-only</code></td>
+                        <td>Select &ltinput&gt elements with a "readonly" attribute specified</td>
+                    </tr>
+                    <tr>
+                        <td><code>:read-write</code></td>
+                        <td><code>input:read-write</code></td>
+                        <td>Select &ltinput&gt elements with no "readonly" attribute</td>
+                    </tr>
+                    <tr>
+                        <td><code>:required</code></td>
+                        <td><code>input:required</code></td>
+                        <td>Selects &ltinput&gt elements with a "required" attribute specified</td>
+                    </tr>
+                    <tr>
+                        <td><code>:root</code></td>
+                        <td><code>root</code></td>
+                        <td>Selects the document's root element</td>
+                    </tr>
+                    <tr>
+                        <td><code>:target</code></td>
+                        <td><code>#news:target</code></td>
+                        <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+                    </tr>
+                    <tr>
+                        <td><code>:valid</code></td>
+                        <td><code>input:valid</code></td>
+                        <td>Selects all &ltinput&gt elements with a valid value</td>
+                    </tr>
+                    <tr>
+                        <td><code>:visited</code></td>
+                        <td><code>a:visited</code></td>
+                        <td>Selects all visited links</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h3 style="text-align: center;"><b>CSS Pseudo-elements</b></h3>
+
+            <p>What are Pseudo-Elements?</p>
+            <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+            <p>For example, it can be used to:</p>
+
+            <ul>
+                <li>Style the first letter, or line, of an element</li>
+                <li>Insert content before, or after, the content of an element</li>
+            </ul>
+
+            <p>The syntax of pseudo-elements: <code>selector::pseudo-element {property: value;}</code> </p>
+
+            <p><b>All CSS Pseudo Elements</b></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Selector</td>
+                        <td>Example</td>
+                        <td>Example description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>::after</code></td>
+                        <td><code>p::after</code></td>
+                        <td>Insert something after the content of each &ltp&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>::before</code></td>
+                        <td><code>p::before</code></td>
+                        <td>Insert something before the content of each &ltp&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>::first-letter</code></td>
+                        <td><code>p::first-letter</code></td>
+                        <td>Select the first letter of each &ltp&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>::first-line</code></td>
+                        <td><code>p::first-line</code></td>
+                        <td>Select the first line of each &ltp&gt element</td>
+                    </tr>
+                    <tr>
+                        <td><code>::selection</code></td>
+                        <td><code>p::selection</code></td>
+                        <td>Selects the portion of an element that is selected by a user</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h3 style="text-align: center;"><b>CSS Attribute Selectors</b></h3>
+
+            <p><span style="background-color: rgba(245, 245, 41, 0.5);">Style HTML Elements With Specific
+                    Attributes</span></p>
+            <p>It is possible to style HTML elements that have specific attributes or attribute values.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Selector</td>
+                        <td>Example</td>
+                        <td>Example description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>[attribute]</code></td>
+                        <td><code>[target]</code></td>
+                        <td>Selects all elements with a target attribute</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute=value]</code></td>
+                        <td><code>[target=_blank]</code></td>
+                        <td>Selects all elements with target="_blank"</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute~=value]</code></td>
+                        <td><code>[title~=flower]</code></td>
+                        <td>Selects all element with a title attribute containing the word "flower"</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute|=value]</code></td>
+                        <td><code>[lang|=en]</code></td>
+                        <td>Selects all elements with a lang attribute value starting with "en"</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute^=value]</code></td>
+                        <td><code>a[href^="https"]</code></td>
+                        <td>Selects every &lta&gt element whose href attribute value begins with "https"</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute$=value]</code></td>
+                        <td><code>a[href$=".pdf"]</code></td>
+                        <td>Selects every &lta&gt element whose href attribute value ends with ".pdf"</td>
+                    </tr>
+                    <tr>
+                        <td><code>[attribute*=value]</code></td>
+                        <td><code>a[href*="w3schools"]</code></td>
+                        <td>Selects every &lta&gt element whose href attribute value contains the substring "w3schools"
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+            <h2 style="text-align: center;"><b>How To Add CSS</b></h2>
+
+            <p>When a browser reads a style sheet, it will format the HTML document according to the information in the
+                style
+                sheet.</p>
+            <p><b>Three Ways to Insert CSS</b></p>
+            <p>There are three ways of inserting a style sheet:</p>
+            <ul>
+                <li>External CSS</li>
+                <li>Internal CSS</li>
+                <li>Inline CSS</li>
+            </ul>
+
+            <hr>
+
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-family: 'Merienda', cursive;">Created by Nattawoot Denduangchai on May 29, 2020</p>
+    </div>
+
+
+</body>
+
+</html>

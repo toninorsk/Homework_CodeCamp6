@@ -1,0 +1,99 @@
+body {
+    background-color: rgba(245, 222, 179, 0.541);
+    font-family: 'Handlee', cursive;
+}
+
+.top-img {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.pin {
+    width: 40px;
+}
+
+div {
+    text-align: center;
+}
+
+div > div:nth-child(even) {
+    padding: 5%;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgb(247, 246, 196);
+    margin: 10px;
+    transform: rotate(2.5deg);
+}
+
+div > div:nth-child(odd) {
+    padding: 5%;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgb(247, 246, 196);
+    margin: 10px;
+    transform: rotate(-2.5deg);
+}
+
+div > div:hover {
+    transform: rotate(0deg);
+}
+
+div > h3 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    margin: 50px auto;
+}
+
+.footer {
+    box-shadow: 5px 10px 8px #888888;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(241, 240, 144);
+    padding: 5%;
+}
+
+.footer > h2 {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    div > div {
+        min-width: 300px;
+    }
+
+    .footer {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 840px) {
+    .container {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 4%;
+        margin-bottom: 100px;
+    }
+
+    div > div {
+        min-width: 255px;
+    }
+}
+
+@media only screen and (min-width: 841px) {
+    .container {
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 3%;
+    }
+
+    div > div {
+        min-width: 255px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form 1</title>
+    <style>
+        input:hover,
+        textarea:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create an Account</h1>
+    <form>
+        <label for="firstName">First name:</label> <br>
+        <input type="text" id="firstName" name="firstName" value=""> <br>
+
+        <label for="lastName">Last name:</label> <br>
+        <input type="text" id="lastName" name="lastName" value=""> <br>
+
+        <p>Please select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="age">Age:</label>
+        <select name="age" id="age">
+            <option value="Under 20">Under 20</option>
+            <option value="20 to 24">20 to 24</option>
+            <option value="25 to 29">25 to 29</option>
+            <option value="30 to 34">30 to 34</option>
+            <option value="35 to 39">35 to 39</option>
+            <option value="40 to 44">40 to 44</option>
+            <option value="45 to 49">45 to 49</option>
+            <option value="50 to 54">50 to 54</option>
+            <option value="55 to 60">55 to 60</option>
+            <option value="Over 60">Over 60</option>
+        </select> <br>
+
+        <p>
+            <label>Address:</label>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="4"></textarea>
+        </p>
+
+        <p> Programming skill(s) and language(s): <br>
+        <input type="checkbox" id="program1" name="program1" value="HTML">
+        <label for="program1"></label>HTML<br>
+        <input type="checkbox" id="program2" name="program2" value="CSS">
+        <label for="program2">CSS</label><br>
+        <input type="checkbox" id="program3" name="program3" value="JavaScript">
+        <label for="program3">JavaScript</label><br>
+        <input type="checkbox" id="program4" name="program4" value="JQuery">
+        <label for="program4">JQuery</label><br>
+        <input type="checkbox" id="program5" name="program5" value="Bootstrap">
+        <label for="program5">Bootstrap</label><br>
+        <input type="checkbox" id="program6" name="program6" value="Node.js">
+        <label for="program6">Node.js</label><br>
+        <input type="checkbox" id="program7" name="program7" value="MySQL">
+        <label for="program7">MySQL</label><br>
+        <input type="checkbox" id="program8" name="program8" value="UX UI Visual design">
+        <label for="program8"></label>UX UI Visual design<br>
+        <input type="checkbox" id="program9" name="program9" value="React.js">
+        <label for="program9"></label>React.js<br>
+        <input type="checkbox" id="program10" name="program10" value="Express.js">
+        <label for="program10"></label>Express.js<br>
+        <input type="checkbox" id="program11" name="program11" value="Passport.js">
+        <label for="program11"></label>Passport.js<br>
+        <input type="checkbox" id="program12" name="program12" value="JWT">
+        <label for="program12"></label>JWT<br>
+        <input type="checkbox" id="program13" name="program13" value="Redux.js">
+        <label for="program13"></label>Redux.js<br>
+        <input type="checkbox" id="program14" name="program14" value="Vue.js">
+        <label for="program14"></label>Vue.js<br>
+        <input type="checkbox" id="program15" name="program15" value="Angular">
+        <label for="program15"></label>Angular<br>
+        <input type="checkbox" id="program16" name="program16" value="Docker">
+        <label for="program16"></label>Docker<br>
+        <input type="checkbox" id="program17" name="program17" value="MS SQL">
+        <label for="program17"></label>MS SQL<br>
+        <input type="checkbox" id="program18" name="program18" value="PostgreSQL">
+        <label for="program18"></label>PostgreSQL<br>
+        <input type="checkbox" id="program19" name="program19" value="CI CD">
+        <label for="program19"></label>CI CD<br>
+        <input type="checkbox" id="program20" name="program20" value="C/C++">
+        <label for="program20"></label>C/C++<br>
+        <input type="checkbox" id="program21" name="program21" value="Java">
+        <label for="program21"></label>Java<br>
+        <input type="checkbox" id="program22" name="program22" value="PHP">
+        <label for="program22"></label>PHP<br>
+        <input type="checkbox" id="program23" name="program23" value="Python">
+        <label for="program23"></label>Python<br></p>
+
+
+        <label for="email">E-mail:</label> <br>
+        <input type="text" id="email" name="email" value=""> <br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" name="password" value=""> <br>
+
+        <p>
+            <label>Tell us a little about yourself:</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="accept" value="yes"> I agree to the <a
+                href="https://policies.google.com/terms?hl=en-US" target="_blank">terms of service</a>.
+        </p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

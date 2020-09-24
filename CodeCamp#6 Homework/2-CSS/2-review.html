@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 review</title>
+    <link rel="stylesheet" href="1-review-stylesheet.css">
+    <link rel="stylesheet" href="2-review-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="1-review-stylesheet.js"></script>
+
+    <div class="header">
+        <h1 style="font-family: 'Merienda', cursive;">TÆ</h1>
+        <h2 style="font-family: 'Marck Script', cursive;">Welcome to my <span
+                style="font-family: 'Merienda', cursive;">CSS</span> homework archives</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="1-review.html">1 CSS review</a>
+        <a href="2-review.html" style="background-color: rgba(0, 255, 0, 0.3);
+        ">2 CSS review</a>
+        <a href="3-form.html">3 CSS form</a>
+        <a href="4-review.html">4 CSS review</a>
+        <a href="5-nike.html" target="_blank">5 Nike</a>
+        <a href="6-media-query.html" target="_blank">6 media query</a>
+        <a href="7-responsive-page.html" target="_blank">7 responsive page</a>
+        <a href="8-animation.html" target="_blank">8 animation</a>
+        <a href="9-animation.html" target="_blank">9 animation</a>
+        <a href="10-animation.html" target="_blank">10 animation</a>
+        <a href="11-bootstrap.html" target="_blank">11 bootstrap</a>
+    </div>
+
+    <img src="image/css-syntax.gif" alt="css-syntax" style="opacity: 0.7; width: 100%; margin-top: 20px;">
+
+    <div class="middlecolumn">
+        <div class="card">
+            <h1 style="text-align: center;">2 CSS review</h1>
+
+            <p>Whereas HTML has tags, CSS has selectors. Selectors are the names given to styles in internal and
+                external style sheets. In this CSS Beginner Tutorial we will be concentrating on HTML selectors, which
+                are simply the names of HTML tags and are used to change the style of a specific type of element.</p>
+            <p>For each selector there are <span style="background-color: rgba(245, 245, 41, 0.5);">"properties"</span>
+                inside curly brackets, which simply take the form of words such as color, font-weight or
+                background-color.</p>
+            <p>A <span style="background-color: rgba(245, 245, 41, 0.5);">value</span> is given to the property
+                following a colon (NOT an “equals” sign). Semi-colons are used to separate the properties.</p>
+
+            <hr>
+
+            <h2 style="text-align: center;">CSS Units</h2>
+
+            <P>CSS has several different units for expressing a length.
+            Many CSS properties take "length" values, such as width, margin, padding, font-size.
+            Length is a number followed by a length unit, such as 10px, 2em, etc.
+            <p>A whitespace cannot appear between the number and the unit.
+            However, if the value is o, the unit can be omitted.
+            For some CSS properties, negative lengths are allowed.</p>
+            <p>There are 2 types of length units: absolute and relative.</p>
+        
+            <h2>Absolute Lengths</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cm</td>
+                        <td>centimeters</td>
+                    </tr>
+                    <tr>
+                        <td>mm</td>
+                        <td>millimeters</td>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td>inches (1in = 96px = 2.54cm)</td>
+                    </tr>
+                    <tr>
+                        <td>px</td>
+                        <td>pixels (1px = 1/96 of 1in)</td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                        <td>points (1pt = 1/72 of 1in)</td>
+                    </tr>
+                    <tr>
+                        <td>pc</td>
+                        <td>picas (1pc = 12pt)</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h2>Relative Lengths</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>em</td>
+                        <td>relative to the font-size of the element (2em means 2 times the size of the current font</td>
+                    </tr>
+                    <tr>
+                        <td>ex</td>
+                        <td>relative to the x-height of the current font (rarely used)</td>
+                    </tr>
+                    <tr>
+                        <td>ch</td>
+                        <td>relative to width of the "0" (zero)</td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>relative to font-size of the root element</td>
+                    </tr>
+                    <tr>
+                        <td>vm</td>
+                        <td>relative to 1% of the width of the viewport</td>
+                    </tr>
+                    <tr>
+                        <td>vh</td>
+                        <td>relative to 1% of the height of the viewport</td>
+                    </tr>
+                    <tr>
+                        <td>vmin</td>
+                        <td>relative to 1% of viewport's smaller dimension</td>
+                    </tr>
+                    <tr>
+                        <td>vmax</td>
+                        <td>relative to 1% of viewport's larger dimension</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>relative to the parent element</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <hr>
+
+            <h2 style="text-align: center;">CSS Properties</h2>
+
+            <table>
+                <tr>
+                    <td class=" hover"><a href="#content"> Content</a></td>
+                    <td class=" hover"><a href="#border">Border</a></td>
+                    <td class=" hover"><a href="#image">Image</a></td>
+                    <td class=" hover"><a href="#margin"> Margin</a></td>
+                    <td class=" hover"><a href="#display"> Display</a></td>
+                    <td class=" hover"><a href="#grid"> Grid</a></td>
+                    <td class=" hover"><a href="#flex"> Flex</a></td>
+                    <td class=" hover"><a href="#position"> Position</a></td>
+                    <td class=" hover"><a href="#media"> Media Queries</a></td>
+                </tr>
+            </table>
+
+            <section id="content"></section>
+
+            <h2 style="text-align: center;"><b>CSS content Property</b></h2>
+
+            <h2> Color </h2>
+            <p>With CSS, color can be specified in different ways:</p>
+            <ul>
+                <li>By color name</li>
+                <li>As RGB values</li>
+                <li>As hexadecimal values</li>
+                <li>As HSL values</li>
+                <li>As HWB values</li>
+            </ul>
+            <hr>
+
+            <h4> <u>Color Names</u> </h4>
+            <p>CSS supports 140 standard color names.</p>
+            <p><u>exp.</u> <span style="color: purple;"> Purple </style></span> <span style="color: lightblue;">
+                    Lightblue
+                </span>
+                <span style="color: blue;"> Blue </span><span style="color: green;"> Green </span><span
+                    style="color: yellow;">
+                    Yellow </span><span style="color: orange;"> Orange </span><span style="color: red;"> Red </span></p>
+
+            <h4> <u>RGB Colors</u> </h4>
+            <p>An RGB color value is specified with: RGB (<span style="color:rgb(255, 0, 0);">Red</span><span
+                    style="color:rgb(0, 255, 0);">Green</span><span style="color:rgb(0, 0,255);">Blue</span>)</p>
+            <p>Each parameter defines the intensity of the color as an integer between 0 and 255. This makes 256*256*256
+                =
+                16,777,216 possible colors</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: rgb(255, 0, 0);"></td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 255, 0);"></td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 0, 255);"></td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(0, 0, 0);"></td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(128, 128, 128);"></td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(255, 255, 255);"></td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>RGBA Colors</h4>
+            <p>RGBA color values are an extension of RGB color values with an alpha chanel - which specifies the opacity
+                for a
+                color.</p>
+            <p>An RGBA color value is specified with: RGBA (<span style="color: rgb(255, 0, 0);">Red</span>
+                <span style="color: rgb(0, 255, 0);">Green</span>
+                <span style="color: rgb(0, 0, 255);">Blue</span>Alpha). The alpha parameter is a number between 0.0
+                (fully
+                transparent) and 1.0 (fully opaque).</p>
+
+            <table>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.2);">RGBA(255, 0, 0, 0.2)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.2);">RGBA(0, 255, 0, 0.2)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.2);">RGBA(0, 0, 255, 0.2)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.4);">RGBA(255, 0, 0, 0.4)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.4);">RGBA(0, 255, 0, 0.4)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.4);">RGBA(0, 0, 255, 0.4)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.6);">RGBA(255, 0, 0, 0.6)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.6);">RGBA(0, 255, 0, 0.6)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.6);">RGBA(0, 0, 255, 0.6)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgba(255, 0, 0, 0.8);">RGBA(255, 0, 0, 0.8)</td>
+                    <td style="background-color: rgba(0, 255, 0, 0.8);">RGBA(0, 255, 0, 0.8)</td>
+                    <td style="background-color: rgba(0, 0, 255, 0.8);">RGBA(0, 0, 255, 0.8)</td>
+                </tr>
+            </table>
+
+            <h4> <u>Hexadecimal Colors</u> </h4>
+            <p>A hexadecimal color is specified with #<span style="color:#ff0000">RR</span><span
+                    style="color:#00ff00">GG</span><span style="color:#0000ff">BB</span></p>
+            <p>The number of colors that can be represented by this system is 16<sup>6</sup> = 16,777,216 </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>HEX</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: #ff0000;"></td>
+                        <td>#FF0000</td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #00ff00;"></td>
+                        <td>#00FF00</td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #0000ff;"></td>
+                        <td>#0000FF</td>
+                        <td>RGB(0,0,255)</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #000000;"></td>
+                        <td>#000000</td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #808080;"></td>
+                        <td>#808080</td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #ffffff;"></td>
+                        <td>#FFFFFF</td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4> <u>HSL Colors</u> </h4>
+            <p>HSL stands for hue, saturation, and lightness (ความเข้มสี, ความอิ่มตัวของสี, ความสว่าง).</p>
+            <p>HLS color values are specified with: hls (hue, saturation, lightness) </p>
+            <p><b>Hue</b> is a degree on the color wheel from 0 to 360. 0 is <span
+                    style="color: rgb(255, 0, 0);">Red</span>,
+                120 is <span style="color: rgb(0, 255, 0);">Green</span>, 240 is <span
+                    style="color: rgb(0, 0, 255);">Blue</span>.</p>
+            <p><b>Saturation</b> is a percentage value; 0% means a shade of gray and 100% is the full color.</p>
+            <p><b>Lightness</b> is also a percentage; 0% is black, 100% is white.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>HEX</th>
+                        <th>RGB</th>
+                        <th>Color</th>
+                        <th>HSL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: hsl(0, 100%, 50%);"></td>
+                        <td>#FF0000</td>
+                        <td>RGB(255,0,0)</td>
+                        <td>Red</td>
+                        <td>HSL(0,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(120, 100%, 50%);"></td>
+                        <td>#00FF00</td>
+                        <td>RGB(0,255,0)</td>
+                        <td>Green</td>
+                        <td>HSL(120,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(240, 100%, 50%);"></td>
+                        <td>#0000FF</td>
+                        <td>RGB(0,0,255)</td>
+                        <td>Blue</td>
+                        <td>HSL(240,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 0%);"></td>
+                        <td>#000000</td>
+                        <td>RGB(0,0,0)</td>
+                        <td>Black</td>
+                        <td>HSL(0,0%,0%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 50%);"></td>
+                        <td>#808080</td>
+                        <td>RGB(128,128,128)</td>
+                        <td>Gray</td>
+                        <td>HSL(0,0%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(0, 0%, 100%);"></td>
+                        <td>#FFFFFF</td>
+                        <td>RGB(255,255,255)</td>
+                        <td>White</td>
+                        <td>HSL(0,0%,100%)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <style>
+                #testHSL {
+                    background-color:
+                        hsl(180, 50%, 50%);
+                    color: hsl(0, 0%, 100%);
+                    padding: 5px;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <td id="testHSL">exp. background color is HLS(180, 50%, 50%) and letter color is HLS(0, 0%, 100%)
+                    </td>
+                </tr>
+            </table>
+
+            <h4> <b>HSLA Colors</b> </h4>
+            <p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the
+                opacity of a
+                color.</p>
+            <p>An HSLA color value is specified with: HSLA (Hue, Saturation, Lightness, Alpha), where the alpha
+                parameter
+                defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully
+                opaque).</p>
+
+            <table>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 30%, 0.3);">HSLA(0, 100%, 30%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 30%, 0.3);">HSLA(120, 100%, 30%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 30%, 0.3);">HSLA(240, 100%, 30%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 50%, 0.3);">HSLA(0, 100%, 50%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 50%, 0.3);">HSLA(120, 100%, 50%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 50%, 0.3);">HSLA(240, 100%, 50%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 70%, 0.3);">HSLA(0, 100%, 70%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 70%, 0.3);">HSLA(120, 100%, 70%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 70%, 0.3);">HSLA(240, 100%, 70%, 0.3)</td>
+                </tr>
+                <tr>
+                    <td style="background-color: hsla(0, 100%, 90%, 0.3);">HSLA(0, 100%, 90%, 0.3)</td>
+                    <td style="background-color: hsla(120, 100%, 90%, 0.3);">HSLA(120, 100%, 90%, 0.3)</td>
+                    <td style="background-color: hsla(240, 100%, 90%, 0.3);">HSLA(240, 100%, 90%, 0.3)</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h2> Text </h2>
+
+            <ul>
+                <li>Text color</li>
+                <li>Text Alignment</li>
+                <li>Text Decoration</li>
+                <li>Text Transformation</li>
+                <li>Text Spacing</li>
+                <li>Text Shadow</li>
+            </ul>
+
+            <hr>
+
+            <h4><u>Text Color</u></h4>
+            <p>The text-color property is used to set the color of the text. The color is specified by:</p>
+
+            <ul>
+                <li> a color name - like "red"</li>
+                <li> a HEX value - like "#ff0000"</li>
+                <li> an RGB value - like "rgb(255,0,0)"</li>
+                <li> a HSL value - like "hsl(0,100%,50%)"</li>
+            </ul>
+
+            <p> <u>exp.</u> <span style="color: purple;"> Purple </style></span> <span style="color: lightblue;">
+                    Lightblue
+                </span>
+                <span style="color: blue;"> Blue </span><span style="color: green;"> Green </span><span
+                    style="color: yellow;">
+                    Yellow </span><span style="color: orange;"> Orange </span><span style="color: red;"> Red </span></p>
+
+            <h4><u>Text Alignment</u></h4>
+            <p>The text-align property is used to set the horizontal alignment of a text.</p>
+            <p>A text can be left or right aligned, centered, or justified.</p>
+            <p>The following example shows center aligned, and left and right aligned text (left alignment is default if
+                text
+                direction is left-to-right, and right alignment is default if text direction is right-to-left): </p>
+
+            <style>
+                #test-text-align-center {
+                    text-align: center;
+                }
+
+                #test-text-align-left {
+                    text-align: left;
+                }
+
+                #test-text-align-right {
+                    text-align: right;
+                }
+
+                #test-text-align-justified {
+                    border: 1px solid black;
+                    padding: 10px;
+                    width: 200px;
+                    height: 200px;
+                    text-align: justify;
+                }
+            </style>
+
+            <style>
+                th,
+                td {
+                    border: 1px solid black;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <td><u>exp.</u> test text alignment - center, left, right</td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-center"> text alignment - center </td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-left"> text alignment - left </td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-right"> text alignment - right </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><u>exp.</u> test text alignment - justify</td>
+                </tr>
+                <tr>
+                    <td id="test-text-align-justified"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                        obcaecati
+                        modi quo nesciunt, similique alias odit laborum sed ullam quia reiciendis accusamus quos illum
+                        labore
+                        cupiditate atque aspernatur in magnam? </td>
+                </tr>
+            </table>
+
+            <h4>Text Direction</h4>
+            <p>The direction and unicode-bidi property can be used to change the text direction of an element:</p>
+
+            <style>
+                #test-text-direction-ltr {
+                    direction: ltr;
+                    unicode-bidi: bidi-override;
+                }
+
+                #test-text-direction-rtl {
+                    direction: rtl;
+                    unicode-bidi: bidi-override;
+                }
+            </style>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ltr</td>
+                        <td id="test-text-direction-ltr"> left-to-right </td>
+                        <td>Text direction goes from left-to-right. This is default.</td>
+                    </tr>
+                    <tr>
+                        <td>rtl</td>
+                        <td id="test-text-direction-rtl"> right-to-left </td>
+                        <td>Text direction goes from right-to-left.</td>
+                    </tr>
+                    <tr>
+                        <td>initial</td>
+                        <td></td>
+                        <td>Sets this property to its default value.</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td></td>
+                        <td>Inherits this property from its parent element.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><u>Text Decoration</u></h4>
+            <p>The text-decoration property is used to set or remove decorations from text.</p>
+            <p>The value text-decoration: none; is often used to remove underlines from links: </p>
+
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+
+            <p>exp. A link with no underline: <a
+                    href="https://www.w3schools.com/css/css_text_decoration.asp">www.w3schools.com</a></p>
+
+            <p style="text-decoration-line: underline; text-decoration-style: none;">exp. text-decoration-line:
+                underline;
+                text-decoration-style: none;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: double;">exp. text-decoration-line:
+                underline;
+                text-decoration-style: double;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: dotted;">exp. text-decoration-line:
+                underline;
+                text-decoration-style: dotted;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: dashed;">exp. text-decoration-line:
+                underline;
+                text-decoration-style: dashed;</p>
+            <p style="text-decoration-line: underline; text-decoration-style: wavy;">exp. text-decoration-line:
+                underline;
+                text-decoration-style: wavy;</p>
+
+            <p
+                style="color: red; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: green;">
+                exp. color: red; text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color:
+                green;</p>
+            <p
+                style="color: hotpink; text-decoration-line: line-through; text-decoration-style: dashed;text-decoration-color: purple;">
+                exp. color: hotpink; text-decoration-line: line-through; text-decoration-style: dashed;
+                text-decoration-color:
+                purple;</p>
+            <p
+                style="color: teal; text-decoration-line: overline; text-decoration-style: double; text-decoration-color: aquamarine;">
+                exp. color: teal; text-decoration-line: overline; text-decoration-style: double; text-decoration-color:
+                aquamarine;</p>
+            <p style="color:blueviolet; text-decoration: underline overline line-through dotted red;">exp. color:
+                blueviolet;
+                text-decoration: underline overline line-through dotted red;</p>
+
+
+            <style>
+                #test-text-decoration-overline {
+                    color: gold;
+                    text-decoration: overline;
+                    text-decoration-color: fuchsia;
+                }
+            </style>
+
+            <p id="test-text-decoration-overline">exp. color: gold; text decoration: overline; text-decoration-color:
+                fuchsia;
+                by id</p>
+
+            <h4><u>Text Transformation</u></h4>
+            <p>The property text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+            <p>it can be used to turn everything into uppercase or lowercase letters, or capitalized the first letter of
+                each
+                word:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Uppercase</th>
+                        <th>Lowercase</th>
+                        <th>Capitalized</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex
+                            expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                        <td style="text-transform: lowercase;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex
+                            expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                        <td style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Assumenda eius sapiente excepturi, veniam possimus aperiam. Reprehenderit doloribus aut ex
+                            expedita
+                            quibusdam debitis neque odit accusamus modi itaque iusto, quam libero.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><u>Text Spacing</u></h4>
+            <h4>Text Indentation</h4>
+            <p>the text-indent property is used to specify the indentation of the first line of a text.</p>
+
+            <p><u>exp.</u> text-indent: 50px;</p>
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae,
+                explicabo
+                voluptate ipsum molestias magni deleniti provident, minima distinctio beatae dolorum temporibus ratione
+                tenetur
+                soluta quos recusandae! Accusamus, excepturi velit!</p>
+
+            <h4>Letter Spacing</h4>
+            <p>The letter-spacing property is used to specify the space between the characters in a text.</p>
+            <p>The following example demonstrates how to increase or decrease the space between character:</p>
+
+            <p><u>exp.</u> letter-spacing: 3px;</p>
+            <p style="letter-spacing: 3px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error minima vero,
+                aperiam
+                temporibus amet fuga accusamus, distinctio itaque eligendi libero corporis animi. Mollitia minima
+                tempora
+                soluta. Corporis ducimus voluptatem enim.</p>
+            <p><u>exp.</u> letter-spacing: -3px;</p>
+            <p style="letter-spacing: -3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus
+                ad eius
+                quis facere temporibus rerum illo itaque a perspiciatis sint laudantium unde maxime enim repellendus,
+                cum error
+                ducimus quibusdam!</p>
+
+            <h4>Line Height</h4>
+            <p>The line-height property is used to specifiy the space between lines:</p>
+
+            <p><u>exp.</u> line-height: normal;</p>
+            <p style="line-height: normal;">This is a paragraph with a normal line-height.<br>This is a paragraph with a
+                normal
+                line-height.</p>
+
+            <p><u>exp.</u> line-height: 0.7;</p>
+            <p style="line-height: 0.7;">This is a paragraph with a smaller line-height.<br>This is a paragraph with a
+                smaller
+                line-height. </p>
+
+            <p><u>exp.</u> line-height: 1.8;</p>
+            <p style="line-height: 1.8;">This is a paragraph with a bigger line-height.<br>This is a paragraph with a
+                bigger
+                line-height.</p>
+
+            <h4>World Spacing</h4>
+            <p>The word-spacing property is used to specify the space between the words in a text.</p>
+            <p>The following example demonstrates how to increase or decrease the space between words:</p>
+
+            <p><u>exp.</u> word-spacing: normal;</p>
+            <p style="word-spacing: normal;">This is a paragraph with a normal word-spacing</p>
+
+            <p><u>exp.</u> word-spacing: 10 px;</p>
+            <p style="word-spacing: 10px;">This is a paragraph with a wider word-spacing.</p>
+
+            <p><u>exp.</u> word-spacing: -5px;</p>
+            <p style="word-spacing: -5px;">This is a paragraph with a smaller word-spacing.</p>
+
+            <h4><u>Text Shadow</u></h4>
+            <p>The text-shadow property adds shadow to text.</p>
+            <p>In its simplest use, you only specify the horizontal shadow (right +, left -) and the vertical shadow (up
+                +, down
+                -):</p>
+
+            <p><u>exp.</u> text-shadow: 2px 2px;</p>
+            <h2 style="text-shadow: 2px 2px;">Text-Shadow effect!</h2>
+
+            <p>Next, add a color <span style="color: blue;">(blue)</span> to the shadow:</p>
+            <p><u>exp.</u> text-shadow: 2px 2px blue;</p>
+            <h2 style="text-shadow: 2px 2px blue;">Text-Shadow effect!</h2>
+
+            <p>Then, add a blur effect (5px) to the shadow:</p>
+            <p><u>exp.</u> text-shadow: 2px 2px 5px blue;</p>
+            <h2 style="text-shadow: 2px 2px 5px blue;">Text-Shadow effect!</h2>
+
+            <hr>
+
+            <h2> Font </h2>
+
+            <p>The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+
+            <ul>
+                <li>Font Family</li>
+                <li>Font Style</li>
+                <li>Font Size</li>
+                <li>Font Shorthand</li>
+            </ul>
+
+            <hr>
+
+            <h4><u>Font Family</u></h4>
+
+            <p>The font-family property speifies the font for an element.</p>
+
+            <p>The font-family property can hold several font names as a "fallback" system. If the browser does not
+                support the
+                first font, it tries the next font.</p>
+
+            <p>In CSS, there are two types of font family names:</p>
+            <ul>
+                <li><b>font family</b> - a specific font family like "Times", "Arial", "Courier", etc.</li>
+                <li><b>generic family</b> - a group of font families with a similar look like "Serif", "Sans-serif",
+                    "cursive",
+                    "fantasy" or "Monospace"</li>
+            </ul>
+
+            <p>Start with the font you want, and always end with a generic family, to let the browser pick a similar
+                font in the
+                generic family, if no other fonts are available.</p>
+            <p><b>Note:</b> Seperate each value with a comma.</p>
+
+            <p><b>Note:</b> If a font name contains white-space, it must be quoted. Single quotes must be used when
+                using the
+                "style" attribute in HTML.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Generic family</th>
+                        <th>Font family Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">Serif</td>
+                        <td style="text-align:center; font-family: 'Times New Roman', Times, serif;">Times New Roman
+                            <br> <span style="font-family: Georgia, Times, serif;">Georgia</span></td>
+                        <td> Serif fonts have small lines at the ends on some characters</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Sans-serif</td>
+                        <td style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Arial<br><span
+                                style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Vernada</span></td>
+                        <td> "Sans" means without - these fonts do not have lines at the ends of characters</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Monospace</td>
+                        <td style="text-align: center; font-family: 'Courier New', Courier, monospace;">Courier
+                            New<br><span
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Lucida
+                                Sans</span> </td>
+                        <td> All monospace characters have the same width</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><u>Font Style</u></h4>
+
+            <h4>Font Style</h4>
+            <p>The font-style property is mostly used to specify italic text.</p>
+            <p>This property has three values:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Font Style</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>normal</td>
+                    <td style="font-style: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>The text is shown normally</td>
+                </tr>
+                <tr>
+                    <td>italic</td>
+                    <td style="font-style: italic;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                    <td>The text is shown in italics</td>
+                </tr>
+                <tr>
+                    <td>oblique</td>
+                    <td style="font-style: oblique;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                    <td>The text is "leaning" (oblique is very similar to italic, but less supported)</td>
+                </tr>
+            </table>
+
+            <h4><u>Font Weight</u></h4>
+            <p>The font-weight property specifies the weight of a font: <br><u>exp.</u> <span
+                    style="font-weight: normal;">font-weight: normal;</span> <br><u>exp.</u> <span
+                    style="font-weight: bold;">font-weight: bold;</span> <span
+                    style="font-weight: lighter;"><br><u>exp.</u>
+                    font-weight: lighter;</span></p>
+
+            <h4><u>Font Variant</u></h4>
+            <p>The font-variant property specifies weather or not a text should be displayed in a small-caps font.</p>
+            <p>In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted
+                uppercase
+                letters appears in a smaller font size than the original uppercase letters in the text.</p>
+            <p><u>exp.</u> <span style="font-variant: normal;">This is font-variant: normal; <br> <u>exp.</u></span>
+                <span style="font-variant: small-caps;"> This is font-variant: small-caps;</span></p>
+
+            <h4><u>Font Size</u></h4>
+            <p>The font-size property sets the size of the text.</p>
+            <p>Being able to manage the text size is important in web design. However, you should not use font size
+                adjustmant
+                to make paragraph look like headings, or headings look like paragraphs.</p>
+
+            <p>Always use the proper HTML tags, like h1 to h6 for headings and p for paragraphs.</p>
+
+            <p>The font-size value can be an absolute, or relative size.</p>
+
+            <p>Absolute size:</p>
+            <ul>
+                <li>Sets the text to a specified size</li>
+                <li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</li>
+                <li>Absolute size is useful when the physical size of the output is known</li>
+            </ul>
+
+            <p>Relative size:</p>
+            <ul>
+                <li>Sets the size relative to surrounding elements</li>
+                <li>Allows a user to change the text size in browsers</li>
+            </ul>
+
+            <p><b>Note:</b> If you do not specify a font size, the default size for normal text, like paragraphs, is
+                16px
+                (16px=1em).</p>
+
+            <h4>Set Font Size With Pixels</h4>
+            <p>Setting the text size with pixels gives you full control over the text size:</p>
+
+            <p><u>exp.</u> font-size: 40px; font-size: 30px; font-size: 20px; and font-size: 10px;</p>
+            <p style="font-size: 40px;">Font-size: 40px; <span style="font-size: 30px;">Font-size: 30px;</span> <span
+                    style="font-size: 20px;">Font-size: 20;</span> <span style="font-size: 10px;">Font-size:
+                    10px;</span></p>
+
+            <h4>Set Font Size With Em</h4>
+            <p>To allow users to resize the text (in the browser menu), many developer use em insteas of pixels.</p>
+            <p>The em size is recommomended by the W3C.</p>
+            <p>1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of
+                1em is
+                16px.</p>
+            <p>The size can be calculated from pixels to em using this formula: <i>pixels/16=em</i></p>
+
+            <p><u>exp.</u> font-size: 2.5em; font-size: 1.875em; front-size:1.25em; and font-size: 0.626; </p>
+            <p><span style="font-size: 2.5em;"> Font-size: 2.5em;</span> <span style="font-size: 1.875em;">Font-size:
+                    1.875em;</span> <span style="font-size: 1.25em;">Font-size: 1.25em;</span> <span
+                    style="font-size: 0.625em;">Font-size: 0.625;</span>
+            </p>
+
+            <h4>Use a Combination of Percent and Em</h4>
+
+            <p>The solution that works in all browsers, is to set a defult font-size in percent for the body element:
+            </p>
+
+            <p><u>exp.</u> font-size: 250%; font-size: 187.5%; front-size:125%; and font-size: 6.25%; </p>
+            <p><span style="font-size: 250%;"> Font-size: 250%;</span> <span style="font-size: 187.5%;">Font-size:
+                    187.5%;</span> <span style="font-size: 125%;">Font-size: 125%;</span> <span
+                    style="font-size: 6.25%;">Font-size: 6.25%;</span>
+            </p>
+
+            <h4>Responsive Font Size</h4>
+            <p>The text size can be set with a vm unit, which means the "viewport width".</p>
+            <p>That way the text size will follow the size of the browser window:</p>
+
+            <p><u>exp.</u> font-size: 5vm; and font-size: 3vm;</p>
+            <p style="font-size: 5vw;"> Font-size: 5vw; <span style="font-size: 3vw;"> Font-size: 3vw; </span> </p>
+
+            <h4>Font Shorthand</h4>
+            <p>To shorten the code, it is also possible to specify all the individual font properties in one property.
+            </p>
+
+            The font property is a shorthand property for:
+            <ul>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>font-size/line-height</li>
+                <li>font-family</li>
+            </ul>
+
+            <p><u>exp.</u> font: italic small-caps bold 2em arial, sans-serif;</p>
+            <p style="font: italic small-caps bold 2em arial, sans-serif;">Font: italic small-caps bold 2em arial,
+                sans-serif;
+            </p>
+
+            <p><u>exp.</u> font: bold 1.2em 'Courier New', Courier, monospace;</p>
+            <p style="font: bold 1.2em 'Courier New', Courier, monospace;">Font: bold 1.2em 'Courier New', Courier,
+                monospace;
+            </p>
+
+            <p><u>exp.</u> color: cadetblue; text-decoration:hotpink underline wavy; font: italic bold 1.5em Verdana,
+                Geneva,
+                Tahoma, sans-serif;</p>
+            <p
+                style="color: cadetblue; text-decoration:hotpink underline  wavy; font: italic bold 1.5em Verdana, Geneva, Tahoma, sans-serif;">
+                color: cadetblue; text-decoration:hotpink underline wavy; font: italic bold 1.5em Verdana, Geneva,
+                Tahoma,
+                sans-serif;</p>
+
+            <h4>@font-face Rule</h4>
+            <p>With the @font-face rule, web designers do not have to use one of the "web-safe" fonts anymore.</p>
+            <p>In the @font-face rule you must first define a name for the font (e.g. myFirstFont), and then point to
+                the font
+                file.</p>
+
+            <p id="kanit"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat pariatur veritatis
+                voluptatibus
+                vitae laborum ad dolorum, omnis quis quisquam optio sed sunt reiciendis numquam consequatur iure
+                sapiente fugiat
+                autem aut.</p>
+
+            <p style="font-family: Kanit;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae
+                quos sequi debitis, neque ipsam facilis error quidem mollitia, doloribus, qui esse rem at. Voluptas
+                culpa natus blanditiis illo libero.</p>
+
+            <style>
+                #test-font-banger {
+                    font-family: 'Bangers', cursive;
+                }
+            </style>
+
+            <p id="Bangers"> Test Bangers</p>
+
+            <h4><u>CSS list-style-type Property</u></h4>
+
+            <table>
+                <thead>
+                    <th>
+                        Value
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>disc</td>
+                        <td>
+                            <ul style="list-style-type: disc;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>Default value. The marker is a filled circle</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>armenian</td>
+                        <td><ul style="list-style-type: armenian;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Armenian numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>circle</td>
+                        <td>
+                            <ul style="list-style-type: circle;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is a circle</td>
+                    </tr>
+                    <tr>
+                        <td>cjk-ideographic</td>
+                        <td>
+                            <ul style="list-style-type: cjk-ideographic;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is plain ideographic numbers</td>
+                    </tr>
+                    <tr>
+                        <td>decimal</td>
+                        <td>
+                            <ul style="list-style-type: decimal;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is a number</td>
+                    </tr>
+                    <tr>
+                        <td>decimal-leading-zero</td>
+                        <td>
+                            <ul style="list-style-type: decimal-leading-zero;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is a number with leading zeros</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>georgian</td>
+                        <td><ul style="list-style-type: georgian;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Georgian numbering</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>hebrew</td>
+                        <td><ul style="list-style-type: hebrew;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Hebrew numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>hiragana</td>
+                        <td>
+                            <ul style="list-style-type: hiragana;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is traditional Hiragana numbering</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>hiragana-iroha</td>
+                        <td><ul style="list-style-type: hiragana-iroha;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Hiragana iroha numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>katakana</td>
+                        <td>
+                            <ul style="list-style-type: katakana;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is traditional Katakana numbering</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>katakana-iroha</td>
+                        <td><ul style="list-style-type: katakana-iroha;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td>The marker is traditional Katakana iroha numbering</td>
+                    </tr> -->
+                    <tr>
+                        <td>lower-alpha</td>
+                        <td>
+                            <ul style="list-style-type: lower-alpha;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is lower-alpha</td>
+                    </tr>
+                    <tr>
+                        <td>lower-greek</td>
+                        <td>
+                            <ul style="list-style-type: lower-greek;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is lower-greek</td>
+                    </tr>
+                    <tr>
+                        <td>lower-latin</td>
+                        <td>
+                            <ul style="list-style-type: lower-latin;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is lower-latin</td>
+                    </tr>
+                    <tr>
+                        <td>lower-roman</td>
+                        <td>
+                            <ul style="list-style-type: lower-roman;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is lower-roman</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>
+                            <ul style="list-style-type: none;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>No marker is shown</td>
+                    </tr>
+                    <tr>
+                        <td>square</td>
+                        <td>
+                            <ul style="list-style-type: square;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is a square</td>
+                    </tr>
+                    <tr>
+                        <td>upper-alpha</td>
+                        <td>
+                            <ul style="list-style-type: upper-latin;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is upper-alpha</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>upper-greek</td>
+                        <td><ul style="list-style-type: upper-greek;"><li >Coffee</li><li>Tea</li><li>Milk</li></ul></td>
+                        <td></td>
+                    </tr> -->
+                    <tr>
+                        <td>upper-latin</td>
+                        <td>
+                            <ul style="list-style-type: upper-latin;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        <td>The marker is upper-latin</td>
+                    </tr>
+                    <tr>
+                        <td>upper-roman</td>
+                        <td>
+                            <ul style="list-style-type: upper-roman;">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The marker is upper-roman</td>
+                    </tr>
+                    <tr>
+                        <td>List-style-image</td>
+                        <td>
+                            <ul id="list-style-image">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+                        <td>The list-style-image property replaces the list-item marker with an image</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id="border"></section>
+
+            <h2 style="text-align: center;"><b>CSS border Property</b></h2>
+            <p>The border-style property specifies what kind of border to display.</p>
+            <p>The following values are allowed:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border-style: dotted;"> A dotted border</td>
+                        <td> defines a dotted border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: dashed;"> A dashed border</td>
+                        <td> defines a dashed border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid;"> A solid border</td>
+                        <td> defines a solid border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: double;"> A double border</td>
+                        <td> defines a double border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: groove;"> A groove border</td>
+                        <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: ridge;"> A ridge border</td>
+                        <td> defines a 3D ridge border. The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: inset;"> A inset border</td>
+                        <td> defines a 3D grooved border. The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: outset;"> A outset border</td>
+                        <td> defines a 3D inset border. The effect depends on the border-color value</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: none;"> A none border</td>
+                        <td> defines no border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: hidden;"> A hidden border</td>
+                        <td> defines a hidden border</td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: dotted dashed solid double;"> A dotted dashed solid double border</td>
+                        <td> defines the top, right bottom and the left border</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><u>CSS Border Width</u></h4>
+            <p>The border-width property specifies the width of the four borders.</p>
+            <p>The width can be set as a specific size (in px, pt, cm, em, etc) or thick:</p>
+
+            <table>
+                <tr>
+                    <td style="border-style: solid; border-width: 5px">5px border-width</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-width: medium;">medium border-width</td>
+                </tr>
+                <tr>
+                    <td style="border-style: dashed; border-width: 1em;">1em border-width</td>
+                </tr>
+                <tr>
+                    <td style="border-style: dotted; border-width: thick;">thick border-width</td>
+                </tr>
+            </table>
+
+            <h4>Specific Side Widths</h4>
+            <p>The border-width property can have from one to four values (for top, right, bottom, and left border):</p>
+
+            <table>
+                <tr>
+                    <td style="border-style: solid; border-width: 5px 20px;"> 5px top and bottom, 20px on the sides</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-width: 20px 5px;"> 20px top and bottom, 5px on the sides</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-width: 5px 10px 15px 20px;"> 5px top, 10px right, 15px
+                        bottom, and
+                        20px left</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-width: 20px 15px 10px 5px;">20px top, 15px right, 10px
+                        bottom, 5px
+                        left</td>
+                </tr>
+            </table>
+
+            <h4>CSS Border color</h4>
+            <p>The border-color property is used to set the color of the four borders.</p>
+            <p>The color can be set by:</p>
+            <ul style="list-style: square;">
+                <li>name - specify a color name, like "red"</li>
+                <li>HEX - specify a HEX value, like "ff0000"</li>
+                <li>RGB - specify an RGB value, like "rgb(255,0,0)" </li>
+                <li>HLS - specify a HSL value, like "hsl(0,100%,50%)"</li>
+                <li>transparent</li>
+            </ul>
+
+            <p>Note: If border-color is not set, it inherits the color of the element.</p>
+
+            <p style="border-style: solid; border-color: red;">red border</p>
+            <p style="border-style: dashed; border-color: green;">green border</p>
+            <p style="border-style: double; border-color: blue;">blue border</p>
+            <p style="color: silver; border-style: dotted;">If border-color is not set, it inherits the color of the
+                element.
+            </p>
+
+            <h4>Specific Side Colors</h4>
+            <p>The border-color property can have one to four values (for top, right, bottom, and left border).</p>
+
+            <p style="border-style: solid; border-color: red green blue silver;">red green blue silver border</p>
+            <p style="border-style: solid; border-color:green blueviolet yellow;">green blueviolet yellow</p>
+
+            <h4>CSS Border - Individual Sides</h4>
+            <p>From the example on the previous, you have seen that it is possible to specify a different border for
+                each.</p>
+            <p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+
+            <p
+                style="border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;">
+                Different Border Style</p>
+            <p
+                style="border-top-style: dashed; border-right-style: solid; border-bottom-style: double; border-left-style: solid;">
+                Different Border Style</p>
+
+            <h4>CSS Shorthand Border Property</h4>
+            <p>Like you saw in the previous page, there are many properties to consider when dealing with borders.</p>
+            <p>The border property is a shorthand property for the following individual</p>
+
+            <p>The border property is a shorthand property for the following individual border properties:</p>
+            <ul>
+                <li>border-width</li>
+                <li>border-style (required)</li>
+                <li>border-color</li>
+            </ul>
+
+            <p style="border: 5px solid red;">Some text</p>
+            <p>You can also specify all the individual border properties for just one side:</p>
+            <p style="border-left: 6px solid red; background-color: silver;">Some text</p>
+            <p style="border-bottom: 6px solid red; background-color: silver;">Some text</p>
+
+            <h4>CSS Rounded Borders</h4>
+            <p>The border-radius property is used to add rounded borders to an element:</p>
+            <p style="border: 2px solid green; border-radius: 0px;">Normal border</p>
+            <p style="border: 2px solid green; border-radius: 5px;">Round border</p>
+            <p style="border: 2px solid green; border-radius: 10px;">Round border</p>
+
+            <h4><u>CSS Height and Width</u></h4>
+            <p>The height and width properties are used to set the height and width of an element.</p>
+            <p>The height and width properties do not include padding, borders, or margins. It sets the height/width of
+                the area
+                inside the padding, border, and margin of the element.</p>
+
+            <h4>CSS height and width Values</h4>
+            <p>The height and width properties may have the following values:</p>
+            <ul>
+                <li>auto - This is default. The browser calculates the height and width</li>
+                <li>length - Defines the height/width in px, cm, etc.</li>
+                <li>% - defines the height/width in percent of the containing block</li>
+                <li>initial - sets the height/width to its default value</li>
+                <li>inherit - the height/width will be inherited from its parent value</li>
+            </ul>
+
+            <h4>CSS height and width Examples</h4>
+            <p
+                style="height: 100px; width: 50%; background-color: lightskyblue; border: dashed green; border-radius: 10px;">
+                This element has a height of 100px and a width of 50% - Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Neque at libero fugiat iste ipsum harum ab. Aliquid veniam praesentium quo ducimus perspiciatis ullam,
+            </p>
+
+            <div style="width: 100%; height: 50px; background-color: yellow; border: dotted deeppink;">This element has
+                a height
+                of 50px and a width of 100% - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto ab
+                ullam magni
+                quam incidunt voluptate laborum labore soluta? Iusto fuga repudiandae ullam maxime sint iure eaque
+                fugiat
+                sapiente nam!</div>
+
+            <br>
+
+            <div
+                style="width:fit-content;height: fit-content; border: thick brown solid; border-radius: 8px; background-color: chartreuse;">
+                This element has a fit-content width and a fit-content height - Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque accusamus placeat natus nesciunt voluptate perspiciatis molestias eos autem
+                assumenda
+                adipisci, dolore hic odit blanditiis voluptatum? Impedit voluptatibus tempore et rem.</div>
+
+            <br>
+
+            <div style="min-width: 700px; border: 1px solid;">This element has a min-width: 700px - Lorem ipsum, dolor
+                sit amet
+                consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus laboriosam.
+                Corrupti,
+                perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+            <br>
+
+            <div style="max-width: 1000px; border: solid 1px;">This element has a max-width: 1000px - Lorem ipsum, dolor
+                sit
+                amet consectetur adipisicing elit. Excepturi non nisi sit nesciunt reprehenderit fuga doloribus
+                laboriosam.
+                Corrupti, perferendis repellendus magnam quod ipsum ullam rerum non earum error quia ad?</div>
+
+            <h4><u>CSS Tables</u></h4>
+            <h4>Table Borders</h4>
+            <p>To specify table borders in CSS, use the border property.</p>
+            <p>The example below specifies a blue border for table th and td elements:</p>
+
+            <table style="border: 1px solid blue;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid blue;">First name</th>
+                        <th style="border: 1px solid blue;">Last name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid blue;">Peter</td>
+                        <td style="border: 1px solid blue;">Griffin</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid blue;">Lois</td>
+                        <td style="border: 1px solid blue;">Griffin</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <p>The example below specifies a black border for table th and td elements:</p>
+
+
+
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black;">First name</th>
+                    <th style="border: 1px solid black;">Last name</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Peter</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Lois</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+
+            <p>Notice that the tables in the example above have double borders. This is because both the table and the
+                th and td
+                elements have separate borders.</p>
+
+            <h4>Collapse Table Borders</h4>
+            <p>The border-collapse property sets whether the table borders should be collapsed into a single border:</p>
+
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th style="border-collapse: collapse; border: 1px solid black">First name</th>
+                    <th style="border-collapse: collapse; border: 1px solid black">Last name</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: 1px solid black">Peter</td>
+                    <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: 1px solid black">Lois</td>
+                    <td style="border-collapse: collapse; border: 1px solid black">Griffin</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table class="borderCollapse">
+                <tr>
+                    <th class="borderCollapse">First name</th>
+                    <th class="borderCollapse">Last name</th>
+                </tr>
+                <tr>
+                    <td class="borderCollapse">Peter</td>
+                    <td class="borderCollapse">Griffin</td>
+                </tr>
+                <tr>
+                    <td class="borderCollapse">Lois</td>
+                    <td class="borderCollapse">Griffin</td>
+                </tr>
+            </table>
+
+            <p>If you only want a border around the table, only specify the border property for table:</p>
+
+            <table style="border: 1px solid black">
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+
+            <h4>CSS border-spacing Property</h4>
+            <p>The border-spacing property sets the distance between the borders of adjacent cells.</p>
+            <p><b>Note:</b> This property works only when <u>border-collapse</u> is separate.</p>
+
+            <p><u>exp.</u> border-collapse: separate; border-spacing: 15px;</p>
+            <table style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">
+                <tr>
+                    <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">First name
+                    </th>
+                    <th style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Last name</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Peter</td>
+                    <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Lois</td>
+                    <td style="border-collapse: separate; border-spacing: 15px; border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+
+            <p>Using two values (the first sets the horizontal spacing and the second sets the vertical spacing)</p>
+            <p><u>exp.</u> border-collapse: separate; border-spacing: 15px 50px;</p>
+
+            <table style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">
+                <tr>
+                    <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">First name
+                    </th>
+                    <th style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Last name
+                    </th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Peter</td>
+                    <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Lois</td>
+                    <td style="border: 1px solid black; border-collapse:separate; border-spacing: 15px 50px;">Griffin
+                    </td>
+                </tr>
+            </table>
+
+            <h4>CSS empty-cells Property</h4>
+            <p>The empty-cells property sets whether or not to display borders on empty cells in a table.</p>
+            <p><b>Note:</b> This property has no effect if <u>border-collapse</u> is "collapse"</p>
+
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">First name</th>
+                    <th style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Last name</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Peter</td>
+                    <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;"></td>
+                    <td style="border: 1px solid black; border-collapse:separate; empty-cells:hide;">Griffin</td>
+                </tr>
+            </table>
+
+            <h4>CSS table-layout Property</h4>
+            <p><b>Tip:</b>The main benefit of table-layout: fixed; is that the table renders much faster. On large
+                tables, users
+                will not see any part of the table until the browser has rendered the whole table. So, if you use
+                table-layout:
+                fixed, users will see the top of the table while the browser loads and renders rest of the table. This
+                gives the
+                impression that the page loads a lot quicker!</p>
+
+            <style>
+                table.a {
+                    table-layout: auto;
+                    width: 180px;
+                }
+
+                table.b {
+                    table-layout: fixed;
+                    width: 180px;
+                }
+
+                table.c {
+                    table-layout: auto;
+                    width: 100%;
+                }
+
+                table.d {
+                    table-layout: fixed;
+                    width: 100%;
+                }
+            </style>
+
+            <p><u>exp.</u> table-layout: auto; width: 180px;</p>
+
+            <table class="a" style="border-collapse: collapse; border: solid black 1px;">
+                <tr>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste </td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+                </tr>
+            </table>
+
+            <p><u>exp.</u> table-layout: fixed; width: 180px;</p>
+
+            <table class="b" style="border-collapse: collapse; border: solid black 1px;">
+                <tr>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste </td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+                </tr>
+            </table>
+
+            <p><u>exp.</u> table-layout: auto; width: 100%;</p>
+
+            <table class="c" style="border-collapse: collapse; border: solid black 1px;">
+                <tr>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste </td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+                </tr>
+            </table>
+
+            <p><u>exp.</u> table-layout: fixed; width: 100%;</p>
+
+            <table class="d" style="border-collapse: collapse; border: solid black 1px;">
+                <tr>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Company</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Contact</th>
+                    <th style="border-collapse: collapse; border: solid black 1px;">Country</th>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Alfreds Futterkiste </td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Maria Anders</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Germany</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Island Trading</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Helen Bennett</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">UK</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Magazzini Alimentari Riuniti</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Giovanni Rovelli</td>
+                    <td style="border-collapse: collapse; border: solid black 1px;">Italy</td>
+                </tr>
+            </table>
+
+            <h4>W3.CSS Tables</h4>
+
+            <h4>W3.CSS Tables Classes</h4>
+            <p>W3.CSS provides the following classes for tables:</p>
+
+            <table style="border: 1px solid black">
+                <tr>
+                    <th style="background-color: silver;">Class</th>
+                    <th style="background-color: silver;">Defines</th>
+                </tr>
+                <tr>
+                    <td>w3-table</td>
+                    <td>Container for an HTML table</td>
+                </tr>
+                <tr>
+                    <td style="background-color: silver;">w3-striped</td>
+                    <td style="background-color: silver;">Striped table</td>
+                </tr>
+                <tr>
+                    <td>w3-border</td>
+                    <td>Bordered table</td>
+                </tr>
+                <tr>
+                    <td style="background-color: silver;">w3-bordered</td>
+                    <td style="background-color: silver;">Bordered lines</td>
+                </tr>
+                <tr>
+                    <td>w3-centered</td>
+                    <td>Centered table content</td>
+                </tr>
+                <tr>
+                    <td style="background-color: silver;">w3-hoverable</td>
+                    <td style="background-color: silver;">Hoverable table</td>
+                </tr>
+                <tr>
+                    <td>w3-table-all</td>
+                    <td>All properties set</td>
+                </tr>
+            </table>
+
+            <p><a href="https://www.w3schools.com/w3css/w3css_tables.asp"><button>Click</button></a> to learn more about
+                W3.CSS
+                Tables Classes</p>
+
+            <h4><u>Adding Cell Padding</u></h4>
+            <p>Cell padding specifies the space between the cell content and its borders.</p>
+            <p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+            <p>To set the padding, use the CSS padding property:</p>
+
+            <p><u>exp.</u> not specify a padding</p>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid black; border-collapse: collapse;">First Name</th>
+                        <th style="border: 1px solid black; border-collapse: collapse;">Last Name</th>
+                        <th style="border: 1px solid black; border-collapse: collapse;">Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">Jill</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">Smith</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">50</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">Eve</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">Jackson</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">94</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse;">John</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">Doe</td>
+                        <td style="border: 1px solid black; border-collapse: collapse;">80</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><u>exp.</u> padding: 15px;</p>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">First Name</th>
+                        <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Last Name</th>
+                        <th style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jill</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Smith</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">50</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Eve</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Jackson</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">94</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">John</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">Doe</td>
+                        <td style="border: 1px solid black; border-collapse: collapse; padding: 15px;">80</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>HTML Table - Cells that Span Many Columns</h4>
+            <p>To make a cell span more than one column, use the <span
+                    style="color: red; background-color: silver;">colspan</span> attribute:</p>
+
+            <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Name</th>
+                        <th colspan="2" style="padding: 15px; border: 1px solid black; border-collapse: collapse;">
+                            Telephone
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">Bill Gates</td>
+                        <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">123456789</td>
+                        <td style="border-collapse: collapse; border: black solid 1px; padding: 15px;">987654321</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">Steve Jobs</td>
+                        <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">000000000</td>
+                        <td style="padding: 15px; border-collapse: collapse; border: black solid 1px;">111111111</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>HTML Table - Cells that Span Many Rows</h4>
+            <p>To make a cell span more than one row, use the <span
+                    style="color: red; background-color: silver;">rowspan</span>
+                attribute:</p>
+
+            <table style="border: 1px solid black; padding: 15px; border-collapse: collapse;">
+                <tr>
+                    <th style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Name:</th>
+                    <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Bill Gates</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">
+                        Telephone:</th>
+                    <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">123456789</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">987654321</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="border-collapse: collapse; border: 1px black solid; padding: 15px;">
+                        Companies:</th>
+                    <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Microsoft</td>
+                </tr>
+                <tr>
+                    <td style="border-collapse: collapse; border: 1px black solid; padding: 15px;">Lorem</td>
+                </tr>
+            </table>
+
+            <h4>HTML Table - Adding a Caption</h4>
+            <p>To add a caption to a table, use the <span style="color: red; background-color: silver;">caption</span>
+                tag:</p>
+
+            <p><u>exp.</u> add a caption "Monthly savings"</p>
+
+            <table style="border: black solid 1px; border-collapse: collapse; padding: 3px;">
+                <caption style="color:tomato">Monthly savings</caption>
+                <tr>
+                    <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+                    <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+                </tr>
+            </table>
+
+            <p><u>exp.</u> add a caption "Monthly savings" capption-side: bottom;</p>
+
+            <table style="border: black solid 1px; border-collapse: collapse; padding: 3px; caption-side: bottom;">
+                <caption style="color: tomato;">Monthly savings</caption>
+                <tr>
+                    <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Month</th>
+                    <th style="border: black solid 1px; border-collapse: collapse; padding: 3px;">Savings</th>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">January</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$100</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">March</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$80</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">April</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$150</td>
+                </tr>
+                <tr>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">May</td>
+                    <td style="border: black solid 1px; border-collapse: collapse; padding: 3px;">$70</td>
+                </tr>
+            </table>
+
+            <h4>A Special Style for One Table</h4>
+            <p>To define a special style for table add an <span style="color: red; background-color: silver;">id</span>
+                attribute to the table:</p>
+
+            <p><u>exp.</u> table#t01 {
+                width: 100%;
+                background-color: #f1f1c1;
+                border: solid black 1px;
+                border-collapse: collapse;
+                text-align: center;
+                }</p>
+
+            <style>
+                table#t01 {
+                    width: 100%;
+                    background-color: #f1f1c1;
+                    border: solid black 1px;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+            </style>
+
+            <table id="t01">
+                <tr>
+                    <th style="border: solid 1px black;">First Name</th>
+                    <th style="border: solid 1px black;">Last Name</th>
+                    <th style="border: solid 1px black;">Age</th>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">Jill</td>
+                    <td style="border: solid 1px black;">Smith</td>
+                    <td style="border: solid 1px black;">50</td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">Eve</td>
+                    <td style="border: solid 1px black;">Jackson</td>
+                    <td style="border: solid 1px black;">94</td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">John</td>
+                    <td style="border: solid 1px black;">Doe</td>
+                    <td style="border: solid 1px black;">80</td>
+                </tr>
+            </table>
+
+            <p><u>exp.</u> <br> table#t02 {
+                width: 100%;
+                border: solid black 1px;
+                border-collapse: collapse;
+                text-align: center;
+                } <br>
+                table#t02 tr:nth-child(even) {
+                background-color: white;
+                } <br>
+                table#t02 tr:nth-child(odd) {
+                background-color: silver;
+                } <br>
+                table#t02 th {
+                background-color: black;
+                color: white;
+                }
+            </p>
+
+            <style>
+                table#t02 {
+                    width: 100%;
+                    border: solid black 1px;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+
+                table#t02 tr:nth-child(even) {
+                    background-color: white;
+                }
+
+                table#t02 tr:nth-child(odd) {
+                    background-color: silver;
+                }
+
+                table#t02 th {
+                    background-color: black;
+                    color: white;
+                }
+            </style>
+
+            <table id="t02">
+                <tr>
+                    <th style="border: solid 1px black;">First Name</th>
+                    <th style="border: solid 1px black;">Last Name</th>
+                    <th style="border: solid 1px black;">Age</th>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">Jill</td>
+                    <td style="border: solid 1px black;">Smith</td>
+                    <td style="border: solid 1px black;">50</td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">Eve</td>
+                    <td style="border: solid 1px black;">Jackson</td>
+                    <td style="border: solid 1px black;">94</td>
+                </tr>
+                <tr>
+                    <td style="border: solid 1px black;">John</td>
+                    <td style="border: solid 1px black;">Doe</td>
+                    <td style="border: solid 1px black;">80</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <section id="image"></section>
+            <h2 style="text-align: center;">CSS image Property</h2>
+            <h4><u>Image and Background decoration</u></h4>
+
+            <p>The img tag is empty, it contains attributes only, and does not have a closing tag. The required alt
+                attribute
+                specifies an alternate text for an image, if the image cannot be displayed.</p>
+            <p>The <code>src</code> attribute specifies the URL (web address) of
+                the image:</p>
+
+            <p><u>exp.</u> img src="picture.jpg" alt="My face at Banyan Tree" style="width:300px; height=300px"</p>
+            <img src="image/71338470_2391737664213895_8146683023476129792_o.jpg" alt="My face at Banyan Tree"
+                style="width:300px; height:300px; margin: auto; display: block;">
+
+            <p><u>exp.</u> img src="picture.jpg" alt="My face at Banyan Tree" style="width:300px; height=300px;
+                border-radius:
+                50%; border: gold dashed 10px; opacity: 0.9;"</p>
+            <img src="image/71338470_2391737664213895_8146683023476129792_o.jpg" alt="My face at Banyan Tree"
+                style="width:300px; height:300px; border-radius: 50%; border: gold dashed 10px; opacity: 0.9; margin: auto; display: block;">
+
+            <hr>
+
+            <section id="margin"></section>
+            <h2 style="text-align: center;">CSS margins Property</h2>
+            <p>The CSS margin properties are used to create space around elements, outside of any defied borders.
+                <br><br>
+                with CSS, you have full control over the margins. There are properties for setting the margin for each
+                side of
+                an element (top, right, bottom, and left).</p>
+
+            <h4>Margin - Individual Sides</h4>
+            <p>CSS has properties for specifying the margin for each side of an element:</p>
+
+            <ul>
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+            </ul>
+
+            <p>All the margin properties can have the following values:</p>
+
+            <ul>
+                <li>auto - the browser calculates the margin</li>
+                <li>length - specifies a margin in px, pt, cm, etc.</li>
+                <li>% - specifies a margin in % of the width of the containing element</li>
+                <li>inherit - specifies that the margin should be inherited from the parent element</li>
+            </ul>
+
+            <p><b>Tip:</b> Negative values are allowed.</p>
+
+            <p><u>exp.</u> set different margins for four sides of a p element:</p>
+
+            <style>
+                div.test1 {
+                    border: 1px solid black;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-right: 150px;
+                    margin-left: 80px;
+                    background-color: lightblue;
+                }
+            </style>
+
+            <div class="test1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of
+                100px,
+                and a left margin of 80px.</div>
+
+            <hr>
+
+            <section id="display"></section>
+
+            <h2>CSS display Property</h2>
+            <p>The display property specifies the display behavior (the type of rendering box) of an element.</p>
+            <p>In HTML, the default display property value is taken from the HTML specifications or from the
+                browser/user default style sheet. The default value in XML is inline, including SVG elements.</p>
+
+            <style>
+                p.display1 {
+                    display: none;
+                    color: red;
+                    border: black solid 1px;
+                }
+
+                p.display2 {
+                    display: inline;
+                    color: red;
+                    border: black solid 1px;
+                }
+
+                p.display3 {
+                    display: block;
+                    color: red;
+                    border: black solid 1px;
+                }
+
+                p.display4 {
+                    display: inline-block;
+                    color: red;
+                    border: black solid 1px;
+                }
+            </style>
+
+            <p><u>exp.</u> display: none; </p>
+
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+                pulvinar felis blandit. <p class="display1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero rhoncus ut.</div>
+
+            <p><u>exp.</u> display: inline; </p>
+
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+                pulvinar felis blandit. <p class="display2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero rhoncus ut.</div>
+
+            <p><u>exp.</u> display: block; </p>
+
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+                pulvinar felis blandit. <p class="display3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero rhoncus ut.</div>
+
+            <p><u>exp.</u> display: inline-block; </p>
+
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+                pulvinar felis blandit. <p class="display4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat
+                gravida libero rhoncus ut.</div>
+
+            <hr>
+
+            <section id="grid"></section>
+
+            <h2 style="text-align: center;">CSS grid Property</h2>
+            <h4><u>Grid Layout</u></h4>
+            <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to
+                design web
+                pages without having to use floats and positioning. </p>
+
+            <p>Grid Layout</p>
+            <p>This grid layout contains six columns and three rows:</p>
+
+            <div class="grid grid-container">
+                <div class="item1">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+            </div>
+
+            <h4>Grid Elements</h4>
+            <p>A grid layout consists of a parent element, with one or more child elements.</p>
+            <p>A Grid Layout must have a parent element with the display property set to <i>grid</i> or
+                <i>inline-grid</i>.</p>
+            <p>Direct child element(s) of the grid container automatically becomes grid items. </p>
+
+            <div class="cont grid-container2">
+                <div class="item6">1</div>
+                <div class="item6">2</div>
+                <div class="item6">3</div>
+                <div class="item6">4</div>
+                <div class="item6">5</div>
+                <div class="item6">6</div>
+                <div class="item6">7</div>
+                <div class="item6">8</div>
+                <div class="item6">9</div>
+            </div>
+
+            <h4>Display Property</h4>
+            <p>An HTML element becomes a grid container when its display property is set to <i>grid</i> or
+                <i>inline-grid</i>.</p>
+            <p><u>exp.</u> set the <i>display</i> property to <i>inline-grid</i> to make an inline grid container.</p>
+
+            <div class="grid-container3">
+                <div class="item7">1</div>
+                <div class="item7">2</div>
+                <div class="item7">3</div>
+                <div class="item7">4</div>
+                <div class="item7">5</div>
+                <div class="item7">6</div>
+                <div class="item7">7</div>
+                <div class="item7">8</div>
+                <div class="item7">9</div>
+            </div>
+
+            <h4>Grid Columns, Grid Rows and Grid Gaps</h4>
+
+            <div class="grid-container4">
+                <div class="item8">
+                    <p>The vertical lines of grid items are called <i>columns</i>.</p><img src="image/grid_columns.png"
+                        alt="grid_columns" width="200px">
+                </div>
+                <div class="item8">
+                    <p>The horizontal lines of grid items are called <i>rows</i>.</p><img src="image/grid_rows.png"
+                        alt="grid_rows" width="270px">
+                </div>
+                <div class="item8">
+                    <p>The spaces between each column/row are called <i>gaps</i>.</p><img src="image/grid_gaps.png"
+                        alt="grid_gaps" width="250px">
+                </div>
+            </div>
+
+            <p>You can adjust the gap size by using one of the following properties:</p>
+            <ul>
+                <li>grid-column-gap</li>
+                <li>grid-row-gap</li>
+                <li>grid-gap</li>
+            </ul>
+
+            <p><u>exp.</u> The <i>grid-column-gap</i> property sets the gap between the columns:</p>
+            <p>grid-column-gap: 50px;</p>
+
+            <div class="grid-container5">
+                <div class="item9">1</div>
+                <div class="item9">2</div>
+                <div class="item9">3</div>
+                <div class="item9">4</div>
+                <div class="item9">5</div>
+                <div class="item9">6</div>
+                <div class="item9">7</div>
+                <div class="item9">8</div>
+                <div class="item9">9</div>
+            </div>
+
+            <p><u>exp.</u> The <i>grid-row-gap</i> property sets the gap between the rows:</p>
+            <p>grid-row-gap: 50px;</p>
+
+            <div class="grid-container6">
+                <div class="item10">1</div>
+                <div class="item10">2</div>
+                <div class="item10">3</div>
+                <div class="item10">4</div>
+                <div class="item10">5</div>
+                <div class="item10">6</div>
+                <div class="item10">7</div>
+                <div class="item10">8</div>
+                <div class="item10">9</div>
+            </div>
+
+            <p><u>exp.</u> The <i>grid-gap</i> property is a shorthand property for the <i>grid-row-gap</i> and the
+                <i>grid-column-gap</i> properties:</p>
+            <p>grid-gap: 50px 100px;</p>
+
+            <div class="grid-container7">
+                <div class="item11">1</div>
+                <div class="item11">2</div>
+                <div class="item11">3</div>
+                <div class="item11">4</div>
+                <div class="item11">5</div>
+                <div class="item11">6</div>
+                <div class="item11">7</div>
+                <div class="item11">8</div>
+                <div class="item11">9</div>
+            </div>
+
+            <h4>Grid Lines</h4>
+            <p>The lines between columns are called <i>column lines</i></p>
+            <p>The lines between rows are called <i>row lines</i></p>
+
+            <img src="image/grid_lines.png" alt="grid_lines" width="400px">
+
+            <p>Refer to line numbers when placing a grid item in a grid container:</p>
+
+            <p><u>exp.</u> place a grid item at column line 1, and let it end on column line 3:</p>
+            <p>grid-column-start: 1;
+                grid-column-end: 3;</p>
+
+            <div class="grid-container8">
+                <div class="item12">1</div>
+                <div class="item13">2</div>
+                <div class="item14">3</div>
+                <div class="item15">4</div>
+                <div class="item16">5</div>
+                <div class="item17">6</div>
+                <div class="item18">7</div>
+                <div class="item19">8</div>
+            </div>
+
+            <p>You can refer to line numbers when placing grid items.</p>
+
+            <p><u>exp.</u> place a grid item at row line 1, and let it end on row line 3: </p>
+            <p>grid-row-start: 1;
+                grid-row-end: 3;</p>
+
+            <div class="grid-container9">
+                <div class="item20">1</div>
+                <div class="item21">2</div>
+                <div class="item23">3</div>
+                <div class="item24">4</div>
+                <div class="item25">5</div>
+                <div class="item26">6</div>
+                <div class="item27">7</div>
+                <div class="item28">8</div>
+            </div>
+
+            <h4><u>CSS Grid Container</u></h4>
+            <p>To make an HTML element behave as a grid container, you have to set the display property to <i>grid</i>
+                or
+                <i>inline-grid</i>.</p>
+
+            <h4>The grid-template-columns Property</h4>
+
+            <p>The grid-template-columns property defines the number of columns in your grid layout, and it can define
+                the width
+                of each column.</p>
+            <p>The value is a space-separated-list, where each value defines the length of the respective column.</p>
+            <p>If you want your grid layout to contain 3 columns, specify the width of the 3 columns, or "auto" if all
+                columns
+                should have the same width.</p>
+
+            <div class="cont grid-container2">
+                <div class="item6">1</div>
+                <div class="item6">2</div>
+                <div class="item6">3</div>
+                <div class="item6">4</div>
+                <div class="item6">5</div>
+                <div class="item6">6</div>
+                <div class="item6">7</div>
+                <div class="item6">8</div>
+                <div class="item6">9</div>
+            </div>
+
+            <p><a>Note:</a> If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row
+                to put
+                the items in.</p>
+
+            <p>The grid-template-columns property can also be used to specify the size (width) of the columns.</p>
+
+            <p><u>exp.</u> set a width for the 4 columns: </p>
+            <p>
+            <p>Use the <em>grid-template-columns</em> property to specify the size of each column.</p>
+            </p>
+            <p>grid-template-columns: 80px 200px auto 30px;</p>
+
+            <div class="grid-container10">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+
+            <h4>The grid-template-columns Property</h4>
+            <p>The grid-template-rows property defines the height of each row.</p>
+
+            <p><u>exp.</u> set a height for the 2 rows: </p>
+            <p>
+            <p>Use the <em>grid-template-rows</em> property to specify the size (height) of each row.</p>
+            </p>
+            <p>grid-template-rows: 80px 200px;</p>
+            <div class="grid-container11">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <h4><u>The justify-content Property</u></h4>
+            <p><span style="background-color: yellow;">The justify-content property is used to horizontally align</span>
+                the whole
+                grid inside the container.</p>
+            <p><b>Note:</b> The grid's total width has to be less than the container's width for the justify-content
+                property to
+                have any effect.</p>
+
+            <p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+            <p><u>exp.</u> The value "space-evenly" will give the columns equal amount of space between, and around
+                them:</p>
+            <p>justify-content: space-evenly;
+                grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container12">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "space-around" will give the columns equal amount of space around them:</p>
+            <p>justify-content: space-around; grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container13">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "space-between" will give the columns equal amount of space between them: </p>
+            <p>justify-content: space-between;
+                grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container14">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "center" will align the grid in the middle of the container: </p>
+            <p>justify-content: center;
+                grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container15">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "start" will align the grid at the beginning of the container:</p>
+            <p>justify-content: start;
+                grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container16">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "end" will align the grid at the end of the container:</p>
+            <p>justify-content: end;
+                grid-template-columns: 50px 50px 50px;</p>
+
+            <div class="grid-container17">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <hr>
+
+            <h4><u>The align-content Property</u></h4>
+            <p><span style="background-color: yellow;">The align-content property is used to vertically align</span> the
+                whole
+                grid inside the container.</p>
+            <p><b>Note:</b> The grid's total height ha to be less than the container's height for the align-content
+                property to
+                have any effect.</p>
+
+            <p>Use the <em>align-content</em> property to vertically align the grid inside the container.</p>
+            <p><u>exp.</u> The value "center" will align the rows in the middle of container:</p>
+            <p>height: 400px;
+                align-content: center;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container18">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "space-evenly" will give the rows equal amount of space between, and around them:
+            </p>
+            <p>height: 400px;
+                align-content: space-evenly;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container19">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "space-around" will give the rows equal amount of space around them:</p>
+            <p>height: 400px;
+                align-content: space-around;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container20">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "space-between" will give the rows equal amount of space between them:</p>
+            <p>height: 400px;
+                align-content: space-between;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container21">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "start" will align the rows at the beginning of the container:</p>
+            <p>height: 400px;
+                align-content: start;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container22">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <p><u>exp.</u> The value "end" will align the rows at the end of the container: </p>
+            <p>height: 400px;
+                align-content: end;
+                grid-template-columns: auto auto auto;</p>
+
+            <div class="grid-container23">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <hr>
+
+            <section id="flex"></section>
+
+            <h2 style="text-align: center;">CSS Flexbox</h2>
+
+            <h4>CSS Flexbox Layout Module</h4>
+            <p>Before the Flexbox Layout module, there were four layout modes:</p>
+            <ul>
+                <li>Block, for sections in a webpage</li>
+                <li>Inline, for text</li>
+                <li>Table, for two-dimensional table data</li>
+                <li>Positioned, for explicit position of an element</li>
+            </ul>
+
+            <p>The Flexible Box Module, makes it easier to design flexible responsive layout structure without using
+                float or
+                positioning.</p>
+
+            <hr>
+
+            <h4><u>Flexbox Elements</u></h4>
+            <p>To start using the Flexbox model, you need to first define a flex container.</p>
+
+            <div class="flex-container0">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p>A Flexible Layout must have a parent element with the <i>display</i> property set to <i>flex</i>.</p>
+            <p>Direct child element(s) of the flexible container automatically becomes flexible items. </p>
+            <hr>
+            <h4><u>Parent Element (Container)</u></h4>
+            <p>The flex container becomes flexible by setting the display property to <em>flex</em>:</p>
+            <p><u>exp.</u> .flex-container {display: flex;} </p>
+            <p>The flex container properties are:</p>
+
+            <ul>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>justify-content</li>
+                <li>align-items</li>
+                <li>align-content</li>
+            </ul>
+            <hr>
+            <h4><u>The flex-direction Property</u></h4>
+            <p>The flex-direction property defines in which direction the container wants to stack the flex items.</p>
+
+            <p><u>exp.</u> The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+            <p>.flex-container {
+                display: flex;
+                flex-direction: column;}</p>
+
+            <div class="flex-container1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "flex-direction: column-reverse;" stacks the flex items vertically (but from bottom to
+                top):</p>
+            <p>.flex-container {
+                display: flex;
+                flex-direction: column-reverse;}</p>
+
+            <div class="flex-container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "flex-direction: row;" stacks the flex items horizontally (from left to right):</p>
+            <p>.flex-container {
+                display: flex;
+                flex-direction: row;}</p>
+
+            <div class="flex-container3">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "flex-direction: row-reverse;" stacks the flex items horizontally (but from right to
+                left):</p>
+            <p>.flex-container {
+                display: flex;
+                flex-direction: row-reverse;}</p>
+
+            <div class="flex-container4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <hr>
+            <h4><u>The flex-wrap Property</u></h4>
+            <p>The flex-wrap property specifies whether the flex items should wrap or not.</p>
+            <p>The example below have 12 flex items, to better demonstrate the flex-wrap property.</p>
+
+            <p><u>exp.</u> The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+            <p>.flex-container {
+                display: flex;
+                flex-wrap: wrap;}</p>
+
+            <div class="flex-container5">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p>Try resizing the browser window.</p>
+
+            <p><u>exp.</u> The "flex-wrap: nowrap;" specifies that the flex items will not wrap (this is default):</p>
+            <p>.flex-container {
+                display: flex;
+                flex-wrap: nowrap;}</p>
+
+            <div class="flex-container6">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p>Try resizing the browser window.</p>
+
+            <p><u>exp.</u> The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if necessary, in
+                reverse
+                order:</p>
+            <p>.flex-container {
+                display: flex;
+                flex-wrap: wrap-reverse;}</p>
+
+            <div class="flex-container7">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <br>
+            <hr>
+            <h4><u>The flex-flow Property</u></h4>
+            <p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+            <p><u>exp.</u> .flex-container {
+                display: flex;
+                flex-flow: row wrap;}</p>
+
+            <div class="flex-container8">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p>Try resizing the browser window.</p>
+            <hr>
+            <h4><u>The justify-content Property</u></h4>
+            <p>The justify-content property is used to align the flex items:</p>
+            <p><u>exp.</u> The "justify-content: center;" aligns the flex items at the center of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                justify-content: center;}</p>
+
+            <div class="flex-container9">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "justify-content: flex-start;" aligns the flex items at the beginning of the container
+                (this is
+                default):</p>
+            <p>.flex-container {
+                display: flex;
+                justify-content: flex-start;}</p>
+
+            <div class="flex-container10">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp. </u> The "justify-content: flex-end;" aligns the flex items at the end of the container:</p>
+            <P>.flex-container {
+                display: flex;
+                justify-content: flex-end;}</P>
+
+            <div class="flex-container11">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p>The "justify-content: space-around;" displays the flex items with space before, between, and after the
+                lines:</p>
+            <p>.flex-container {
+                display: flex;
+                justify-content: space-around;}</p>
+
+            <div class="flex-container12">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "justify-content: space-between;" displays the flex items with space between the lines:
+            </p>
+            <p>.flex-container {
+                display: flex;
+                justify-content: space-between;}</p>
+
+            <div class="flex-container13">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <hr>
+            <h4><u>The align-items Property</u></h4>
+            <p>The align-items property is used to align the flex items vertically.</p>
+            <p>In these examples we use a 200 pixels high container, to better demonstrate the align-items property.</p>
+
+            <p>The <i>center</i> value aligns the flex items in the middle of the container:</p>
+            <p><u>exp.</u> The "align-items: center;" aligns the flex items in the middle of the container: </p>
+            <p>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: center;}</p>
+
+            <div class="flex-container14">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "align-items: flex-start;" aligns the flex items at the top of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: center;}</p>
+
+            <div class="flex-container15">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "align-items: flex-end;" aligns the flex items at the bottom of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: flex-end;}</p>
+
+            <div class="flex-container16">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "align-items: stretch;" stretches the flex items to fill the container (this is default):
+            </p>
+            <p>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: stretch;}</p>
+
+            <div class="flex-container17">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <p><u>exp.</u> The "align-items: baseline;" aligns the flex items such as their baselines aligns: </p>
+            <p>.flex-container {
+                display: flex;
+                height: 200px;
+                align-items: baseline;}</p>
+
+            <div class="flex-container18">
+                <div>
+                    <h1>1</h1>
+                </div>
+                <div>
+                    <h6>2</h6>
+                </div>
+                <div>
+                    <h3>3</h3>
+                </div>
+                <div><small>4</small></div>
+            </div>
+            <hr>
+            <h4><u>The align-content Property</u></h4>
+            <p>The align-content property is used to align the flex lines.</p>
+            <p>In these examples we use a 600 pixels high container, with the flex-wrap property set to wrap, to better
+                demonstrate the align-content property.</p>
+
+            <p><u>exp.</u> The space-between value displays the flex lines with equal space between them: </p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: space-between;}</p>
+
+            <div class="flex-container19">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p><u>exp.</u> The "align-content: space-around;" displays the flex lines with space before, between, and
+                after
+                them:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: space-around;</p>
+
+            <div class="flex-container20">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p><u>exp.</u> The "align-content: stretch;" stretches the flex lines to take up the remaining space (this
+                is
+                default):</p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: stretch;</p>
+
+            <div class="flex-container21">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p><u>exp.</u> The "align-content: center;" displays the flex lines in the middle of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: center;</p>
+
+            <div class="flex-container22">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p><u>exp.</u> The flex-start value displays the flex lines at the start of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: flex-start;</p>
+
+            <div class="flex-container23">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p><u>exp.</u> The "align-content: flex-end;" displays the flex lines at the end of the container:</p>
+            <p>.flex-container {
+                display: flex;
+                height: 600px;
+                flex-wrap: wrap;
+                align-content: flex-end;</p>
+
+            <div class="flex-container24">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <hr>
+            <h4><u>Perfect Centering</u></h4>
+            <p>In the following example we will solve a very common style problem: perfect centering.</p>
+
+            <p><u>exp.</u> A container with both the justify-content and the align-items properties set to center will
+                align the
+                item(s) in the center (in both axis).</p>
+            <p>.flex-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;}</p>
+
+            <div class="flex-container25">
+                <div></div>
+            </div>
+            <hr>
+            <h4><u>Child Elements (Items)</u></h4>
+            <p>The direct elements of a flex container automatically becomes flexible (flex) items.</p>
+            <p><u>exp.</u> The element below represents four blue flex items inside a grey flex container.</p>
+            <p></p>
+
+            <div class="flex-container26">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <p>The flex item properties are:</p>
+            <ul>
+                <li>order</li>
+                <li>flex-grow</li>
+                <li>flex-shrink</li>
+                <li>flex-basis</li>
+                <li>flex</li>
+                <li>align-self</li>
+            </ul>
+            <hr>
+            <h4><u>The order Property</u></h4>
+            <p>The order property specifies the order of the flex items.</p>
+            <p>The first flex item in the code does not have to appear as the first item in the layout.</p>
+            <p>The order value must be a number, default value is 0.</p>
+            <p><u>exp.</u> Use the order property to sort the flex items as you like:</p>
+            <p>"order: 3" 1 "order: 2" 2 "order: 4" 3 "order: 1" 4</p>
+
+            <div class="flex-container27">
+                <div style="order: 3">1</div>
+                <div style="order: 2">2</div>
+                <div style="order: 4">3</div>
+                <div style="order: 1">4</div>
+            </div>
+            <hr>
+            <h4><u>The flex-grow Property</u></h4>
+            <p>The flex-grow property specifies how much a flex item will grow ralative to the rest of the
+                flex items.</p>
+            <p>The value must be a number, default value is 0.</p>
+
+            <p><u>exp.</u> Make the third flex item grow eight times faster than the other flex items:</p>
+            <p>"flex-grow: 1""flex-grow: 1""flex-grow: 8"</p>
+
+            <div class="flex-container28">
+                <div style="flex-grow: 1">1</div>
+                <div style="flex-grow: 1">2</div>
+                <div style="flex-grow: 8">3</div>
+            </div>
+            <hr>
+            <h4><u>The flex-shrink Property</u></h4>
+            <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of
+                the flex items.</p>
+            <p><u>exp.</u> Do not let the third flex item shrink as much as the other flex items:</p>
+            <p>"flex-shrink: 0" 3 </p>
+
+            <div class="flex-container29">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-shrink: 0">3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+            <hr>
+            <h4><u>The flex-basis Property</u></h4>
+            <p><u>exp.</u> Set the initial length of the third flex item to 200 pixels:</p>
+            <p>"flex-basis:200px" 3</p>
+
+            <div class="flex-container30">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-basis:200px">3</div>
+                <div>4</div>
+            </div>
+            <hr>
+            <h4><u>The flex Property</u></h4>
+            <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+            <p><u>exp.</u> Make the third flex item not growable (0), not shrinkable (0), and with an initial length of
+                200
+                pixels:</p>
+            <p>"flex: 0 0 200px" 3 </p>
+
+            <div class="flex-container31">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex: 0 0 200px">3</div>
+                <div>4</div>
+            </div>
+            <hr>
+            <h4><u>The align-self Property</u></h4>
+            <p>The align-self property specifies the alignment for the selected item inside the flexible container.</p>
+            <p>The align-self property override the default alignment set by the container's align-items property.</p>
+
+            <p>In these examples we use a 200 pixels high container, to better demonstrate the align-self property:</p>
+
+            <p><u>exp.</u> The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+            <p>"align-self: center" 3 </p>
+
+            <div class="flex-container32">
+                <div>1</div>
+                <div>2</div>
+                <div style="align-self: center">3</div>
+                <div>4</div>
+            </div>
+            <p><u>exp.</u> Align the second flex item at the top of the container, and the third flex item at the bottom
+                of the
+                container:</p>
+            <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+            <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+            <p>"align-self: flex-start" 2 "align-self: flex-end" 3 </p>
+
+            <div class="flex-container33">
+                <div>1</div>
+                <div style="align-self: flex-start">2</div>
+                <div style="align-self: flex-end">3</div>
+                <div>4</div>
+            </div>
+
+            <hr>
+
+            <section id="position"></section>
+
+
+            <h2 style="text-align: center;">CSS Layout - The position Property</h2>
+            <p>The position property specifies the type of positioning method used for an element (static, relative,
+                fixed,
+                absolute or sticky)</p>
+
+            <h4>The position Property</h4>
+            <p>The position property specifies the type of positioning method used for an element.</p>
+            <p>There are five different position values:</p>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>absolute</li>
+                <li>sticky</li>
+            </ul>
+
+            <p>Element are then positioned using the top, bottom, left, and right properties. However, these properties
+                will not
+                work unless the position property is set first. They also work differently depending on the position
+                value.</p>
+            <hr>
+            <h4>position: static;</h4>
+            <p>HTML elements are positioned static by default.</p>
+            <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+            <p>An element with position: static; is not positioned in any special way; it is always positioned according
+                to the
+                normal flow of the page:</p>
+            <p><u>exp.</u> position: static;</p>
+
+            <div class="static">
+                This div element has position: static;
+            </div>
+            <hr>
+            <h4>position: relative;</h4>
+            <p>An element with position: relative; is positioned relative to its normal position.</p>
+            <p>Setting the top, right, bottom, and left properties of a relative-positioned element will cause it to be
+                adjusted
+                away from its normal position. Other content will not be adjusted to fit into any gap left by the
+                element.</p>
+            <p><u>exp.</u> position: relative;
+                left: 30px;</p>
+
+            <div class="relative">
+                This div element has position: relative;
+            </div>
+            <hr>
+            <h4>position: fixed;</h4>
+            <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays on
+                the same
+                place even if the page is scrolled. The top, right, bottom, and left properties are used to position the
+                element.</p>
+
+            <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+
+            <p>Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:</p>
+
+            <p><u>exp.</u> div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;</p>
+
+            <div class="fixed">
+                This div element has position: fixed;
+            </div>
+            <hr>
+            <h4>position: absolute;</h4>
+            <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+                positioned relative to the viewport, like fixed).</p>
+            <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and
+                moves
+                along with page scrolling.</p>
+
+            <p><b>Note:</b> A "positioned" element is one whose position is anything except static.</p>
+            <p>Here is a simple example:</p>
+            <p><u>exp.</u> div class="relative" div class="absolute" div div</p>
+
+            <div class="relative2" style="display: block; margin:auto
+    ">This div element has position: relative;
+                <div class="absolute">This div element has position: absolute;
+                </div>
+            </div>
+            <hr>
+            <h4>position: sticky;</h4>
+            <p>An element with position: sticky; is positioned based on the user's scroll position.</p>
+
+            <p>A sticky element toggle between relative and fixed, depending on the scroll position. It is positioned
+                relative
+                until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+            </p>
+
+            <p>You must also specify at least one of top, right, bottom or left for sticky positioning to work.</p>
+            <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll
+                position.
+            </p>
+            <p><u>exp.</u> div class="relative" div class="sticky" dive div class="padding-bottom: 100px;" div div </p>
+
+            <div class="relative3" style="text-align: center; display: block; margin: auto;"><b>Try to scroll inside
+                    this frame to understand how sticky
+                    positioning works.</b>
+                <div class="sticky">I am sticky!</div>
+                <div style="padding-bottom: 200px;">
+                    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its
+                        scroll
+                        position.</p>
+                    <p>Scroll back up to remove the stickyness.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.
+                    </p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.
+                    </p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <h4>Overlapping Elements</h4>
+            <p>When elements are positioned, they can overlap other elements.</p>
+            <p>The z-index property specifies the stack order of an element (which element should be placed in front of,
+                or
+                behind, the others).</p>
+            <p>An element can have a positive or negative stack order:</p>
+
+            <div class="relative4" style="display: block; margin: auto;">
+                <h1>This is a heading</h1>
+                <img src="image/Eiffel.png" alt="Eiffel" class="img1" width="100" height="150" style="opacity: 0.4;">
+                <img src="image/Paris.jpg" alt="Paris" class="img1 img2" width="400" height="150" style="opacity: 0.4;">
+                <p>Because the image has a z-index of -1, it will be placed behind the text. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+            <p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+            <p><b>Note:</b> If two positioned elements overlap without a z-index specified, the element positioned last
+                in the
+                HTML code will be shown on top.</p>
+
+            <hr>
+
+            <section id="media"></section>
+
+            <h2>Responsive Web Design - Media Queries</h2>
+            <h4>What is a Media Query?</h4>
+            <p>Media query is a CSS technique introduced in CSS.</p>
+            <p>It uses the @media rule to include a block of CSS properties only if a certain condition is true.</p>
+            <p>Resize the browser window. When the width of this document is 750 pixels or less, the background-image is "London", otherwise it is "Copenhagen".</p>
+        
+            <div class="relative0"></div>
+        
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-family: 'Merienda', cursive;">Created by Nattawoot Denduangchai on May 29, 2020</p>
+    </div>
+
+
+</body>
+
+</html>

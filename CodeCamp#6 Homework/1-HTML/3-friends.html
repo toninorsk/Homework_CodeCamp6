@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-friends</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #000000;
+            opacity: 0.7;
+            color: #ffffff;
+            padding: 15px;
+            width: 100%;
+            transition: 0.7s;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #fff;
+            opacity: 0.5;
+            color: #000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: 0.7s;
+        }
+
+        .menu li:hover {
+            background-color: #66db93;
+        }
+
+        .footer {
+            background-color: #000;
+            opacity: 0.7;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        td {
+            color: black;
+            background-color: white;
+            opacity: 0.5;
+        }
+
+        body {
+            background-color: black;
+            background-image: url("Friends.jpg");
+            background-repeat: repeat-y;
+            background-size: contain, cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Nattawoot Denduangchai: Friends</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <a href="1-index.html">
+                    <li>Homepage</li>
+                </a>
+                <a href="2-profile.html">
+                    <li>Profile</li>
+                </a>
+                <a href="3-friends.html">
+                    <li style="background-color: #66db93;">Friends</li>
+                </a>
+                <a href="4-booking.html">
+                    <li>Booking</li>
+                </a>
+                <a href="5-phonebook.html">
+                    <li>Phone book</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <p>Here's the list of my CodeCamp#6 friends</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td style="text-align: center; background-color: #66db93;">Number</td>
+                        <td style="text-align: center; background-color: #66db93;">First name</td>
+                        <td style="text-align: center; background-color: #66db93;">Last name</td>
+                        <td style="text-align: center; background-color: #66db93;">Nickname</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:center;">1</td>
+                        <td>Kanisha</td>
+                        <td>R. Liljeholm</td>
+                        <td>Eiw</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">2</td>
+                        <td>Surasak</td>
+                        <td>Somboon</td>
+                        <td>Ato</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">3</td>
+                        <td>Nicha</td>
+                        <td>Ngamtweerat</td>
+                        <td>Fern</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">4</td>
+                        <td>Nantika</td>
+                        <td>Chaiwirattana</td>
+                        <td>Nook</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">5</td>
+                        <td>Thanapath</td>
+                        <td>Yamubon</td>
+                        <td>Champ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">6</td>
+                        <td>Nattawoot</td>
+                        <td>Denduangchai</td>
+                        <td>Tae</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">7</td>
+                        <td>Suriya</td>
+                        <td>Thaweechat</td>
+                        <td>M</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">8</td>
+                        <td>Nonthasut</td>
+                        <td>Phanphon</td>
+                        <td>Pack</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">9</td>
+                        <td>Pattarachai</td>
+                        <td>Roongsritong</td>
+                        <td>Stamp</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">10</td>
+                        <td>Saracha</td>
+                        <td>Tongkumpunt</td>
+                        <td>First</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">11</td>
+                        <td>Chayawatthanin</td>
+                        <td>Thirathananithichaiyaphak</td>
+                        <td>Ake</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">12</td>
+                        <td>Makawan</td>
+                        <td>Maneephong</td>
+                        <td>Mix</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">13</td>
+                        <td>Supanat</td>
+                        <td>Thanarungrueangkij</td>
+                        <td>Touch</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">14</td>
+                        <td>Thanathip</td>
+                        <td>Singkaew</td>
+                        <td>Tak</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">15</td>
+                        <td>Burapon</td>
+                        <td>Ngamkhum</td>
+                        <td>Bu</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">16</td>
+                        <td>Naruth</td>
+                        <td>Sithasom</td>
+                        <td>Dean</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">17</td>
+                        <td>Suntiradh</td>
+                        <td>Kesbungkan</td>
+                        <td>Dean</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">18</td>
+                        <td>Kompruch</td>
+                        <td>Benjaputharak</td>
+                        <td>Ice</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">19</td>
+                        <td>Wannapa</td>
+                        <td>Sornchan</td>
+                        <td>May</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">20</td>
+                        <td>Nawinluck</td>
+                        <td>Parsarai</td>
+                        <td>Win</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">21</td>
+                        <td>Nittha</td>
+                        <td>Koohatammakun</td>
+                        <td>Namfon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">22</td>
+                        <td>Pakin</td>
+                        <td>Phupong</td>
+                        <td>Ake</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">23</td>
+                        <td>Prachya</td>
+                        <td>Piyaphonnarinthon</td>
+                        <td>Boom</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">24</td>
+                        <td>Suttichai</td>
+                        <td>Intarumpun</td>
+                        <td>Aum</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">25</td>
+                        <td>Sompop</td>
+                        <td>Laya</td>
+                        <td>Tum</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">26</td>
+                        <td>Apichit</td>
+                        <td>Ungsitapkdee</td>
+                        <td>Po</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">27</td>
+                        <td>Natthapong</td>
+                        <td>Vanichkajorn</td>
+                        <td>Aong</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">28</td>
+                        <td>Sitanan</td>
+                        <td>Mitsuphap</td>
+                        <td>Fah</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">29</td>
+                        <td>Pattarathon</td>
+                        <td>Nopwattanapong</td>
+                        <td>Khaokong</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">30</td>
+                        <td>Rungrawee</td>
+                        <td>Musignawabut</td>
+                        <td>Pair</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">31</td>
+                        <td>Kaeoweena</td>
+                        <td>Panjan</td>
+                        <td>Gam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">32</td>
+                        <td>Passakorn</td>
+                        <td>Chantarapakorn</td>
+                        <td>Champ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">33</td>
+                        <td>Nanthaya</td>
+                        <td>Sartpong</td>
+                        <td>Aum</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">34</td>
+                        <td>Teerapong</td>
+                        <td>Mookda</td>
+                        <td>Jo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">35</td>
+                        <td>Pongsatorn</td>
+                        <td>Pheungnoi</td>
+                        <td>Tack</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">36</td>
+                        <td>Mutcharin</td>
+                        <td>Saekang</td>
+                        <td>Moo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">37</td>
+                        <td>Pitch</td>
+                        <td>Piyapramote</td>
+                        <td>Not</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">38</td>
+                        <td>Chatwaroon</td>
+                        <td>Boonprakob</td>
+                        <td>Mint</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">39</td>
+                        <td>Narusorn</td>
+                        <td>Veerachartwattana</td>
+                        <td>Peach</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">40</td>
+                        <td>Wasin</td>
+                        <td>Nopsuwan</td>
+                        <td>Now</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">41</td>
+                        <td>Yanisara</td>
+                        <td>Amonwanijhsan</td>
+                        <td>Kaew</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">42</td>
+                        <td>Seksak</td>
+                        <td>Marakrong</td>
+                        <td>Nui</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">43</td>
+                        <td>Narongkorn</td>
+                        <td>Atchariyayat</td>
+                        <td>plug</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">44</td>
+                        <td>Phatara</td>
+                        <td>Chutinathorakul</td>
+                        <td>Ter</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">45</td>
+                        <td>Aethaya</td>
+                        <td>Meesawat</td>
+                        <td>Chompoo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">46</td>
+                        <td>Chakkarin</td>
+                        <td>Yinghan</td>
+                        <td>Nut</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">47</td>
+                        <td>Jintawat</td>
+                        <td>Chumnumpornchai</td>
+                        <td>B</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">48</td>
+                        <td>Chanpakorn</td>
+                        <td>Choosub</td>
+                        <td>Fluke</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">49</td>
+                        <td>Apat</td>
+                        <td>Palawan</td>
+                        <td>Nan</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">50</td>
+                        <td>Don</td>
+                        <td>Klanakin</td>
+                        <td>DK</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">51</td>
+                        <td>Sutara</td>
+                        <td>Sirisukkhasin</td>
+                        <td>Lookpair</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">52</td>
+                        <td>Kamonluck</td>
+                        <td>Chobdee</td>
+                        <td>Gofe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">53</td>
+                        <td>Chatchon</td>
+                        <td>Suwanchote</td>
+                        <td>Nick</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">54</td>
+                        <td>Akkarawat</td>
+                        <td>Mansap</td>
+                        <td>Coach</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">55</td>
+                        <td>Bukhori</td>
+                        <td>Malee</td>
+                        <td>Ri</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">56</td>
+                        <td>Sutthipong</td>
+                        <td>Minsakorn</td>
+                        <td>Bar</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">57</td>
+                        <td>Kotchamon</td>
+                        <td>Limgajangwong</td>
+                        <td>Roe</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">58</td>
+                        <td>Panupong</td>
+                        <td>Keawpong</td>
+                        <td>Joke</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">59</td>
+                        <td>Nara</td>
+                        <td>Muennara</td>
+                        <td>Pom</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">60</td>
+                        <td>Supanat</td>
+                        <td>Auengsirirat</td>
+                        <td>Joong</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">61</td>
+                        <td>Ponlawat</td>
+                        <td>Suparat</td>
+                        <td>Ko</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">62</td>
+                        <td>Nattapat</td>
+                        <td>Pattarapormjaroen</td>
+                        <td>Nob</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">63</td>
+                        <td>Panithi</td>
+                        <td>Changranggan</td>
+                        <td>Korid</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">64</td>
+                        <td>Boonthicha</td>
+                        <td>Sae-jia</td>
+                        <td>Mui</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">65</td>
+                        <td>Rattapol</td>
+                        <td>Boonphui</td>
+                        <td>Golf</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">66</td>
+                        <td>Jatupong</td>
+                        <td>Yospimpar</td>
+                        <td>New</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">67</td>
+                        <td>Thitipong</td>
+                        <td>Hongkaroon</td>
+                        <td>Boy</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">68</td>
+                        <td>Kongphop</td>
+                        <td>Lalun</td>
+                        <td>Pokdeng</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">69</td>
+                        <td>Sorawit</td>
+                        <td>Phattharakundilok</td>
+                        <td>Boom</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">70</td>
+                        <td>Chitpon</td>
+                        <td>Ponkram</td>
+                        <td>Gho</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">71</td>
+                        <td>Nutchanok</td>
+                        <td>Puttakun</td>
+                        <td>Nat</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">72</td>
+                        <td>Thatapon</td>
+                        <td>Samtalee</td>
+                        <td>Deen</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">73</td>
+                        <td>Rattanachai</td>
+                        <td>Rachparcon</td>
+                        <td>MaxNum</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">74</td>
+                        <td>Kittiporn</td>
+                        <td>Julchoo</td>
+                        <td>Foam</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            <p>Created by <b>Nattawoot Denduangchai</b> on May 28, 2020</p>
+        </div>
+
+</body>
+
+</html>

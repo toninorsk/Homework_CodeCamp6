@@ -1,0 +1,1120 @@
+.hover {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+td.hover:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* CSS grid Property */
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* -------------------------- */
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.item6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container3 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .item7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    /* grid-template-columns: subgrid subgrid subgrid; */
+  }
+
+  .item8 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /* font-size: 30px;
+    text-align: center; */
+  }
+
+  .grid-container5 {
+      display: grid;
+      grid-column-gap: 50px;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 10px;
+  }
+  
+  .item9 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container6 {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .item10 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container7 {
+    display: grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .item11 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container8 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      background-color: #2196f3;
+      padding: 10px;
+  }
+
+  .grid-container8 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .item12 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+
+  .grid-container9 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container9 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item20 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .grid-container10 {
+    display: grid;
+    grid-template-columns: 80px 200px auto 30px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container10 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container11 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container11 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container12 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+  }
+
+  .grid-container12 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container13 {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container13 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container14 {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container14 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container15 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container15 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container16 {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container16 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container17 {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-container17 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container18 {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container18 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container19 {
+    display: grid;
+    height: 400px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container19 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container20 {
+    display: grid;
+    height: 400px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container20 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container20 {
+    display: grid;
+    height: 400px;
+    align-content: space-around;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container20 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container21 {
+    display: grid;
+    height: 400px;
+    align-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container21 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container22 {
+    display: grid;
+    height: 400px;
+    align-content: start;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container22 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container23 {
+    display: grid;
+    height: 400px;
+    align-content: end;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container23 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  /* class container opacity */
+
+  [class*="container"] {
+    opacity: 0.7;
+  }
+
+  /* CSS flex Property */
+
+  .flex-container0 {
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.flex-container0 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+  .flex-container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container2 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container3 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  /* ---------------------------------- */
+
+  .flex-container4 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container4 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  
+  /* ---------------------------------- */
+
+  .flex-container5 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container5 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+  .flex-container6 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container6 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container7 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container7 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container8 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container8 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+  .flex-container9 {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container9 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container10 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container10 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container11 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container11 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container12 {
+    display: flex;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container12 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container13 {
+    display: flex;
+    justify-content: space-between;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container13 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container14 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container14 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container15 {
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container15 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container16 {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container16 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container17 {
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container17 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container18 {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container18 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container19 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container19 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container20 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container20 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container21 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container21 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container22 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container22 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container23 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container23 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container24 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container24 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container25 > div {
+    background-color: #f1f1f1;
+    color: white;
+    width: 100px;
+    height: 100px;
+  }
+
+/* ---------------------------------- */
+
+  .flex-container26 {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container26 > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container27 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container27 > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container28 {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container28 > div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* ---------------------------------- */
+
+.flex-container29 {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container29 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+.flex-container30 {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container30 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+.flex-container31 {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container31 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+.flex-container32 {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.flex-container32 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+.flex-container33 {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.flex-container33 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* ---------------------------------- */
+
+/* CSS position Property */
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+/* fixed bar */
+
+/* div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73ad21;
+} */
+
+div.relative2 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73ad21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73ad21;
+}
+
+div.relative3 {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 3px solid #73ad21;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+div.relative4 {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  border: 3px solid #73ad21;
+}
+
+.img1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.img2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+}
+
+/* CSS media Property */
+div.relative0 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border: 3px solid #73ad21;
+  /* background-color: lightgreen; */
+  background-image: url(Image/Copenhagen.jpg);
+  opacity: 0.5;
+  background-size: 100% 200px;
+}
+
+@media only screen and (max-width: 750px) {
+  div.relative0 {
+      /* background-color: lightskyblue; */
+      background-image: url(Image/London.jpg);
+  }
+}
+
+
+
+
