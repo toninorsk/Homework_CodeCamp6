@@ -1,0 +1,84 @@
+UX/UI 
+UX: User Experience
+
+UI: User Interface
+
+UX process
+
+"Encompasses all aspects of the end user's interaction with the company, its service, and its product."
+
+
+
+Design Thinking + Lean + Agile 
+
+Product definition > Research > Analysis > Design > Validation
+
+
+UI = User Interface
+
+5 senses (Visibility, Taste, Odor, Noise, Touch)
+
+UI Design Process 
+
+- Inspiration
+- Mood board
+- Style Guide
+- Brand Guideline
+
+7 Misunderstood (Below are wrong)
+
+1. UX =! UI (Incomparable)
+2. You = You user (Don't always assume as you are a user)
+3. User always know what they want (actually they don't)
+4. UX ends when user leave website/screen (Actually, continue)
+5. UX best practice always works! (No, e.g. What's App is famous around the world, but Thailand and Japan ...)
+6. UX Guru knows all (Untrue)
+7. Client always like Innovation and Change (not always)
+
+UI (User Interface)
+
+Increase number of users
+Branding 
+
+1. find pain points
+2. have clear User Flow
+3. experiment for clear persona
+4. wire frames and sketches
+5. mockup with ui
+6. user test
+7. ui design 
+
+UX 6 values
+- useful
+- usable
+- finable
+- credible
+- desirable
+- accessible
+
+1.
+
+http://arngren.net/
+
+- useful = True 
+- usable = False
+- findable = False
+- credible = False
+- desirable = False
+- accessible = False
+
+2.
+
+- I am single.
+- I am a soldier.
+- I studied in Norway.
+
+3. 
+
+- 
+
+4. 
+
+
+
+
