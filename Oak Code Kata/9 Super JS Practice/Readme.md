@@ -9261,16 +9261,530 @@ console.log(getRating(watchList));
 
 ----
 
-****
+16. **Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem**
+
+Now that you have worked through a few challenges using higher-order functions like `map()`, `filter()`, and `reduce()`, you now get to apply them to solve a more complex challenge.
+
+✍ *We have defined a function named `squareList`. You need to complete the code for the `squareList` function using any combination of `map()`, `filter()`, and `reduce()` so that it returns a new array containing only the square of only the positive integers (decimal numbers are not integers) when an array of real numbers is passed to it. An example of an array containing only real numbers is `[-3, 4.8, 5, 3, -3.2]`.*
+
+*Note: Your function should not use any kind of `for` or `while` loops or the `forEach()` function.*
+
+<pre>
+const squareList = (arr) => {
+  // Only change code below this line
+  return arr
+    .filter(num => num > 0 && num % parseInt(num) === 0)
+    .map(num => Math.pow(num, 2));
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+</pre>
 
 ----
 
-****
+17. **Sort an Array Alphabetically using the sort Method**
+
+The `sort` method sorts the elements of an array according to the callback function.
+
+For example:
+
+<pre>
+function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+ascendingOrder([1, 5, 2, 3, 4]);
+// Returns [1, 2, 3, 4, 5]
+
+function reverseAlpha(arr) {
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? 1 : -1;
+  });
+}
+reverseAlpha(['l', 'h', 'z', 'b', 's']);
+// Returns ['z', 's', 'l', 'h', 'b']
+</pre>
+
+JavaScript's default sorting method is by string Unicode point value, which may return unexpected results. Therefore, it is encouraged to provide a callback function to specify how to sort the array items. When such a callback function, normally called `compareFunction`, is supplied, the array elements are sorted according to the return value of the `compareFunction`: If `compareFunction(a,b)` returns a value less than 0 for two elements `a` and `b`, then `a` will come before `b`. If `compareFunction(a,b)` returns a value greater than 0 for two elements `a` and `b`, then b will come before a. If compareFunction(a,b) returns a value equal to 0 for two elements `a` and `b`, then `a` and `b` will remain unchanged.
+
+✍ *Use the `sort` method in the `alphabeticalOrder` function to sort the elements of `arr` in alphabetical order.*
+
+<pre>
+function alphabeticalOrder(arr) {
+  // Only change code below this line
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? -1 : 1;
+  });
+
+  // Only change code above this line
+}
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+</pre>
 
 ----
 
+18. **Return a Sorted Array Without Changing the Original Array**
+
+A side effect of the `sort` method is that it changes the order of the elements in the original array. In other words, it mutates the array in place. One way to avoid this is to first concatenate an empty array to the one being sorted (remember that `slice` and `concat` return a new array), then run the `sort` method.
+
+✍ *Use the `sort` method in the `nonMutatingSort` function to sort the elements of an array in ascending order. The function should return a new array, and not mutate the `globalArray` variable.*
+
+<pre>
+var globalArray = [5, 6, 3, 2, 9];
+function nonMutatingSort(arr) {
+  // Only change code below this line
+    return [].concat(arr).sort(function(a, b) {
+      return a - b;
+    });
+  // Only change code above this line
+}
+nonMutatingSort(globalArray);
+</pre>
+
 ----
+
+19. **Split a String into an Array Using the split Method**
+
+The `split` method splits a string into an array of strings. It takes an argument for the delimiter, which can be a character to use to break up the string or a regular expression. For example, if the delimiter is a space, you get an array of words, and if the delimiter is an empty string, you get an array of each character in the string.
+
+Here are two examples that split one string by spaces, then another by digits using a regular expression:
+
+<pre>
+var str = "Hello World";
+var bySpace = str.split(" ");
+// Sets bySpace to ["Hello", "World"]
+
+var otherString = "How9are7you2today";
+var byDigits = otherString.split(/\d/);
+// Sets byDigits to ["How", "are", "you", "today"]
+</pre>
+
+Since strings are immutable, the `split` method makes it easier to work with them.
+
+✍ *Use the `split` method inside the `splitify` function to split `str` into an array of words. The function should return the array. Note that the words are not always separated by spaces, and the array should not contain punctuation.*
+
+<pre>
+function splitify(str) {
+  // Only change code below this line
+
+return str.split(/\W/)
+  // Only change code above this line
+}
+splitify("Hello World,I-am code");
+</pre>
+
+----
+
+20. **Combine an Array into a String Using the join Method**
+
+The `join` method is used to join the elements of an array together to create a string. It takes an argument for the delimiter that is used to separate the array elements in the string.
+
+Here's an example:
+
+<pre>
+var arr = ["Hello", "World"];
+var str = arr.join(" ");
+// Sets str to "Hello World"
+</pre>
+
+Use the `join` method (among others) inside the `sentensify` function to make a sentence from the words in the string `str`. The function should return a string. For example, "I-like-Star-Wars" would be converted to "I like Star Wars". For this challenge, do not use the `replace` method.
+
+<pre>
+function sentensify(str) {
+  // Only change code below this line
+return str.split(/\W/).join(" ");
+
+  // Only change code above this line
+}
+sentensify("May-the-force-be-with-you");
+</pre>
+
+----
+
+21. **Apply Functional Programming to Convert Strings to URL Slugs**
+
+The last several challenges covered a number of useful array and string methods that follow functional programming principles. We've also learned about `reduce`, which is a powerful method used to reduce problems to simpler forms. From computing averages to sorting, any array operation can be achieved by applying it. Recall that `map` and `filter` are special cases of `reduce`.
+
+Let's combine what we've learned to solve a practical problem.
+
+Many content management sites (CMS) have the titles of a post added to part of the URL for simple bookmarking purposes. For example, if you write a Medium post titled "Stop Using Reduce", it's likely the URL would have some form of the title string in it (".../stop-using-reduce"). You may have already noticed this on the freeCodeCamp site.
+
+✍ *Fill in the `urlSlug` function so it converts a string `title` and returns the hyphenated version for the URL. You can use any of the methods covered in this section, and don't use `replace`. Here are the requirements:*
+
+*The input is a string with spaces and title-cased words*
+
+*The output is a string with the spaces between words replaced by a hyphen (`-`)*
+
+*The output should be all lower-cased letters*
+
+*The output should not have any spaces*
+
+<pre>
+// Only change code below this line
+function urlSlug(title) {
+  return title
+    .split(/\W/)
+    .filter(obj => {
+      return obj !== "";
+    })
+    .join("-")
+    .toLowerCase();
+}
+// Only change code above this line
+</pre>
+
+----
+
+22. **Use the every Method to Check that Every Element in an Array Meets a Criteria**
+
+The `every` method works with arrays to check if every element passes a particular test. It returns a Boolean value - `true` if all values meet the criteria, `false` if not.
+
+For example, the following code would check if every element in the `numbers` array is less than 10:
+
+<pre>
+var numbers = [1, 5, 8, 0, 10, 11];
+numbers.every(function(currentValue) {
+  return currentValue < 10;
+});
+// Returns false
+</pre>
+
+✍ *Use the `every` method inside the `checkPositive` function to check if every element in `arr` is positive. The function should return a Boolean value.*
+
+<pre>
+function checkPositive(arr) {
+  // Only change code below this line
+
+return arr.every(val => val > 0);
+
+  // Only change code above this line
+}
+checkPositive([1, 2, 3, -4, 5]);
+</pre>
+
+----
+
+23. **Use the some Method to Check that Any Elements in an Array Meet a Criteria**
+
+The `some` method works with arrays to check if any element passes a particular test. It returns a Boolean value - `true` if any of the values meet the criteria, `false` if not.
+
+For example, the following code would check if any element in the `numbers` array is less than 10:
+
+<pre>
+var numbers = [10, 50, 8, 220, 110, 11];
+numbers.some(function(currentValue) {
+  return currentValue < 10;
+});
+// Returns true
+</pre>
+
+✍ *Use the `some` method inside the `checkPositive` function to check if any element in `arr` is positive. The function should return a Boolean value.*
+
+<pre>
+function checkPositive(arr) {
+  // Only change code below this line
+
+return arr.some(elem => elem > 0);
+
+  // Only change code above this line
+}
+checkPositive([1, 2, 3, -4, 5]);
+</pre>
+
+----
+
+24. **Introduction to Currying and Partial Application**
+
+The arity of a function is the number of arguments it requires. *Currying* a function means to convert a function of N arity into N functions of arity 1.
+
+In other words, it restructures a function so it takes one argument, then returns another function that takes the next argument, and so on.
+
+Here's an example:
+
+<pre>
+//Un-curried function
+function unCurried(x, y) {
+  return x + y;
+}
+
+//Curried function
+function curried(x) {
+  return function(y) {
+    return x + y;
+  }
+}
+//Alternative using ES6
+const curried = x => y => x + y
+
+curried(1)(2) // Returns 3
+</pre>
+
+This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. Here's an example using the curried function in the example above:
+
+<pre>
+// Call a curried function in parts:
+var funcForY = curried(1);
+console.log(funcForY(2)); // Prints 3
+</pre>
+
+Similarly, *partial application* can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments. Here's an example:
+
+<pre>
+//Impartial function
+function impartial(x, y, z) {
+  return x + y + z;
+}
+var partialFn = impartial.bind(this, 1, 2);
+partialFn(10); // Returns 13
+</pre>
+
+✍ *Fill in the body of the `add` function so it uses currying to add parameters `x`, `y`, and `z`.*
+
+<pre>
+function add(x) {
+  // Only change code below this line
+  return function(y) {
+    return function(z){
+      return x + y + z;
+    };
+  };
+
+  // Only change code above this line
+}
+add(10)(20)(30);
+</pre>
+
+----
+
 ### Intermediate Algorithms Scripting
+
+The following challenges are part of FCC's Intermediate Algorithm Scripting Challenges. These should prepare you to complete the final challenges for the JavaScript Algorithms And Data Structures Certification.
+
+These challenges will allow you to test how much you have learned and which parts you may need to review again before starting the projects.
+
+With that being said-
+
+Have fun and remember to use the Read-Search-Ask method if you get stuck.
+
+Good Luck!
+
+----
+
+1. **Sum All Numbers in a Range**
+
+We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.
+
+For example, `sumAll([4,1])` should return `10` because sum of all the numbers between 1 and 4 (both inclusive) is `10`.
+
+<pre>
+function sumAll(arr) {
+  var max = Math.max(arr[0], arr[1]);
+  var min = Math.min(arr[0], arr[1]);
+  var temp = 0;
+  for (var i = min; i <= max; i++) {
+    temp += i;
+  }
+  return temp;
+}
+
+sumAll([1, 4]);
+</pre>
+
+----
+
+2. **Diff Two Arrays**
+
+Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
+
+Note
+You can return the array with its elements in any order.
+
+<pre>
+function diffArray(arr1, arr2) {
+  var newArr = [];
+
+function onlyInFirst(first, second) {
+  for (var i = 0; i < first.length; i++) {
+    if (second.indexOf(first[i]) === -1) {
+      newArr.push(first[i]);
+    }
+  }
+}
+  onlyInFirst(arr1, arr2);
+  onlyInFirst(arr2, arr1);
+
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+</pre>
+
+----
+
+3. **Algorithm Scripting: Seek and Destroy**
+
+You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
+
+Note
+You have to use the `arguments` object.
+
+<pre>
+function destroyer(arr) {
+  var args = Array.prototype.slice.call(arguments);
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < args.length; j++) {
+      if (arr[i] === args[j]) {
+        delete arr[i];
+      }
+    }
+  }
+  return arr.filter(Boolean);
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+</pre>
+
+----
+
+4. **Wherefore art thou**
+
+Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
+
+For example, if the first argument is `[{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }]`, and the second argument is `{ last: "Capulet" }`, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.
+
+<pre>
+function whatIsInAName(collection, source) {
+  // "What's in a name? that which we call a rose
+  // By any other name would smell as sweet.”
+  // -- by William Shakespeare, Romeo and Juliet
+  var srcKeys = Object.keys(source);
+
+  return collection.filter(function(obj) {
+    return srcKeys.every(function(key) {
+      return obj.hasOwnProperty(key) && obj[key] === source[key];
+    });
+  });
+}
+
+// test here
+whatIsInAName(
+  [
+    { first: "Romeo", last: "Montague" },
+    { first: "Mercutio", last: null },
+    { first: "Tybalt", last: "Capulet" }
+  ],
+  { last: "Capulet" }
+);
+</pre>
+
+----
+
+5. **Spinal Tap Case**
+
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+
+<pre>
+function spinalCase(str) {
+  // Create a variable for the white space and underscores.
+  var regex = /\s+|_+/g;
+
+  // Replace low-upper case to low-space-uppercase
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+
+  // Replace space and underscore with -
+  return str.replace(regex, "-").toLowerCase();
+}
+
+// test here
+spinalCase("This Is Spinal Tap");
+</pre>
+
+----
+
+6. **Pig Latin**
+
+Pig Latin is a way of altering English Words. The rules are as follows:
+
+- If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add "ay" to it.
+
+- If a word begins with a vowel, just add "way" at the end.
+
+✍ *Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.*
+
+<pre>
+function translatePigLatin(str) {
+  let consonantRegex = /^[^aeiou]+/;
+  let myConsonants = str.match(consonantRegex);
+  return myConsonants !== null
+  ? str
+      .replace(consonantRegex, "")
+      .concat(myConsonants)
+      .concat("ay")
+    : str.concat("way");
+}
+
+translatePigLatin("consonant");
+</pre>
+
+----
+
+7. **Search and Replace**
+
+Perform a search and replace on the sentence using the arguments provided and return the new sentence.
+
+First argument is the sentence to perform the search and replace on.
+
+Second argument is the word that you will be replacing (before).
+
+Third argument is what you will be replacing the second argument with (after).
+
+Note
+Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"
+
+<pre>
+function myReplace(str, before, after) {
+  // Find index where before is on string
+  var index = str.indexOf(before);
+  // Check to see if the first letter is uppercase or not
+  if (str[index] === str[index].toUpperCase()) {
+    // Change the after word to be capitalized before we use it.
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    // Change the after word to be uncapitalized before we use it.
+    after = after.charAt(0).toLowerCase() + after.slice(1);
+  }
+  // Now replace the original str with the edited one.
+  str = str.replace(before, after);
+
+  return str;
+}
+
+// test here
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+</pre>
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
+****
+
+----
+
 
 ----
 ### JavaScript Algorithms and Data Structures Projects
