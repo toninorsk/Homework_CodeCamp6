@@ -8740,7 +8740,7 @@ const names = users.map(user => user.name);
 console.log(names); // [ 'John', 'Amy', 'camperCat' ]
 </pre>
 
-The `watchList` array holds objects with information on several movies. Use `map` on `watchList` to assign a new array of objects with only `title` and `rating` keys to the `ratings` variable. The code in the editor currently uses a `for` loop to do this, so you should replace the loop functionality with your `map` expression.
+✍ *The `watchList` array holds objects with information on several movies. Use `map` on `watchList` to assign a new array of objects with only `title` and `rating` keys to the `ratings` variable. The code in the editor currently uses a `for` loop to do this, so you should replace the loop functionality with your `map` expression.*
 
 <pre>
 const ratings = watchList.map(item => ({
@@ -8751,7 +8751,35 @@ const ratings = watchList.map(item => ({
 
 ----
 
-****
+8. **Implement map on a Prototype**
+
+As you have seen from applying `Array.prototype.map()`, or simply `map()` earlier, the `map` method returns an array of the same length as the one it was called on. It also doesn't alter the original array, as long as its callback function doesn't.
+
+In other words, `map` is a pure function, and its output depends solely on its inputs. Plus, it takes another function as its argument.
+
+It would teach us a lot about `map` to try to implement a version of it that behaves exactly like the `Array.prototype.map()` with a `for` loop or `Array.prototype.forEach()`.
+
+Note: A pure function is allowed to alter local variables defined within its scope, although, it's preferable to avoid that as well.
+
+✍ *Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You may use a for loop or the forEach method.*
+
+<pre>
+// The global variable
+var s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback){
+  var newArray = [];
+  // Only change code below this line
+this.forEach(a => newArray.push(callback(a)));
+  // Only change code above this line
+  return newArray;
+
+};
+
+var new_s = s.myMap(function(item){
+  return item * 2;
+});
+</pre>
 
 ----
 
