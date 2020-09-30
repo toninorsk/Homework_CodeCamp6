@@ -6158,10 +6158,10 @@ let ourVariable = ourArray[0];
 
 In addition to accessing the value associated with an index, you can also *set* an index to a value using the same notation:
 
-</pre>
+<pre>
 ourArray[1] = "not b anymore";
 // ourArray now equals ["a", "not b anymore", "c"];
-<pre>
+</pre>
 
 Using bracket notation, we have now reset the item at index 1 from `"b"`, to `"not b anymore"`.
 
