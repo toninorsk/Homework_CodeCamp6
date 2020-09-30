@@ -10623,8 +10623,4 @@ checkCashRegister(19.5, 20.0, [
   ["ONE HUNDRED", 100.0]
 ]);
 </pre>
-----
 
-****
-
-----
