@@ -7826,10 +7826,10 @@ let duck = new Bird("Donald");
 
 `duck` inherits its `prototype` from the `Bird` constructor function. You can show this relationship with the `isPrototypeOf` method:
 
-</pre>
+<pre>
 Bird.prototype.isPrototypeOf(duck);
 // returns true
-<pre>
+</pre>
 
 ✍ *Use `isPrototypeOf` to check the `prototype` of `beagle`.*
 
