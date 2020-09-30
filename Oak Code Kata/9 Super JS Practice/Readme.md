@@ -1,7 +1,10 @@
 # FreeCodeCamp
 ## JavaScript Algorithms and Data Structures
 
-![JS cert](https://ibb.co/MPZ96vY)
+![JS cert](https://i.ibb.co/QYpXdg2/Screen-Shot-2020-09-30-at-14-53-47.png)
+
+[JavaScript Certificate Verification](https://www.freecodecamp.org/certification/fcca8de9fc8-ae81-430b-a26f-3ca8b9761fd8/javascript-algorithms-and-data-structures)
+
 
 ### Basic JavaScript
 1. **Comment Your JavaScript Code**
