@@ -9769,22 +9769,567 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 ----
 
-****
+8. **DNA Pairing**
+
+The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
+
+Base pairs are a pair of AT and CG. Match the missing element to the provided character.
+
+Return the provided character as the first element in each array.
+
+For example, for the input GCG, return [["G", "C"], ["C","G"],["G", "C"]]
+
+The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
+
+<pre>
+function pairElement(str) {
+  // Return each strand as an array of two elements, the original and the pair.
+  var paired = [];
+
+  // Function to check with strand to pair.
+  var search = function(char) {
+    switch (char) {
+      case "A":
+        paired.push(["A", "T"]);
+        break;
+      case "T":
+        paired.push(["T", "A"]);
+        break;
+      case "C":
+        paired.push(["C", "G"]);
+        break;
+      case "G":
+        paired.push(["G", "C"]);
+        break;
+    }
+  };
+
+  // Loops through the input and pair.
+  for (var i = 0; i < str.length; i++) {
+    search(str[i]);
+  }
+
+  return paired;
+}
+
+// test here
+pairElement("GCG");
+</pre>
 
 ----
 
-****
+9. **Missing letters**
+
+Find the missing letter in the passed letter range and return it.
+
+If all letters are present in the range, return undefined.
+
+<pre>
+function fearNotLetter(str) {
+  for (var i = 0; i < str.length; i++) {
+    /* code of current character */
+    var code = str.charCodeAt(i);
+
+    /* if code of current character is not equal to first character + no of iteration
+        hence character has been escaped */
+    if (code !== str.charCodeAt(0) + i) {
+      /* if current character has escaped one character find previous char and return */
+      return String.fromCharCode(code - 1);
+    }
+  }
+  return undefined;
+}
+
+// test here
+fearNotLetter("abce");
+</pre>
 
 ----
 
-****
+10. **Sorted Union**
+
+Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.
+
+In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.
+
+The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
+
+Check the assertion tests for examples.
+
+<pre>
+function uniteUnique(arr1, arr2, arr3) {
+  // Creates an empty array to store our final result.
+  var finalArray = [];
+
+  // Loop through the arguments object to truly make the program work with two or more arrays
+  // instead of 3.
+  for (var i = 0; i < arguments.length; i++) {
+    var arrayArguments = arguments[i];
+
+    // Loops through the array at hand
+    for (var j = 0; j < arrayArguments.length; j++) {
+      var indexValue = arrayArguments[j];
+
+      // Checks if the value is already on the final array.
+      if (finalArray.indexOf(indexValue) < 0) {
+        finalArray.push(indexValue);
+      }
+    }
+  }
+
+  return finalArray;
+}
+
+// test here
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+</pre>
 
 ----
 
-****
+11. **Convert HTML Entities**
+
+Convert the characters `&`, `<`, `>`, `"` (double quote), and `'` (apostrophe), in a string to their corresponding HTML entities.
+
+<pre>
+function convertHTML(str) {
+  // Split by character to avoid problems.
+
+  var temp = str.split("");
+
+  // Since we are only checking for a few HTML elements, use a switch
+
+  for (var i = 0; i < temp.length; i++) {
+    switch (temp[i]) {
+      case "<":
+        temp[i] = "&lt;";
+        break;
+      case "&":
+        temp[i] = "&amp;";
+        break;
+      case ">":
+        temp[i] = "&gt;";
+        break;
+      case '"':
+        temp[i] = "&quot;";
+        break;
+      case "'":
+        temp[i] = "&apos;";
+        break;
+    }
+  }
+
+  temp = temp.join("");
+  return temp;
+}
+
+//test here
+convertHTML("Dolce & Gabbana");
+</pre>
 
 ----
 
+12. **Sum All Odd Fibonacci Numbers**
+
+Given a positive integer `num`, return the sum of all odd Fibonacci numbers that are less than or equal to `num`.
+
+The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+
+For example, `sumFibs(10)` should return `10` because all odd Fibonacci numbers less than or equal to `10` are 1, 1, 3, and 5.
+
+<pre>
+function sumFibs(num) {
+  var prevNumber = 0;
+  var currNumber = 1;
+  var result = 0;
+  while (currNumber <= num) {
+    if (currNumber % 2 !== 0) {
+      result += currNumber;
+    }
+
+    currNumber += prevNumber;
+    prevNumber = currNumber - prevNumber;
+  }
+
+  return result;
+}
+
+// test here
+sumFibs(4);
+</pre>
+
+----
+
+13. **Sum All Primes**
+
+A *prime number* is a whole number greater than 1 with exactly two divisors: 1 and itself. For example, 2 is a prime number because it is only divisible by 1 and 2. In contrast, 4 is not prime since it is divisible by 1, 2 and 4.
+
+Rewrite `sumPrimes` so it returns the sum of all prime numbers that are less than or equal to num.
+
+<pre>
+function sumPrimes(num) {
+  var res = 0;
+
+  // Function to get the primes up to max in an array
+  function getPrimes(max) {
+    var sieve = [];
+    var i;
+    var j;
+    var primes = [];
+    for (i = 2; i <= max; ++i) {
+      if (!sieve[i]) {
+        // i has not been marked -- it is prime
+        primes.push(i);
+        for (j = i << 1; j <= max; j += i) {
+          sieve[j] = true;
+        }
+      }
+    }
+
+    return primes;
+  }
+
+  // Add the primes
+  var primes = getPrimes(num);
+  for (var p = 0; p < primes.length; p++) {
+    res += primes[p];
+  }
+
+  return res;
+}
+
+// test here
+sumPrimes(10);
+</pre>
+
+----
+
+14. **Smallest Common Multiple**
+
+Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.
+
+The range will be an array of two numbers that will not necessarily be in numerical order.
+
+For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.
+
+<pre>
+function smallestCommons(arr) {
+  // Sort array from greater to lowest
+  // This line of code was from Adam Doyle (http://github.com/Adoyle2014)
+  arr.sort(function(a, b) {
+    return b - a;
+  });
+
+  // Create new array and add all values from greater to smaller from the
+  // original array.
+  var newArr = [];
+  for (var i = arr[0]; i >= arr[1]; i--) {
+    newArr.push(i);
+  }
+
+  // Variables needed declared outside the loops.
+  var quot = 0;
+  var loop = 1;
+  var n;
+
+  // Run code while n is not the same as the array length.
+  do {
+    quot = newArr[0] * loop * newArr[1];
+    for (n = 2; n < newArr.length; n++) {
+      if (quot % newArr[n] !== 0) {
+        break;
+      }
+    }
+
+    loop++;
+  } while (n !== newArr.length);
+
+  return quot;
+}
+
+// test here
+smallestCommons([1, 5]);
+</pre>
+
+----
+
+15. **Drop it**
+
+Given the array `arr`, iterate through and remove each element starting from the first element (the 0 index) until the function `func` returns `true` when the iterated element is passed through it.
+
+Then return the rest of the array once the condition is satisfied, otherwise, `arr` should be returned as an empty array.
+
+<pre>
+function dropElements(arr, func) {
+  // drop them elements.
+  var times = arr.length;
+  for (var i = 0; i < times; i++) {
+    if (func(arr[0])) {
+      break;
+    } else {
+      arr.shift();
+    }
+  }
+  return arr;
+}
+
+// test here
+dropElements([1, 2, 3, 4], function(n) {
+  return n >= 3;
+});
+</pre>
+
+----
+
+16. **Steamroller**
+
+Flatten a nested array. You must account for varying levels of nesting.
+
+<pre>
+function steamrollArray(arr) {
+  var flattenedArray = [];
+
+  // Create function that adds an element if it is not an array.
+  // If it is an array, then loops through it and uses recursion on that array.
+  var flatten = function(arg) {
+    if (!Array.isArray(arg)) {
+      flattenedArray.push(arg);
+    } else {
+      for (var a in arg) {
+        flatten(arg[a]);
+      }
+    }
+  };
+
+  // Call the function for each element in the array
+  arr.forEach(flatten);
+  return flattenedArray;
+}
+
+// test here
+steamrollArray([1, [2], [3, [[4]]]]);
+</pre>
+
+----
+
+17. **Binary Agents**
+
+Return an English translated sentence of the passed binary string.
+
+The binary string will be space separated.
+
+<pre>
+function binaryAgent(str) {
+  var biString = str.split(" ");
+  var uniString = [];
+
+  /*using the radix (or base) parameter in parseInt, we can convert the binary
+      number to a decimal number while simultaneously converting to a char*/
+
+  for (var i = 0; i < biString.length; i++) {
+    uniString.push(String.fromCharCode(parseInt(biString[i], 2)));
+  }
+
+  // we then simply join the string
+  return uniString.join("");
+}
+
+// test here
+binaryAgent(
+  "01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"
+);
+</pre>
+
+----
+
+18. **Everything Be True**
+
+Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
+
+In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.
+
+In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.
+
+Remember, you can access object properties through either dot notation or [] notation.
+
+<pre>
+function truthCheck(collection, pre) {
+  // Create a counter to check how many are true.
+  var counter = 0;
+  // Check for each object
+  for (var c in collection) {
+    // If it is has property and value is truthy
+    if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+      counter++;
+    }
+  }
+  // Outside the loop, check to see if we got true for all of them and return true or false
+  return counter == collection.length;
+}
+
+// test here
+truthCheck(
+  [
+    { user: "Tinky-Winky", sex: "male" },
+    { user: "Dipsy", sex: "male" },
+    { user: "Laa-Laa", sex: "female" },
+    { user: "Po", sex: "female" }
+  ],
+  "sex"
+);
+</pre>
+
+----
+
+19. **Arguments Optional**
+
+Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
+
+For example, `addTogether(2, 3)` should return `5`, and `addTogether(2)` should return a function.
+
+Calling this returned function with a single argument will then return the sum:
+
+`var sumTwoAnd = addTogether(2);`
+
+`sumTwoAnd(3)` returns `5`.
+
+If either argument isn't a valid number, return undefined.
+
+<pre>
+function addTogether() {
+  // Function to check if a number is actually a number
+  // and return undefined otherwise.
+  var checkNum = function(num) {
+    if (typeof num !== "number") {
+      return undefined;
+    } else return num;
+  };
+
+  // Check if we have two parameters, check if they are numbers
+  // handle the case where one is not
+  // returns the addition.
+  if (arguments.length > 1) {
+    var a = checkNum(arguments[0]);
+    var b = checkNum(arguments[1]);
+    if (a === undefined || b === undefined) {
+      return undefined;
+    } else {
+      return a + b;
+    }
+  } else {
+    // If only one parameter was found, returns a new function that expects two
+    // Store first argument before entering the new function scope
+    var c = arguments[0];
+
+    // Check the number again, must be outside the function to about returning an object
+    // instead of undefined.
+    if (checkNum(c)) {
+      // Return function that expect a second argument.
+      return function(arg2) {
+        // Check for non-numbers
+        if (c === undefined || checkNum(arg2) === undefined) {
+          return undefined;
+        } else {
+          // if numbers then add them.
+          return c + arg2;
+        }
+      };
+    }
+  }
+}
+
+// test here
+addTogether(2, 3);
+</pre>
+
+----
+
+20. **Make a Person**
+
+Fill in the object constructor with the following methods below:
+
+<pre>
+getFirstName()
+getLastName()
+getFullName()
+setFirstName(first)
+setLastName(last)
+setFullName(firstAndLast)
+</pre>
+
+Run the tests to see the expected output for each method. The methods that take an argument must accept only one argument and it has to be a string. These methods must be the only available means of interacting with the object.
+
+<pre>
+var Person = function(firstAndLast) {
+  var fullName = firstAndLast;
+
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];
+  };
+
+  this.getLastName = function() {
+    return fullName.split(" ")[1];
+  };
+
+  this.getFullName = function() {
+    return fullName;
+  };
+
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+var bob = new Person("Bob Ross");
+bob.getFullName();
+</pre>
+
+----
+
+21. **Map the Debris**
+
+Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).
+
+The array will contain objects in the format `{name: 'name', avgAlt: avgAlt}`.
+
+You can read about orbital periods on Wikipedia.
+
+The values should be rounded to the nearest whole number. The body being orbited is Earth.
+
+The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km<sup>3</sup>s<sup>-2</sup>.
+
+<pre>
+function orbitalPeriod(arr) {
+  var GM = 398600.4418;
+  var earthRadius = 6367.4447;
+  var a = 2 * Math.PI;
+  var newArr = [];
+
+  var getOrbPeriod = function(obj) {
+    var c = Math.pow(earthRadius + obj.avgAlt, 3);
+    var b = Math.sqrt(c / GM);
+    var orbPeriod = Math.round(a * b);
+    // create new object
+    return {name: obj.name, orbitalPeriod: orbPeriod};
+  };
+
+  for (var elem in arr) {
+    newArr.push(getOrbPeriod(arr[elem]));
+  }
+
+  return newArr;
+}
+
+// test here
+orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
+</pre>
 
 ----
 ### JavaScript Algorithms and Data Structures Projects
