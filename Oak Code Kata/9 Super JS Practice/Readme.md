@@ -10624,3 +10624,4 @@ checkCashRegister(19.5, 20.0, [
 ]);
 </pre>
 
+test
